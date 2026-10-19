@@ -94,8 +94,8 @@ function BookshelfTools() {
   ];
 
   const groups: { label: string; rows: ToolItem[] }[] = [
-    { label: '工具', rows: [items[0], items[1], items[2], items[3], items[4]] },
-    { label: '社区', rows: [items[5]] },
+    { label: '工具', rows: items.slice(0, items.length - 1) },
+    { label: '社区', rows: items.slice(items.length - 1) },
   ];
 
   return (
