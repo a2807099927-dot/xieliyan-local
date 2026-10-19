@@ -2,6 +2,7 @@
 name = "xie-li-yan"
 version = "2.1.15"
 description = "写梨眼-AI 小说写作桌面应用（Tauri 2 版）"
+license = "GPL-3.0-only"
 authors = ["写梨眼团队"]
 edition = "2021"
 

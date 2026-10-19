@@ -2,7 +2,7 @@
   "name": "xie-li-yan-tauri",
   "version": "2.1.15",
   "description": "写梨眼 Tauri 2.0 版本",
-  "private": true,
+  "license": "GPL-3.0-only",
   "type": "module",
   "scripts": {
     "clean": "rimraf dist src-tauri/target/release",
@@ -49,5 +49,6 @@
     "typescript": "^5.8.3",
     "vite": "^6.0.0",
     "vitest": "^4.1.10"
-  }
+  },
+  "private": true
 }
