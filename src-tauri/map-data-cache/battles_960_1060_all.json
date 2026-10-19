@@ -1,0 +1,906 @@
+{
+  "query": "battles_960_1060_all",
+  "timestamp": 1779901131312,
+  "data": [
+    {
+      "id": "Q26493",
+      "name": "丹丹納干戰役",
+      "type": "battle",
+      "description": "1040 battle of the Seljuk-Ghaznavid Wars",
+      "lon": 61.345353,
+      "lat": 37.391933,
+      "startYear": 1040
+    },
+    {
+      "id": "Q61100",
+      "name": "西維泰特之役",
+      "type": "battle",
+      "description": "1053 middle ages battle",
+      "lon": 15.266667,
+      "lat": 41.733333,
+      "startYear": 1053
+    },
+    {
+      "id": "Q68371",
+      "name": "Battle of Mortemer",
+      "type": "battle",
+      "description": "1054 battle",
+      "lon": 1.551111111,
+      "lat": 49.751666666,
+      "startYear": 1054
+    },
+    {
+      "id": "Q830878",
+      "name": "斯蒂克萊斯塔戰役",
+      "type": "battle",
+      "description": "battle in Trøndelag, Norway",
+      "lon": 11.566666666,
+      "lat": 63.796666666,
+      "startYear": 1030
+    },
+    {
+      "id": "Q868027",
+      "name": "克朗塔夫戰役",
+      "type": "battle",
+      "description": "1014 middle ages battle",
+      "lon": -6.1975,
+      "lat": 53.365,
+      "startYear": 1014
+    },
+    {
+      "id": "Q938980",
+      "name": "Battle of Ménfő",
+      "type": "battle",
+      "description": "1044 battle",
+      "lon": 17.63444444,
+      "lat": 47.68416667,
+      "startYear": 1044
+    },
+    {
+      "id": "Q1073429",
+      "name": "白藤江之战",
+      "type": "battle",
+      "description": "越宋战争",
+      "lon": 106.755,
+      "lat": 20.99,
+      "startYear": 981
+    },
+    {
+      "id": "Q1422925",
+      "name": "瓦尔斯沙丘战役",
+      "type": "battle",
+      "description": "1047 battle",
+      "lon": -0.25,
+      "lat": 49.083333,
+      "startYear": 1047
+    },
+    {
+      "id": "Q1424959",
+      "name": "Battle of Nouy",
+      "type": "battle",
+      "description": "1044 battle",
+      "lon": 0.880884,
+      "lat": 47.371,
+      "startYear": 1044
+    },
+    {
+      "id": "Q1442050",
+      "name": "莫爾登战役",
+      "type": "battle",
+      "description": "991 CE battle near Maldon, United Kingdom",
+      "lon": 0.700833333,
+      "lat": 51.715277777,
+      "startYear": 991
+    },
+    {
+      "id": "Q532544",
+      "name": "斯文达克斯战役",
+      "type": "battle",
+      "description": "1022 battle",
+      "lon": 41.6,
+      "lat": 39.9,
+      "startYear": 1022
+    },
+    {
+      "id": "Q2423998",
+      "name": "Battle of Listven",
+      "type": "battle",
+      "description": "battle in Eastern Europe in 1024",
+      "lon": 31.5,
+      "lat": 51.766667,
+      "startYear": 1024
+    },
+    {
+      "id": "Q2428651",
+      "name": "Battle of Florennes",
+      "type": "battle",
+      "description": "1015 battle in Wallonia",
+      "lon": 3.276,
+      "lat": 50.829,
+      "startYear": 1015
+    },
+    {
+      "id": "Q1219645",
+      "name": "Battle of Atapuerca",
+      "type": "battle",
+      "description": "1054 medieval battle between the Kingdom of Castile and the Kingdom of Navarre",
+      "lon": -3.51666667,
+      "lat": 42.35,
+      "startYear": 1054
+    },
+    {
+      "id": "Q2575960",
+      "name": "Battle of Carham",
+      "type": "battle",
+      "description": "1016 battle",
+      "lon": -2.32083333,
+      "lat": 55.63694444,
+      "startYear": 1010
+    },
+    {
+      "id": "Q584047",
+      "name": "克雷迪昂战役",
+      "type": "battle",
+      "description": "1014 battle of the Byzantine–Bulgarian Wars",
+      "lon": 23.016666666,
+      "lat": 41.366666666,
+      "startYear": 1014
+    },
+    {
+      "id": "Q608438",
+      "name": "Battle of Cannae (1018)",
+      "type": "battle",
+      "description": "1018 battle during the Norman conquest of Italy",
+      "lon": 16.15166667,
+      "lat": 41.29638889,
+      "startYear": 1018
+    },
+    {
+      "id": "Q1638751",
+      "name": "希姆里尼战役",
+      "type": "battle",
+      "description": "1021 battle",
+      "lon": 43.233333333,
+      "lat": 41.016666666,
+      "startYear": 1021
+    },
+    {
+      "id": "Q1704268",
+      "name": "Battle of Assandun",
+      "type": "battle",
+      "description": "battle fought in Essex in 1016",
+      "lon": 0.6948,
+      "lat": 51.6028,
+      "startYear": 1016
+    },
+    {
+      "id": "Q2890177",
+      "name": "Battle of Thessalonica",
+      "type": "battle",
+      "description": "1000 circa 995 battle",
+      "lon": 22.9,
+      "lat": 40.65,
+      "startYear": 1000
+    },
+    {
+      "id": "Q2890236",
+      "name": "在托拉戰役",
+      "type": "battle",
+      "description": "1006 victory of an alliance of Catalan counts over the Caliphate of Córdoba",
+      "lon": -1.40385556,
+      "lat": 41.81140278,
+      "startYear": 1006
+    },
+    {
+      "id": "Q623766",
+      "name": "Battle of Conquereuil",
+      "type": "battle",
+      "description": "992 battle",
+      "lon": -1.75,
+      "lat": 47.62527778,
+      "startYear": 992
+    },
+    {
+      "id": "Q645905",
+      "name": "采迪尼亚战役",
+      "type": "battle",
+      "description": "battle between Lusatia and Poland in 972",
+      "lon": 14.483,
+      "lat": 53.25,
+      "startYear": 972
+    },
+    {
+      "id": "Q3544388",
+      "name": "Battle of Tamarón",
+      "type": "battle",
+      "description": "1037 battle between the troops of the Leonese king Bermudo III and those of the Count of Castile Fernando Sánchez",
+      "lon": -4.39525,
+      "lat": 42.210333333,
+      "startYear": 1037
+    },
+    {
+      "id": "Q3616452",
+      "name": "黃海之戰",
+      "type": "battle",
+      "description": "1057 battle in the Zenkunen War",
+      "lon": 141.293555555,
+      "lat": 38.848472222,
+      "startYear": 1057
+    },
+    {
+      "id": "Q3623153",
+      "name": "锡利斯特拉战役",
+      "type": "battle",
+      "description": "",
+      "lon": 27.266667,
+      "lat": 44.116667,
+      "startYear": 968
+    },
+    {
+      "id": "Q3623166",
+      "name": "Battle of Thessalonica",
+      "type": "battle",
+      "description": "1014 battle",
+      "lon": 22.9,
+      "lat": 40.65,
+      "startYear": 1014
+    },
+    {
+      "id": "Q1784087",
+      "name": "图尔图战役",
+      "type": "battle",
+      "description": "973 battle",
+      "lon": 6.30155,
+      "lat": 43.589969,
+      "startYear": 973
+    },
+    {
+      "id": "Q1896360",
+      "name": "斯科普里战役",
+      "type": "battle",
+      "description": "1004 battle near the Bulgarian city of Skopje",
+      "lon": 21.4333,
+      "lat": 42,
+      "startYear": 1004
+    },
+    {
+      "id": "Q2628015",
+      "name": "Battle of Kapetron",
+      "type": "battle",
+      "description": "battle of the Byzantine–Seljuq wars, 1048",
+      "lon": 41.675556,
+      "lat": 39.979722,
+      "startYear": 1048
+    },
+    {
+      "id": "Q2664985",
+      "name": "菲里斯维利尔战役",
+      "type": "battle",
+      "description": "980 battle",
+      "lon": 17.614166666,
+      "lat": 59.871944444,
+      "startYear": 980
+    },
+    {
+      "id": "Q2712298",
+      "name": "Battle of Ostrovo",
+      "type": "battle",
+      "description": "1041 battle",
+      "lon": 21.833333,
+      "lat": 40.8,
+      "startYear": 1041
+    },
+    {
+      "id": "Q2855373",
+      "name": "佩特罗内战役",
+      "type": "battle",
+      "description": "battle between two rival Byzantine armies in 1057",
+      "lon": 29.690556,
+      "lat": 40.486944,
+      "startYear": 1057
+    },
+    {
+      "id": "Q3636352",
+      "name": "Battle of Brentford",
+      "type": "battle",
+      "description": "battle of 1016",
+      "lon": -0.30694444,
+      "lat": 51.47861111,
+      "startYear": 1016
+    },
+    {
+      "id": "Q3636537",
+      "name": "Battle of Montemaggiore",
+      "type": "battle",
+      "description": "battle in 1041 in Italy",
+      "lon": 16.216667,
+      "lat": 41.35,
+      "startYear": 1041
+    },
+    {
+      "id": "Q3636538",
+      "name": "Battle of Montepeloso",
+      "type": "battle",
+      "description": "battle fought between Lombard-Norman force and Byzantine Empire in 1041 AD",
+      "lon": 16.233333,
+      "lat": 40.75,
+      "startYear": 1041
+    },
+    {
+      "id": "Q3636556",
+      "name": "Battle of Olivento",
+      "type": "battle",
+      "description": "battle in Italy in 1041",
+      "lon": 15.7526,
+      "lat": 41.0515,
+      "startYear": 1041
+    },
+    {
+      "id": "Q1992706",
+      "name": "格倫麻碼之戰",
+      "type": "battle",
+      "description": "1000 battle of the Viking wars in Ireland",
+      "lon": -6.525,
+      "lat": 53.28,
+      "startYear": 1000
+    },
+    {
+      "id": "Q2888155",
+      "name": "Battle of Bitola",
+      "type": "battle",
+      "description": "1015 battle of the Byzantine-Bulgarian Wars",
+      "lon": 21.3347,
+      "lat": 41.0319,
+      "startYear": 1015
+    },
+    {
+      "id": "Q3656902",
+      "name": "Battle of Strumica",
+      "type": "battle",
+      "description": "battle fought in 1014 AD",
+      "lon": 22.6333,
+      "lat": 41.4333,
+      "startYear": 1014
+    },
+    {
+      "id": "Q3656928",
+      "name": "Battle of Thessalonica",
+      "type": "battle",
+      "description": "2nd 1040 battle",
+      "lon": 22.9,
+      "lat": 40.65,
+      "startYear": 1040
+    },
+    {
+      "id": "Q3656964",
+      "name": "Battle of Thessalonica",
+      "type": "battle",
+      "description": "1040 battle",
+      "lon": 22.9,
+      "lat": 40.65,
+      "startYear": 1040
+    },
+    {
+      "id": "Q3658075",
+      "name": "Battle of Setina",
+      "type": "battle",
+      "description": "1017 battle",
+      "lon": 21.6167,
+      "lat": 40.8667,
+      "startYear": 1017
+    },
+    {
+      "id": "Q3781410",
+      "name": "阿爾貝薩戰役",
+      "type": "battle",
+      "description": "1003 battle",
+      "lon": 0.65,
+      "lat": 41.75,
+      "startYear": 1003
+    },
+    {
+      "id": "Q703523",
+      "name": "斯蒂洛战役",
+      "type": "battle",
+      "description": "982 battle",
+      "lon": 17.2022,
+      "lat": 39.0254,
+      "startYear": 982
+    },
+    {
+      "id": "Q2086785",
+      "name": "Battle of Bauds",
+      "type": "battle",
+      "description": "962 battle",
+      "lon": -2.893,
+      "lat": 57.649,
+      "startYear": 962
+    },
+    {
+      "id": "Q3302805",
+      "name": "阿克巴特·伯克爾戰役",
+      "type": "battle",
+      "description": "1010 battle in Spain",
+      "lon": -5.01667,
+      "lat": 38.1833,
+      "startYear": 1010
+    },
+    {
+      "id": "Q4562817",
+      "name": "Battle of Tara",
+      "type": "battle",
+      "description": "980 battle in Ireland",
+      "lon": -6.61194,
+      "lat": 53.5775,
+      "startYear": 980
+    },
+    {
+      "id": "Q2237076",
+      "name": "Battle of Pontlevoy",
+      "type": "battle",
+      "description": "1016 battle",
+      "lon": 1.254324,
+      "lat": 47.390249,
+      "startYear": 1016
+    },
+    {
+      "id": "Q737655",
+      "name": "多洛斯特隆要塞",
+      "type": "battle",
+      "description": "byzantine military investment of the Kievan Rus in Dorostolon",
+      "lon": 27.260277777,
+      "lat": 44.118611111,
+      "startYear": 971
+    },
+    {
+      "id": "Q738768",
+      "name": "菲恰爾之戰",
+      "type": "battle",
+      "description": "middle ages battle",
+      "lon": 5.371388888,
+      "lat": 59.918888888,
+      "startYear": 961
+    },
+    {
+      "id": "Q777332",
+      "name": "阿卡迪欧波利斯战役",
+      "type": "battle",
+      "description": "battle fought in 970 between a Byzantine army under Bardas Skleros and a Rus' army,",
+      "lon": 27.35,
+      "lat": 41.4,
+      "startYear": 970
+    },
+    {
+      "id": "Q3436319",
+      "name": "Battle of Dyrrhachium",
+      "type": "battle",
+      "description": "1018 battle between the Bulgarians and the Byzantine Empire",
+      "lon": 19.4544,
+      "lat": 41.3256,
+      "startYear": 1018
+    },
+    {
+      "id": "Q2292026",
+      "name": "图拉真之门战役",
+      "type": "battle",
+      "description": "part of The Byzantine Bulgarian Wars",
+      "lon": 23.91833333,
+      "lat": 42.35611111,
+      "startYear": 986
+    },
+    {
+      "id": "Q4870309",
+      "name": "阿尼战役",
+      "type": "battle",
+      "description": "1042年拜占庭与亚美尼亚之间的战役",
+      "lon": 43.5728,
+      "lat": 40.5075,
+      "startYear": 1042
+    },
+    {
+      "id": "Q4871616",
+      "name": "Battle of Lumphanan",
+      "type": "battle",
+      "description": "1057 battle between Macbeth and Malcolm III of Scotland",
+      "lon": -2.70375,
+      "lat": 57.11974,
+      "startYear": 1057
+    },
+    {
+      "id": "Q4870423",
+      "name": "Battle of Barry",
+      "type": "battle",
+      "description": "legendary battle in 1010 AD",
+      "lon": -2.7083,
+      "lat": 56.5011,
+      "startYear": 1010
+    },
+    {
+      "id": "Q5452499",
+      "name": "First Battle of Alton",
+      "type": "battle",
+      "description": "skirmish in 1001 between the English and the Vikings",
+      "lon": -0.975,
+      "lat": 51.151,
+      "startYear": 1001
+    },
+    {
+      "id": "Q4870698",
+      "name": "Battle of Cervera",
+      "type": "battle",
+      "description": "July 1000 battle",
+      "lon": -3.46666667,
+      "lat": 41.9,
+      "startYear": 1000
+    },
+    {
+      "id": "Q4872019",
+      "name": "Battle of Peshawar",
+      "type": "battle",
+      "description": "1001 Ghaznavid–Hindu Shahi battle",
+      "lon": 71.5675,
+      "lat": 34.014444444,
+      "startYear": 1001
+    },
+    {
+      "id": "Q4872044",
+      "name": "Battle of Pinhoe",
+      "type": "battle",
+      "description": "1001 battle",
+      "lon": -3.477244,
+      "lat": 50.743336,
+      "startYear": 1001
+    },
+    {
+      "id": "Q4870988",
+      "name": "Battle of Estercuel",
+      "type": "battle",
+      "description": "975 battle in Muslim Iberia",
+      "lon": -1.51247246,
+      "lat": 42.008303895,
+      "startYear": 975
+    },
+    {
+      "id": "Q4871081",
+      "name": "高梁河之战",
+      "type": "battle",
+      "description": "979 battle",
+      "lon": 116.407413,
+      "lat": 39.904214,
+      "startYear": 979
+    },
+    {
+      "id": "Q4872183",
+      "name": "Battle of Ringmere",
+      "type": "battle",
+      "description": "1010 battle",
+      "lon": 1.35,
+      "lat": 52.816666666,
+      "startYear": 1010
+    },
+    {
+      "id": "Q4872212",
+      "name": "Battle of Rueda",
+      "type": "battle",
+      "description": "981 battle of the Reconquista",
+      "lon": -4.81666667,
+      "lat": 41.6,
+      "startYear": 981
+    },
+    {
+      "id": "Q5723010",
+      "name": "塔法利亞戰役",
+      "type": "battle",
+      "description": "1043 medieval battle in Spain",
+      "lon": -1.666667,
+      "lat": 42.516667,
+      "startYear": 1043
+    },
+    {
+      "id": "Q8244418",
+      "name": "Battle of Rovirans",
+      "type": "battle",
+      "description": "985 battle",
+      "lon": 2.00806,
+      "lat": 41.5611,
+      "startYear": 985
+    },
+    {
+      "id": "Q9172457",
+      "name": "达多色扎尼领地战役",
+      "type": "battle",
+      "description": "battle between Poland and the Holy Roman Empire",
+      "lon": 15.516667,
+      "lat": 51.556667,
+      "startYear": 1015
+    },
+    {
+      "id": "Q9172488",
+      "name": "施普雷河战役",
+      "type": "battle",
+      "description": "1005 battle of the German-Polish War (1003–1018)",
+      "lon": 14.116667,
+      "lat": 52.116667,
+      "startYear": 1005
+    },
+    {
+      "id": "Q9172879",
+      "name": "西亚尼战役",
+      "type": "battle",
+      "description": "July 1015 battle in the German–Polish War",
+      "lon": 13.643889,
+      "lat": 51.950278,
+      "startYear": 1015
+    },
+    {
+      "id": "Q9173125",
+      "name": "克罗斯诺战役",
+      "type": "battle",
+      "description": "battle between Poland and the Holy Roman Empire",
+      "lon": 15.113056,
+      "lat": 52.052778,
+      "startYear": 1015
+    },
+    {
+      "id": "Q4872578",
+      "name": "Battle of Torrevicente",
+      "type": "battle",
+      "description": "981 battle of the Reconquista",
+      "lon": -2.93333,
+      "lat": 41.3333,
+      "startYear": 981
+    },
+    {
+      "id": "Q9173435",
+      "name": "Battle of Pobiedziska",
+      "type": "battle",
+      "description": "",
+      "lon": 17.279444,
+      "lat": 52.48,
+      "startYear": 1041
+    },
+    {
+      "id": "Q13126298",
+      "name": "Battle of Abergwili",
+      "type": "battle",
+      "description": "battle fought in 1022",
+      "lon": -4.269,
+      "lat": 51.866,
+      "startYear": 1022
+    },
+    {
+      "id": "Q13126299",
+      "name": "Battle of Aber Towi",
+      "type": "battle",
+      "description": "1044 battle",
+      "lon": -3.83,
+      "lat": 53.28,
+      "startYear": 1044
+    },
+    {
+      "id": "Q4872981",
+      "name": "奥伦特战役",
+      "type": "battle",
+      "description": "between the Byzantines and their Hamdanid allies against the forces of the Fatimid vizier of Damascus",
+      "lon": 36.58333333,
+      "lat": 35.25,
+      "startYear": 994
+    },
+    {
+      "id": "Q4873025",
+      "name": "Battle of the Theben Pass",
+      "type": "battle",
+      "description": "battle in Hungary in 1060",
+      "lon": 16.98333333,
+      "lat": 48.17388889,
+      "startYear": 1060
+    },
+    {
+      "id": "Q11794892",
+      "name": "Siege of Meissen (1015)",
+      "type": "battle",
+      "description": "1015 battle part of the German–Polish War (1003–1018)",
+      "lon": 13.483333,
+      "lat": 51.166667,
+      "startYear": 1015
+    },
+    {
+      "id": "Q11794926",
+      "name": "赫拉代茨围城战",
+      "type": "battle",
+      "description": "",
+      "lon": 17.876944,
+      "lat": 49.871389,
+      "startYear": 1060
+    },
+    {
+      "id": "Q11908761",
+      "name": "Battle of Qantish",
+      "type": "battle",
+      "description": "1009 battle",
+      "lon": -3.71666667,
+      "lat": 38.01666667,
+      "startYear": 1009
+    },
+    {
+      "id": "Q12001384",
+      "name": "Battle of Lyrskov Heath",
+      "type": "battle",
+      "description": "conflict between a Dano-Norwegian army led by Magnus the Good, and an army of Wends",
+      "lon": 9.46667,
+      "lat": 54.55,
+      "startYear": 1043
+    },
+    {
+      "id": "Q15844349",
+      "name": "Battle at Brůdek",
+      "type": "battle",
+      "description": "battle fought between Henry III, King of the Romans, and Břetislav I, Duke of Bohemia, on 22/23 August 1040",
+      "lon": 12.738,
+      "lat": 49.487,
+      "startYear": 1040
+    },
+    {
+      "id": "Q19772473",
+      "name": "Siege of Kyiv",
+      "type": "battle",
+      "description": "1036 siege",
+      "lon": 30.523611111,
+      "lat": 50.45,
+      "startYear": 1036
+    },
+    {
+      "id": "Q20054768",
+      "name": "阿帕米亚战役",
+      "type": "battle",
+      "description": "998 Fatimid victory in the Arab–Byzantine wars",
+      "lon": 36.38,
+      "lat": 35.415,
+      "startYear": 998
+    },
+    {
+      "id": "Q20584463",
+      "name": "Battle of Llanllieni",
+      "type": "battle",
+      "description": "battle between Gruffudd ap Llywelyn and the defeated Normans in Leominster in 1052",
+      "lon": -2.7385,
+      "lat": 52.2282,
+      "startYear": 1052
+    },
+    {
+      "id": "Q20638753",
+      "name": "亚历山大勒塔战役",
+      "type": "battle",
+      "description": "971 battle of the Arab-Byzantine wars",
+      "lon": 36.165,
+      "lat": 36.581667,
+      "startYear": 971
+    },
+    {
+      "id": "Q20875449",
+      "name": "Battle of the Guadiaro River",
+      "type": "battle",
+      "description": "1010 battle",
+      "lon": -5.302222222,
+      "lat": 36.300277777,
+      "startYear": 1010
+    },
+    {
+      "id": "Q28717575",
+      "name": "Sack of Aleppo",
+      "type": "battle",
+      "description": "capture and destruction of the city in 962",
+      "lon": 37.15,
+      "lat": 36.2,
+      "startYear": 962
+    },
+    {
+      "id": "Q61413183",
+      "name": "Battle of Ystradowain",
+      "type": "battle",
+      "description": "battle fought near Cowbridge in 1027",
+      "lon": -3.417353,
+      "lat": 51.486705,
+      "startYear": 1027
+    },
+    {
+      "id": "Q61413906",
+      "name": "Battle of Pant Câd-Einion",
+      "type": "battle",
+      "description": "battle which took place between Coitty and Pencoed, Wales in 982",
+      "lon": -3.519504,
+      "lat": 51.51456,
+      "startYear": 982
+    },
+    {
+      "id": "Q106542708",
+      "name": "Battle of Cesar",
+      "type": "battle",
+      "description": "1035 battle",
+      "lon": -8.442222222,
+      "lat": 40.923611111,
+      "startYear": 1035
+    },
+    {
+      "id": "Q125552181",
+      "name": "Hammadid capture of Béja (1015)",
+      "type": "battle",
+      "description": "",
+      "lon": 9.183333333,
+      "lat": 36.733333333,
+      "startYear": 1015
+    },
+    {
+      "id": "Q113649166",
+      "name": "Battle of Dunsinane",
+      "type": "battle",
+      "description": "battle in Scotland in 1054",
+      "lon": -3.277777777,
+      "lat": 56.470277777,
+      "startYear": 1054
+    },
+    {
+      "id": "Q1163186",
+      "name": "斯瓦爾巴海戰",
+      "type": "battle",
+      "description": "battle",
+      "lon": 12.75,
+      "lat": 55.75,
+      "startYear": 999
+    },
+    {
+      "id": "Q1163186",
+      "name": "斯瓦爾巴海戰",
+      "type": "battle",
+      "description": "battle",
+      "lon": 12.75,
+      "lat": 55.75,
+      "startYear": 1000
+    },
+    {
+      "id": "Q1163186",
+      "name": "斯瓦爾巴海戰",
+      "type": "battle",
+      "description": "battle",
+      "lon": 13.4,
+      "lat": 54.416666666,
+      "startYear": 999
+    },
+    {
+      "id": "Q1163186",
+      "name": "斯瓦爾巴海戰",
+      "type": "battle",
+      "description": "battle",
+      "lon": 13.4,
+      "lat": 54.416666666,
+      "startYear": 1000
+    },
+    {
+      "id": "Q1267571",
+      "name": "丹麥入侵艦隊",
+      "type": "battle",
+      "description": "984 naval battle",
+      "lon": 6.1,
+      "lat": 62.35833333,
+      "startYear": 984
+    },
+    {
+      "id": "Q1288012",
+      "name": "Battle of Nesjar",
+      "type": "battle",
+      "description": "1016 battle",
+      "lon": 9.8272,
+      "lat": 58.9916,
+      "startYear": 1016
+    },
+    {
+      "id": "Q126415847",
+      "name": "Battle of Achir",
+      "type": "battle",
+      "description": "1016 battle",
+      "lon": 3.24,
+      "lat": 35.9375,
+      "startYear": 1016
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+﻿node_modules/
+dist/
+dist-installer/
+build/*
+!build/installer.nsh
+.hermes/
+coverage/
+tmp_asar_check/
+
+.writerzen-userdata/
+books/
+tmp/
+.history/
+.claude/
+.codex/
+.gemini/
+.kiro/
+.npm-cache/
+
+# Agent 题材数据（源文件，打包后加密�?runtime.dat，不上传源文件）
+# genre-packs/
+
+# Local recovery/backup snapshots
+.backup_*/
+recovered_from_asar_*/
+ref_from_installed_*/
+_git_upload/
+*.bak_*
+
+*.log
+.dev-*.log
+.run-*.log
+dev-runtime.log
+dev.log
+*.err.log
+*.out.log
+
+# Temp scan/debug artifacts
+.scan_*.txt
+.type_errors_*.txt
+
+.DS_Store
+Thumbs.db
+
+# 安装�?镜像（应该上�?R2，不入库�?
+*.dmg
+*.exe
+*.blockmap
+*.AppImage
+
+# 本地生成的密�?敏感文件，绝不能入库
+.webdav-enc-key.txt
+.*-secret.txt
+
+# ��ʾ��Դ���ݣ���������
+з�Ʊ��ط�/
+���Ķ�����ʾ��.txt
+
+
+# Tauri 2 实验分支（独立开发，不影响主项目�?
+# (tauri2/ is now tracked by git, sub-ignores managed by tauri2/.gitignore)
+
+
+
+
+
+# Rust target directory
+src-tauri/target/
+
+# 本地误生成的二进制 / 日志（勿入库、勿混进仓库）
+src-tauri/test_enrich.exe
+src-tauri/*.exe
+gradle_test.log
+*.nsis.7z
+
+# ── 调试 / 一次性产物（勿入库，2026-07 清理）──
+exported-chat.txt
+readable-desktop-chat.txt
+claude_debug_context.md
+claude_distribute_context.md
+网文定制提示词.txt
+README_强力润色.txt
+backend_fixes.patch
+styles_199.css
+199_styles.css
+reviewDiffMark_199.ts
+fix.py
+fix_dropdown.py
+fix_dropdown2.py
+search-keyword.py
+extract-*.py
+replace.js
+check.cjs
+fix.cjs
+fix_notes.cjs
+extract-transcripts.cjs
+refactor_deduction.cjs

@@ -1,0 +1,384 @@
+{
+  "query": "battles_180_280_all",
+  "timestamp": 1779899553031,
+  "data": [
+    {
+      "id": "Q555463",
+      "name": "Battle at the Harzhorn",
+      "type": "battle",
+      "description": "235 battle between Roman and Germanic troops (c.235)",
+      "lon": 10.105,
+      "lat": 51.8324,
+      "startYear": 235
+    },
+    {
+      "id": "Q762600",
+      "name": "Battle of Fano",
+      "type": "battle",
+      "description": "battle during the Roman-Germanic wars (271)",
+      "lon": 13.0167,
+      "lat": 43.8333,
+      "startYear": 271
+    },
+    {
+      "id": "Q603598",
+      "name": "界橋之戰",
+      "type": "battle",
+      "description": "battle between warlords Yuan Shao and Gongsun Zan (191)",
+      "lon": 115.274722222,
+      "lat": 36.980833333,
+      "startYear": 191
+    },
+    {
+      "id": "Q1583991",
+      "name": "Battle of Misiche",
+      "type": "battle",
+      "description": "244 battle",
+      "lon": 43.797222222,
+      "lat": 33.363888888,
+      "startYear": 244
+    },
+    {
+      "id": "Q830059",
+      "name": "赤壁之戰",
+      "type": "battle",
+      "description": "東漢末年戰役",
+      "lon": 113.620277777,
+      "lat": 29.869722222,
+      "startYear": 208
+    },
+    {
+      "id": "Q653482",
+      "name": "卢格杜努姆战役",
+      "type": "battle",
+      "description": "197 battle between Septimius Severus and Clodius Albinus (197)",
+      "lon": 4.819444,
+      "lat": 45.759722,
+      "startYear": 197
+    },
+    {
+      "id": "Q929265",
+      "name": "纳伊苏斯战役",
+      "type": "battle",
+      "description": "罗马帝国时期对抗日耳曼人的战役",
+      "lon": 21.9,
+      "lat": 43.3,
+      "startYear": 268
+    },
+    {
+      "id": "Q2451436",
+      "name": "再次交战",
+      "type": "battle",
+      "description": "battle between Septimius Severus and Pescennius Niger (193)",
+      "lon": 29.71866667,
+      "lat": 40.42866667,
+      "startYear": 193
+    },
+    {
+      "id": "Q2530973",
+      "name": "Battle of Emesa",
+      "type": "battle",
+      "description": "battle between Palmyrene and Roman armies (272)",
+      "lon": 36.71,
+      "lat": 34.72,
+      "startYear": 272
+    },
+    {
+      "id": "Q1753340",
+      "name": "五丈原之戰",
+      "type": "battle",
+      "description": "military conflict between Cao Wei and Shu Han (234)",
+      "lon": 107.383333,
+      "lat": 34.35,
+      "startYear": 234
+    },
+    {
+      "id": "Q2170603",
+      "name": "伊苏斯",
+      "type": "battle",
+      "description": "battle between Septimius Severus and Pescennius Niger (194)",
+      "lon": 36.16444444,
+      "lat": 36.83833333,
+      "startYear": 194
+    },
+    {
+      "id": "Q1057910",
+      "name": "官渡之战",
+      "type": "battle",
+      "description": "三國時代袁紹與曹操之間的重大戰役",
+      "lon": 114.620277777,
+      "lat": 34.907222222,
+      "startYear": 200
+    },
+    {
+      "id": "Q1092503",
+      "name": "夏口之战",
+      "type": "battle",
+      "description": "battle between warlords Sun Quan and Liu Biao (203)",
+      "lon": 113.765555555,
+      "lat": 31.0625,
+      "startYear": 203
+    },
+    {
+      "id": "Q1094363",
+      "name": "襄阳之战",
+      "type": "battle",
+      "description": "battle between warlords Sun Jian and Liu Biao (191)",
+      "lon": 112.121944444,
+      "lat": 32.01,
+      "startYear": 191
+    },
+    {
+      "id": "Q2588587",
+      "name": "尼西比斯之戰",
+      "type": "battle",
+      "description": "battle between Roman and Parthian forces (217)",
+      "lon": 41.2167,
+      "lat": 37.0667,
+      "startYear": 217
+    },
+    {
+      "id": "Q2243653",
+      "name": "Battle of Resaena",
+      "type": "battle",
+      "description": "243 battle between Roman and Sasanian forces",
+      "lon": 40.0667,
+      "lat": 36.85,
+      "startYear": 243
+    },
+    {
+      "id": "Q2255524",
+      "name": "安條克之役",
+      "type": "battle",
+      "description": "218 battle between rivals for the Roman throne",
+      "lon": 36.15,
+      "lat": 36.2,
+      "startYear": 218
+    },
+    {
+      "id": "Q2273280",
+      "name": "Battle of Immae",
+      "type": "battle",
+      "description": "battle between Palmyrene and Roman forces (272)",
+      "lon": 36.569471,
+      "lat": 36.237868,
+      "startYear": 272
+    },
+    {
+      "id": "Q2309606",
+      "name": "梅蒂奥拉努战役",
+      "type": "battle",
+      "description": "battle during the Roman-Germanic wars (259)",
+      "lon": 9.16667,
+      "lat": 45.4667,
+      "startYear": 259
+    },
+    {
+      "id": "Q2334735",
+      "name": "Battle of Philippopolis",
+      "type": "battle",
+      "description": "battle between Roman and Gothic forces (250)",
+      "lon": 24.75,
+      "lat": 42.15,
+      "startYear": 250
+    },
+    {
+      "id": "Q2665461",
+      "name": "巴巴利索斯战役",
+      "type": "battle",
+      "description": "252 battle between Sasanian Persians and Romans",
+      "lon": 37.891158333,
+      "lat": 36.061033333,
+      "startYear": 252
+    },
+    {
+      "id": "Q2707586",
+      "name": "維洛那戰役",
+      "type": "battle",
+      "description": "battle between Roman general Decius and Emperor Philip the Arab (249)",
+      "lon": 10.992530555,
+      "lat": 45.42625,
+      "startYear": 249
+    },
+    {
+      "id": "Q1132985",
+      "name": "博望坡之戰",
+      "type": "battle",
+      "description": "battle between warlords Cao Cao and Liu Bei (202)",
+      "lon": 112.710555555,
+      "lat": 33.166111111,
+      "startYear": 202
+    },
+    {
+      "id": "Q1141614",
+      "name": "夷陵之战",
+      "type": "battle",
+      "description": "中国三国时代发生于蜀汉和孙吴间的战争",
+      "lon": 111.286944444,
+      "lat": 30.691944444,
+      "startYear": 221
+    },
+    {
+      "id": "Q1151692",
+      "name": "下邳之戰",
+      "type": "battle",
+      "description": "曹操消滅呂布之戰",
+      "lon": 118.009722222,
+      "lat": 34.342222222,
+      "startYear": 199
+    },
+    {
+      "id": "Q1165502",
+      "name": "埃德萨战役",
+      "type": "battle",
+      "description": "260 AD battle between the Sasanian Empire and the Roman Empire",
+      "lon": 38.8,
+      "lat": 37.15,
+      "startYear": 260
+    },
+    {
+      "id": "Q1231684",
+      "name": "Battle of Châlons",
+      "type": "battle",
+      "description": "274 battle between the Roman and Gallic empires",
+      "lon": 4.365,
+      "lat": 48.9575,
+      "startYear": 274
+    },
+    {
+      "id": "Q2408278",
+      "name": "屈兹库斯战役",
+      "type": "battle",
+      "description": "battle between Septimius Severus and Pescennius Niger (193)",
+      "lon": 27.89,
+      "lat": 40.38,
+      "startYear": 193
+    },
+    {
+      "id": "Q1267656",
+      "name": "贝纳库斯湖战役",
+      "type": "battle",
+      "description": "battle during the Roman-Germanic wars (268/269)",
+      "lon": 10.62053,
+      "lat": 45.5806,
+      "startYear": 268
+    },
+    {
+      "id": "Q1289831",
+      "name": "Battle of Pavia",
+      "type": "battle",
+      "description": "battle of the Roman-Germanic wars (271)",
+      "lon": 9.15,
+      "lat": 45.1833,
+      "startYear": 271
+    },
+    {
+      "id": "Q1289843",
+      "name": "Battle of Placentia",
+      "type": "battle",
+      "description": "bitka med rimsko-germanskimi vojnami (271)",
+      "lon": 9.7,
+      "lat": 45.05,
+      "startYear": 271
+    },
+    {
+      "id": "Q1330310",
+      "name": "长坂坡之战",
+      "type": "battle",
+      "description": "battle between warlords Cao Cao and Liu Bei (208)",
+      "lon": 112.136,
+      "lat": 32.045,
+      "startYear": 208
+    },
+    {
+      "id": "Q2887977",
+      "name": "荷姆茲甘戰役",
+      "type": "battle",
+      "description": "battle between Parthian and Sasanian dynasties in 224 AD",
+      "lon": 48.85,
+      "lat": 32.05,
+      "startYear": 224
+    },
+    {
+      "id": "Q1421082",
+      "name": "阿伯里圖斯戰役",
+      "type": "battle",
+      "description": "battle between Romans and Gothic and Scythian tribesmen (251)",
+      "lon": 26.54,
+      "lat": 43.51,
+      "startYear": 251
+    },
+    {
+      "id": "Q2888872",
+      "name": "江陵之战 (208年)",
+      "type": "battle",
+      "description": "battle between Sun Quan and Liu Bei against Cao Cao (208-209)",
+      "lon": 120.263055556,
+      "lat": 32.008888888,
+      "startYear": 208
+    },
+    {
+      "id": "Q3467874",
+      "name": "冀城之围",
+      "type": "battle",
+      "description": "part of campaign by Ma Chao to retake Liang Province (213)",
+      "lon": 105.3297,
+      "lat": 34.73969,
+      "startYear": 213
+    },
+    {
+      "id": "Q3780302",
+      "name": "阳城之战",
+      "type": "battle",
+      "description": "battle between the warlords Yuan Shao and Yuan Shu (191)",
+      "lon": 113.025277777,
+      "lat": 34.455277777,
+      "startYear": 191
+    },
+    {
+      "id": "Q3818303",
+      "name": "巴西之战",
+      "type": "battle",
+      "description": "battle between warlords Liu Bei and Cao Cao (215)",
+      "lon": 106.670557,
+      "lat": 33.172839,
+      "startYear": 215
+    },
+    {
+      "id": "Q3827914",
+      "name": "荥阳之战",
+      "type": "battle",
+      "description": "东汉末年战役",
+      "lon": 113.35,
+      "lat": 34.783333333,
+      "startYear": 190
+    },
+    {
+      "id": "Q16822698",
+      "name": "Battle of Qi Mountains",
+      "type": "battle",
+      "description": "battle between warlords Cao Cao and Zhang Lu (214)",
+      "lon": 104.918889,
+      "lat": 33.395556,
+      "startYear": 214
+    },
+    {
+      "id": "Q4872544",
+      "name": "Battle of Thermopylae (254)",
+      "type": "battle",
+      "description": "254 battle between Roman and Gothic forces",
+      "lon": 22.56277778,
+      "lat": 38.80527778,
+      "startYear": 254
+    },
+    {
+      "id": "Q11908763",
+      "name": "Battle of Pons Aureoli",
+      "type": "battle",
+      "description": "268 battle",
+      "lon": 9.566666666,
+      "lat": 45.566666666,
+      "startYear": 268
+    }
+  ]
+}

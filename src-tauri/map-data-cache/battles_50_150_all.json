@@ -1,0 +1,159 @@
+{
+  "query": "battles_50_150_all",
+  "timestamp": 1779901133054,
+  "data": [
+    {
+      "id": "Q386578",
+      "name": "First Battle of Bedriacum",
+      "type": "battle",
+      "description": "69 AD battle with Nero",
+      "lon": 10.14,
+      "lat": 45.09,
+      "startYear": 69
+    },
+    {
+      "id": "Q386578",
+      "name": "First Battle of Bedriacum",
+      "type": "battle",
+      "description": "69 AD battle with Nero",
+      "lon": 10.45,
+      "lat": 45.13333333,
+      "startYear": 69
+    },
+    {
+      "id": "Q1127337",
+      "name": "格劳庇乌山战役",
+      "type": "battle",
+      "description": "83 battle that was part of the Roman conquest of Britain",
+      "lon": -3,
+      "lat": 56.916667,
+      "startYear": 83
+    },
+    {
+      "id": "Q1127337",
+      "name": "格劳庇乌山战役",
+      "type": "battle",
+      "description": "83 battle that was part of the Roman conquest of Britain",
+      "lon": -3,
+      "lat": 56.916667,
+      "startYear": 84
+    },
+    {
+      "id": "Q2263382",
+      "name": "Battle of Rhandeia",
+      "type": "battle",
+      "description": "62 battle",
+      "lon": 43.75,
+      "lat": 39.4,
+      "startYear": 62
+    },
+    {
+      "id": "Q1476280",
+      "name": "Battle of Tapae",
+      "type": "battle",
+      "description": "87 CE battle",
+      "lon": 22.7247,
+      "lat": 45.5056,
+      "startYear": 87
+    },
+    {
+      "id": "Q2521439",
+      "name": "Battle of Caer Caradoc",
+      "type": "battle",
+      "description": "final battle in Caratacus's resistance to Roman rule (50 AD)",
+      "lon": -2.77278,
+      "lat": 52.5531,
+      "startYear": 50
+    },
+    {
+      "id": "Q3494883",
+      "name": "Battle of Sarmisegetusa",
+      "type": "battle",
+      "description": "Roman siege of Sarmizegetusa, the capital of Dacia (106)",
+      "lon": 23.3093,
+      "lat": 45.6219,
+      "startYear": 106
+    },
+    {
+      "id": "Q3496783",
+      "name": "伯和仑战役",
+      "type": "battle",
+      "description": "battle between Judean rebels and the Syrian Legion of the Roman Empire",
+      "lon": 35.1142,
+      "lat": 31.8858,
+      "startYear": 66
+    },
+    {
+      "id": "Q3636241",
+      "name": "Battle of Mount Tabor",
+      "type": "battle",
+      "description": "67 battle",
+      "lon": 35.390383333,
+      "lat": 32.687113888,
+      "startYear": 67
+    },
+    {
+      "id": "Q2707263",
+      "name": "Third Battle of Tapae",
+      "type": "battle",
+      "description": "battle between the Roman Empire and the Dacians (101)",
+      "lon": 22.7247,
+      "lat": 45.5056,
+      "startYear": 101
+    },
+    {
+      "id": "Q4871083",
+      "name": "Battle of Gatae",
+      "type": "battle",
+      "description": "103 AD battle in Trajan's Dacian campaign",
+      "lon": 7.684198,
+      "lat": 45.077697,
+      "startYear": 103
+    },
+    {
+      "id": "Q9172764",
+      "name": "Siege of Ascalon",
+      "type": "battle",
+      "description": "67 siege",
+      "lon": 34.566388888,
+      "lat": 31.665833333,
+      "startYear": 67
+    },
+    {
+      "id": "Q9173065",
+      "name": "Battle of Jerusalem",
+      "type": "battle",
+      "description": "66 battle during the First Jewish-Roman War",
+      "lon": 35.229444,
+      "lat": 31.778611,
+      "startYear": 66
+    },
+    {
+      "id": "Q13126303",
+      "name": "Battle of Cefn Carnedd",
+      "type": "battle",
+      "description": "51 battle between the Celts and the Romans",
+      "lon": -3.449472,
+      "lat": 52.499013,
+      "startYear": 51
+    },
+    {
+      "id": "Q63146684",
+      "name": "貝德里亞庫姆戰役",
+      "type": "battle",
+      "description": "two Roman battles in 69 AD",
+      "lon": 10.14,
+      "lat": 45.09,
+      "startYear": 69
+    },
+    {
+      "id": "Q56346643",
+      "name": "Battle of Londinium",
+      "type": "battle",
+      "description": "battle between the Iceni and Roman Empire in Londinium, Britain (60 AD)",
+      "lon": -0.0906,
+      "lat": 51.5125,
+      "startYear": 60
+    }
+  ]
+}

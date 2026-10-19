@@ -1,0 +1,906 @@
+{
+  "query": "battles_1880_1980_all",
+  "timestamp": 1779898811650,
+  "data": [
+    {
+      "id": "Q130861",
+      "name": "库尔斯克会战",
+      "type": "battle",
+      "description": "第二次世界大戰期間蘇聯與納粹德國的戰略性決戰",
+      "lon": 36.1,
+      "lat": 51.7,
+      "startYear": 1943
+    },
+    {
+      "id": "Q145588",
+      "name": "贡宾嫩战役",
+      "type": "battle",
+      "description": "1914 battle",
+      "lon": 22.2,
+      "lat": 54.6,
+      "startYear": 1914
+    },
+    {
+      "id": "Q149560",
+      "name": "斯塔卢波嫩战役",
+      "type": "battle",
+      "description": "1914 battle",
+      "lon": 22.573333333,
+      "lat": 54.630555555,
+      "startYear": 1914
+    },
+    {
+      "id": "Q151290",
+      "name": "莫斯科戰役",
+      "type": "battle",
+      "description": "二战苏德战役",
+      "lon": 37.632222222,
+      "lat": 55.752222222,
+      "startYear": 1941
+    },
+    {
+      "id": "Q155103",
+      "name": "布達佩斯圍城戰",
+      "type": "battle",
+      "description": "Soviet siege of Budapest 1944-1945",
+      "lon": 19.040833333,
+      "lat": 47.498333333,
+      "startYear": 1944
+    },
+    {
+      "id": "Q161033",
+      "name": "傑米揚斯克包圍戰",
+      "type": "battle",
+      "description": "military operation from 8 February – 20 May 1942",
+      "lon": 32.466666666,
+      "lat": 57.65,
+      "startYear": 1942
+    },
+    {
+      "id": "Q162284",
+      "name": "基輔戰役",
+      "type": "battle",
+      "description": "纳粹德国对苏联军队实施的大规模歼灭战",
+      "lon": 30.5164,
+      "lat": 50.4536,
+      "startYear": 1941
+    },
+    {
+      "id": "Q162357",
+      "name": "斯摩棱斯克戰役",
+      "type": "battle",
+      "description": "納粹德國為推進至莫斯科，所發起的一場戰役",
+      "lon": 32.045278,
+      "lat": 54.782778,
+      "startYear": 1941
+    },
+    {
+      "id": "Q177283",
+      "name": "阿爾特馬克號事件",
+      "type": "battle",
+      "description": "1940 WW II naval incident between British and German ships",
+      "lon": 6.336388888,
+      "lat": 58.316944444,
+      "startYear": 1940
+    },
+    {
+      "id": "Q178842",
+      "name": "Battle of Waterberg",
+      "type": "battle",
+      "description": "1904 decisive battle in the German campaign against the Herero",
+      "lon": 17.30805556,
+      "lat": -20.47666667,
+      "startYear": 1904
+    },
+    {
+      "id": "Q192660",
+      "name": "沖繩島戰役",
+      "type": "battle",
+      "description": "太平洋戰爭中美軍實施的最大規模兩棲登陸行動",
+      "lon": 128,
+      "lat": 26.5,
+      "startYear": 1945
+    },
+    {
+      "id": "Q199371",
+      "name": "米吉多戰役 (1918年)",
+      "type": "battle",
+      "description": "1918 battle of the First World War which was fought in Ottoman Palestine",
+      "lon": 34.883,
+      "lat": 32.4,
+      "startYear": 1918
+    },
+    {
+      "id": "Q203234",
+      "name": "埃佩伊戰役",
+      "type": "battle",
+      "description": "1918 battle",
+      "lon": 3.11667,
+      "lat": 50,
+      "startYear": 1918
+    },
+    {
+      "id": "Q220766",
+      "name": "馬拉茲吉爾特戰役",
+      "type": "battle",
+      "description": "1915 battle in World War I",
+      "lon": 42.544167,
+      "lat": 39.147778,
+      "startYear": 1915
+    },
+    {
+      "id": "Q3956",
+      "name": "哈拉马战役",
+      "type": "battle",
+      "description": "1937 part of the Spanish Civil War",
+      "lon": -3.50403333,
+      "lat": 40.2179,
+      "startYear": 1937
+    },
+    {
+      "id": "Q28703",
+      "name": "布雷库尔庄园突袭",
+      "type": "battle",
+      "description": "1944 U.S. parachute assault of the Normandy Invasion",
+      "lon": -1.22611111,
+      "lat": 49.38805556,
+      "startYear": 1944
+    },
+    {
+      "id": "Q40144",
+      "name": "科罗内尔海战",
+      "type": "battle",
+      "description": "naval battle of 1 November 1914 off the coast of central Chile in World War I",
+      "lon": -73.813611111,
+      "lat": -36.983611111,
+      "startYear": 1914
+    },
+    {
+      "id": "Q52418",
+      "name": "珍珠港事件",
+      "type": "battle",
+      "description": "二戰期間日本對美軍基地珍珠港的一次襲擊",
+      "lon": -157.95,
+      "lat": 21.365,
+      "startYear": 1941
+    },
+    {
+      "id": "Q247871",
+      "name": "Battle of Talana Hill",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 30.267777777,
+      "lat": -28.163888888,
+      "startYear": 1899
+    },
+    {
+      "id": "Q248979",
+      "name": "Battle of Modder River",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 24.62638889,
+      "lat": -29.03916667,
+      "startYear": 1899
+    },
+    {
+      "id": "Q250383",
+      "name": "內里事件",
+      "type": "battle",
+      "description": "1914 battle of the First World War",
+      "lon": 2.77917,
+      "lat": 49.2822,
+      "startYear": 1914
+    },
+    {
+      "id": "Q259526",
+      "name": "隆新戰役",
+      "type": "battle",
+      "description": "1966年越戰期間發生於南越福綏省隆新的戰役",
+      "lon": 107.258888888,
+      "lat": 10.553888888,
+      "startYear": 1966
+    },
+    {
+      "id": "Q263950",
+      "name": "伊蘭斯拉格特戰役",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 29.95,
+      "lat": -28.4,
+      "startYear": 1899
+    },
+    {
+      "id": "Q269207",
+      "name": "色當戰役",
+      "type": "battle",
+      "description": "battle which took place in the Second World War during the Battle of France in 1940.",
+      "lon": 4.9425,
+      "lat": 49.7025,
+      "startYear": 1940
+    },
+    {
+      "id": "Q270517",
+      "name": "迪耶普戰役",
+      "type": "battle",
+      "description": "1942 landing operation in World War II",
+      "lon": 1.083333333,
+      "lat": 49.933333333,
+      "startYear": 1942
+    },
+    {
+      "id": "Q275019",
+      "name": "斯摩棱斯克戰役",
+      "type": "battle",
+      "description": "recapture of the city by the Soviet 39th, 43rd and 10th Guards armies",
+      "lon": 32.05,
+      "lat": 54.7833,
+      "startYear": 1943
+    },
+    {
+      "id": "Q280468",
+      "name": "北邑戰役",
+      "type": "battle",
+      "description": "1963 battle of the Vietnam War",
+      "lon": 106.195277777,
+      "lat": 10.438333333,
+      "startYear": 1963
+    },
+    {
+      "id": "Q286667",
+      "name": "Battle of Aguadulce",
+      "type": "battle",
+      "description": "1901 conflict",
+      "lon": -80.54,
+      "lat": 8.24,
+      "startYear": 1901
+    },
+    {
+      "id": "Q287389",
+      "name": "Battle of Monte Pelado",
+      "type": "battle",
+      "description": "1936 battle",
+      "lon": -1.812777777,
+      "lat": 42.739444444,
+      "startYear": 1936
+    },
+    {
+      "id": "Q298614",
+      "name": "Battle of Asiago",
+      "type": "battle",
+      "description": "1916 battle",
+      "lon": 11.50888889,
+      "lat": 45.90194444,
+      "startYear": 1916
+    },
+    {
+      "id": "Q302519",
+      "name": "阿杜瓦战役",
+      "type": "battle",
+      "description": "battle between the Ethiopian Empire and the Kingdom of Italy near the town of Adwa, the climactic battle of the First Italo-Ethiopian War, securing Ethiopian sovereignty",
+      "lon": 38.973333333,
+      "lat": 14.018888888,
+      "startYear": 1896
+    },
+    {
+      "id": "Q303176",
+      "name": "马尼拉战役",
+      "type": "battle",
+      "description": "mock battle in 1898 during the Spanish–American War",
+      "lon": 121,
+      "lat": 14.583333333,
+      "startYear": 1898
+    },
+    {
+      "id": "Q324977",
+      "name": "Fort Driant",
+      "type": "battle",
+      "description": "architectural structure",
+      "lon": 6.05527778,
+      "lat": 49.07305556,
+      "startYear": 1944
+    },
+    {
+      "id": "Q327099",
+      "name": "凱賽林隘口戰役",
+      "type": "battle",
+      "description": "1943 battle in Tunisia",
+      "lon": 8.7424,
+      "lat": 35.2596,
+      "startYear": 1943
+    },
+    {
+      "id": "Q368596",
+      "name": "Battle of Agagia",
+      "type": "battle",
+      "description": "1916 WWI battle",
+      "lon": 25.9425,
+      "lat": 31.5439,
+      "startYear": 1916
+    },
+    {
+      "id": "Q369859",
+      "name": "Battle of Belmont",
+      "type": "battle",
+      "description": "1899 battle of the Second Boer War",
+      "lon": 24.36666667,
+      "lat": -29.41666667,
+      "startYear": 1899
+    },
+    {
+      "id": "Q370307",
+      "name": "Battle of Kandahar",
+      "type": "battle",
+      "description": "1880 battle",
+      "lon": 65.71666667,
+      "lat": 31.61666667,
+      "startYear": 1880
+    },
+    {
+      "id": "Q371298",
+      "name": "伊拉瓦底會戰",
+      "type": "battle",
+      "description": "conflict",
+      "lon": 95.859148436,
+      "lat": 20.880110146,
+      "startYear": 1945
+    },
+    {
+      "id": "Q371298",
+      "name": "伊拉瓦底會戰",
+      "type": "battle",
+      "description": "conflict",
+      "lon": 96.087461162,
+      "lat": 21.963326758,
+      "startYear": 1945
+    },
+    {
+      "id": "Q371476",
+      "name": "焦剑行动",
+      "type": "battle",
+      "description": "Islamic Republic of Iran Air Attack on Osirak Nuclear Power Plant, Iraq",
+      "lon": 44.525,
+      "lat": 33.208333,
+      "startYear": 1980
+    },
+    {
+      "id": "Q378392",
+      "name": "Battle of A Shau",
+      "type": "battle",
+      "description": "1966 battle",
+      "lon": 107.213,
+      "lat": 16.2593,
+      "startYear": 1966
+    },
+    {
+      "id": "Q383067",
+      "name": "萨拉加希之战",
+      "type": "battle",
+      "description": "1897 battle in British India",
+      "lon": 70.886904138,
+      "lat": 33.55474665,
+      "startYear": 1897
+    },
+    {
+      "id": "Q383614",
+      "name": "科希馬戰役",
+      "type": "battle",
+      "description": "1944 battle around Kohima, Nagaland, India",
+      "lon": 94.103175,
+      "lat": 25.667645,
+      "startYear": 1944
+    },
+    {
+      "id": "Q383614",
+      "name": "科希馬戰役",
+      "type": "battle",
+      "description": "1944 battle around Kohima, Nagaland, India",
+      "lon": 94.103,
+      "lat": 25.668,
+      "startYear": 1944
+    },
+    {
+      "id": "Q384413",
+      "name": "Battle of Bilin River",
+      "type": "battle",
+      "description": "1942 conflict",
+      "lon": 97.246706,
+      "lat": 17.182429,
+      "startYear": 1942
+    },
+    {
+      "id": "Q385180",
+      "name": "黃海海戰",
+      "type": "battle",
+      "description": "1894年中日海戰",
+      "lon": 123.126388888,
+      "lat": 39.213888888,
+      "startYear": 1894
+    },
+    {
+      "id": "Q820617",
+      "name": "Battle of the Sierra Guadalupe",
+      "type": "battle",
+      "description": "1936 battle",
+      "lon": -5.4,
+      "lat": 39.4833,
+      "startYear": 1936
+    },
+    {
+      "id": "Q821283",
+      "name": "华沙战役",
+      "type": "battle",
+      "description": "battle of the 1920 Polish–Soviet War",
+      "lon": 20.8167,
+      "lat": 52.3,
+      "startYear": 1920
+    },
+    {
+      "id": "Q842670",
+      "name": "Battle of Bulair",
+      "type": "battle",
+      "description": "1913 battle",
+      "lon": 26.7948,
+      "lat": 40.5263,
+      "startYear": 1913
+    },
+    {
+      "id": "Q845845",
+      "name": "Battle of Kraaipan",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 25.3064,
+      "lat": -26.2969,
+      "startYear": 1899
+    },
+    {
+      "id": "Q868249",
+      "name": "科伦索战役",
+      "type": "battle",
+      "description": "battle between British and Boer forces, South Africa on 15 December 1899",
+      "lon": 29.8225,
+      "lat": -28.73416667,
+      "startYear": 1899
+    },
+    {
+      "id": "Q919922",
+      "name": "Battle of Majorca",
+      "type": "battle",
+      "description": "battle in the beginning of Spanish civil war in Mallorca (1936)",
+      "lon": 2.983333333,
+      "lat": 39.616666666,
+      "startYear": 1936
+    },
+    {
+      "id": "Q923995",
+      "name": "Battle of Seseña",
+      "type": "battle",
+      "description": "1936 battle",
+      "lon": -3.702222222,
+      "lat": 40.105,
+      "startYear": 1936
+    },
+    {
+      "id": "Q936223",
+      "name": "卡拉基利塞戰役",
+      "type": "battle",
+      "description": "1915 battle",
+      "lon": 43.050833,
+      "lat": 39.718611,
+      "startYear": 1915
+    },
+    {
+      "id": "Q390693",
+      "name": "彎刀山戰役",
+      "type": "battle",
+      "description": "1915 battle",
+      "lon": 26.23,
+      "lat": 40.303055555,
+      "startYear": 1915
+    },
+    {
+      "id": "Q426099",
+      "name": "安特衛普圍城戰",
+      "type": "battle",
+      "description": "1914 engagement between the German and the Belgian armies during World War I",
+      "lon": 4.41,
+      "lat": 51.22,
+      "startYear": 1914
+    },
+    {
+      "id": "Q431849",
+      "name": "Battle of Stormberg",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 26.25480833,
+      "lat": -31.29795556,
+      "startYear": 1899
+    },
+    {
+      "id": "Q469416",
+      "name": "克羅加提戰役",
+      "type": "battle",
+      "description": "WWII Polish invasion battle",
+      "lon": 17.631944444,
+      "lat": 53.725555555,
+      "startYear": 1939
+    },
+    {
+      "id": "Q472100",
+      "name": "懲罰行動",
+      "type": "battle",
+      "description": "戰略轟炸行動",
+      "lon": 20.466667,
+      "lat": 44.816667,
+      "startYear": 1941
+    },
+    {
+      "id": "Q473983",
+      "name": "突丘拉森林戰役",
+      "type": "battle",
+      "description": "1939 battle",
+      "lon": 18,
+      "lat": 53.6,
+      "startYear": 1939
+    },
+    {
+      "id": "Q482456",
+      "name": "430事件",
+      "type": "battle",
+      "description": "越南人民軍在1975年攻陷西貢、使南越滅亡的戰役",
+      "lon": 106.696111111,
+      "lat": 10.778055555,
+      "startYear": 1975
+    },
+    {
+      "id": "Q484494",
+      "name": "烏山戰役",
+      "type": "battle",
+      "description": "1950 first battle between North Korean and American forces during the Korean War",
+      "lon": 127.053,
+      "lat": 37.185,
+      "startYear": 1950
+    },
+    {
+      "id": "Q492464",
+      "name": "馬索勒戰役",
+      "type": "battle",
+      "description": "1904 battle",
+      "lon": -56.084586,
+      "lat": -31.058997,
+      "startYear": 1904
+    },
+    {
+      "id": "Q493122",
+      "name": "Battle of Sangju",
+      "type": "battle",
+      "description": "1950 engagement between the United Nations and North Korean forces",
+      "lon": 128.16972222,
+      "lat": 36.43972222,
+      "startYear": 1950
+    },
+    {
+      "id": "Q493131",
+      "name": "平澤戰役",
+      "type": "battle",
+      "description": "1950 battle of the Korean War",
+      "lon": 127.096,
+      "lat": 36.9933,
+      "startYear": 1950
+    },
+    {
+      "id": "Q493252",
+      "name": "天安戰役",
+      "type": "battle",
+      "description": "1950 battle",
+      "lon": 127.1475,
+      "lat": 36.81,
+      "startYear": 1950
+    },
+    {
+      "id": "Q503347",
+      "name": "凱比爾港海戰",
+      "type": "battle",
+      "description": "1940 battle",
+      "lon": -0.688888888,
+      "lat": 35.719494444,
+      "startYear": 1940
+    },
+    {
+      "id": "Q956098",
+      "name": "Battle of La Concepción",
+      "type": "battle",
+      "description": "1882 battle",
+      "lon": -75.312222,
+      "lat": -11.918227,
+      "startYear": 1882
+    },
+    {
+      "id": "Q957155",
+      "name": "Battle of Dujaila",
+      "type": "battle",
+      "description": "1916 WWI battle of the Mesopotamian Campaign",
+      "lon": 45.824722,
+      "lat": 32.505556,
+      "startYear": 1916
+    },
+    {
+      "id": "Q962311",
+      "name": "Battle of Passo Fundo",
+      "type": "battle",
+      "description": "1894 battle",
+      "lon": -52.550833333,
+      "lat": -28.272222222,
+      "startYear": 1894
+    },
+    {
+      "id": "Q963444",
+      "name": "Battle of Cut Knife",
+      "type": "battle",
+      "description": "1885 battle",
+      "lon": -109.02776111,
+      "lat": 52.74530833,
+      "startYear": 1885
+    },
+    {
+      "id": "Q986637",
+      "name": "南日島戰役",
+      "type": "battle",
+      "description": "1952 battle",
+      "lon": 119.5,
+      "lat": 25.24,
+      "startYear": 1952
+    },
+    {
+      "id": "Q989075",
+      "name": "阿拉斯戰役",
+      "type": "battle",
+      "description": "1914 battle during the First World War",
+      "lon": 2.78083,
+      "lat": 50.2897,
+      "startYear": 1914
+    },
+    {
+      "id": "Q994316",
+      "name": "Maysalun戰役",
+      "type": "battle",
+      "description": "1920 battle",
+      "lon": 36.06472222,
+      "lat": 33.59555556,
+      "startYear": 1920
+    },
+    {
+      "id": "Q1006470",
+      "name": "锦州战役",
+      "type": "battle",
+      "description": "1948 battle",
+      "lon": 121.1258,
+      "lat": 41.0957,
+      "startYear": 1948
+    },
+    {
+      "id": "Q1345169",
+      "name": "Battle of the Sambre",
+      "type": "battle",
+      "description": "1918 battle during Word War I",
+      "lon": 4.86667,
+      "lat": 50.4667,
+      "startYear": 1918
+    },
+    {
+      "id": "Q1362319",
+      "name": "第一次錫德拉灣海戰",
+      "type": "battle",
+      "description": "1941 battle",
+      "lon": 17.95138889,
+      "lat": 34.13444444,
+      "startYear": 1941
+    },
+    {
+      "id": "Q1388058",
+      "name": "馬格斯方丹戰役",
+      "type": "battle",
+      "description": "1899 battle of the Second Boer War",
+      "lon": 24.698333333,
+      "lat": -28.969444444,
+      "startYear": 1899
+    },
+    {
+      "id": "Q1398069",
+      "name": "安巴阿拉吉戰役",
+      "type": "battle",
+      "description": "1895 battle",
+      "lon": 39.5036,
+      "lat": 12.9942,
+      "startYear": 1895
+    },
+    {
+      "id": "Q1414998",
+      "name": "泰纳鲁河战役",
+      "type": "battle",
+      "description": "第二次世界大战太平洋战争的一部分",
+      "lon": 160.066803,
+      "lat": -9.422168,
+      "startYear": 1942
+    },
+    {
+      "id": "Q1417205",
+      "name": "蒙斯戰役",
+      "type": "battle",
+      "description": "1914 battle during World War I",
+      "lon": 3.950111,
+      "lat": 50.478892,
+      "startYear": 1914
+    },
+    {
+      "id": "Q1420382",
+      "name": "大土陵戰役",
+      "type": "battle",
+      "description": "1882 battle",
+      "lon": 31.9333,
+      "lat": 30.6667,
+      "startYear": 1882
+    },
+    {
+      "id": "Q1497922",
+      "name": "库里沃夫卡战役",
+      "type": "battle",
+      "description": "1945 battle",
+      "lon": 22.4647,
+      "lat": 50.2972,
+      "startYear": 1945
+    },
+    {
+      "id": "Q1497933",
+      "name": "海倫戰役",
+      "type": "battle",
+      "description": "1914 battle",
+      "lon": 5.110555555,
+      "lat": 50.949166666,
+      "startYear": 1914
+    },
+    {
+      "id": "Q1497947",
+      "name": "Hornkranz massacre",
+      "type": "battle",
+      "description": "1893 massacre in German South West Africa",
+      "lon": 16.4325,
+      "lat": -23.365,
+      "startYear": 1893
+    },
+    {
+      "id": "Q1538855",
+      "name": "安加爾戰役",
+      "type": "battle",
+      "description": "1944 battle of the Pacific campaign in World War II on the island of Angaur in the Palau Islands",
+      "lon": 134.133,
+      "lat": 6.9,
+      "startYear": 1944
+    },
+    {
+      "id": "Q1539453",
+      "name": "聖康坦戰役",
+      "type": "battle",
+      "description": "1914 battle of the first world war",
+      "lon": 3.62833333,
+      "lat": 49.90083333,
+      "startYear": 1914
+    },
+    {
+      "id": "Q1564029",
+      "name": "Battle of Livno",
+      "type": "battle",
+      "description": "1943 battle",
+      "lon": 17.06666667,
+      "lat": 43.83333333,
+      "startYear": 1943
+    },
+    {
+      "id": "Q1572785",
+      "name": "拉包爾戰役",
+      "type": "battle",
+      "description": "1942年战争",
+      "lon": 152.168056,
+      "lat": -4.198056,
+      "startYear": 1942
+    },
+    {
+      "id": "Q506916",
+      "name": "多布羅峰戰役",
+      "type": "battle",
+      "description": "1918 battle",
+      "lon": 21.885,
+      "lat": 41.035,
+      "startYear": 1918
+    },
+    {
+      "id": "Q523742",
+      "name": "炮击帕皮提",
+      "type": "battle",
+      "description": "1914 battle",
+      "lon": -149.57,
+      "lat": -17.53,
+      "startYear": 1914
+    },
+    {
+      "id": "Q541506",
+      "name": "普洛霍羅夫卡戰役",
+      "type": "battle",
+      "description": "1943 battle during World War II",
+      "lon": 36.675,
+      "lat": 51.017,
+      "startYear": 1943
+    },
+    {
+      "id": "Q541958",
+      "name": "米盧斯之戰",
+      "type": "battle",
+      "description": "1914 battle",
+      "lon": 7.34,
+      "lat": 47.749444444,
+      "startYear": 1914
+    },
+    {
+      "id": "Q543072",
+      "name": "卡新加之戰",
+      "type": "battle",
+      "description": "1978 battle",
+      "lon": 16.086388888,
+      "lat": -15.1175,
+      "startYear": 1978
+    },
+    {
+      "id": "Q543075",
+      "name": "荷蘭港戰役",
+      "type": "battle",
+      "description": "1942 battle",
+      "lon": -166.54222222,
+      "lat": 53.8875,
+      "startYear": 1942
+    },
+    {
+      "id": "Q548625",
+      "name": "Battle of Maiwand",
+      "type": "battle",
+      "description": "1880 battle of the Second Anglo-Afghan War",
+      "lon": 65.133333333,
+      "lat": 31.733333333,
+      "startYear": 1880
+    },
+    {
+      "id": "Q549305",
+      "name": "Battle of Pęcice",
+      "type": "battle",
+      "description": "1944 battle",
+      "lon": 20.8478406,
+      "lat": 52.1561537,
+      "startYear": 1944
+    },
+    {
+      "id": "Q550500",
+      "name": "南东战役",
+      "type": "battle",
+      "description": "越南战争的一部分",
+      "lon": 107.678,
+      "lat": 16.1175,
+      "startYear": 1964
+    },
+    {
+      "id": "Q558642",
+      "name": "Battle of Linge",
+      "type": "battle",
+      "description": "1915 World War I battle",
+      "lon": 7.1256,
+      "lat": 48.0547,
+      "startYear": 1915
+    },
+    {
+      "id": "Q564388",
+      "name": "但澤波蘭郵局保衛戰",
+      "type": "battle",
+      "description": "1939 battle",
+      "lon": 18.65694444,
+      "lat": 54.355,
+      "startYear": 1939
+    }
+  ]
+}

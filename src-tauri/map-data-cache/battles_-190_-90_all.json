@@ -1,0 +1,294 @@
+{
+  "query": "battles_-190_-90_all",
+  "timestamp": 1779901130838,
+  "data": [
+    {
+      "id": "Q504739",
+      "name": "彼得那戰役",
+      "type": "battle",
+      "description": "battle of the Third Macedonian War",
+      "lon": 22.473555555,
+      "lat": 40.251027777,
+      "startYear": null
+    },
+    {
+      "id": "Q774487",
+      "name": "艾克斯战役",
+      "type": "battle",
+      "description": "102 BCE battle of the Cimbrian War",
+      "lon": 5.4538889,
+      "lat": 43.5311111,
+      "startYear": null
+    },
+    {
+      "id": "Q776215",
+      "name": "阿勞西奧戰役",
+      "type": "battle",
+      "description": "battle between the ancient Roman Republic and several German tribes",
+      "lon": 4.8,
+      "lat": 44.133333333,
+      "startYear": null
+    },
+    {
+      "id": "Q776215",
+      "name": "阿勞西奧戰役",
+      "type": "battle",
+      "description": "battle between the ancient Roman Republic and several German tribes",
+      "lon": 4.80889,
+      "lat": 44.1375,
+      "startYear": null
+    },
+    {
+      "id": "Q783058",
+      "name": "溫泉關戰役",
+      "type": "battle",
+      "description": "191 BCE battle of the Roman-Seleucid War",
+      "lon": 22.5333,
+      "lat": 38.8,
+      "startYear": null
+    },
+    {
+      "id": "Q846491",
+      "name": "凡薩利战役",
+      "type": "battle",
+      "description": "Final battle of the Cimbrian war",
+      "lon": 8.416667,
+      "lat": 45.316667,
+      "startYear": null
+    },
+    {
+      "id": "Q917811",
+      "name": "馬格尼西亞戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 27.4333,
+      "lat": 38.6167,
+      "startYear": null
+    },
+    {
+      "id": "Q587983",
+      "name": "科林斯戰役",
+      "type": "battle",
+      "description": "146 BCE battle between the Roman Republic and Corinth and its allies",
+      "lon": 22.880191666,
+      "lat": 37.905344444,
+      "startYear": null
+    },
+    {
+      "id": "Q1268317",
+      "name": "伊茅斯戰役",
+      "type": "battle",
+      "description": "165 BCE battle",
+      "lon": 34.989458333,
+      "lat": 31.8393,
+      "startYear": null
+    },
+    {
+      "id": "Q1268331",
+      "name": "阿達薩戰役",
+      "type": "battle",
+      "description": "161 BCE battle",
+      "lon": 35.2333,
+      "lat": 31.8333,
+      "startYear": null
+    },
+    {
+      "id": "Q1268339",
+      "name": "霍倫堡戰役",
+      "type": "battle",
+      "description": "166 BC or 165 BCE battle",
+      "lon": 35.115443,
+      "lat": 31.885536,
+      "startYear": null
+    },
+    {
+      "id": "Q1268349",
+      "name": "傑卡里亞堡戰役",
+      "type": "battle",
+      "description": "162 BCE battle",
+      "lon": 35.12325,
+      "lat": 31.664,
+      "startYear": null
+    },
+    {
+      "id": "Q1281077",
+      "name": "伊拉薩戰役",
+      "type": "battle",
+      "description": "160 BCE battle",
+      "lon": 35.20830556,
+      "lat": 31.87608333,
+      "startYear": null
+    },
+    {
+      "id": "Q1288632",
+      "name": "米奥内苏斯战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 26.785,
+      "lat": 38.177222,
+      "startYear": null
+    },
+    {
+      "id": "Q1290572",
+      "name": "祖爾堡戰役",
+      "type": "battle",
+      "description": "164 BCE battle",
+      "lon": 35.094155,
+      "lat": 31.589383,
+      "startYear": null
+    },
+    {
+      "id": "Q2542852",
+      "name": "奧諾帕魯斯河戰役",
+      "type": "battle",
+      "description": "145 BCE battle",
+      "lon": 36.1606,
+      "lat": 36.1989,
+      "startYear": null
+    },
+    {
+      "id": "Q2617894",
+      "name": "彼得那戰役 (前148年)",
+      "type": "battle",
+      "description": "battle of the Fourth Macedonian War",
+      "lon": 22.583333,
+      "lat": 40.366667,
+      "startYear": null
+    },
+    {
+      "id": "Q657620",
+      "name": "諾瑞亞戰役",
+      "type": "battle",
+      "description": "113 BCE battle of the Cimbrian War",
+      "lon": 14.4333,
+      "lat": 46.7,
+      "startYear": null
+    },
+    {
+      "id": "Q2890816",
+      "name": "Battle of the Muthul",
+      "type": "battle",
+      "description": "battle of the Jugurthine War",
+      "lon": 8.674918,
+      "lat": 36.291028,
+      "startYear": null
+    },
+    {
+      "id": "Q2920325",
+      "name": "馬爾列弗納戰役",
+      "type": "battle",
+      "description": "167 or 166 BCE battle of the Maccabean Revolt",
+      "lon": 35.24083333,
+      "lat": 32.05444444,
+      "startYear": null
+    },
+    {
+      "id": "Q3242126",
+      "name": "歐利米登戰役",
+      "type": "battle",
+      "description": "naval battle where Rhodes defeat the Seleucids",
+      "lon": 31.173056,
+      "lat": 36.83,
+      "startYear": null
+    },
+    {
+      "id": "Q722331",
+      "name": "马邑之谋",
+      "type": "battle",
+      "description": "battle",
+      "lon": 112.434,
+      "lat": 39.335,
+      "startYear": null
+    },
+    {
+      "id": "Q3555607",
+      "name": "埃克巴坦那戰役",
+      "type": "battle",
+      "description": "129 BCE battle between Seleucids and Parthians",
+      "lon": 48.5158,
+      "lat": 4.7961,
+      "startYear": null
+    },
+    {
+      "id": "Q2347053",
+      "name": "卡利基努斯战役",
+      "type": "battle",
+      "description": "battle of the Third Macedonian War",
+      "lon": 22.419935,
+      "lat": 39.632098,
+      "startYear": null
+    },
+    {
+      "id": "Q2890102",
+      "name": "Battle of Suthul",
+      "type": "battle",
+      "description": "battle of the Jugurthine War",
+      "lon": 7.433333,
+      "lat": 36.466667,
+      "startYear": null
+    },
+    {
+      "id": "Q7443103",
+      "name": "Second Battle of Nepheris",
+      "type": "battle",
+      "description": "battle of the Third Punic War where the forces of the Roman Republic, commanded by Scipio Aemilianus, defeated the forces of Carthage who were commanded by Diogenes of Carthage",
+      "lon": 10.383068055,
+      "lat": 36.615106111,
+      "startYear": null
+    },
+    {
+      "id": "Q9173324",
+      "name": "First Battle of Nepheris",
+      "type": "battle",
+      "description": "battle of the Third Punic War in which a Roman army was defeated at Nepheris, a Carthaginian stronghold south of the city of Carthage",
+      "lon": 10.383068055,
+      "lat": 36.615106111,
+      "startYear": null
+    },
+    {
+      "id": "Q4871806",
+      "name": "Battle of Mount Olympus",
+      "type": "battle",
+      "description": "188 BCE battle",
+      "lon": 29.22138889,
+      "lat": 40.06944444,
+      "startYear": null
+    },
+    {
+      "id": "Q16933440",
+      "name": "斯卡菲亚战役",
+      "type": "battle",
+      "description": "battle between Roman & Achaean",
+      "lon": 22.55,
+      "lat": 38.8,
+      "startYear": null
+    },
+    {
+      "id": "Q3636407",
+      "name": "科里庫斯戰役",
+      "type": "battle",
+      "description": "191 BCE naval battle in which the Roman Republic and Pergamon defeated the Seleucids",
+      "lon": 26.592444,
+      "lat": 38.103694,
+      "startYear": null
+    },
+    {
+      "id": "Q4872996",
+      "name": "迦太基港口戰",
+      "type": "battle",
+      "description": "naval battle of the Third Punic War fought in 147 BC between the Carthaginians and the Roman Republic",
+      "lon": 10.5,
+      "lat": 37,
+      "startYear": null
+    },
+    {
+      "id": "Q27863955",
+      "name": "Battle of Lake Tunis",
+      "type": "battle",
+      "description": "148 BCE naval battle",
+      "lon": 10.25,
+      "lat": 36.816666666,
+      "startYear": null
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "query": "battles_340_440_all",
+  "timestamp": 1779899555101,
+  "data": [
+    {
+      "id": "Q192473",
+      "name": "阿德里安堡戰役",
+      "type": "battle",
+      "description": "378 battle between Roman Empire and Goths",
+      "lon": 26.6,
+      "lat": 41.8,
+      "startYear": 378
+    },
+    {
+      "id": "Q389540",
+      "name": "Battle of the Save",
+      "type": "battle",
+      "description": "0388 battle",
+      "lon": 15.871388888,
+      "lat": 46.418611111,
+      "startYear": 388
+    },
+    {
+      "id": "Q2435881",
+      "name": "里米尼战役 (432年)",
+      "type": "battle",
+      "description": "432 battle",
+      "lon": 12.2,
+      "lat": 44.41666667,
+      "startYear": 432
+    },
+    {
+      "id": "Q2479447",
+      "name": "Battle of Thyatira",
+      "type": "battle",
+      "description": "battle over the Roman imperial succession",
+      "lon": 27.8361,
+      "lat": 38.9208,
+      "startYear": 366
+    },
+    {
+      "id": "Q1333898",
+      "name": "淝水之戰",
+      "type": "battle",
+      "description": "383 battle where the Former Qin Empire (Di tribe) was decisively defeated by the Eastern Jin (Sima Jin)",
+      "lon": 116.52,
+      "lat": 31.736111111,
+      "startYear": 383
+    },
+    {
+      "id": "Q1367199",
+      "name": "斯特拉斯堡战役",
+      "type": "battle",
+      "description": "battle fought in AD 357",
+      "lon": 7.661952,
+      "lat": 48.598709,
+      "startYear": 357
+    },
+    {
+      "id": "Q1424076",
+      "name": "穆尔萨战役",
+      "type": "battle",
+      "description": "351 battle",
+      "lon": 18.670277777,
+      "lat": 45.560277777,
+      "startYear": 351
+    },
+    {
+      "id": "Q1583689",
+      "name": "Battle of Brumath",
+      "type": "battle",
+      "description": "battle",
+      "lon": 7.70917,
+      "lat": 48.7328,
+      "startYear": 356
+    },
+    {
+      "id": "Q2568416",
+      "name": "Battle of Thessalonica",
+      "type": "battle",
+      "description": "battle in 380 between the Goths and the Romans",
+      "lon": 22.9439,
+      "lat": 40.6403,
+      "startYear": 380
+    },
+    {
+      "id": "Q2666515",
+      "name": "Battle of Singara",
+      "type": "battle",
+      "description": "344 battle of the Roman–Persian Wars",
+      "lon": 41.864167,
+      "lat": 36.3225,
+      "startYear": 344
+    },
+    {
+      "id": "Q2889171",
+      "name": "Battle of Lutetia",
+      "type": "battle",
+      "description": "383 battle",
+      "lon": 2.35183,
+      "lat": 48.8566,
+      "startYear": 383
+    },
+    {
+      "id": "Q762717",
+      "name": "波伦蒂亚战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 7.85,
+      "lat": 44.7,
+      "startYear": 402
+    },
+    {
+      "id": "Q767124",
+      "name": "泰西封戰役",
+      "type": "battle",
+      "description": "363 battle",
+      "lon": 44.583333,
+      "lat": 33.1,
+      "startYear": 363
+    },
+    {
+      "id": "Q767605",
+      "name": "Battle of Argentovaria",
+      "type": "battle",
+      "description": "378 battle",
+      "lon": 7.35556,
+      "lat": 48.0817,
+      "startYear": 378
+    },
+    {
+      "id": "Q4870386",
+      "name": "Battle of Bagavan",
+      "type": "battle",
+      "description": "371 battle of the Roman–Persian Wars",
+      "lon": 43.476944444,
+      "lat": 39.608333333,
+      "startYear": 371
+    },
+    {
+      "id": "Q1784785",
+      "name": "蒙斯·塞琉古戰役",
+      "type": "battle",
+      "description": "353 battle won by Constantius II",
+      "lon": 5.73625,
+      "lat": 44.459806,
+      "startYear": 353
+    },
+    {
+      "id": "Q1890225",
+      "name": "Battle of Verona",
+      "type": "battle",
+      "description": "403",
+      "lon": 10.9833,
+      "lat": 45.4333,
+      "startYear": 402
+    },
+    {
+      "id": "Q1890225",
+      "name": "Battle of Verona",
+      "type": "battle",
+      "description": "403",
+      "lon": 10.9833,
+      "lat": 45.4333,
+      "startYear": 403
+    },
+    {
+      "id": "Q4871168",
+      "name": "Battle of Guoloph",
+      "type": "battle",
+      "description": "437 conflict between the rival Britonnic forces of Ambrosius Aurelianus and Vortigern (Vitalinus).",
+      "lon": -1.56952,
+      "lat": 51.12744,
+      "startYear": 437
+    },
+    {
+      "id": "Q2154977",
+      "name": "Battle of the Willows",
+      "type": "battle",
+      "description": "battle",
+      "lon": 27.5833,
+      "lat": 43.2167,
+      "startYear": 377
+    },
+    {
+      "id": "Q2166297",
+      "name": "蘭斯戰役",
+      "type": "battle",
+      "description": "356 battle between Roman and Alemanni forces (356)",
+      "lon": 4.0225,
+      "lat": 49.1456,
+      "startYear": 356
+    },
+    {
+      "id": "Q4872963",
+      "name": "Battle of the Nervasos Mountains",
+      "type": "battle",
+      "description": "419 battle",
+      "lon": -5.577222222,
+      "lat": 42.603333333,
+      "startYear": 419
+    },
+    {
+      "id": "Q4873022",
+      "name": "Battle of the Tanais River",
+      "type": "battle",
+      "description": "373 battle",
+      "lon": 39.2875,
+      "lat": 47.06083333,
+      "startYear": 373
+    },
+    {
+      "id": "Q13126317",
+      "name": "Alleluia Victory of Germanus",
+      "type": "battle",
+      "description": "Britons led by Germanus of Auxerre against Picts",
+      "lon": -3.133,
+      "lat": 53.166,
+      "startYear": 430
+    },
+    {
+      "id": "Q16207132",
+      "name": "Battle of Constantinople",
+      "type": "battle",
+      "description": "battle",
+      "lon": 28.95,
+      "lat": 41,
+      "startYear": 378
+    },
+    {
+      "id": "Q9173231",
+      "name": "Battle of Marcianople",
+      "type": "battle",
+      "description": "376 battle",
+      "lon": 27.583333,
+      "lat": 43.216667,
+      "startYear": 376
+    },
+    {
+      "id": "Q20106465",
+      "name": "Siege of Tolosa",
+      "type": "battle",
+      "description": "(439)",
+      "lon": 1.444,
+      "lat": 43.6045,
+      "startYear": 439
+    },
+    {
+      "id": "Q60524380",
+      "name": "Battle of Arles",
+      "type": "battle",
+      "description": "435 battle",
+      "lon": 4.628,
+      "lat": 43.677,
+      "startYear": 435
+    }
+  ]
+}

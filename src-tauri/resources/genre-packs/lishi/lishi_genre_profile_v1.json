@@ -1,0 +1,193 @@
+{
+  "_comment": "历史穿越题材 genre_profiles 完整配置 v1",
+  "_version": "1.0",
+  "_anonymized": true,
+
+  "genre": "lishi",
+  "display_name": "历史穿越",
+
+  "reflector_threshold": {
+    "pass_total": 18,
+    "max_total": 25,
+    "key_dimensions": ["beats", "persona"],
+    "key_min_score": 3,
+    "dimensions": {
+      "beats": {
+        "weight": 5,
+        "description": "必选剧情节点是否到位",
+        "objective_check": "required_beats命中率 >= 80%"
+      },
+      "persona": {
+        "weight": 5,
+        "description": "穿越者身份一致性：现代思维 vs 古代环境",
+        "objective_check": "persona_conflict_rate <= 0.3/千字",
+        "forbidden_behaviors": [
+          "主角使用与身份不符的现代网络俚语（非吐槽场景）",
+          "主角在政治场合暴露软弱和恐惧",
+          "主角对古代事件缺乏穿越者的先知视角",
+          "君主身份主角使用平民式开场句",
+          "完全放弃权威让下属自行决定"
+        ]
+      },
+      "emotion": {
+        "weight": 5,
+        "description": "情绪曲线是否符合历史题材节奏",
+        "objective_check": "情绪波峰在章节末尾80%位置，每2-3章一个波峰"
+      },
+      "causality": {
+        "weight": 5,
+        "description": "政治/军事事件推进是否有合理因果链",
+        "objective_check": "每个政治决策必须有明确的利弊分析，不可无缘由突变"
+      },
+      "style": {
+        "weight": 5,
+        "description": "是否偏离历史题材文风",
+        "objective_ratio": 3,
+        "ai_ratio": 2,
+        "objective_checks": [
+          "平均句长在sentence_len_range范围内",
+          "无现代网络俚语（非穿越者吐槽场景）",
+          "无打破第四面墙的元叙事",
+          "无超过200字的单一长段落"
+        ]
+      }
+    }
+  },
+
+  "style_profile": {
+    "sentence_len_range": {
+      "tense_scene": [4, 12],
+      "normal_scene": [20, 40],
+      "background_narration": [30, 60]
+    },
+    "perspective": "third_limited_protagonist_centric",
+    "psychology_depth_ratio": {
+      "surface_level_thought": 0.4,
+      "strategic_planning": 0.55,
+      "deep_emotional_reflection": 0.05
+    },
+    "banned_words": [
+      "醉了", "太香了", "yyds", "绝绝子",
+      "光阴似箭日月如梭", "像仙女一样"
+    ],
+    "banned_scene_types": [
+      "纯景物抒情段落（无叙事功能）",
+      "完全放弃权威的主角表现",
+      "打破第四面墙的元叙事（作者PS除外）",
+      "意识流或蒙太奇手法"
+    ],
+    "tone": "weighty_strategic_historical",
+    "paragraph_avg_lines": 4,
+    "paragraph_max_chars": 200,
+    "dialogue_paragraph_avg_lines": 1,
+    "narration_paragraph_avg_lines": 5,
+    "description_order": ["整体印象（年龄/身材）", "关键特征（容貌/气质）"],
+    "description_first_appearance_max_chars": 20,
+    "sensory_channels": {
+      "visual": 0.75,
+      "auditory": 0.1,
+      "tactile": 0.15,
+      "olfactory": 0.0
+    },
+    "chapter_structure": {
+      "opening_types": {
+        "action_start": 0.4,
+        "dialogue_start": 0.3,
+        "environment_start": 0.2,
+        "suspense_start": 0.1
+      },
+      "climax_position_range": [0.75, 0.9],
+      "ending_types": {
+        "suspense_hook": 0.5,
+        "emotional_resonance": 0.4,
+        "action_cliffhanger": 0.1
+      },
+      "closure_type": "semi_open",
+      "event_arc_chapters": [6, 10],
+      "setup_nodes_before_turning_point": 5,
+      "foreshadowing_recovery_span": [6, 10]
+    },
+    "info_density": {
+      "new_info_points_per_chapter": 5,
+      "delivery_method": "mixed（集中叙述+对话嵌入+长线伏笔）",
+      "concentrated_dump_allowed": true,
+      "concentrated_dump_max_ratio": 0.67
+    }
+  },
+
+  "optimizer_gate": {
+    "silent_lt": 10,
+    "freq_only_lt": 20,
+    "full_advice_gte": 20
+  },
+
+  "optimization_map": {
+    "pace_fast": [
+      {"action": "raise_word_count_min", "value": 0.2, "unit": "percent"},
+      {"action": "add_required_beats", "value": 1, "unit": "count"},
+      {"action": "inject_craft_pattern", "value": "叙事结构规则", "unit": "pattern_name"}
+    ],
+    "pace_slow": [
+      {"action": "lower_word_count_max", "value": 0.15, "unit": "percent"},
+      {"action": "inject_craft_pattern", "value": "场景转场句", "unit": "pattern_name"}
+    ],
+    "persona_ooc": [
+      {"action": "persona_weight", "value": 1, "unit": "score_delta"},
+      {"action": "refresh_character_snapshot", "value": true, "unit": "bool"},
+      {"action": "inject_forbidden_behaviors", "value": true, "unit": "bool"}
+    ],
+    "style_drift": [
+      {"action": "inject_style_constraints", "value": 0.2, "unit": "percent"},
+      {"action": "banned_words_strict", "value": true, "unit": "bool"}
+    ],
+    "not_connected_prev": [
+      {"action": "nearby_recall", "value": 5, "unit": "count_delta"},
+      {"action": "anchor_prev_event_strict", "value": true, "unit": "bool"}
+    ],
+    "emotion_flat": [
+      {"action": "inject_craft_pattern", "value": "冲突升级信号词", "unit": "pattern_name"},
+      {"action": "emotion_arc_strict", "value": true, "unit": "bool"}
+    ],
+    "dialogue_unnatural": [
+      {"action": "inject_craft_pattern", "value": "对话开场句", "unit": "pattern_name"},
+      {"action": "inject_craft_pattern", "value": "冲突降温句", "unit": "pattern_name"}
+    ],
+    "chapter_ending_weak": [
+      {"action": "inject_craft_pattern", "value": "章节收尾钩子句", "unit": "pattern_name"},
+      {"action": "forbidden_ending_types", "value": ["完全闭合", "纯景物", "总结陈词"], "unit": "list"}
+    ],
+    "info_density_low": [
+      {"action": "inject_craft_pattern", "value": "信息密度规则", "unit": "pattern_name"},
+      {"action": "min_info_points_per_chapter", "value": 3, "unit": "count"}
+    ]
+  },
+
+  "conflict_signals": {
+    "undercurrent": [
+      "微微蹙眉", "一时情急", "却不料", "面色丝毫不变",
+      "怔在当场", "心中翻腾起来", "隐隐", "沉默不语",
+      "若有所思", "递上奏章", "密信往来"
+    ],
+    "open_conflict": [
+      "当众冷笑", "再度迫上", "厉声以对", "昂然反问",
+      "愤愤难平", "呵斥", "质问", "板起脸",
+      "不等对方话音落地", "廷争", "弹劾"
+    ],
+    "explosion": [
+      "勃然大怒", "拍案", "直接拔出刀来", "目眦欲裂",
+      "气急败坏", "再也忍耐不住", "涕泪交加",
+      "兵变", "刺杀", "彻底决裂", "斩首示众"
+    ]
+  },
+
+  "craft_fingerprint": {
+    "dialogue_style": "对话即权力行使——君主身份决定开场句必须带权威感，穿越者视角的冷静与古人惊慌形成独特爽点",
+    "rhythm_style": "张弛有道——背景分析用长句，冲突爆发用极短句，省略号独立成段是历史题材特有留白",
+    "description_style": "极度功能化——外貌20字点到即止，环境服务氛围，气质通过行为暗示，为权力关系服务",
+    "structure_style": "宏观叙事——事件弧线8-10章，情绪收尾比例高（40%），信息密度最高（每章5点）",
+    "psychology_style": "理性分析主导（55%）——穿越者现代思维碰撞古代环境是核心爽点，他人视角对主角的感知必须分离存储",
+    "info_style": "三种投放模式——设定章节集中说明/对话按需投放/核心人物长线伏笔，按重要性选择策略"
+  },
+
+  "core_emotional_loop": "穿越者以现代视角洞察古代局势（先知优势）→ 被古人质疑/轻视/掣肘（波谷）→ 运用现代知识或超前决策碾压局面（爽点）→ 古人震惊臣服/政治格局改变 → 更大的历史危机或权力博弈浮现（循环触发）"
+}

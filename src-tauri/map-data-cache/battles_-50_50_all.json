@@ -1,0 +1,294 @@
+{
+  "query": "battles_-50_50_all",
+  "timestamp": 1779901132323,
+  "data": [
+    {
+      "id": "Q203681",
+      "name": "法萨卢斯战役",
+      "type": "battle",
+      "description": "48 BCE decisive battle of Caesar's Civil War",
+      "lon": 22.38333333,
+      "lat": 39.3,
+      "startYear": null
+    },
+    {
+      "id": "Q203681",
+      "name": "法萨卢斯战役",
+      "type": "battle",
+      "description": "48 BCE decisive battle of Caesar's Civil War",
+      "lon": 22.38333333,
+      "lat": 39.3,
+      "startYear": null
+    },
+    {
+      "id": "Q203681",
+      "name": "法萨卢斯战役",
+      "type": "battle",
+      "description": "48 BCE decisive battle of Caesar's Civil War",
+      "lon": 22.38333333,
+      "lat": 39.3,
+      "startYear": null
+    },
+    {
+      "id": "Q87779",
+      "name": "条顿堡森林战役",
+      "type": "battle",
+      "description": "battle between a coalition of Germanic peoples and an Imperial Roman army, 9 BCE",
+      "lon": 8.125833333,
+      "lat": 52.4075,
+      "startYear": 9
+    },
+    {
+      "id": "Q516760",
+      "name": "蒙达战役",
+      "type": "battle",
+      "description": "凯撒内战战役",
+      "lon": -4.85,
+      "lat": 37.55,
+      "startYear": null
+    },
+    {
+      "id": "Q525325",
+      "name": "底拉西乌姆会战",
+      "type": "battle",
+      "description": "battle of Caesar's Civil War in the area of the city of Dyrrachium (in what is now Albania)",
+      "lon": 19.45,
+      "lat": 41.316666666,
+      "startYear": null
+    },
+    {
+      "id": "Q630644",
+      "name": "Battle of Idistaviso",
+      "type": "battle",
+      "description": "16 AD battle between Roman legions and Germanic peoples",
+      "lon": 9.0206583,
+      "lat": 52.1900036,
+      "startYear": 16
+    },
+    {
+      "id": "Q617650",
+      "name": "梅德韋戰役",
+      "type": "battle",
+      "description": "43 battle",
+      "lon": 0.742,
+      "lat": 51.44,
+      "startYear": 43
+    },
+    {
+      "id": "Q619030",
+      "name": "巴格拉達斯戰役",
+      "type": "battle",
+      "description": "between Julius Caesar's general Gaius Scribonius Curio and the Pompeian Republicans under Publius Attius Varus and King Juba I of Numidia",
+      "lon": 9.965,
+      "lat": 36.88,
+      "startYear": null
+    },
+    {
+      "id": "Q971507",
+      "name": "泽拉战役",
+      "type": "battle",
+      "description": "47 BCE battle of Julius Caesar's Pontic Campaign",
+      "lon": 35.88333333,
+      "lat": 40.3,
+      "startYear": null
+    },
+    {
+      "id": "Q762458",
+      "name": "魯斯皮納戰役",
+      "type": "battle",
+      "description": "46 BCE battle between the Republican forces of the Optimates and forces loyal to Julius Caesar",
+      "lon": 10.816666666,
+      "lat": 35.766666666,
+      "startYear": null
+    },
+    {
+      "id": "Q849653",
+      "name": "塔普蘇斯戰役",
+      "type": "battle",
+      "description": "battle in Caesar's Civil War",
+      "lon": 11.047777777,
+      "lat": 35.624444444,
+      "startYear": null
+    },
+    {
+      "id": "Q1975400",
+      "name": "Battle of the Nile",
+      "type": "battle",
+      "description": "47 BCE battle between Julius Caesar and Ptolemy XIII",
+      "lon": 31.11666667,
+      "lat": 30.9,
+      "startYear": null
+    },
+    {
+      "id": "Q2416094",
+      "name": "Battle of Utica",
+      "type": "battle",
+      "description": "Battle of Caesar's Civil War",
+      "lon": 10.06259722,
+      "lat": 37.05794444,
+      "startYear": null
+    },
+    {
+      "id": "Q2889520",
+      "name": "Battle of Nicopolis",
+      "type": "battle",
+      "description": "48 BCE battle",
+      "lon": 37.83333333,
+      "lat": 40.3,
+      "startYear": null
+    },
+    {
+      "id": "Q3498428",
+      "name": "Battle of Mount Gindarus",
+      "type": "battle",
+      "description": "battle of Mount Gindarus",
+      "lon": 36.688889,
+      "lat": 36.394722,
+      "startYear": null
+    },
+    {
+      "id": "Q2520025",
+      "name": "Battle of Baduhenna Wood",
+      "type": "battle",
+      "description": "28 battle",
+      "lon": 4.7,
+      "lat": 52.6,
+      "startYear": 28
+    },
+    {
+      "id": "Q2521439",
+      "name": "Battle of Caer Caradoc",
+      "type": "battle",
+      "description": "final battle in Caratacus's resistance to Roman rule (50 AD)",
+      "lon": -2.77278,
+      "lat": 52.5531,
+      "startYear": 50
+    },
+    {
+      "id": "Q4870287",
+      "name": "Battle of Amanus Pass",
+      "type": "battle",
+      "description": "Roman victory over Parthian army in 39BC",
+      "lon": 36.232,
+      "lat": 36.4795,
+      "startYear": null
+    },
+    {
+      "id": "Q3272217",
+      "name": "昆陽之戰",
+      "type": "battle",
+      "description": "公元23年王莽军和刘秀军之间的战役",
+      "lon": 113.356944444,
+      "lat": 33.626944444,
+      "startYear": 23
+    },
+    {
+      "id": "Q4872891",
+      "name": "Battle of the Cilician Gates",
+      "type": "battle",
+      "description": "39 BCE Roman victory over the Parthian army",
+      "lon": 34.794444,
+      "lat": 37.327778,
+      "startYear": null
+    },
+    {
+      "id": "Q29056780",
+      "name": "Battle of the Thames",
+      "type": "battle",
+      "description": "early battle in the Claudian invasion of Britain",
+      "lon": -0.366667,
+      "lat": 51.433333,
+      "startYear": 43
+    },
+    {
+      "id": "Q29056780",
+      "name": "Battle of the Thames",
+      "type": "battle",
+      "description": "early battle in the Claudian invasion of Britain",
+      "lon": 0.366667,
+      "lat": 51.433333,
+      "startYear": 43
+    },
+    {
+      "id": "Q29513472",
+      "name": "勞羅戰役",
+      "type": "battle",
+      "description": "45 BCE battle",
+      "lon": -4.81666667,
+      "lat": 37.26666667,
+      "startYear": null
+    },
+    {
+      "id": "Q676692",
+      "name": "納洛丘斯戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 15.65,
+      "lat": 38.25,
+      "startYear": null
+    },
+    {
+      "id": "Q106855846",
+      "name": "Battle of Ascurum",
+      "type": "battle",
+      "description": "ancient Roman battle",
+      "lon": 13.57,
+      "lat": 42.85,
+      "startYear": null
+    },
+    {
+      "id": "Q107304813",
+      "name": "Siege of Curicta",
+      "type": "battle",
+      "description": "siege in 49 BCE",
+      "lon": 14.6,
+      "lat": 45.066666666,
+      "startYear": null
+    },
+    {
+      "id": "Q1546379",
+      "name": "Battle of Lake Constance",
+      "type": "battle",
+      "description": "battle",
+      "lon": 9.424906,
+      "lat": 47.59371,
+      "startYear": null
+    },
+    {
+      "id": "Q160387",
+      "name": "亞克興海戰",
+      "type": "battle",
+      "description": "31 BCE decisive confrontation of the Final War of the Roman Republic",
+      "lon": 20.725,
+      "lat": 38.925,
+      "startYear": null
+    },
+    {
+      "id": "Q11688130",
+      "name": "Battle of Tauris",
+      "type": "battle",
+      "description": "47 BCE naval battle",
+      "lon": 16.7,
+      "lat": 43.083333,
+      "startYear": null
+    },
+    {
+      "id": "Q109377210",
+      "name": "Siege of Antioch",
+      "type": "battle",
+      "description": "51 BCE battle between Roman and Parthian armies",
+      "lon": 36.1813,
+      "lat": 36.2045,
+      "startYear": null
+    },
+    {
+      "id": "Q28662986",
+      "name": "希波城戰役",
+      "type": "battle",
+      "description": "sea battle in 46 BC",
+      "lon": 7.751889,
+      "lat": 36.883222,
+      "startYear": null
+    }
+  ]
+}

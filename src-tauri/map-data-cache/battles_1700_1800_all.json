@@ -1,0 +1,906 @@
+{
+  "query": "battles_1700_1800_all",
+  "timestamp": 1779898805905,
+  "data": [
+    {
+      "id": "Q138025",
+      "name": "Siege of Veprik",
+      "type": "battle",
+      "description": "1708 siege",
+      "lon": 29.805833333,
+      "lat": 50.106666666,
+      "startYear": 1708
+    },
+    {
+      "id": "Q140439",
+      "name": "马尔库舒夫战役",
+      "type": "battle",
+      "description": "1792 battle",
+      "lon": 22.256944444,
+      "lat": 51.375277777,
+      "startYear": 1792
+    },
+    {
+      "id": "Q152486",
+      "name": "波爾塔瓦會戰",
+      "type": "battle",
+      "description": "decisive battle in the Great Northern War between Tsardom Russia and the Swedish Empire in 1709",
+      "lon": 34.552777777,
+      "lat": 49.631388888,
+      "startYear": 1709
+    },
+    {
+      "id": "Q154635",
+      "name": "布伦汉姆战役",
+      "type": "battle",
+      "description": "1704 major battle of the War of the Spanish Succession",
+      "lon": 10.6,
+      "lat": 48.645,
+      "startYear": 1704
+    },
+    {
+      "id": "Q155726",
+      "name": "納爾瓦之役",
+      "type": "battle",
+      "description": "1700 battle of the Great Northern War",
+      "lon": 28.18,
+      "lat": 59.375,
+      "startYear": 1700
+    },
+    {
+      "id": "Q161325",
+      "name": "拉米伊戰役",
+      "type": "battle",
+      "description": "1706年歐洲戰役",
+      "lon": 4.915277777,
+      "lat": 50.636388888,
+      "startYear": 1706
+    },
+    {
+      "id": "Q166015",
+      "name": "列斯納亞戰役",
+      "type": "battle",
+      "description": "1708 battle of the Great Northern War",
+      "lon": 30.915,
+      "lat": 53.542222222,
+      "startYear": 1708
+    },
+    {
+      "id": "Q166929",
+      "name": "Battle of Avesnes-le-Sec",
+      "type": "battle",
+      "description": "1793 battle",
+      "lon": 3.378,
+      "lat": 50.25,
+      "startYear": 1793
+    },
+    {
+      "id": "Q167143",
+      "name": "突袭柏林",
+      "type": "battle",
+      "description": "七年战争战役",
+      "lon": 13.4081,
+      "lat": 52.5186,
+      "startYear": 1760
+    },
+    {
+      "id": "Q169602",
+      "name": "Battle of Jakobstadt",
+      "type": "battle",
+      "description": "1704 battle",
+      "lon": 25.870833333,
+      "lat": 56.503611111,
+      "startYear": 1704
+    },
+    {
+      "id": "Q170400",
+      "name": "庫勒斯道夫戰役",
+      "type": "battle",
+      "description": "1759 battle of the Seven Years' War",
+      "lon": 14.612777777,
+      "lat": 52.353055555,
+      "startYear": 1759
+    },
+    {
+      "id": "Q182831",
+      "name": "施林根战役",
+      "type": "battle",
+      "description": "1796 battle during the War of the First Coalition",
+      "lon": 7.57722222,
+      "lat": 47.75555556,
+      "startYear": 1796
+    },
+    {
+      "id": "Q325486",
+      "name": "布魯利克斯之役",
+      "type": "battle",
+      "description": "1782 battle",
+      "lon": -83.994647222,
+      "lat": 38.428407833,
+      "startYear": 1782
+    },
+    {
+      "id": "Q328447",
+      "name": "Battle of La Belle-Famille",
+      "type": "battle",
+      "description": "1759 battle",
+      "lon": -79.05075,
+      "lat": 43.2417,
+      "startYear": 1759
+    },
+    {
+      "id": "Q331725",
+      "name": "多姆斯塔戰役",
+      "type": "battle",
+      "description": "1758 battle between the Habsburg Monarchy and the Kingdom of Prussia",
+      "lon": 17.4433333,
+      "lat": 49.7383333,
+      "startYear": 1758
+    },
+    {
+      "id": "Q332543",
+      "name": "金字塔戰役",
+      "type": "battle",
+      "description": "1798 battle during the French invasion of Egypt",
+      "lon": 31.2,
+      "lat": 30.08333333,
+      "startYear": 1798
+    },
+    {
+      "id": "Q334029",
+      "name": "邦克山戰役",
+      "type": "battle",
+      "description": "1775 early battle of the American Revoluntionary War",
+      "lon": -71.060777777,
+      "lat": 42.376361111,
+      "startYear": 1775
+    },
+    {
+      "id": "Q335174",
+      "name": "Battle of Vila Velha",
+      "type": "battle",
+      "description": "1762 battle",
+      "lon": -7.67,
+      "lat": 39.65,
+      "startYear": 1762
+    },
+    {
+      "id": "Q368457",
+      "name": "马提尼克争夺战",
+      "type": "battle",
+      "description": "1794 battle",
+      "lon": -61,
+      "lat": 14.66666667,
+      "startYear": 1794
+    },
+    {
+      "id": "Q370376",
+      "name": "卡斯特里克姆战役",
+      "type": "battle",
+      "description": "1799 battle",
+      "lon": 4.65426,
+      "lat": 52.54344,
+      "startYear": 1799
+    },
+    {
+      "id": "Q386601",
+      "name": "凯撒斯劳滕战役",
+      "type": "battle",
+      "description": "1793 battle during the War of the First Coalition",
+      "lon": 7.76361111,
+      "lat": 49.47027778,
+      "startYear": 1793
+    },
+    {
+      "id": "Q387215",
+      "name": "洛阿諾戰役",
+      "type": "battle",
+      "description": "occurred on 23-24 November 1795 during the War of the First Coalition",
+      "lon": 8.25,
+      "lat": 44.1167,
+      "startYear": 1795
+    },
+    {
+      "id": "Q4411",
+      "name": "瓦爾密戰役",
+      "type": "battle",
+      "description": "1792 battle during the War of the First Coalition",
+      "lon": 4.767222222,
+      "lat": 49.080277777,
+      "startYear": 1792
+    },
+    {
+      "id": "Q32198",
+      "name": "格洛斯特戰鬥",
+      "type": "battle",
+      "description": "1775 skirmish fought early in the American Revolutionary War at Gloucester, Massachusetts",
+      "lon": -70.6637,
+      "lat": 42.6064,
+      "startYear": 1775
+    },
+    {
+      "id": "Q32493",
+      "name": "羅庫爾戰役",
+      "type": "battle",
+      "description": "1746年於列日，屬奧地利王位繼承戰爭",
+      "lon": 5.546,
+      "lat": 50.6757,
+      "startYear": 1746
+    },
+    {
+      "id": "Q32559",
+      "name": "Siege of Vyborg",
+      "type": "battle",
+      "description": "1706 siege during the Great Northern War",
+      "lon": 28.7442,
+      "lat": 60.7092,
+      "startYear": 1706
+    },
+    {
+      "id": "Q41320",
+      "name": "德南戰役",
+      "type": "battle",
+      "description": "1712 battle",
+      "lon": 3.395833333,
+      "lat": 50.329444444,
+      "startYear": 1712
+    },
+    {
+      "id": "Q63313",
+      "name": "沛爾岬之戰",
+      "type": "battle",
+      "description": "1776 battle",
+      "lon": -73.81048,
+      "lat": 40.86617,
+      "startYear": 1776
+    },
+    {
+      "id": "Q74119",
+      "name": "Battle of Langensalza",
+      "type": "battle",
+      "description": "1761 battle",
+      "lon": 10.6468,
+      "lat": 51.108,
+      "startYear": 1761
+    },
+    {
+      "id": "Q74391",
+      "name": "瑙海姆戰役",
+      "type": "battle",
+      "description": "1762 battle of the Seven Years' War",
+      "lon": 8.72555,
+      "lat": 50.36482,
+      "startYear": 1762
+    },
+    {
+      "id": "Q111648",
+      "name": "斯托尼角战役",
+      "type": "battle",
+      "description": "1779 battle of the American Revolutionary War",
+      "lon": -73.97352219,
+      "lat": 41.24180362,
+      "startYear": 1779
+    },
+    {
+      "id": "Q127299",
+      "name": "科林戰役",
+      "type": "battle",
+      "description": "1757 battle of the Third Silesian War",
+      "lon": 15.121944444,
+      "lat": 50.028888888,
+      "startYear": 1757
+    },
+    {
+      "id": "Q186107",
+      "name": "史塔卡赫戰役",
+      "type": "battle",
+      "description": "1799 battle during the War of the Second Coalition",
+      "lon": 7.57722222,
+      "lat": 47.75555556,
+      "startYear": 1799
+    },
+    {
+      "id": "Q211220",
+      "name": "Battle of Chandannagar",
+      "type": "battle",
+      "description": "1757 battle",
+      "lon": 88.38,
+      "lat": 22.855886,
+      "startYear": 1757
+    },
+    {
+      "id": "Q223622",
+      "name": "布拉格戰役",
+      "type": "battle",
+      "description": "1757 battle of the Seven Years' War",
+      "lon": 14.557,
+      "lat": 50.076,
+      "startYear": 1757
+    },
+    {
+      "id": "Q233417",
+      "name": "阿孫平克溪戰役",
+      "type": "battle",
+      "description": "1777 battle between American and British troops",
+      "lon": -74.764166666,
+      "lat": 40.218055555,
+      "startYear": 1777
+    },
+    {
+      "id": "Q390286",
+      "name": "比利亞維西奧薩戰役",
+      "type": "battle",
+      "description": "1710 battle",
+      "lon": -2.83638889,
+      "lat": 40.78638889,
+      "startYear": 1710
+    },
+    {
+      "id": "Q402312",
+      "name": "德廷根战役",
+      "type": "battle",
+      "description": "British-led battle during the War of the Austrian Succession on 27 June 1743 near Aschaffenburg, Germany.",
+      "lon": 9.018333333,
+      "lat": 50.048888888,
+      "startYear": 1743
+    },
+    {
+      "id": "Q404561",
+      "name": "Battle of Koniecpol",
+      "type": "battle",
+      "description": "1708 battle",
+      "lon": 19.683333333,
+      "lat": 50.783333333,
+      "startYear": 1708
+    },
+    {
+      "id": "Q425773",
+      "name": "吉爾福德縣府戰役",
+      "type": "battle",
+      "description": "1781 battle of the American Revolutionary War",
+      "lon": -79.844,
+      "lat": 36.132,
+      "startYear": 1781
+    },
+    {
+      "id": "Q427891",
+      "name": "Battle of Fort Ligonier",
+      "type": "battle",
+      "description": "1758 battle of the French and Indian War",
+      "lon": -79.23777778,
+      "lat": 40.24083333,
+      "startYear": 1758
+    },
+    {
+      "id": "Q428035",
+      "name": "米勒西米歐戰役",
+      "type": "battle",
+      "description": "1796 battle",
+      "lon": 8.2,
+      "lat": 44.3667,
+      "startYear": 1796
+    },
+    {
+      "id": "Q428280",
+      "name": "Battle of Pont-Barré",
+      "type": "battle",
+      "description": "1793 battle",
+      "lon": -0.631111111,
+      "lat": 47.303055555,
+      "startYear": 1793
+    },
+    {
+      "id": "Q443501",
+      "name": "新维德战役",
+      "type": "battle",
+      "description": "1797 battle during the War of the First Coalition",
+      "lon": 7.454166666,
+      "lat": 50.453333333,
+      "startYear": 1797
+    },
+    {
+      "id": "Q445663",
+      "name": "薩拉登戰役",
+      "type": "battle",
+      "description": "1703 battle",
+      "lon": 24.3617,
+      "lat": 56.2486,
+      "startYear": 1703
+    },
+    {
+      "id": "Q445710",
+      "name": "Battle of Kletsk",
+      "type": "battle",
+      "description": "1706 battle",
+      "lon": 26.63916667,
+      "lat": 53.06361111,
+      "startYear": 1706
+    },
+    {
+      "id": "Q459447",
+      "name": "約克鎮圍城戰役",
+      "type": "battle",
+      "description": "siege, part of American Revolutionary War",
+      "lon": -76.5025,
+      "lat": 37.230833333,
+      "startYear": 1781
+    },
+    {
+      "id": "Q473706",
+      "name": "凱伊戰役",
+      "type": "battle",
+      "description": "1759 battle",
+      "lon": 15.53333333,
+      "lat": 52.1,
+      "startYear": 1759
+    },
+    {
+      "id": "Q475544",
+      "name": "梅斯基希戰役",
+      "type": "battle",
+      "description": "1800 battle",
+      "lon": 9.1127,
+      "lat": 47.993,
+      "startYear": 1800
+    },
+    {
+      "id": "Q481466",
+      "name": "安贝格战役",
+      "type": "battle",
+      "description": "1796 battle during the War of the First Coalition",
+      "lon": 11.831111111,
+      "lat": 49.471111111,
+      "startYear": 1796
+    },
+    {
+      "id": "Q481518",
+      "name": "Battle of Rauge",
+      "type": "battle",
+      "description": "1701 battle",
+      "lon": 26.909722222,
+      "lat": 57.727777777,
+      "startYear": 1701
+    },
+    {
+      "id": "Q494318",
+      "name": "Battle of Hobkirk's Hill",
+      "type": "battle",
+      "description": "1781 battle",
+      "lon": -80.60722222,
+      "lat": 34.27444444,
+      "startYear": 1781
+    },
+    {
+      "id": "Q251184",
+      "name": "訊號山戰役",
+      "type": "battle",
+      "description": "1762 battle",
+      "lon": -52.68194444,
+      "lat": 47.56972222,
+      "startYear": 1762
+    },
+    {
+      "id": "Q262648",
+      "name": "胡赫斯特戰役",
+      "type": "battle",
+      "description": "1800 battle",
+      "lon": 10.55,
+      "lat": 48.6,
+      "startYear": 1800
+    },
+    {
+      "id": "Q266689",
+      "name": "第一次迪哥戰役",
+      "type": "battle",
+      "description": "1794 battle",
+      "lon": 8.31667,
+      "lat": 44.45,
+      "startYear": 1794
+    },
+    {
+      "id": "Q273011",
+      "name": "马伦哥战役",
+      "type": "battle",
+      "description": "1800 battle during the War of the Second Coalition",
+      "lon": 8.683333333,
+      "lat": 44.883333333,
+      "startYear": 1800
+    },
+    {
+      "id": "Q281461",
+      "name": "格劳霍尔茨之战",
+      "type": "battle",
+      "description": "1798 battle",
+      "lon": 7.5,
+      "lat": 47.01666667,
+      "startYear": 1798
+    },
+    {
+      "id": "Q301487",
+      "name": "白蘭地酒戰役",
+      "type": "battle",
+      "description": "1777 battle of the American Revolutionary War",
+      "lon": -75.59006,
+      "lat": 39.872,
+      "startYear": 1777
+    },
+    {
+      "id": "Q303998",
+      "name": "圖爾寬戰役",
+      "type": "battle",
+      "description": "1794 battle of the Flanders Campaign during the War of the First Coalition",
+      "lon": 3.1548,
+      "lat": 50.73235,
+      "startYear": 1794
+    },
+    {
+      "id": "Q311726",
+      "name": "亞伯拉罕平原戰役",
+      "type": "battle",
+      "description": "1759 battle between British and French near Quebec City, Canada",
+      "lon": -71.22,
+      "lat": 46.801666666,
+      "startYear": 1759
+    },
+    {
+      "id": "Q313435",
+      "name": "洛伊滕會戰",
+      "type": "battle",
+      "description": "1757 battle of the Seven Years' War",
+      "lon": 16.752527777,
+      "lat": 51.152111111,
+      "startYear": 1757
+    },
+    {
+      "id": "Q316139",
+      "name": "奧德納德戰役",
+      "type": "battle",
+      "description": "battle in the War of the Spanish Succession, fought on 11 July 1708, in Belgium.",
+      "lon": 3.6,
+      "lat": 50.83,
+      "startYear": 1708
+    },
+    {
+      "id": "Q316897",
+      "name": "馬爾普拉凱戰役",
+      "type": "battle",
+      "description": "1709 battle",
+      "lon": 3.836666666,
+      "lat": 50.319722222,
+      "startYear": 1709
+    },
+    {
+      "id": "Q320394",
+      "name": "阿爾曼薩戰役",
+      "type": "battle",
+      "description": "戰役",
+      "lon": -1.093694444,
+      "lat": 38.874444444,
+      "startYear": 1707
+    },
+    {
+      "id": "Q1754313",
+      "name": "本寧頓戰爭",
+      "type": "battle",
+      "description": "1777 battle of the American Revolutionary War",
+      "lon": -73.304444444,
+      "lat": 42.938611111,
+      "startYear": 1777
+    },
+    {
+      "id": "Q1760280",
+      "name": "瓜斯塔拉戰役",
+      "type": "battle",
+      "description": "1734 battle as part of the War of the Polish Succession",
+      "lon": 10.66666667,
+      "lat": 44.91666667,
+      "startYear": 1734
+    },
+    {
+      "id": "Q1779439",
+      "name": "色達斯之戰",
+      "type": "battle",
+      "description": "1776 skirmishes of the American Revolutionary War",
+      "lon": -74.054611,
+      "lat": 45.306222,
+      "startYear": 1776
+    },
+    {
+      "id": "Q1811438",
+      "name": "沃克斯華戰役",
+      "type": "battle",
+      "description": "1780 battle of the American Revolutionary War",
+      "lon": -80.62579167,
+      "lat": 34.74195278,
+      "startYear": 1780
+    },
+    {
+      "id": "Q2890385",
+      "name": "怀特马什战役",
+      "type": "battle",
+      "description": "1777 American Revolutionary War battle",
+      "lon": -75.23,
+      "lat": 40.12,
+      "startYear": 1777
+    },
+    {
+      "id": "Q2890450",
+      "name": "Battle of the Acul",
+      "type": "battle",
+      "description": "1794 battle",
+      "lon": -72.6339,
+      "lat": 18.5108,
+      "startYear": 1794
+    },
+    {
+      "id": "Q2890460",
+      "name": "Battle of Auberge-neuve",
+      "type": "battle",
+      "description": "1796 battle",
+      "lon": -0.407777777,
+      "lat": 48.384166666,
+      "startYear": 1796
+    },
+    {
+      "id": "Q2890489",
+      "name": "Battle of Bouin",
+      "type": "battle",
+      "description": "1793 battle",
+      "lon": -2.000555555,
+      "lat": 46.974444444,
+      "startYear": 1793
+    },
+    {
+      "id": "Q2890504",
+      "name": "Battle of La Bégaudière",
+      "type": "battle",
+      "description": "1796 battle",
+      "lon": -1.390277777,
+      "lat": 46.863888888,
+      "startYear": 1796
+    },
+    {
+      "id": "Q2890512",
+      "name": "Battle of Croix-des-Bouquets",
+      "type": "battle",
+      "description": "1792 conflict in Haiti",
+      "lon": -72.233333333,
+      "lat": 18.583333333,
+      "startYear": 1792
+    },
+    {
+      "id": "Q2890529",
+      "name": "Battle of Hennerie",
+      "type": "battle",
+      "description": "1799 battle",
+      "lon": -0.64,
+      "lat": 48.085,
+      "startYear": 1799
+    },
+    {
+      "id": "Q2890537",
+      "name": "拉古迪尼亞戰役",
+      "type": "battle",
+      "description": "1709 battle of the War of the Spanish Succession",
+      "lon": -7.075451815,
+      "lat": 38.955850263,
+      "startYear": 1709
+    },
+    {
+      "id": "Q2890566",
+      "name": "Battle of La Roullière",
+      "type": "battle",
+      "description": "1794 battle",
+      "lon": -1.528611111,
+      "lat": 47.147222222,
+      "startYear": 1794
+    },
+    {
+      "id": "Q2890578",
+      "name": "Battle of Elven Tower",
+      "type": "battle",
+      "description": "1799 battle",
+      "lon": -2.618611111,
+      "lat": 47.725277777,
+      "startYear": 1799
+    },
+    {
+      "id": "Q2890584",
+      "name": "Battle of Vieuville",
+      "type": "battle",
+      "description": "1795 battle",
+      "lon": -1.234021666,
+      "lat": 48.419161944,
+      "startYear": 1795
+    },
+    {
+      "id": "Q2890585",
+      "name": "Battle of Mario Town",
+      "type": "battle",
+      "description": "1795 battle",
+      "lon": -2.849587,
+      "lat": 48.650064,
+      "startYear": 1795
+    },
+    {
+      "id": "Q2890641",
+      "name": "Battle of Les Aubiers",
+      "type": "battle",
+      "description": "1793 battle",
+      "lon": -0.588611111,
+      "lat": 46.938055555,
+      "startYear": 1793
+    },
+    {
+      "id": "Q2890645",
+      "name": "Battle of Bauches",
+      "type": "battle",
+      "description": "1794 battle",
+      "lon": -1.464611944,
+      "lat": 47.129181111,
+      "startYear": 1794
+    },
+    {
+      "id": "Q2890652",
+      "name": "Battle of Clouzeaux",
+      "type": "battle",
+      "description": "1794 battle",
+      "lon": -1.5075,
+      "lat": 46.630833333,
+      "startYear": 1794
+    },
+    {
+      "id": "Q2890666",
+      "name": "Battle of Gonaïves",
+      "type": "battle",
+      "description": "1794 battle",
+      "lon": -72.683,
+      "lat": 19.45,
+      "startYear": 1794
+    },
+    {
+      "id": "Q2890670",
+      "name": "Battle of Les Irois",
+      "type": "battle",
+      "description": "1796 battle",
+      "lon": -74.45,
+      "lat": 18.5,
+      "startYear": 1796
+    },
+    {
+      "id": "Q2890671",
+      "name": "Battle of Iffs",
+      "type": "battle",
+      "description": "1795 battle",
+      "lon": -1.86556,
+      "lat": 48.28861,
+      "startYear": 1795
+    },
+    {
+      "id": "Q2890674",
+      "name": "Battle of Landes-Genusson",
+      "type": "battle",
+      "description": "1795 battle",
+      "lon": -1.117222222,
+      "lat": 46.966388888,
+      "startYear": 1795
+    },
+    {
+      "id": "Q2890676",
+      "name": "Battle of Landes de Béjarry",
+      "type": "battle",
+      "description": "1795 battle",
+      "lon": -1.423888888,
+      "lat": 46.808611111,
+      "startYear": 1795
+    },
+    {
+      "id": "Q2890688",
+      "name": "Battle of Quatre Chemins",
+      "type": "battle",
+      "description": "1793 battle",
+      "lon": -1.138888888,
+      "lat": 46.809722222,
+      "startYear": 1793
+    },
+    {
+      "id": "Q2890696",
+      "name": "Battle of the Tombettes",
+      "type": "battle",
+      "description": "1800 battle",
+      "lon": -1.233888888,
+      "lat": 48.419166666,
+      "startYear": 1800
+    },
+    {
+      "id": "Q2890697",
+      "name": "千島戰役",
+      "type": "battle",
+      "description": "1760 operation against Montreal's outer defences in the French and Indian War",
+      "lon": -75.99472222,
+      "lat": 44.33388889,
+      "startYear": 1760
+    },
+    {
+      "id": "Q2890730",
+      "name": "Battle of Bois-de-Céné",
+      "type": "battle",
+      "description": "1793 battle",
+      "lon": -1.884166666,
+      "lat": 46.938888888,
+      "startYear": 1793
+    },
+    {
+      "id": "Q2890758",
+      "name": "Battle of Faouët",
+      "type": "battle",
+      "description": "1795 battle",
+      "lon": -3.490277777,
+      "lat": 48.033888888,
+      "startYear": 1795
+    },
+    {
+      "id": "Q2890769",
+      "name": "Battle of Geisberg",
+      "type": "battle",
+      "description": "1793 battle",
+      "lon": 7.946944,
+      "lat": 49.038333,
+      "startYear": 1793
+    },
+    {
+      "id": "Q2890770",
+      "name": "Battle of Grand Celland",
+      "type": "battle",
+      "description": "1796 battle",
+      "lon": -1.184722222,
+      "lat": 48.681666666,
+      "startYear": 1796
+    },
+    {
+      "id": "Q2890779",
+      "name": "Battle of Lorey",
+      "type": "battle",
+      "description": "1799 battle",
+      "lon": -1.305277777,
+      "lat": 49.094722222,
+      "startYear": 1799
+    },
+    {
+      "id": "Q2618930",
+      "name": "Battle of Stołowicze",
+      "type": "battle",
+      "description": "1771 war of the Bar Confederation battle",
+      "lon": 26.0367,
+      "lat": 53.2147,
+      "startYear": 1771
+    },
+    {
+      "id": "Q2628049",
+      "name": "捷楞策战役",
+      "type": "battle",
+      "description": "battle of the 1792 Polish–Russian War",
+      "lon": 26.87,
+      "lat": 49.53,
+      "startYear": 1792
+    },
+    {
+      "id": "Q2639377",
+      "name": "科尔贝格战役 (七年战争)",
+      "type": "battle",
+      "description": "维基媒体列表条目",
+      "lon": 15.5833,
+      "lat": 54.1833,
+      "startYear": 1759
+    },
+    {
+      "id": "Q2659387",
+      "name": "波泊戰役",
+      "type": "battle",
+      "description": "1759 battle of the French and Indian War",
+      "lon": -71.14726,
+      "lat": 46.89018,
+      "startYear": 1759
+    }
+  ]
+}

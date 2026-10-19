@@ -1,0 +1,906 @@
+{
+  "query": "battles_1250_1350_all",
+  "timestamp": 1779898804684,
+  "data": [
+    {
+      "id": "Q244356",
+      "name": "阿音札鲁特战役",
+      "type": "battle",
+      "description": "1260 battle between the Egyptian Sultanate and the Mongol Empire",
+      "lon": 35.357,
+      "lat": 32.55,
+      "startYear": 1260
+    },
+    {
+      "id": "Q152295",
+      "name": "沃林根戰役",
+      "type": "battle",
+      "description": "1288 medieval battle",
+      "lon": 6.887777777,
+      "lat": 51.0425,
+      "startYear": 1288
+    },
+    {
+      "id": "Q153712",
+      "name": "帕拉比亚戈战役",
+      "type": "battle",
+      "description": "1339 battle",
+      "lon": 8.85,
+      "lat": 45.55,
+      "startYear": 1339
+    },
+    {
+      "id": "Q181293",
+      "name": "Battle of Rozgony",
+      "type": "battle",
+      "description": "1312 battle",
+      "lon": 21.336136,
+      "lat": 48.744743,
+      "startYear": 1312
+    },
+    {
+      "id": "Q27759",
+      "name": "克雷西會戰",
+      "type": "battle",
+      "description": "1346 battle of the Hundred Years' War",
+      "lon": 1.887777777,
+      "lat": 50.256388888,
+      "startYear": 1346
+    },
+    {
+      "id": "Q44732",
+      "name": "金马刺战役",
+      "type": "battle",
+      "description": "1302 battle between Flamish citizens and the king",
+      "lon": 3.275833333,
+      "lat": 50.828888888,
+      "startYear": 1302
+    },
+    {
+      "id": "Q62417",
+      "name": "Battle of Turaida",
+      "type": "battle",
+      "description": "1298 middle ages battle",
+      "lon": 24.85,
+      "lat": 57.183333333,
+      "startYear": 1298
+    },
+    {
+      "id": "Q63701",
+      "name": "聖奧梅爾戰爭",
+      "type": "battle",
+      "description": "1340 battle",
+      "lon": 2.26167,
+      "lat": 50.7461,
+      "startYear": 1340
+    },
+    {
+      "id": "Q73105",
+      "name": "Battle of Westkapelle",
+      "type": "battle",
+      "description": "1253 conflict",
+      "lon": 3.58,
+      "lat": 51.52,
+      "startYear": 1253
+    },
+    {
+      "id": "Q114620",
+      "name": "凑川之战",
+      "type": "battle",
+      "description": "battle in Japan on July 4, 1336",
+      "lon": 135.165861111,
+      "lat": 34.679972222,
+      "startYear": 1336
+    },
+    {
+      "id": "Q326989",
+      "name": "莫加滕战役",
+      "type": "battle",
+      "description": "1315 battle during the creation of the Swiss Confederacy",
+      "lon": 8.633,
+      "lat": 47.09,
+      "startYear": 1315
+    },
+    {
+      "id": "Q402237",
+      "name": "Battle of Zappolino",
+      "type": "battle",
+      "description": "1325 battle",
+      "lon": 11.083333,
+      "lat": 44.5,
+      "startYear": 1325
+    },
+    {
+      "id": "Q499626",
+      "name": "斯特靈橋之役",
+      "type": "battle",
+      "description": "1297 battle of the First War of Scottish Independence",
+      "lon": -3.935,
+      "lat": 56.13,
+      "startYear": 1297
+    },
+    {
+      "id": "Q877777",
+      "name": "加梅尔斯多夫战役",
+      "type": "battle",
+      "description": "1313 battle",
+      "lon": 11.9451,
+      "lat": 48.5501,
+      "startYear": 1313
+    },
+    {
+      "id": "Q252698",
+      "name": "韋森堡戰役",
+      "type": "battle",
+      "description": "battle fought on February 18, 1268",
+      "lon": 26.35,
+      "lat": 59.35,
+      "startYear": 1268
+    },
+    {
+      "id": "Q283062",
+      "name": "貝內文托戰役",
+      "type": "battle",
+      "description": "1266 battle between the troops of Charles of Anjou and Manfred of Sicily",
+      "lon": 14.773333333,
+      "lat": 41.134166666,
+      "startYear": 1266
+    },
+    {
+      "id": "Q1339928",
+      "name": "伊夫舍姆战役",
+      "type": "battle",
+      "description": "1265 battle of the Second Barons' War in England",
+      "lon": -1.946111111,
+      "lat": 52.108055555,
+      "startYear": 1265
+    },
+    {
+      "id": "Q1369379",
+      "name": "白藤江之战",
+      "type": "battle",
+      "description": "1288 middle ages battle",
+      "lon": 106.629,
+      "lat": 20.937,
+      "startYear": 1288
+    },
+    {
+      "id": "Q1400402",
+      "name": "尼西亚帝国收复君士坦丁堡",
+      "type": "battle",
+      "description": "1261 battle between the Latin and Nicaean Empires",
+      "lon": 28.97694444,
+      "lat": 41.01666667,
+      "startYear": 1261
+    },
+    {
+      "id": "Q518759",
+      "name": "佩里塞奥里翁战役",
+      "type": "battle",
+      "description": "1345 battle",
+      "lon": 25.090807,
+      "lat": 41.103349,
+      "startYear": 1345
+    },
+    {
+      "id": "Q534990",
+      "name": "格尔海姆战役",
+      "type": "battle",
+      "description": "1298 battle",
+      "lon": 8.0443,
+      "lat": 49.59263333,
+      "startYear": 1298
+    },
+    {
+      "id": "Q1049530",
+      "name": "卡魯塞戰役",
+      "type": "battle",
+      "description": "1270 Medieval battle",
+      "lon": 23.5,
+      "lat": 58.5,
+      "startYear": 1270
+    },
+    {
+      "id": "Q1049697",
+      "name": "普沃切战役",
+      "type": "battle",
+      "description": "1331 battle",
+      "lon": 18.6439,
+      "lat": 52.6156,
+      "startYear": 1331
+    },
+    {
+      "id": "Q1078359",
+      "name": "崖门海战",
+      "type": "battle",
+      "description": "元朝正式灭亡宋朝的一场战役",
+      "lon": 113.08,
+      "lat": 22.27,
+      "startYear": 1279
+    },
+    {
+      "id": "Q1092099",
+      "name": "斯库奥达斯战役",
+      "type": "battle",
+      "description": "1258 battle",
+      "lon": 21.44055556,
+      "lat": 56.23638889,
+      "startYear": 1258
+    },
+    {
+      "id": "Q1092099",
+      "name": "斯库奥达斯战役",
+      "type": "battle",
+      "description": "1258 battle",
+      "lon": 21.44055556,
+      "lat": 56.23638889,
+      "startYear": 1259
+    },
+    {
+      "id": "Q1109794",
+      "name": "德西奧戰役",
+      "type": "battle",
+      "description": "1277 battle between House of Della Torre and House of Visconti to take control over Milan",
+      "lon": 9.216666666,
+      "lat": 45.616666666,
+      "startYear": 1277
+    },
+    {
+      "id": "Q1422948",
+      "name": "Battle of the Wülferichskamp",
+      "type": "battle",
+      "description": "1254 battle",
+      "lon": 7.48416667,
+      "lat": 51.585,
+      "startYear": 1254
+    },
+    {
+      "id": "Q1488817",
+      "name": "Battle of Orewin Bridge",
+      "type": "battle",
+      "description": "1282 battle",
+      "lon": -3.4617,
+      "lat": 52.1519,
+      "startYear": 1282
+    },
+    {
+      "id": "Q914152",
+      "name": "Battle of Teba",
+      "type": "battle",
+      "description": "1330 battle",
+      "lon": -4.918402777,
+      "lat": 36.983252777,
+      "startYear": 1330
+    },
+    {
+      "id": "Q939358",
+      "name": "第一次霍姆斯戰役",
+      "type": "battle",
+      "description": "1260 battle between Egyptians and Mongols",
+      "lon": 36.714462,
+      "lat": 34.723185,
+      "startYear": 1260
+    },
+    {
+      "id": "Q941093",
+      "name": "弗爾內戰役",
+      "type": "battle",
+      "description": "1297 battle in France",
+      "lon": 2.667935,
+      "lat": 51.072566,
+      "startYear": 1297
+    },
+    {
+      "id": "Q964226",
+      "name": "佩勒卡農戰役",
+      "type": "battle",
+      "description": "1329 battle",
+      "lon": 29.1503,
+      "lat": 41.01,
+      "startYear": 1329
+    },
+    {
+      "id": "Q1148862",
+      "name": "法瑞斯库尔战役",
+      "type": "battle",
+      "description": "1250 Egyptian victory in the major battle of the Seventh Crusade",
+      "lon": 31.714722222,
+      "lat": 31.329722222,
+      "startYear": 1250
+    },
+    {
+      "id": "Q1254898",
+      "name": "Battle of Lucocisterna",
+      "type": "battle",
+      "description": "conflict",
+      "lon": 9.11666667,
+      "lat": 39.21666667,
+      "startYear": 1324
+    },
+    {
+      "id": "Q1265867",
+      "name": "Battle of Gallipoli",
+      "type": "battle",
+      "description": "1312 battle",
+      "lon": 26.6711,
+      "lat": 40.4133,
+      "startYear": 1312
+    },
+    {
+      "id": "Q2388708",
+      "name": "Battle of Salé",
+      "type": "battle",
+      "description": "1260 attack on the Marinid city by the Crown of Castile",
+      "lon": -6.816667,
+      "lat": 34.05,
+      "startYear": 1260
+    },
+    {
+      "id": "Q2889149",
+      "name": "盧克馬霍爾戰役",
+      "type": "battle",
+      "description": "1349 battle",
+      "lon": 2.883333333,
+      "lat": 39.483333333,
+      "startYear": 1349
+    },
+    {
+      "id": "Q2889207",
+      "name": "Battle of Makryplagi",
+      "type": "battle",
+      "description": "1263 battle",
+      "lon": 22,
+      "lat": 37.17,
+      "startYear": 1263
+    },
+    {
+      "id": "Q587095",
+      "name": "蒙塔佩蒂之战",
+      "type": "battle",
+      "description": "1260 battle between the Italian republics of Florence and Siena",
+      "lon": 11.439444444,
+      "lat": 43.315277777,
+      "startYear": 1260
+    },
+    {
+      "id": "Q589318",
+      "name": "福爾柯克之役",
+      "type": "battle",
+      "description": "1298 battle of the First War of Scottish Independence",
+      "lon": -3.76,
+      "lat": 55.9875,
+      "startYear": 1298
+    },
+    {
+      "id": "Q599647",
+      "name": "Battle of Cassano",
+      "type": "battle",
+      "description": "1259 battle between the Guelphs and Ghibellines",
+      "lon": 9.516771,
+      "lat": 45.52606,
+      "startYear": 1259
+    },
+    {
+      "id": "Q600609",
+      "name": "杜尔贝战役",
+      "type": "battle",
+      "description": "battle in Latvia, 1260",
+      "lon": 21.35,
+      "lat": 56.595,
+      "startYear": 1260
+    },
+    {
+      "id": "Q611827",
+      "name": "布朗什塔克戰役",
+      "type": "battle",
+      "description": "1346 battle during the Hundred Years' War",
+      "lon": 1.683333333,
+      "lat": 50.166666666,
+      "startYear": 1346
+    },
+    {
+      "id": "Q616448",
+      "name": "尚托索战役",
+      "type": "battle",
+      "description": "1341 battle",
+      "lon": -1.292889,
+      "lat": 47.315972,
+      "startYear": 1341
+    },
+    {
+      "id": "Q1502715",
+      "name": "四條畷之戰",
+      "type": "battle",
+      "description": "1348 battle",
+      "lon": 135.649166666,
+      "lat": 34.732416666,
+      "startYear": 1348
+    },
+    {
+      "id": "Q1509619",
+      "name": "巴菲尤斯戰役",
+      "type": "battle",
+      "description": "1302 Ottoman-Byzantine military engagement",
+      "lon": 29.483333333,
+      "lat": 40.683333333,
+      "startYear": 1302
+    },
+    {
+      "id": "Q1509663",
+      "name": "Battle of Dunbar",
+      "type": "battle",
+      "description": "1296 battle during the First War of Scottish Independence",
+      "lon": -2.52119,
+      "lat": 55.97692,
+      "startYear": 1296
+    },
+    {
+      "id": "Q1576140",
+      "name": "Battle of St Pol de Léon",
+      "type": "battle",
+      "description": "1346 battle",
+      "lon": -3.985,
+      "lat": 48.686111111,
+      "startYear": 1346
+    },
+    {
+      "id": "Q1582486",
+      "name": "欧布罗什战役",
+      "type": "battle",
+      "description": "1345 Middle Ages battle",
+      "lon": 0.895833,
+      "lat": 45.2089,
+      "startYear": 1345
+    },
+    {
+      "id": "Q1613521",
+      "name": "Battle of Roslin",
+      "type": "battle",
+      "description": "1303 battle",
+      "lon": -3.16666667,
+      "lat": 55.85,
+      "startYear": 1303
+    },
+    {
+      "id": "Q2889701",
+      "name": "Battle of Prinitza",
+      "type": "battle",
+      "description": "1263 battle",
+      "lon": 21.5,
+      "lat": 37.67,
+      "startYear": 1263
+    },
+    {
+      "id": "Q2497690",
+      "name": "朗奴士威戰役",
+      "type": "battle",
+      "description": "1275 battle",
+      "lon": -4.618,
+      "lat": 54.081,
+      "startYear": 1275
+    },
+    {
+      "id": "Q2527770",
+      "name": "代维纳战役",
+      "type": "battle",
+      "description": "1279 battle in the Balkans",
+      "lon": 26.45,
+      "lat": 42.91666667,
+      "startYear": 1279
+    },
+    {
+      "id": "Q2571558",
+      "name": "马里战役",
+      "type": "battle",
+      "description": "1266 battle in Mari between Egypt and Armenian Kingdom of Cilicia",
+      "lon": 36.364167,
+      "lat": 36.531389,
+      "startYear": 1266
+    },
+    {
+      "id": "Q2889962",
+      "name": "塞特波齐战役",
+      "type": "battle",
+      "description": "1263 battle off the island of Settepozzi",
+      "lon": 23.1,
+      "lat": 37.25,
+      "startYear": 1263
+    },
+    {
+      "id": "Q1640209",
+      "name": "埃兹卡乌克战役",
+      "type": "battle",
+      "description": "1279 middle ages battle",
+      "lon": 25.25,
+      "lat": 56.6,
+      "startYear": 1279
+    },
+    {
+      "id": "Q1664736",
+      "name": "Battle of Frohse",
+      "type": "battle",
+      "description": "1278 battle",
+      "lon": 11.690231,
+      "lat": 52.047499,
+      "startYear": 1278
+    },
+    {
+      "id": "Q1749390",
+      "name": "Battle of Coffrane",
+      "type": "battle",
+      "description": "1296 battle",
+      "lon": 6.86666667,
+      "lat": 47.01666667,
+      "startYear": 1296
+    },
+    {
+      "id": "Q667606",
+      "name": "Battle of Laupen",
+      "type": "battle",
+      "description": "battle in 1339 between Bern and Freibur",
+      "lon": 7.23333333,
+      "lat": 46.9,
+      "startYear": 1339
+    },
+    {
+      "id": "Q688081",
+      "name": "米爾多夫戰役",
+      "type": "battle",
+      "description": "1322 battle",
+      "lon": 12.55972222,
+      "lat": 48.27638889,
+      "startYear": 1322
+    },
+    {
+      "id": "Q693989",
+      "name": "Battle of Strėva",
+      "type": "battle",
+      "description": "1348 battle",
+      "lon": 24.4167,
+      "lat": 54.8,
+      "startYear": 1348
+    },
+    {
+      "id": "Q3636244",
+      "name": "Battle of the Pass of Brander",
+      "type": "battle",
+      "description": "battle between Robert the Bruce and the MacDougalls of Argyll in 1308",
+      "lon": -5.18027778,
+      "lat": 56.41305556,
+      "startYear": 1308
+    },
+    {
+      "id": "Q3636315",
+      "name": "Battle of Aidu de Turdu",
+      "type": "battle",
+      "description": "1347 battle",
+      "lon": 9,
+      "lat": 40.3833,
+      "startYear": 1347
+    },
+    {
+      "id": "Q3636320",
+      "name": "Battle of Altopascio",
+      "type": "battle",
+      "description": "",
+      "lon": 10.6717845,
+      "lat": 43.81472633,
+      "startYear": 1325
+    },
+    {
+      "id": "Q1786470",
+      "name": "爾平河之戰",
+      "type": "battle",
+      "description": "Semi-legendary, supposed 1320s battle between Lithuania and Kiev",
+      "lon": 30.216667,
+      "lat": 50.383333,
+      "startYear": 1320
+    },
+    {
+      "id": "Q1792643",
+      "name": "萨拉多河战役",
+      "type": "battle",
+      "description": "battle occurring in Spain on 30 October 1340",
+      "lon": -5.615,
+      "lat": 36.045,
+      "startYear": 1340
+    },
+    {
+      "id": "Q1794521",
+      "name": "Battle of Hova",
+      "type": "battle",
+      "description": "fought in 1275",
+      "lon": 14.216666666,
+      "lat": 58.85,
+      "startYear": 1275
+    },
+    {
+      "id": "Q1887009",
+      "name": "莫尔莱战役",
+      "type": "battle",
+      "description": "1342 battle during the Hundred Years' War",
+      "lon": -3.74,
+      "lat": 48.63,
+      "startYear": 1342
+    },
+    {
+      "id": "Q1887057",
+      "name": "哈利頓山戰役",
+      "type": "battle",
+      "description": "1333 part of the Second War of Scottish Independence",
+      "lon": -2.05,
+      "lat": 55.7875,
+      "startYear": 1333
+    },
+    {
+      "id": "Q1889668",
+      "name": "鲁斯卡斯特罗战役",
+      "type": "battle",
+      "description": "1332 battle in Bulgaria",
+      "lon": 27.20166667,
+      "lat": 42.46694444,
+      "startYear": 1332
+    },
+    {
+      "id": "Q1894062",
+      "name": "塔利亞科佐戰役",
+      "type": "battle",
+      "description": "1268 battle in Italy",
+      "lon": 13.25667,
+      "lat": 42.06583,
+      "startYear": 1268
+    },
+    {
+      "id": "Q2890289",
+      "name": "Battle of Varey",
+      "type": "battle",
+      "description": "1325 battle in France",
+      "lon": 5.425278,
+      "lat": 46.007778,
+      "startYear": 1325
+    },
+    {
+      "id": "Q700194",
+      "name": "杜恩克鲁特战役",
+      "type": "battle",
+      "description": "1278 medieval battle in Austria",
+      "lon": 16.877316666,
+      "lat": 48.481513888,
+      "startYear": 1278
+    },
+    {
+      "id": "Q3636400",
+      "name": "Battle of the Cyzicus",
+      "type": "battle",
+      "description": "1303 battle",
+      "lon": 27.88861111,
+      "lat": 40.38,
+      "startYear": 1303
+    },
+    {
+      "id": "Q3636428",
+      "name": "Battle of Falconaria",
+      "type": "battle",
+      "description": "battle in the War of the Sicilian Vespers, 1 December 1299",
+      "lon": 12.5322,
+      "lat": 37.9372,
+      "startYear": 1299
+    },
+    {
+      "id": "Q3636441",
+      "name": "Battle of Gamenario",
+      "type": "battle",
+      "description": "1345 battle in Italy",
+      "lon": 7.77530842,
+      "lat": 44.95308608,
+      "startYear": 1345
+    },
+    {
+      "id": "Q763428",
+      "name": "佩拉戈尼亚战役",
+      "type": "battle",
+      "description": "1259 battle",
+      "lon": 21.566666666,
+      "lat": 40.816666666,
+      "startYear": 1259
+    },
+    {
+      "id": "Q2628082",
+      "name": "埃尔比斯坦之战",
+      "type": "battle",
+      "description": "1277 battle between the Sultanate of Egypt and the Seljuk Sultanate of Rum",
+      "lon": 37.1883,
+      "lat": 38.2014,
+      "startYear": 1277
+    },
+    {
+      "id": "Q2657536",
+      "name": "Battle of Boroughbridge",
+      "type": "battle",
+      "description": "1322 battle of the Wars of Scottish Independence",
+      "lon": -1.395833333,
+      "lat": 54.096944444,
+      "startYear": 1322
+    },
+    {
+      "id": "Q1968883",
+      "name": "Battle of Methven",
+      "type": "battle",
+      "description": "1306 fought by Robert the Bruce",
+      "lon": -3.58201,
+      "lat": 56.42014,
+      "startYear": 1306
+    },
+    {
+      "id": "Q2011697",
+      "name": "霍克戰役",
+      "type": "battle",
+      "description": "1318 battle",
+      "lon": -6.38,
+      "lat": 54.04,
+      "startYear": 1318
+    },
+    {
+      "id": "Q3766009",
+      "name": "Battle of Pieve al Toppo",
+      "type": "battle",
+      "description": "battle between Arezzo and Siena in 1288",
+      "lon": 11.79511342,
+      "lat": 43.40674569,
+      "startYear": 1288
+    },
+    {
+      "id": "Q3817235",
+      "name": "馬諾拉達戰役",
+      "type": "battle",
+      "description": "1316 battle",
+      "lon": 21.35,
+      "lat": 38.05,
+      "startYear": 1316
+    },
+    {
+      "id": "Q3920750",
+      "name": "Battle of Medininkai",
+      "type": "battle",
+      "description": "battle in 1320 between the Teutonic Knights and the Grand Duchy of Lithuania",
+      "lon": 22.37,
+      "lat": 55.74,
+      "startYear": 1320
+    },
+    {
+      "id": "Q3401002",
+      "name": "Battle of Cadfan",
+      "type": "battle",
+      "description": "1257 battle",
+      "lon": -3.995,
+      "lat": 51.884,
+      "startYear": 1257
+    },
+    {
+      "id": "Q4590555",
+      "name": "Battle of Loudoun Hill",
+      "type": "battle",
+      "description": "1307 Medieval battle",
+      "lon": -4.21068,
+      "lat": 55.60926,
+      "startYear": 1307
+    },
+    {
+      "id": "Q4677183",
+      "name": "Action at Lanark",
+      "type": "battle",
+      "description": "1297 battle in Scotland",
+      "lon": -3.777,
+      "lat": 55.6749,
+      "startYear": 1297
+    },
+    {
+      "id": "Q2064142",
+      "name": "阿尔米洛斯战役",
+      "type": "battle",
+      "description": "1311 battle in present-day Greece",
+      "lon": 22.8401,
+      "lat": 39.1587,
+      "startYear": 1311
+    },
+    {
+      "id": "Q2092043",
+      "name": "Battle of Arques",
+      "type": "battle",
+      "description": "1303 battle in France",
+      "lon": 2.3033,
+      "lat": 50.7361,
+      "startYear": 1303
+    },
+    {
+      "id": "Q2094999",
+      "name": "Battle of Skafida",
+      "type": "battle",
+      "description": "1304 battle",
+      "lon": 27.40651,
+      "lat": 42.3425,
+      "startYear": 1304
+    },
+    {
+      "id": "Q2097266",
+      "name": "拉格斯戰役",
+      "type": "battle",
+      "description": "1263 battle of the Scottish-Norwegian War",
+      "lon": -4.867777777,
+      "lat": 55.7925,
+      "startYear": 1263
+    },
+    {
+      "id": "Q2164009",
+      "name": "劉易斯戰役",
+      "type": "battle",
+      "description": "1264 battle of the Second Barons' War",
+      "lon": -0.013888888,
+      "lat": 50.878611111,
+      "startYear": 1264
+    },
+    {
+      "id": "Q2204399",
+      "name": "内维尔十字之战",
+      "type": "battle",
+      "description": "1346 Medieval battle between England and Scotland",
+      "lon": -1.593333333,
+      "lat": 54.7725,
+      "startYear": 1346
+    },
+    {
+      "id": "Q2724154",
+      "name": "Battle of Adrianople",
+      "type": "battle",
+      "description": "1254 battle",
+      "lon": 26.566667,
+      "lat": 41.666667,
+      "startYear": 1254
+    },
+    {
+      "id": "Q2726734",
+      "name": "第二次霍姆斯戰役",
+      "type": "battle",
+      "description": "1281 battle between Egyptians and Mongols",
+      "lon": 36.714462,
+      "lat": 34.723185,
+      "startYear": 1281
+    },
+    {
+      "id": "Q2737232",
+      "name": "Battle of Old Byland",
+      "type": "battle",
+      "description": "battle during the Wars of Scottish Independence (1322)",
+      "lon": -1.159,
+      "lat": 54.227,
+      "startYear": 1322
+    },
+    {
+      "id": "Q2799746",
+      "name": "Battle of Hausbergen",
+      "type": "battle",
+      "description": "1262 conflict to free the city of Strasbourg",
+      "lon": 7.671126202,
+      "lat": 48.608588268,
+      "startYear": 1262
+    },
+    {
+      "id": "Q3406664",
+      "name": "Battle of Maes Moydog",
+      "type": "battle",
+      "description": "battle in 1295 during the revolt against English rule",
+      "lon": -3.324,
+      "lat": 52.649,
+      "startYear": 1295
+    },
+    {
+      "id": "Q4871579",
+      "name": "Battle of Llandeilo Fawr",
+      "type": "battle",
+      "description": "battle between the Welsh and the invading English; fought 16 June 1286",
+      "lon": -3.996,
+      "lat": 51.884,
+      "startYear": 1282
+    }
+  ]
+}

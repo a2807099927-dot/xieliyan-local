@@ -1,0 +1,5160 @@
+/* ═══════════════════════════════════════════════════════════════════
+ * IDE 写作工作台主题（设计稿 v4 复刻）
+ *
+ * 加载顺序：main.tsx 中必须在 styles.css 之后 import，靠后置覆盖旧主题变量。
+ * 维护边界：
+ *   - 本文件只做「视觉层」，不含任何布局结构假设，删掉它应用仍能跑（只是回到旧配色）。
+ *   - 第一段是设计稿原始 token；第二段把 token 映射到项目既有语义变量
+ *     （--bg-primary / --text-primary / --border-color 等），旧组件无需改动即可换肤。
+ *   - 第三段起是设计稿新增组件类，统一 wz-ide- 前缀，避免与旧类名冲突。
+ *   - 主题被强制为深色 IDE：对所有 data-theme 值生效，壁纸层已弃用。
+ * ═══════════════════════════════════════════════════════════════════ */
+
+/* ── 1. 设计稿原始 token ── */
+:root,
+:root[data-theme],
+:root[data-theme='dark'],
+:root[data-theme='light'],
+:root[data-theme='parchment'],
+:root[data-theme='matcha'] {
+  --ide-ab-bg: #141416;
+  --ide-sb-bg: #18181c;
+  --ide-ed-bg: #1e1e22;
+  --ide-pn-bg: #222226;
+  --ide-tab-bg: #252529;
+  --ide-tab-active: #1e1e22;
+  --ide-hover: #2e2e34;
+  --ide-list-active: #32323a;
+  --ide-border: #28282e;
+  --ide-border-strong: #3f3f48;
+
+  --ide-t1: #e2e2e6;
+  --ide-t2: #9e9ea6;
+  --ide-t3: #686870;
+  --ide-t4: #4a4a50;
+
+  --ide-accent: #528bf2;
+  --ide-accent-hover: #3d7bf0;
+  --ide-accent-soft: rgba(82, 139, 242, 0.16);
+  --ide-accent-line: rgba(82, 139, 242, 0.28);
+
+  --ide-green: #4ec9a0;
+  --ide-green-soft: rgba(78, 201, 160, 0.13);
+  --ide-green-line: rgba(78, 201, 160, 0.35);
+  --ide-amber: #e0af68;
+  --ide-red: #e06c75;
+  --ide-purple: #c586f0;
+
+  --ide-statusbar: #18181c;
+  --ide-statusbar-2: #141416;
+
+  --ide-font-ui: 'Segoe UI', 'Microsoft YaHei UI', 'PingFang SC', system-ui, sans-serif;
+  --ide-font-serif: 'Source Han Serif SC', 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+  --ide-font-mono: 'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace;
+
+  /* 各区域固定尺寸，组件与 CSS 共用，避免两边写死不同步 */
+  --ide-titlebar-h: 38px;
+  --ide-activitybar-w: 50px;
+  --ide-sidebar-w: 252px;
+  --ide-agent-w: 404px;
+  --ide-etabs-h: 36px;
+  --ide-toolbar-h: 40px;
+  --ide-statusbar-h: 24px;
+}
+
+:root[data-theme='matcha'] {
+  --ide-ab-bg: #d7e0d3;
+  --ide-sb-bg: #e0e8dc;
+  --ide-ed-bg: #eaf1e6;
+  --ide-pn-bg: #e4ece0;
+  --ide-tab-bg: #d5ddd1;
+  --ide-tab-active: #eaf1e6;
+  --ide-hover: #cad2c6;
+  --ide-list-active: #bfc8bc;
+  --ide-border: #b8c4b4;
+  --ide-border-strong: #9ca997;
+  --ide-t1: #202d23;
+  --ide-t2: #455549;
+  --ide-t3: #6b7b6f;
+  --ide-t4: #87978b;
+  --ide-accent: #3d6b43;
+  --ide-accent-hover: #2e5233;
+  --ide-accent-soft: rgba(61, 107, 67, 0.14);
+  --ide-accent-line: rgba(61, 107, 67, 0.28);
+  --ide-green: #4f7a52;
+  --ide-green-soft: rgba(79, 122, 82, 0.13);
+  --ide-green-line: rgba(79, 122, 82, 0.30);
+  --ide-amber: #b88a24;
+  --ide-red: #a33d3d;
+  --ide-purple: #635787;
+  --ide-statusbar: #e0e8dc;
+  --ide-statusbar-2: #d7e0d3;
+}
+
+:root[data-theme='parchment'] {
+  --ide-ab-bg: #ecdcc0;
+  --ide-sb-bg: #f3e6cd;
+  --ide-ed-bg: #faf2e0;
+  --ide-pn-bg: #f5ebcf;
+  --ide-tab-bg: #e6d6b6;
+  --ide-tab-active: #faf2e0;
+  --ide-hover: #dac8a4;
+  --ide-list-active: #d1be99;
+  --ide-border: #c4b391;
+  --ide-border-strong: #a89774;
+  --ide-t1: #3a2818;
+  --ide-t2: #634a2e;
+  --ide-t3: #8f6f44;
+  --ide-t4: #a88a5c;
+  --ide-accent: #94624a;
+  --ide-accent-hover: #7a4d38;
+  --ide-accent-soft: rgba(148, 98, 74, 0.14);
+  --ide-accent-line: rgba(148, 98, 74, 0.28);
+  --ide-green: #6a7a3a;
+  --ide-green-soft: rgba(106, 122, 58, 0.13);
+  --ide-green-line: rgba(106, 122, 58, 0.30);
+  --ide-amber: #b07a20;
+  --ide-red: #9a4444;
+  --ide-purple: #7a5680;
+  --ide-statusbar: #f3e6cd;
+  --ide-statusbar-2: #ecdcc0;
+}
+
+:root[data-theme='light'] {
+  --ide-ab-bg: #ebeae4;
+  --ide-sb-bg: #f2f1eb;
+  --ide-ed-bg: #f8f7f2;
+  --ide-pn-bg: #efeee8;
+  --ide-tab-bg: #e3e2db;
+  --ide-tab-active: #f8f7f2;
+  --ide-hover: #dad9d1;
+  --ide-list-active: #d0cfc6;
+  --ide-border: #c5c4bb;
+  --ide-border-strong: #a8a79d;
+  --ide-t1: #2e2d2a;
+  --ide-t2: #595752;
+  --ide-t3: #85837d;
+  --ide-t4: #a19f97;
+  --ide-accent: #476f8a;
+  --ide-accent-hover: #395c74;
+  --ide-accent-soft: rgba(71, 111, 138, 0.12);
+  --ide-accent-line: rgba(71, 111, 138, 0.26);
+  --ide-green: #4a7a55;
+  --ide-green-soft: rgba(74, 122, 85, 0.13);
+  --ide-green-line: rgba(74, 122, 85, 0.30);
+  --ide-amber: #a8772f;
+  --ide-red: #a23b3b;
+  --ide-purple: #6a5aa0;
+  --ide-statusbar: #f2f1eb;
+  --ide-statusbar-2: #ebeae4;
+}
+
+/* ── 2. 映射到项目既有语义变量（旧组件零改动换肤） ── */
+:root,
+:root[data-theme],
+:root[data-theme='dark'],
+:root[data-theme='light'],
+:root[data-theme='parchment'],
+:root[data-theme='matcha'] {
+  --bg: var(--ide-ed-bg);
+  --bg-primary: var(--ide-ed-bg);
+  --bg-secondary: var(--ide-sb-bg);
+  --bg-tertiary: var(--ide-pn-bg);
+  --surface: var(--ide-tab-bg);
+  --surface-strong: var(--ide-hover);
+  --card: var(--ide-pn-bg);
+
+  --text: var(--ide-t1);
+  --text-primary: var(--ide-t1);
+  --text-secondary: var(--ide-t2);
+  --text-muted: var(--ide-t3);
+  --muted: var(--ide-t3);
+
+  --border-color: var(--ide-border);
+  --shadow-color: rgba(0, 0, 0, 0.55);
+  --modal-bg-mix: rgba(27, 27, 31, 0.97);
+
+  --accent: var(--ide-accent);
+  --accent-glow: var(--ide-accent-soft);
+  --success: var(--ide-green);
+  --danger: var(--ide-red);
+
+  --dz-bg: var(--ide-ed-bg);
+  --dz-surface: var(--ide-hover);
+  --dz-panel: var(--ide-pn-bg);
+  --dz-border: var(--ide-border);
+  --dz-text: var(--ide-t1);
+  --dz-muted: var(--ide-t3);
+  --dz-primary: var(--ide-accent);
+  --dz-primary-strong: var(--ide-accent);
+  --dz-primary-soft: var(--ide-accent-soft);
+  --dz-danger: var(--ide-red);
+  --dz-shadow: 0 12px 42px rgba(0, 0, 0, 0.55);
+
+  --editor-canvas-bg: var(--ide-ed-bg);
+  --editor-paper-bg: var(--ide-ed-bg);
+  --editor-toolbar-bg: var(--ide-ed-bg);
+
+  --ide-line: var(--ide-border);
+  --ide-line-strong: var(--ide-border-strong);
+
+  --font-ui: var(--ide-font-ui);
+  --app-font-family: var(--ide-font-ui);
+  --font-body: var(--ide-font-serif);
+
+  /* IDE 皮肤走平面风：关掉旧主题的玻璃/发光/文字阴影 */
+  --app-panel-bg: transparent;
+  --app-panel-blur: 0px;
+  --ui-text-shadow: none;
+  --wz-radius: 6px;
+  --wz-border-width: 1px;
+  --obsidian-void: var(--ide-ed-bg);
+
+  --chrono-rim: var(--ide-border);
+  --chrono-blur: 0px;
+  --chrono-contrast: 1;
+  --chrono-depth: rgba(0, 0, 0, 0.4);
+}
+
+/* ══ 浅色/暖色写作主题专属语义覆盖 ══
+ * 仅当切换到羊皮纸/暖白/竹青等浅纸主题时，把原本写死的深色阴影、
+ * 弹窗底色翻转为柔暖版本，避免纸面上浮脏黑阴影、弹窗发灰。
+ */
+:root[data-theme='parchment'],
+:root[data-theme='light'],
+:root[data-theme='matcha'] {
+  --shadow-color: rgba(60, 45, 20, 0.08);
+  --dz-shadow: 0 12px 42px rgba(60, 45, 20, 0.12);
+  --chrono-depth: rgba(40, 30, 10, 0.10);
+  --modal-bg-mix: rgba(255, 255, 255, 0.98);
+}
+:root[data-theme='parchment'] { --modal-bg-mix: rgba(250, 242, 224, 0.98); }
+:root[data-theme='matcha']   { --modal-bg-mix: rgba(234, 241, 230, 0.98); }
+:root[data-theme='light']    { --modal-bg-mix: rgba(248, 247, 242, 0.98); }
+
+/* ══ 边界轻量化：把 --border-color 改成半透明叠加色，1px 边框视觉更细更轻 ══
+ * 深色主题用半透白、浅色/暖纸主题用半透墨，避免实色硬边带来的"厚重"感。
+ * 用 1px（保持非 HiDPI 也可见），靠低 alpha 让它"看起来更细更轻"。
+ */
+:root[data-theme='dark'],
+:root[data-theme='inked-glacier'],
+:root[data-theme='warm-amber'],
+:root[data-theme='zen-mist'],
+:root[data-theme='forest'],
+:root[data-theme='blue'],
+:root[data-theme='immersive'],
+:root[data-theme='custom'] {
+  --border-color: rgba(255, 255, 255, 0.07);
+  --ide-border: rgba(255, 255, 255, 0.07);
+}
+:root[data-theme='parchment'],
+:root[data-theme='light'],
+:root[data-theme='sepia'],
+:root[data-theme='matcha'] {
+  --border-color: rgba(40, 30, 15, 0.10);
+  --ide-border: rgba(40, 30, 15, 0.10);
+}
+/* 通用：让所有用 var(--border-color) 的 1px 边框自带轻微亚像素感 */
+.wz-body-host * {
+  border-color: var(--border-color);
+}
+
+/* ── 3. 全局基础 ── */
+body.wz-body-host {
+  font-family: var(--ide-font-ui);
+  font-size: 13px;
+  color: var(--ide-t1);
+  background: var(--ide-ed-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* VS Code 风格滚动条：10px 轨道 + 2px 内缩滑块 */
+.wz-body-host ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.wz-body-host ::-webkit-scrollbar-thumb {
+  background: var(--ide-border-strong);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.wz-body-host ::-webkit-scrollbar-thumb:hover {
+  background: #4a4a54;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.wz-body-host ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ── 4. TitleBar ── */
+.wz-ide-titlebar {
+  height: var(--ide-titlebar-h);
+  flex: 0 0 var(--ide-titlebar-h);
+  display: flex;
+  align-items: center;
+  background: var(--ide-ab-bg);
+  border-bottom: 1px solid var(--ide-border);
+  padding: 0 8px 0 12px;
+  user-select: none;
+}
+.wz-ide-tb-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 14px;
+}
+.wz-ide-tb-badge {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #4f8ef7, #7a5cf5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+.wz-ide-tb-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ide-t1);
+  letter-spacing: 0.02em;
+}
+.wz-ide-tb-cmd {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto;
+  background: var(--ide-hover);
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  padding: 3px 10px;
+  color: var(--ide-t3);
+  font-size: 12px;
+  min-width: 220px;
+  justify-content: center;
+}
+.wz-ide-tb-cmd:hover {
+  color: var(--ide-t2);
+  border-color: var(--ide-border-strong);
+}
+.wz-ide-tb-win {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.wz-ide-tb-win button {
+  width: 38px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-t2);
+  border-radius: 4px;
+}
+.wz-ide-tb-win button:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-ide-tb-win button.wz-ide-close:hover {
+  background: #e81123;
+  color: #fff;
+}
+.wz-ide-tb-dirty {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ide-amber);
+  display: inline-block;
+}
+
+/* ── 5. ActivityBar ── */
+.wz-ide-activitybar {
+  width: var(--ide-activitybar-w);
+  flex: 0 0 var(--ide-activitybar-w);
+  background: var(--ide-ab-bg);
+  border-right: 1px solid var(--ide-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0;
+  user-select: none;
+}
+.wz-ide-ab-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+.wz-ide-ab-item {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-t3);
+  border-radius: 8px;
+  transition: color 0.12s, background 0.12s;
+}
+.wz-ide-ab-item:hover {
+  color: var(--ide-t1);
+  background: var(--ide-hover);
+}
+.wz-ide-ab-item.is-active {
+  color: var(--ide-t1);
+}
+/* 选中态左侧蓝条：设计稿标志性元素 */
+.wz-ide-ab-item.is-active::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 8px;
+  bottom: 8px;
+  width: 2.5px;
+  border-radius: 3px;
+  background: var(--ide-accent);
+}
+.wz-ide-ab-badge {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ide-green);
+  border: 1.5px solid var(--ide-ab-bg);
+}
+.wz-ide-ab-sep {
+  width: 24px;
+  height: 1px;
+  background: var(--ide-border-strong);
+  margin: 7px 0;
+}
+.wz-ide-ab-spacer {
+  flex: 1;
+}
+.wz-ide-ab-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.wz-ide-ab-avatar:hover {
+  border-color: var(--ide-accent);
+}
+
+/* ── 6. SideBar ── */
+.wz-ide-sidebar {
+  width: var(--ide-sidebar-w);
+  flex: 0 0 var(--ide-sidebar-w);
+  background: var(--ide-sb-bg);
+  border-right: 1px solid var(--ide-border);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.wz-ide-sb-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px 8px;
+}
+.wz-ide-sb-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  color: var(--ide-t2);
+}
+.wz-ide-sb-actions {
+  display: flex;
+  gap: 2px;
+}
+.wz-ide-icon-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-t3);
+  border-radius: 5px;
+}
+.wz-ide-icon-btn:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-ide-sb-search {
+  margin: 0 10px 8px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  padding: 5px 9px;
+  color: var(--ide-t3);
+}
+.wz-ide-sb-search input {
+  flex: 1;
+  min-width: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--ide-t1);
+  font-size: 12px;
+  font-family: var(--ide-font-ui);
+}
+.wz-ide-sb-search input::placeholder {
+  color: var(--ide-t4);
+}
+.wz-ide-sb-tree {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 2px 6px 10px;
+}
+.wz-ide-sb-foot {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  border-top: 1px solid var(--ide-border);
+}
+.wz-ide-sb-foot button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  background: var(--ide-hover);
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+}
+.wz-ide-sb-foot button:hover {
+  color: var(--ide-t1);
+  border-color: var(--ide-border-strong);
+}
+.wz-ide-sb-foot button.is-primary {
+  background: var(--ide-accent);
+  border-color: var(--ide-accent);
+  color: #fff;
+}
+.wz-ide-sb-foot button.is-primary:hover {
+  background: var(--ide-accent-hover);
+}
+
+/* 树：卷 / 章 */
+.wz-ide-tree-vol {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 4px;
+  border-radius: 5px;
+  color: var(--ide-t2);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+.wz-ide-tree-vol:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-ide-chev {
+  transition: transform 0.12s;
+  color: var(--ide-t3);
+  flex: 0 0 auto;
+}
+.wz-ide-tree-vol.is-closed .wz-ide-chev {
+  transform: rotate(-90deg);
+}
+.wz-ide-vol-count {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--ide-t4);
+  font-weight: 500;
+  font-family: var(--ide-font-mono);
+}
+.wz-ide-tree-ch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 6px 0 20px;
+  height: 26px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: var(--ide-t2);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.wz-ide-tree-ch:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-ide-ch-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wz-ide-ch-wc {
+  font-size: 10px;
+  color: var(--ide-t4);
+  font-family: var(--ide-font-mono);
+  flex: 0 0 auto;
+}
+/* 未保存=绿点，已保存=灰点 */
+.wz-ide-ch-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ide-green);
+  flex: 0 0 5px;
+  opacity: 0.85;
+}
+.wz-ide-ch-dot.is-saved {
+  background: var(--ide-t4);
+}
+.wz-ide-tree-ch.is-active {
+  background: var(--ide-list-active);
+  color: var(--ide-t1);
+}
+.wz-ide-tree-ch.is-active::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--ide-accent);
+}
+
+/* ── 7. 编辑器标签栏 ── */
+.wz-ide-etabs {
+  flex: 0 0 var(--ide-etabs-h);
+  display: flex;
+  align-items: stretch;
+  background: var(--ide-sb-bg);
+  border-bottom: 1px solid var(--ide-border);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.wz-ide-etabs::-webkit-scrollbar {
+  height: 0;
+}
+.wz-ide-etab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  font-size: 12px;
+  color: var(--ide-t3);
+  background: var(--ide-tab-bg);
+  border-right: 1px solid var(--ide-border);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+}
+.wz-ide-etab:hover {
+  color: var(--ide-t2);
+}
+.wz-ide-etab.is-active {
+  background: var(--ide-tab-active);
+  color: var(--ide-t1);
+}
+.wz-ide-etab.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1.5px;
+  background: var(--ide-accent);
+}
+.wz-ide-etab-dirty {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ide-amber);
+  flex: 0 0 auto;
+}
+.wz-ide-etab-x {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--ide-t3);
+  opacity: 0;
+}
+.wz-ide-etab:hover .wz-ide-etab-x {
+  opacity: 1;
+}
+.wz-ide-etab-x:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-ide-etab-add {
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-t3);
+  flex: 0 0 32px;
+}
+.wz-ide-etab-add:hover {
+  color: var(--ide-t1);
+  background: var(--ide-hover);
+}
+
+/* ── 8. 工具栏 ── */
+.wz-ide-toolbar {
+  flex: 0 0 var(--ide-toolbar-h);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 8px;
+  background: var(--ide-ed-bg);
+  border-bottom: 1px solid var(--ide-border);
+  user-select: none;
+}
+.wz-ide-tl-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-t2);
+  border-radius: 6px;
+  flex: 0 0 auto;
+}
+.wz-ide-tl-btn:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-ide-tl-btn:disabled {
+  color: var(--ide-t4);
+  cursor: default;
+}
+.wz-ide-tl-btn:disabled:hover {
+  background: none;
+  color: var(--ide-t4);
+}
+.wz-ide-tl-sep {
+  width: 1px;
+  height: 18px;
+  background: var(--ide-border-strong);
+  margin: 0 6px;
+  flex: 0 0 1px;
+}
+.wz-ide-tl-flex {
+  flex: 1;
+}
+.wz-ide-tl-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  background: var(--ide-hover);
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+.wz-ide-tl-chip:hover {
+  color: var(--ide-t1);
+  border-color: var(--ide-border-strong);
+}
+.wz-ide-tl-chip.is-accent {
+  color: #fff;
+  background: var(--ide-accent);
+  border-color: var(--ide-accent);
+}
+.wz-ide-tl-chip.is-accent:hover {
+  background: var(--ide-accent-hover);
+}
+.wz-ide-tl-caret {
+  color: inherit;
+  opacity: 0.7;
+}
+
+/* ── 9. 正文排版 ── */
+.wz-ide-editor-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  background: var(--ide-ed-bg);
+}
+.wz-ide-doc {
+  width: 100%;
+  max-width: none;
+  padding: 48px 56px 120px;
+  font-family: var(--ide-font-serif);
+}
+.wz-ide-doc-meta {
+  font-family: var(--ide-font-ui);
+  font-size: 11px;
+  color: var(--ide-t4);
+  margin-bottom: 14px;
+  letter-spacing: 0.04em;
+}
+.wz-ide-doc h1 {
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--ide-t1);
+  line-height: 1.4;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+.wz-ide-doc-sub {
+  font-family: var(--ide-font-ui);
+  font-size: 12px;
+  color: var(--ide-t3);
+  margin-bottom: 34px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--ide-border);
+}
+.wz-ide-doc p {
+  font-size: 16.5px;
+  line-height: 2.05;
+  color: #c9c9cf;
+  margin-bottom: 1.2em;
+  text-align: start;
+  letter-spacing: normal;
+}
+.wz-ide-doc-scene {
+  text-align: center;
+  color: var(--ide-t4);
+  font-family: var(--ide-font-ui);
+  font-size: 13px;
+  letter-spacing: 0.6em;
+  margin: 2.2em 0 2em;
+}
+/* AI 待确认插入块 */
+.wz-ide-ai-ins {
+  background: var(--ide-green-soft);
+  border-left: 3px solid var(--ide-green);
+  border-radius: 0 6px 6px 0;
+  padding: 10px 14px;
+  margin: 1.4em 0;
+  position: relative;
+}
+.wz-ide-ai-ins p {
+  margin: 0;
+  color: #c4e8d9;
+}
+.wz-ide-ai-tag {
+  position: absolute;
+  top: -11px;
+  left: 10px;
+  font-family: var(--ide-font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--ide-green);
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-green-line);
+  border-radius: 4px;
+  padding: 1px 7px;
+}
+/* 正文中的角色名高亮 */
+.wz-ide-role {
+  color: var(--ide-accent);
+  border-bottom: 1px dotted var(--ide-accent-line);
+  cursor: pointer;
+}
+
+/* ── 10. 底部面板 ── */
+.wz-ide-bottom-panel {
+  flex: 0 0 auto;
+  border-top: 1px solid var(--ide-border);
+  background: var(--ide-pn-bg);
+  display: flex;
+  flex-direction: column;
+}
+.wz-ide-bp-bar {
+  flex: 0 0 34px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 8px;
+  user-select: none;
+}
+.wz-ide-bp-tab {
+  padding: 6px 12px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ide-t3);
+  border-radius: 6px;
+  position: relative;
+}
+.wz-ide-bp-tab:hover {
+  color: var(--ide-t2);
+}
+.wz-ide-bp-tab.is-active {
+  color: var(--ide-t1);
+}
+.wz-ide-bp-tab.is-active::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 2px;
+  height: 1.5px;
+  background: var(--ide-accent);
+  border-radius: 2px;
+}
+.wz-ide-bp-n {
+  font-family: var(--ide-font-mono);
+  font-size: 10px;
+  margin-left: 4px;
+  color: var(--ide-t4);
+}
+.wz-ide-bp-body {
+  height: 150px;
+  overflow-y: auto;
+  padding: 6px 14px 12px;
+  font-family: var(--ide-font-mono);
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--ide-t2);
+}
+.wz-ide-bp-body.is-collapsed {
+  display: none;
+}
+.wz-ide-bp-line {
+  display: flex;
+  gap: 10px;
+}
+.wz-ide-bp-time {
+  color: var(--ide-t4);
+  flex: 0 0 auto;
+}
+.wz-ide-bp-ok {
+  color: var(--ide-green);
+  flex: 0 0 auto;
+}
+.wz-ide-bp-warn {
+  color: var(--ide-amber);
+  flex: 0 0 auto;
+}
+.wz-ide-bp-err {
+  color: var(--ide-red);
+  flex: 0 0 auto;
+}
+.wz-ide-bp-info {
+  color: var(--ide-accent);
+  flex: 0 0 auto;
+}
+
+/* ── 11. Agent 面板 ── */
+.wz-ide-agent-panel {
+  width: var(--ide-agent-w);
+  flex: 0 0 var(--ide-agent-w);
+  background: var(--ide-pn-bg);
+  border-left: 1px solid var(--ide-border);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.wz-ide-ag-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--ide-border);
+  user-select: none;
+}
+.wz-ide-ag-tabs {
+  display: flex;
+  gap: 2px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 7px;
+  padding: 2px;
+}
+.wz-ide-ag-tab {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ide-t3);
+  border-radius: 5px;
+}
+.wz-ide-ag-tab.is-active {
+  background: var(--ide-list-active);
+  color: var(--ide-t1);
+}
+.wz-ide-ag-icon-btn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-t3);
+  border-radius: 6px;
+  flex: 0 0 auto;
+}
+.wz-ide-ag-icon-btn:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+
+/* 上下文 chips */
+.wz-ide-ag-ctx {
+  flex: 0 0 auto;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--ide-border);
+}
+.wz-ide-ag-ctx-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ide-t4);
+  margin-bottom: 7px;
+}
+.wz-ide-ag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.wz-ide-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--ide-t2);
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 20px;
+  padding: 3px 9px;
+}
+.wz-ide-chip:hover {
+  border-color: var(--ide-border-strong);
+  color: var(--ide-t1);
+}
+.wz-ide-chip-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex: 0 0 5px;
+}
+.wz-ide-chip.is-chapter .wz-ide-chip-dot {
+  background: var(--ide-accent);
+}
+.wz-ide-chip.is-role .wz-ide-chip-dot {
+  background: var(--ide-purple);
+}
+.wz-ide-chip.is-memory .wz-ide-chip-dot {
+  background: var(--ide-amber);
+}
+.wz-ide-chip.is-outline .wz-ide-chip-dot {
+  background: var(--ide-green);
+}
+
+/* token 用量条 */
+.wz-ide-ag-token {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--ide-border);
+}
+.wz-ide-ag-token-bar {
+  height: 4px;
+  border-radius: 3px;
+  background: var(--ide-ed-bg);
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+.wz-ide-ag-token-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--ide-green), #35b98a);
+  transition: width 0.2s;
+}
+/* 逼近上限时变色，避免用户超限才发现 */
+.wz-ide-ag-token-fill.is-warn {
+  background: linear-gradient(90deg, var(--ide-amber), #c9913f);
+}
+.wz-ide-ag-token-fill.is-danger {
+  background: linear-gradient(90deg, var(--ide-red), #c0525b);
+}
+.wz-ide-ag-token-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10.5px;
+  color: var(--ide-t3);
+  font-family: var(--ide-font-mono);
+}
+
+/* 消息流 */
+.wz-ide-ag-msgs {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 14px 12px;
+}
+.wz-ide-msg {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 16px;
+}
+.wz-ide-msg-av {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.wz-ide-msg.is-user .wz-ide-msg-av {
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+}
+.wz-ide-msg.is-agent .wz-ide-msg-av {
+  background: linear-gradient(135deg, #4ec9a0, #2fa584);
+  color: #06281e;
+}
+.wz-ide-msg-body {
+  flex: 1;
+  min-width: 0;
+}
+.wz-ide-msg-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ide-t3);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wz-ide-msg-time {
+  font-weight: 500;
+  color: var(--ide-t4);
+  font-family: var(--ide-font-mono);
+  font-size: 10px;
+}
+.wz-ide-msg.is-user .wz-ide-msg-text {
+  background: var(--ide-accent-soft);
+  border: 1px solid var(--ide-accent-line);
+  border-radius: 2px 10px 10px 10px;
+  padding: 8px 11px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ide-t1);
+}
+.wz-ide-msg.is-agent .wz-ide-msg-text {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ide-t2);
+}
+.wz-ide-msg.is-agent .wz-ide-msg-text b,
+.wz-ide-msg.is-agent .wz-ide-msg-text strong {
+  color: var(--ide-t1);
+  font-weight: 600;
+}
+.wz-ide-msg-text code {
+  font-family: var(--ide-font-mono);
+  font-size: 11.5px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: #9ecbff;
+}
+
+/* 工具调用折叠卡 */
+.wz-ide-tool {
+  margin: 10px 0;
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: var(--ide-ed-bg);
+  overflow: hidden;
+}
+.wz-ide-tool-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  text-align: left;
+}
+.wz-ide-tool-head:hover {
+  background: var(--ide-hover);
+}
+.wz-ide-tool-ic {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-green);
+}
+.wz-ide-tool-name {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  font-family: var(--ide-font-mono);
+}
+.wz-ide-tool-stat {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--ide-green);
+  font-family: var(--ide-font-mono);
+}
+.wz-ide-tool-stat.is-err {
+  color: var(--ide-red);
+}
+.wz-ide-tool-head .wz-ide-chev {
+  color: var(--ide-t4);
+}
+.wz-ide-tool.is-open .wz-ide-tool-head .wz-ide-chev {
+  transform: rotate(90deg);
+}
+.wz-ide-tool-body {
+  display: none;
+  padding: 8px 11px;
+  border-top: 1px solid var(--ide-border);
+  font-family: var(--ide-font-mono);
+  font-size: 11px;
+  line-height: 1.65;
+  color: var(--ide-t3);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.wz-ide-tool.is-open .wz-ide-tool-body {
+  display: block;
+}
+.wz-ide-tool-k {
+  color: var(--ide-t4);
+}
+.wz-ide-tool-v {
+  color: var(--ide-t2);
+}
+
+/* AI 建议 diff 卡 */
+.wz-ide-sugg {
+  margin: 10px 0;
+  border: 1px solid var(--ide-green-line);
+  border-radius: 8px;
+  background: var(--ide-ed-bg);
+  overflow: hidden;
+}
+.wz-ide-sugg-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  background: var(--ide-green-soft);
+  border-bottom: 1px solid var(--ide-green-line);
+}
+.wz-ide-sugg-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ide-green);
+}
+.wz-ide-sugg-meta {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--ide-t3);
+  font-family: var(--ide-font-mono);
+}
+.wz-ide-sugg-body {
+  padding: 9px 11px;
+  font-family: var(--ide-font-serif);
+  font-size: 12.5px;
+  line-height: 1.75;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.wz-ide-sugg-add {
+  background: var(--ide-green-soft);
+  color: #bfe8d6;
+  border-radius: 4px;
+  padding: 3px 6px;
+  display: block;
+  margin: 3px 0;
+}
+.wz-ide-sugg-del {
+  background: rgba(224, 108, 117, 0.1);
+  color: #e8a2a8;
+  text-decoration: line-through;
+  border-radius: 4px;
+  padding: 3px 6px;
+  display: block;
+  margin: 3px 0;
+}
+.wz-ide-sugg-ctx {
+  color: var(--ide-t3);
+  display: block;
+  margin: 3px 0;
+  padding: 3px 6px;
+}
+.wz-ide-sugg-foot {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  border-top: 1px solid var(--ide-border);
+}
+.wz-ide-sugg-foot button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.wz-ide-btn-accept {
+  background: var(--ide-green);
+  color: #06281e;
+}
+.wz-ide-btn-accept:hover {
+  background: #3fb88f;
+}
+.wz-ide-btn-reject {
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+  border: 1px solid var(--ide-border);
+}
+.wz-ide-btn-reject:hover {
+  color: var(--ide-t1);
+}
+.wz-ide-btn-retry {
+  background: none;
+  color: var(--ide-t3);
+  border: 1px solid var(--ide-border);
+  flex: 0 0 auto !important;
+  padding: 6px 10px !important;
+}
+.wz-ide-btn-retry:hover {
+  color: var(--ide-t1);
+}
+
+/* 行内进行中提示 */
+.wz-ide-tool-inline-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--ide-t3);
+  font-family: var(--ide-font-mono);
+  margin: 6px 0;
+}
+.wz-ide-spin {
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--ide-green);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: wz-ide-spin 0.8s linear infinite;
+  flex: 0 0 11px;
+}
+@keyframes wz-ide-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wz-ide-typing::after {
+  content: '▍';
+  color: var(--ide-green);
+  animation: wz-ide-blink 1s steps(1) infinite;
+}
+@keyframes wz-ide-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 简化模式：关掉光标闪烁与 spinner 动画，省电 */
+.wz-low-performance .wz-ide-spin {
+  animation: none;
+}
+.wz-low-performance .wz-ide-typing::after {
+  animation: none;
+}
+
+/* 快捷指令 */
+.wz-ide-ag-quick {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 5px;
+  padding: 8px 12px 4px;
+  overflow-x: auto;
+  user-select: none;
+}
+.wz-ide-ag-quick::-webkit-scrollbar {
+  height: 0;
+}
+.wz-ide-qcmd {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+.wz-ide-qcmd:hover {
+  color: var(--ide-accent);
+  border-color: color-mix(in srgb, var(--ide-accent) 40%, transparent) !important;
+}
+.wz-ide-qcmd-slash {
+  color: var(--ide-accent);
+  font-family: var(--ide-font-mono);
+  font-weight: 700;
+}
+
+/* 输入区 */
+.wz-ide-ag-input {
+  flex: 0 0 auto;
+  padding: 8px 12px 10px;
+  border-top: 1px solid var(--ide-border);
+}
+.wz-ide-ag-input-box {
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 10px;
+  padding: 9px 11px;
+  transition: border-color 0.12s;
+}
+.wz-ide-ag-input-box:focus-within {
+  border-color: var(--ide-accent);
+}
+.wz-ide-ag-input-box textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  color: var(--ide-t1);
+  font-family: var(--ide-font-ui);
+  font-size: 13px;
+  line-height: 1.5;
+  max-height: 110px;
+}
+.wz-ide-ag-input-box textarea::placeholder {
+  color: var(--ide-t4);
+}
+.wz-ide-ag-input-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+.wz-ide-ag-model {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  background: var(--ide-hover);
+  border: 1px solid var(--ide-border);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.wz-ide-ag-model:hover {
+  color: var(--ide-t1);
+}
+.wz-ide-ag-model-zap {
+  color: var(--ide-amber);
+}
+.wz-ide-ag-send {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ide-accent);
+  color: #fff;
+  border-radius: 8px;
+  flex: 0 0 30px;
+}
+.wz-ide-ag-send:hover {
+  background: var(--ide-accent-hover);
+}
+.wz-ide-ag-send:disabled {
+  background: var(--ide-hover);
+  color: var(--ide-t4);
+  cursor: default;
+}
+.wz-ide-ag-foot {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 14px;
+  font-size: 10px;
+  color: var(--ide-t4);
+  font-family: var(--ide-font-mono);
+  border-top: 1px solid var(--ide-border);
+}
+
+/* ── 12. StatusBar ── */
+.wz-ide-statusbar {
+  flex: 0 0 var(--ide-statusbar-h);
+  display: flex;
+  align-items: center;
+  background: var(--ide-statusbar);
+  color: #dbe9f6;
+  font-size: 11.5px;
+  user-select: none;
+  padding: 0 4px;
+}
+.wz-ide-st-seg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 9px;
+  height: var(--ide-statusbar-h);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.wz-ide-st-seg:hover {
+  background: var(--ide-statusbar-2);
+}
+.wz-ide-st-seg.is-mono {
+  font-family: var(--ide-font-mono);
+}
+.wz-ide-st-spacer {
+  flex: 1;
+}
+.wz-ide-st-err {
+  color: #ffd7d7;
+}
+.wz-ide-st-warn {
+  color: #ffe9b8;
+}
+
+/* ── 正文排版 ── */
+/* 用户要求：正文铺展开，左右空隙不要过大，但仍与边框保留呼吸空间。
+   字号/行高/字体仍交给 BookSettings，不在这里写死。 */
+.ProseMirror {
+  box-sizing: border-box !important;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 48px 120px;
+}
+
+/* 分屏同样铺满，左右留白略收 */
+.wz-editor-focus-split .ProseMirror {
+  width: 100%;
+  padding: 24px 40px 88px !important;
+}
+
+/* 外壳 Tailwind 大水平 padding 一并压住，避免外层再空一圈 */
+.wz-editor-main .px-8 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.wz-editor-main .px-5 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+/* ── 状态栏 ── */
+/* Editor.tsx 底部已有状态栏（保存态 + 本章/全书字数 + 专注模式），
+   用的是 wz-st-* 类名，不是本文件前面预置的 wz-ide-st-seg。
+   这里按实际类名上设计稿的蓝底状态栏，组件不动。 */
+
+/* 旧规则里写的是 var(--ide-mono)，而 token 名为 --ide-font-mono，
+   属于失效引用，补一个别名保底。 */
+:root {
+  --ide-mono: var(--ide-font-mono);
+}
+
+.wz-ide-statusbar {
+  height: var(--ide-statusbar-h);
+  flex: 0 0 var(--ide-statusbar-h);
+  background: var(--ide-statusbar);
+  color: var(--ide-t2);
+  font-size: 11.5px;
+  padding: 0 4px;
+  border-top: none;
+}
+
+.wz-st-item {
+  height: var(--ide-statusbar-h);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 9px;
+  color: inherit;
+  white-space: nowrap;
+}
+.wz-st-item.clickable:hover {
+  background: var(--ide-statusbar-2) !important;
+  color: var(--ide-t1) !important;
+}
+
+.wz-st-item .num {
+  font-family: var(--ide-font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 状态色自适应亮色与深色背景下的对比度 */
+.wz-st-item .ok {
+  color: var(--ide-green);
+}
+.wz-st-item .busy {
+  color: var(--ide-amber);
+}
+.wz-st-item .fail {
+  color: var(--ide-red);
+}
+
+.wz-st-sep {
+  background: var(--ide-border);
+  height: 12px;
+  margin: 0 3px;
+}
+
+/* ══ 13. Agent 面板 ══ */
+/* 同样按 AgentChatPanel.tsx 的实际类名（wz-ag-* / wz-ctx-chip / wz-cb-* / wz-msg-*）
+   上样式，组件不动——这是核心链路，发送、模型选择、删除模式、实体上下文
+   移除等逻辑都挂在这些节点上。 */
+
+.wz-ag-head {
+  height: 42px;
+  background: var(--ide-pn-bg);
+  border-bottom: 1px solid var(--ide-border);
+}
+.wz-ag-head-title {
+  color: var(--ide-t1);
+}
+.wz-ag-head-sub {
+  color: var(--ide-t3);
+}
+.wz-ag-head-sub .live {
+  background: var(--ide-green);
+  box-shadow: 0 0 5px var(--ide-green-line);
+}
+
+/* 模式切换：设计稿的分段控件 */
+.wz-ag-modes {
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 7px;
+  padding: 2px;
+}
+.wz-ag-mode {
+  color: var(--ide-t3);
+  border-radius: 5px;
+}
+.wz-ag-mode:hover {
+  color: var(--ide-t2);
+}
+.wz-ag-mode.on {
+  background: var(--ide-list-active);
+  color: var(--ide-t1);
+  box-shadow: none;
+}
+
+/* 上下文 chips：改为胶囊形 */
+.wz-ag-ctx {
+  border-bottom: 1px solid var(--ide-border);
+}
+.wz-ctx-chip {
+  height: 22px;
+  border-radius: 20px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  color: var(--ide-t2);
+}
+.wz-ctx-chip:hover {
+  border-color: var(--ide-border-strong);
+  color: var(--ide-t1);
+}
+.wz-ctx-chip.entity {
+  background: var(--ide-accent-soft);
+  border-color: var(--ide-accent-line);
+  color: var(--ide-accent);
+}
+
+/* 快捷指令 chips */
+.wz-quick-chip {
+  border-radius: 20px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  color: var(--ide-t2);
+}
+.wz-quick-chip:hover {
+  border-color: var(--ide-border-strong);
+  color: var(--ide-t1);
+}
+.wz-quick-chip.accent {
+  background: var(--ide-accent-soft);
+  border-color: var(--ide-accent-line);
+  color: var(--ide-accent);
+}
+
+/* 消息流 */
+.wz-msg-user-bubble {
+  background: var(--ide-accent-soft);
+  border: 1px solid var(--ide-accent-line);
+  color: var(--ide-t1);
+}
+.wz-msg-ai-ava {
+  border-radius: 5px;
+}
+
+/* 输入区 */
+.wz-ag-composer {
+  border-top: 1px solid var(--ide-border);
+}
+.wz-composer-box {
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border-strong);
+  border-radius: 8px;
+}
+.wz-composer-box:focus-within {
+  border-color: var(--ide-accent);
+  box-shadow: 0 0 0 3px var(--ide-accent-soft);
+}
+.wz-composer-box textarea {
+  color: var(--ide-t1);
+}
+.wz-composer-box textarea::placeholder {
+  color: var(--ide-t4);
+}
+.wz-cb-btn {
+  color: var(--ide-t3);
+  border-radius: 5px;
+}
+.wz-cb-btn:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-cb-btn.on {
+  color: var(--ide-accent);
+  background: var(--ide-accent-soft);
+}
+.wz-cb-select {
+  color: var(--ide-t2);
+}
+.wz-cb-select:hover {
+  background: var(--ide-hover);
+}
+.wz-cb-select option {
+  background: var(--ide-pn-bg);
+  color: var(--ide-t1);
+}
+.wz-cb-send {
+  background: var(--ide-accent);
+  border-radius: 7px;
+  box-shadow: none;
+}
+.wz-cb-send:hover:not(:disabled) {
+  background: var(--ide-accent-hover);
+  filter: none;
+}
+
+.wz-ag-meta {
+  color: var(--ide-t4);
+}
+.wz-ag-meta kbd {
+  font-family: var(--ide-font-mono);
+  background: var(--ide-hover);
+  color: var(--ide-t3);
+}
+
+/* 删除模式条与 thinking 动画 */
+.wz-ag-delbar {
+  border-top: 1px solid rgba(224, 108, 117, 0.25);
+  background: rgba(224, 108, 117, 0.07);
+}
+.wz-del-check {
+  border: 1px solid var(--ide-border-strong);
+}
+.wz-thinking {
+  color: var(--ide-t3);
+}
+.wz-thinking .dots i {
+  background: var(--ide-accent);
+}
+
+/* 工具调用卡：AgentTraceCards 用的是 <details> 原生折叠（[open] 属性），
+   而前面预置的 .wz-ide-tool.is-open 靠 class 切换，两者对不上。
+   这里按 details 适配，不给组件引入额外的展开状态。 */
+details.wz-ide-tool {
+  margin: 8px 0 0;
+}
+details.wz-ide-tool > summary {
+  list-style: none;
+}
+details.wz-ide-tool > summary::-webkit-details-marker {
+  display: none;
+}
+/* 右侧折叠箭头，展开时旋转 */
+details.wz-ide-tool > summary::after {
+  content: '›';
+  margin-left: 8px;
+  color: var(--ide-t4);
+  font-size: 13px;
+  line-height: 1;
+  transition: transform 0.12s;
+  display: inline-block;
+}
+details.wz-ide-tool[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+.wz-ide-tool-runs {
+  border-top: 1px solid var(--ide-border);
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.wz-ide-tool-run {
+  border-radius: 5px;
+  padding: 5px 7px;
+  font-size: 10.5px;
+  line-height: 1.55;
+  color: var(--ide-t3);
+}
+.wz-ide-tool-run:hover {
+  background: var(--ide-hover);
+}
+.wz-ide-tool-run .font-medium {
+  color: var(--ide-t2);
+  font-family: var(--ide-font-mono);
+}
+
+/* ══ 14. 复刻覆盖层（按组件实际类名） ══ */
+/* 前面第 4/5/6/8 节用的是 wz-ide-* 预置类，与组件实际类名对不上，
+   真正生效的是下面这些。组件一律不改（上面挂着 VIP 判定、拖拽、右键菜单等逻辑）。
+   旧 styles.css 里带 !important 的规则必须同等强度才能覆盖。 */
+
+/* ──── 14.1 TitleBar（32 → 38px，标签整高入栏） ──── */
+.wz-titlebar {
+  height: var(--ide-titlebar-h);
+  background: var(--ide-tab-bg) !important;
+  border-bottom: 1px solid var(--ide-border) !important;
+}
+
+/* 旧规则锁了 align-items: flex-end，标签永远贴底、无法整高，必须破除 */
+.wz-titlebar .wz-editor-book-tabs {
+  background: var(--ide-tab-bg) !important;
+  align-items: stretch !important;
+  height: 100% !important;
+  padding: 0 8px 0 0 !important;
+}
+
+.wz-titlebar .wz-editor-book-tab {
+  height: 100% !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-right: 1px solid var(--ide-border) !important;
+  background: var(--ide-tab-bg) !important;
+  color: var(--ide-t3) !important;
+  padding: 0 10px !important;
+  font-size: 12px !important;
+}
+.wz-titlebar .wz-editor-book-tab:hover {
+  background: var(--ide-hover) !important;
+  color: var(--ide-t2) !important;
+}
+.wz-titlebar .wz-editor-book-tab.is-active {
+  background: var(--ide-tab-active) !important;
+  color: var(--ide-t1) !important;
+  border-bottom: none !important;
+  box-shadow: inset 0 2px 0 var(--ide-accent) !important;
+}
+.wz-titlebar .wz-editor-book-tab.is-home-tab {
+  min-width: 118px !important;
+}
+
+/* 未保存圆点与关闭按钮 */
+.wz-ide-etab-dirty {
+  background: var(--ide-green);
+}
+.wz-ide-etab-x:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+
+/* ──── 14.2 ActivityBar（48 → 50px） ──── */
+.wz-activitybar {
+  width: var(--ide-activitybar-w);
+  background: var(--ide-ab-bg);
+  border-left: 1px solid var(--ide-border);
+}
+.wz-ab-item {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  color: var(--ide-t3);
+}
+.wz-ab-item:hover:not(:disabled) {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-ab-item.active {
+  background: var(--ide-list-active);
+  color: var(--ide-t1);
+}
+.wz-ab-item.active::before {
+  right: -5px;
+  top: 10px;
+  bottom: 10px;
+  width: 2.5px;
+  background: var(--ide-accent);
+}
+.wz-ab-item.running {
+  color: var(--ide-accent);
+}
+/* 待办点：蓝色 6px → 绿色 7px，与蓝色选中态拉开区分 */
+.wz-ab-badge {
+  width: 7px;
+  height: 7px;
+  background: var(--ide-green);
+  box-shadow: 0 0 0 1.5px var(--ide-ab-bg);
+}
+.wz-ab-avatar {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 0 1.5px var(--ide-accent-line);
+}
+.wz-ab-avatar:hover {
+  box-shadow: 0 0 0 2px var(--ide-accent);
+}
+.wz-ab-sep {
+  width: 24px;
+  background: var(--ide-border);
+}
+
+/* ──── 14.3 侧边栏与章节树 ──── */
+.wz-editor-sidebar {
+  background: var(--ide-sb-bg) !important;
+  border-right: 1px solid var(--ide-border) !important;
+  box-shadow: none !important;
+}
+
+/* 旧规则给侧边栏按钮加了圆角 + 边框 + 双层阴影，在深色 IDE 底上
+   会浮成一块亮卡片（就是截图里那块白框），这里压平。 */
+.wz-editor-sidebar button.mb-1,
+.wz-editor-sidebar button[class*="hover:bg-[var(--surface)]"] {
+  border: 1px solid var(--ide-border) !important;
+  background: var(--ide-hover) !important;
+  box-shadow: none !important;
+  color: var(--ide-t2) !important;
+}
+.wz-editor-sidebar button.mb-1:hover,
+.wz-editor-sidebar button[class*="hover:bg-[var(--surface)]"]:hover {
+  background: var(--ide-list-active) !important;
+  border-color: var(--ide-border-strong) !important;
+  box-shadow: none !important;
+  color: var(--ide-t1) !important;
+}
+
+/* 分组从卡片拍平为平铺树（组件里是 <section class="bg-transparent p-0.5">） */
+.wz-editor-sidebar section {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 2px !important;
+  padding: 0 !important;
+}
+.wz-editor-sidebar section:hover {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 迷你书架：保留 3D 旋转门功能，只压低存在感，不再与目录头部割裂 */
+.wz-mini-bookshelf-container {
+  height: 68px !important;
+}
+.wz-mini-bookshelf-item {
+  background: var(--ide-tab-bg) !important;
+  border: 1px solid var(--ide-border) !important;
+}
+
+/* 章节项：旧 styles.css @3052 全量 !important，必须同等强度。
+   字号保持 13.5px —— 设计稿是 12px/26px，但你先前要求把目录调大，
+   跟随设计稿会把那次改动撤销，故此处故意不跟稿。 */
+.wz-chapter-item {
+  color: var(--ide-t2) !important;
+  background: transparent !important;
+  font-size: 13.5px !important;
+  font-weight: 400 !important;
+  padding: 5px 10px !important;
+  transition: background 0.18s ease, color 0.18s ease, padding 0.18s ease, transform 0.18s ease !important;
+}
+.wz-chapter-item:hover {
+  background: var(--ide-hover) !important;
+  color: var(--ide-t1) !important;
+  padding-left: 13px !important;
+  transform: translateX(2px);
+}
+.wz-chapter-item-active {
+  background: var(--ide-list-active) !important;
+  color: var(--ide-t1) !important;
+  border-left: 3px solid var(--ide-accent) !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  padding: 5px 10px 5px 7px !important;
+  box-shadow: none !important;
+}
+.wz-chapter-item-active:hover {
+  background: var(--ide-list-active) !important;
+  padding-left: 7px !important;
+}
+
+/* 字数：组件已改用 wz-ch-wc，之前这条规则丢失导致字数变成继承的白亮大字 */
+.wz-ch-wc {
+  font-size: 11.5px;
+  color: var(--ide-t4);
+  font-family: var(--ide-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 400;
+}
+.wz-ch-wc.is-active {
+  color: var(--ide-accent);
+}
+
+/* ──── 14.4 工具栏 ──── */
+.wz-ide-toolbar {
+  height: var(--ide-toolbar-h);
+  background: var(--ide-ed-bg);
+  border-bottom: 1px solid var(--ide-border);
+}
+.wz-ide-icon-btn {
+  color: var(--ide-t3);
+  border-radius: 6px;
+}
+.wz-ide-icon-btn:hover:not(:disabled) {
+  background: var(--ide-hover) !important;
+  color: var(--ide-t1) !important;
+}
+.wz-ide-icon-btn:disabled:hover {
+  background: none !important;
+  color: var(--ide-t3) !important;
+}
+.wz-tb-sep {
+  height: 18px;
+  background: var(--ide-border-strong);
+}
+.wz-tl-chip {
+  color: var(--ide-t2);
+  border: 1px solid var(--ide-border);
+  background: var(--ide-ed-bg);
+  border-radius: 6px;
+}
+.wz-tl-chip:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+  border-color: var(--ide-border-strong);
+}
+/* 实心蓝 = 未进入自动工坊；淡底蓝 = 已进入，两者必须可区分 */
+.wz-tl-chip.accent {
+  background: var(--ide-accent);
+  border-color: var(--ide-accent);
+  color: #fff;
+}
+.wz-tl-chip.accent:hover {
+  background: var(--ide-accent-hover);
+  color: #fff;
+}
+.wz-tl-chip.engaged {
+  background: var(--ide-accent-soft);
+  border-color: var(--ide-accent-line);
+  color: var(--ide-accent);
+  box-shadow: none;
+}
+.wz-tl-save {
+  color: var(--ide-t3);
+}
+.wz-tl-save .ok {
+  color: var(--ide-green);
+}
+.wz-tl-save .busy {
+  color: var(--ide-amber);
+}
+.wz-tl-save .fail {
+  color: var(--ide-red);
+}
+
+/* ══ 15. 按设计稿逐项校正参数 ══ */
+/* 对照 设计稿-IDE写作工作台-v4.html 把尺寸/间距/字号填准。
+   上一轮我只换了配色，多处参数与稿子不符，这里逐项修正。 */
+
+/* ── 15.1 TitleBar：背景应为 ab-bg(#17171a)，不是 tab-bg ── */
+.wz-titlebar {
+  background: var(--ide-ab-bg) !important;
+  padding: 0 8px 0 12px !important;
+}
+
+/* 标签栏容器底色稿子是 sb-bg */
+.wz-titlebar .wz-editor-book-tabs {
+  background: var(--ide-sb-bg) !important;
+}
+/* 稿子：.etab padding 0 12px / 12px / t3；激活顶部 1.5px 蓝条 */
+.wz-titlebar .wz-editor-book-tab {
+  padding: 0 12px !important;
+  gap: 7px !important;
+}
+.wz-titlebar .wz-editor-book-tab.is-active {
+  box-shadow: inset 0 1.5px 0 var(--ide-accent) !important;
+}
+/* 稿子的未保存点是琥珀色（amber），上轮我错填了绿色 */
+.wz-ide-etab-dirty {
+  width: 7px;
+  height: 7px;
+  background: var(--ide-amber);
+}
+.wz-ide-etab-x {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+/* ── 15.2 ActivityBar：激活态只变文字色，稿子没有底色 ── */
+.wz-activitybar {
+  padding: 6px 0 !important;
+}
+.wz-ab-item {
+  background: none !important;
+}
+.wz-ab-item:hover:not(:disabled) {
+  background: var(--ide-hover) !important;
+  color: var(--ide-t1) !important;
+}
+.wz-ab-item.active {
+  background: none !important;
+  color: var(--ide-t1) !important;
+}
+.wz-ab-item.active::before {
+  right: -4px;
+  top: 8px;
+  bottom: 8px;
+  width: 2.5px;
+  border-radius: 3px;
+}
+.wz-ab-badge {
+  top: 7px;
+  right: 7px;
+  border: 1.5px solid var(--ide-ab-bg);
+  box-shadow: none;
+}
+/* 分隔线稿子用 border-strong，比 border 亮 */
+.wz-ab-sep {
+  width: 24px;
+  background: var(--ide-border-strong);
+  margin: 7px 0;
+}
+.wz-ab-avatar {
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+.wz-ab-avatar:hover {
+  border-color: var(--ide-accent);
+  box-shadow: none;
+}
+
+/* ── 15.3 侧边栏：280 → 252px（组件写死了内联 width，必须 !important 才能盖住） ── */
+.wz-editor-sidebar {
+  width: 252px !important;
+  flex: 0 0 252px !important;
+  padding: 0 !important;
+}
+
+/* 稿子的树容器内边距 */
+.wz-editor-sidebar .min-h-0.flex-1.overflow-y-auto {
+  padding: 2px 6px 10px !important;
+}
+
+/* 章节行：稿子 height 26px / font 12px / 左内边距 20px（给层级缩进留位） */
+.wz-chapter-item,
+.wz-chapter-item-active {
+  height: 26px !important;
+  min-height: 26px !important;
+  font-size: 12px !important;
+  border-radius: 5px !important;
+  gap: 6px !important;
+  padding: 0 6px 0 20px !important;
+  border-left: none !important;
+  position: relative !important;
+}
+.wz-chapter-item:hover {
+  padding-left: 20px !important;
+}
+/* 激活指示条：稿子是内嵌 ::before（2px圆角竖条），不是整条 border-left */
+.wz-chapter-item-active::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--ide-accent);
+}
+.wz-chapter-item-active:hover {
+  padding-left: 20px !important;
+}
+/* 字数：稿子 10px */
+.wz-ch-wc {
+  font-size: 10px;
+}
+
+/* ── 15.4 工具栏：chip 底色稿子用 hover(#2a2a30) ── */
+.wz-ide-toolbar {
+  padding: 0 8px;
+  gap: 2px;
+}
+.wz-tl-chip {
+  padding: 5px 11px;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 6px;
+  background: var(--ide-hover);
+}
+.wz-tb-sep {
+  margin: 0 6px;
+}
+
+/* ── 15.5 底部面板：激活页签下划线内缩 12px ── */
+.wz-ide-bp-tab {
+  padding: 6px 12px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+.wz-ide-bp-body {
+  padding: 6px 14px 12px;
+  font-size: 11.5px;
+  line-height: 1.7;
+}
+
+/* ── 15.6 状态栏：稿子 padding 0 4px，每段 0 9px ── */
+.wz-ide-statusbar {
+  padding: 0 4px;
+  gap: 0;
+}
+
+/* ── 15.7 Agent 面板：输入框圆角 10px、模型胶囊 20px ── */
+.wz-composer-box {
+  border-radius: 10px;
+  padding: 9px 11px;
+}
+.wz-ag-modes {
+  border-radius: 7px;
+}
+.wz-ag-mode {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 行高改为 26px 后，虚拟滚动的占位高度必须跟着改，
+   否则 content-visibility 估算高度（30px）与实际不符，长目录滚动条会跳。 */
+.wz-chapter-item,
+.wz-chapter-item-active {
+  contain-intrinsic-size: 0 26px !important;
+}
+
+
+/* ══════ 16. 正文排版与稿纸网格线：对齐设计稿 .doc ══════ */
+/* 中文正文禁止强 justify：浏览器会在汉字之间塞空距，
+   人名 mark 再带左右 padding 时更夸张；打一个空格改行宽又“突然正常”。 */
+.ProseMirror p {
+  color: var(--ide-t1);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-align: start;
+  text-indent: 0;
+}
+
+.ProseMirror h1 {
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--ide-t1);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+/* 稿纸网格线颜色跟随字体：暗色主题用白色半透明，亮色主题用黑色半透明。 */
+
+/* 深色主题（dark）→ 白色描边 */
+:root,
+:root[data-theme='dark'] {
+  --editor-grid-color: rgba(255, 255, 255, 0.12);
+}
+
+/* 亮色主题（light / matcha / parchment）→ 黑色描边 */
+:root[data-theme='light'],
+:root[data-theme='matcha'],
+:root[data-theme='parchment'] {
+  --editor-grid-color: rgba(0, 0, 0, 0.15);
+}
+
+/* 虚线：深色主题（白色 SVG 描边 rgba(255,255,255,0.12)） */
+:root[data-theme='dark'] .wz-grid-line-dashed .ProseMirror p {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4IDEwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZSB4MT0iMCIgeTE9IjEwIiB4Mj0iNCIgeTI9IjEwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMikiIHN0cm9rZS13aWR0aD0iMSIgdmVjdG9yLWVmZmVjdD0ibm9uLXNjYWxpbmctc3Ryb2tlIi8+PC9zdmc+') !important;
+}
+
+/* 虚线：亮色主题（黑色 SVG 描边 rgba(0,0,0,0.15)） */
+:root[data-theme='light'] .wz-grid-line-dashed .ProseMirror p,
+:root[data-theme='matcha'] .wz-grid-line-dashed .ProseMirror p,
+:root[data-theme='parchment'] .wz-grid-line-dashed .ProseMirror p {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4IDEwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZSB4MT0iMCIgeTE9IjEwIiB4Mj0iNCIgeTI9IjEwIiBzdHJva2U9InJnYmEoMCwwLDAsMC4xNSkiIHN0cm9rZS13aWR0aD0iMSIgdmVjdG9yLWVmZmVjdD0ibm9uLXNjYWxpbmctc3Ryb2tlIi8+PC9zdmc+') !important;
+}
+
+
+/* ══════ 17. 结构搬迁后的布局校正 ══════ */
+/* 本节配合两处 DOM 搬迁：
+   (1) 章节标签栏 从 TitleBar 移入 .wz-editor-main 顶部（设计稿 .etabs 在 .editor-area 内、侧边栏右侧）
+   (2) 状态栏 从 Editor 内部移到 App 末位（设计稿 .statusbar 是 .app 末位子元素，跨满全宽）
+   原 `.wz-titlebar .wz-editor-book-tabs` 等后代规则因标签栏已移出 titlebar 而自动失效，无需压制。 */
+
+/* ---- 17.1 TitleBar 左侧 logo（设计稿 .tb-logo）---- */
+.wz-tb-logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  letter-spacing: 0.02em;
+  -webkit-app-region: drag;
+}
+
+/* ---- 17.2 标签栏在编辑区顶部（设计稿 .etabs：flex 0 0 36px，sb-bg 底，横向排列）---- */
+.wz-editor-main > .wz-editor-book-tabs {
+  flex: 0 0 var(--ide-etabs-h) !important;
+  height: var(--ide-etabs-h) !important;
+  display: flex !important;
+  align-items: stretch !important;
+  background: var(--ide-sb-bg) !important;
+  border-bottom: 1px solid var(--ide-border) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  -webkit-app-region: no-drag !important;
+}
+
+/* 设计稿 .etab：满高、无圆角、右侧分隔线、激活态用顶部 1.5px 蓝条（见第 15 节） */
+.wz-editor-main > .wz-editor-book-tabs .wz-editor-book-tab {
+  height: 100% !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-right: 1px solid var(--ide-border) !important;
+  margin: 0 !important;
+  background: var(--ide-tab-bg) !important;
+  color: var(--ide-t3) !important;
+}
+
+.wz-editor-main > .wz-editor-book-tabs .wz-editor-book-tab.is-active {
+  background: var(--ide-tab-active) !important;
+  color: var(--ide-t1) !important;
+}
+
+/* ---- 17.3 状态栏跨全宽（现为 App 的 flex-col 直接子元素）---- */
+.wz-ide-statusbar {
+  flex: 0 0 var(--ide-statusbar-h) !important;
+  width: 100% !important;
+  z-index: 20;
+}
+
+
+/* ══════ 18. Agent 面板：按设计稿 .agent-panel / .ag-* 全量复刻 ══════ */
+/* 「看不清」的根因：面板容器带 Tailwind 的 bg-[var(--panel-bg)]，内部旧规则又用
+   --surface / --surface-strong / --ide-line 这类语义 token，它们在当前主题下解析为浅色，
+   于是整片发亮。旧规则本身没有 !important，因此只需在这里按设计稿重填一遍。 */
+
+/* ---- 18.1 面板容器（设计稿 .agent-panel）---- */
+/* 宽度不写死 404px：agentPanelWidth 是随窗口宽度算出来的，写死后窗口调窄会挤爆。 */
+.wz-editor-agent-workbench {
+  background: var(--ide-pn-bg) !important;
+  border-left: 1px solid var(--ide-border) !important;
+  box-shadow: none !important;
+  color: var(--ide-t2);
+}
+
+/* ---- 18.2 顶部 .ag-head：padding 9px 12px ---- */
+.wz-ag-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--ide-border);
+  background: transparent;
+  user-select: none;
+}
+
+.wz-ag-head-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #4ec9a0, #2fa584);
+  color: #06281e;
+}
+
+.wz-ag-head-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ide-t1);
+}
+
+.wz-ag-head-sub {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  color: var(--ide-t4);
+}
+
+.wz-ag-head-sub .live {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ide-green);
+}
+
+/* ---- 18.3 模式页签（设计稿 .ag-tabs / .ag-tab）---- */
+.wz-ag-modes {
+  display: flex;
+  gap: 2px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.wz-ag-mode {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ide-t3);
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+}
+
+.wz-ag-mode:hover {
+  color: var(--ide-t2);
+}
+
+.wz-ag-mode.on {
+  background: var(--ide-list-active);
+  color: var(--ide-t1);
+}
+
+/* ---- 18.4 上下文区与 chips（设计稿 .ag-ctx / .chip）---- */
+.wz-ag-ctx {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--ide-border);
+  background: transparent;
+}
+
+.wz-ctx-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--ide-t2);
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 20px;
+  padding: 3px 9px;
+}
+
+.wz-ctx-chip:hover {
+  border-color: var(--ide-border-strong);
+  color: var(--ide-t1);
+}
+
+/* ---- 18.5 消息流（设计稿 .ag-msgs / .msg）---- */
+.wz-ag-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 14px 12px;
+  background: transparent;
+}
+
+.wz-msg-user,
+.wz-msg-ai {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 16px;
+}
+
+.wz-msg-avatar,
+.wz-msg-ai-ava {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4ec9a0, #2fa584);
+  color: #06281e;
+}
+
+.wz-msg-user .wz-msg-avatar {
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+}
+
+.wz-msg-body {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ide-t2);
+}
+
+.wz-msg-body b {
+  color: var(--ide-t1);
+  font-weight: 600;
+}
+
+/* 设计稿：用户气泡是蓝色半透底 + 左上角尖角 */
+.wz-msg-user-bubble {
+  background: var(--ide-accent-soft);
+  border: 1px solid color-mix(in srgb, var(--ide-accent) 25%, transparent) !important;
+  border-radius: 2px 10px 10px 10px;
+  padding: 8px 11px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ide-t1);
+}
+
+.wz-msg-body code {
+  font-family: var(--ide-font-mono);
+  font-size: 11.5px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--ide-accent) !important;
+}
+
+/* ---- 18.6 工具调用卡（设计稿 .tool）---- */
+.wz-ide-tool {
+  margin: 10px 0;
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: var(--ide-ed-bg);
+  overflow: hidden;
+}
+
+.wz-ide-tool-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wz-ide-tool-head:hover {
+  background: var(--ide-hover);
+}
+
+.wz-ide-tool-ic {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-green);
+}
+
+.wz-ide-tool-name {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  font-family: var(--ide-font-mono);
+}
+
+.wz-ide-tool-stat {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--ide-green);
+  font-family: var(--ide-font-mono);
+}
+
+.wz-ide-tool-runs,
+.wz-ide-tool-run {
+  font-family: var(--ide-font-mono);
+  font-size: 11px;
+  line-height: 1.65;
+  color: var(--ide-t3);
+}
+
+/* ---- 18.7 快捷指令 chip（设计稿 .qcmd）---- */
+.wz-ag-quick-row {
+  display: flex;
+  gap: 5px;
+  padding: 8px 12px 4px;
+  overflow-x: auto;
+  user-select: none;
+}
+
+.wz-ag-quick-row::-webkit-scrollbar {
+  height: 0;
+}
+
+.wz-quick-chip {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.wz-quick-chip:hover {
+  color: var(--ide-accent);
+  border-color: color-mix(in srgb, var(--ide-accent) 40%, transparent) !important;
+  background: var(--ide-ed-bg);
+}
+
+/* ---- 18.8 输入区（设计稿 .ag-input / .ag-input-box / .ag-input-row）---- */
+.wz-ag-composer {
+  padding: 8px 12px 10px;
+  border-top: 1px solid var(--ide-border);
+  background: transparent;
+}
+
+.wz-composer-box {
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 10px;
+  padding: 9px 11px;
+  transition: border-color 0.12s;
+  box-shadow: none;
+}
+
+.wz-composer-box:focus-within {
+  border-color: var(--ide-accent);
+  box-shadow: none;
+}
+
+.wz-composer-box textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  color: var(--ide-t1);
+  font-size: 13px;
+  line-height: 1.5;
+  max-height: 110px;
+  padding: 0;
+}
+
+.wz-composer-box textarea::placeholder {
+  color: var(--ide-t4);
+}
+
+.wz-composer-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+/* 模型选择（设计稿 .ag-model：胶囊形） */
+.wz-cb-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ide-t2);
+  background: var(--ide-hover);
+  border: 1px solid var(--ide-border);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+.wz-cb-select:hover {
+  color: var(--ide-t1);
+}
+
+.wz-cb-select option {
+  background: var(--ide-pn-bg);
+  color: var(--ide-t1);
+}
+
+/* 图标按钮（设计稿 .ag-icon-btn：静默色 t3，hover 才亮） */
+.wz-cb-btn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ide-t3);
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+}
+
+.wz-cb-btn:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+
+.wz-cb-btn.on {
+  color: var(--ide-accent);
+  background: var(--ide-accent-soft);
+}
+
+/* 发送键（设计稿 .ag-send：30×30 实心蓝） */
+.wz-cb-send {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ide-accent);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+
+.wz-cb-send:hover:not(:disabled) {
+  background: #3f7df0;
+}
+
+.wz-cb-send:disabled {
+  opacity: 0.45;
+}
+
+/* ---- 18.9 底部信息条（设计稿 .ag-foot）---- */
+.wz-ag-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 14px;
+  font-size: 10px;
+  color: var(--ide-t4);
+  font-family: var(--ide-font-mono);
+  border-top: 1px solid var(--ide-border);
+}
+
+.wz-ag-meta kbd {
+  background: var(--ide-hover);
+  border: 1px solid var(--ide-border);
+  border-radius: 3px;
+  padding: 0 4px;
+  color: var(--ide-t3);
+  font-family: var(--ide-font-mono);
+}
+
+/* ---- 18.10 空状态与删除条（设计稿无对应，统一到深色调不再发亮）---- */
+.wz-ag-empty {
+  color: var(--ide-t3);
+  background: transparent;
+}
+
+.wz-ag-empty-title {
+  color: var(--ide-t2);
+  font-weight: 600;
+}
+
+.wz-ag-empty-sub {
+  color: var(--ide-t4);
+}
+
+.wz-ag-empty-mark {
+  color: var(--ide-t4);
+  opacity: 0.5;
+}
+
+.wz-ag-empty-grid .wz-quick-chip {
+  justify-content: center;
+}
+
+.wz-ag-delbar {
+  background: var(--ide-pn-bg);
+  border-top: 1px solid var(--ide-border);
+  color: var(--ide-t2);
+}
+
+.wz-act-btn {
+  color: var(--ide-t3);
+  background: transparent;
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+}
+
+.wz-act-btn:hover {
+  color: var(--ide-t1);
+  background: var(--ide-hover);
+}
+
+
+/* ══════ 19. Agent DOM 重建：严格映射设计稿结构与局部色彩作用域 ══════ */
+/*
+ * 这一节不再依赖全局 light/dark 语义变量。Agent 内部的旧组件大量使用
+ * --panel-bg / --surface / --text-*，全部在面板根节点重映射到设计稿 token，
+ * 因而空状态、消息、工具结果、确认卡和输入框不会再出现浅色漏底。
+ */
+.wz-agent-panel {
+  --panel-bg: var(--ide-pn-bg);
+  --panel-border-color: var(--ide-border);
+  --bg-primary: var(--ide-ed-bg);
+  --bg-secondary: var(--ide-pn-bg);
+  --surface: var(--ide-ed-bg);
+  --surface-strong: var(--ide-hover);
+  --surface-hover: var(--ide-hover);
+  --border-color: var(--ide-border);
+  --text-primary: var(--ide-t1);
+  --text-secondary: var(--ide-t2);
+  --text-muted: var(--ide-t3);
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--ide-pn-bg);
+  color: var(--ide-t2);
+  font-family: var(--ide-font-ui, "Segoe UI", "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif);
+  font-size: 13px;
+}
+
+/* 设计稿 .ag-head：页签和操作按钮同一行 */
+.wz-agent-panel .wz-ag-head {
+  flex: 0 0 auto;
+  height: auto;
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--ide-border);
+  background: var(--ide-pn-bg);
+  user-select: none;
+}
+
+.wz-agent-panel .wz-ag-spacer {
+  flex: 1;
+  min-width: 4px;
+}
+
+.wz-agent-panel .wz-ag-modes {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 2px;
+  margin: 0;
+  padding: 2px;
+  background: var(--ide-ed-bg);
+  border: 1px solid var(--ide-border);
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-ag-mode {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  min-height: 0;
+  padding: 4px 12px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--ide-t3);
+  font: 600 12px/1.35 var(--ide-font-ui, inherit);
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-ag-mode:hover {
+  color: var(--ide-t2);
+  background: transparent;
+}
+
+.wz-agent-panel .wz-ag-mode.on {
+  background: var(--ide-list-active);
+  color: var(--ide-t1);
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-ag-icon-btn {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ide-t3);
+}
+
+.wz-agent-panel .wz-ag-icon-btn:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+
+/* 设计稿 .ag-ctx / .ag-ctx-label / .ag-chips / .chip */
+.wz-agent-panel .wz-ag-ctx {
+  flex: 0 0 auto;
+  display: block;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--ide-border);
+  background: var(--ide-pn-bg);
+}
+
+.wz-agent-panel .wz-ag-ctx-label {
+  margin-bottom: 7px;
+  color: var(--ide-t4);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+}
+
+.wz-agent-panel .wz-ag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.wz-agent-panel .wz-ctx-chip {
+  width: auto;
+  max-width: 180px;
+  height: auto;
+  min-height: 23px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border: 1px solid var(--ide-border);
+  border-radius: 20px;
+  background: var(--ide-ed-bg);
+  color: var(--ide-t2);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.wz-agent-panel .wz-ctx-chip:hover {
+  border-color: var(--ide-border-strong);
+  color: var(--ide-t1);
+}
+
+.wz-agent-panel .wz-ctx-chip.entity {
+  background: var(--ide-ed-bg);
+  border-color: var(--ide-border);
+  color: var(--ide-t2);
+}
+
+.wz-agent-panel .wz-ctx-chip .dot {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 5px;
+  border-radius: 50%;
+}
+
+.wz-agent-panel .wz-ctx-chip.c-book .dot { background: var(--ide-green); }
+.wz-agent-panel .wz-ctx-chip.c-chapter .dot { background: var(--ide-accent); }
+.wz-agent-panel .wz-ctx-chip.c-entity .dot { background: #c586f0; }
+
+/* 设计稿 .ag-msgs / .msg */
+.wz-agent-panel .wz-ag-scroll {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 14px 12px;
+  background: var(--ide-pn-bg);
+}
+
+.wz-agent-panel .wz-ag-scroll > .flex {
+  width: 100%;
+}
+
+.wz-agent-panel .wz-msg-user,
+.wz-agent-panel .wz-msg-ai {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 9px;
+  margin: 0 0 16px;
+}
+
+.wz-agent-panel .wz-msg-avatar {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #4ec9a0, #2fa584);
+  color: #06281e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.wz-agent-panel .wz-msg-user .wz-msg-avatar {
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+}
+
+.wz-agent-panel .wz-msg-body {
+  flex: 1;
+  min-width: 0;
+  color: var(--ide-t2);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.wz-agent-panel .wz-msg-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 4px;
+  color: var(--ide-t3);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.wz-agent-panel .wz-msg-user-bubble {
+  max-width: 100%;
+  padding: 8px 11px;
+  border: 1px solid color-mix(in srgb, var(--ide-accent) 25%, transparent) !important;
+  border-radius: 2px 10px 10px 10px;
+  background: var(--ide-accent-soft);
+  color: var(--ide-t1);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* HTML 没有空白亮屏；真实应用无消息时保留功能入口，但视觉归入消息区 */
+.wz-agent-panel .wz-ag-empty {
+  flex: 1;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 18px;
+  overflow: visible;
+  background: transparent;
+  color: var(--ide-t3);
+  text-align: center;
+}
+
+.wz-agent-panel .wz-ag-empty-mark {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #4ec9a0, #2fa584);
+  color: #06281e;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 1;
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-ag-empty-title {
+  margin: 0 0 5px;
+  color: var(--ide-t2);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.wz-agent-panel .wz-ag-empty-sub {
+  max-width: 280px;
+  margin: 0 0 14px;
+  color: var(--ide-t4);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.wz-agent-panel .wz-ag-empty-grid {
+  width: 100%;
+  max-width: 292px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.wz-agent-panel .wz-ag-empty-grid button {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  background: var(--ide-ed-bg);
+  color: var(--ide-t2);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.wz-agent-panel .wz-ag-empty-grid button:hover {
+  border-color: color-mix(in srgb, var(--ide-accent) 40%, transparent) !important;
+  color: var(--ide-accent);
+}
+
+/* 动态消息里仍使用旧语义变量的系统卡/结果卡，根 token 已保证深色；这里统一边角 */
+.wz-agent-panel details,
+.wz-agent-panel [class*="rounded-xl"],
+.wz-agent-panel [class*="rounded-lg"] {
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-ide-tool {
+  margin: 10px 0;
+  overflow: hidden;
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: var(--ide-ed-bg);
+}
+
+.wz-agent-panel .wz-ide-tool-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  color: var(--ide-t2);
+}
+
+.wz-agent-panel .wz-ide-tool-head:hover { background: var(--ide-hover); }
+.wz-agent-panel .wz-ide-tool-ic { color: var(--ide-green); }
+.wz-agent-panel .wz-ide-tool-name { color: var(--ide-t2); font: 600 11.5px/1.4 var(--ide-font-mono); }
+.wz-agent-panel .wz-ide-tool-stat { margin-left: auto; color: var(--ide-green); font: 10px/1.4 var(--ide-font-mono); }
+.wz-agent-panel .wz-ide-tool-runs { border-top: 1px solid var(--ide-border); padding: 8px 11px; color: var(--ide-t3); font: 11px/1.65 var(--ide-font-mono); }
+
+/* 设计稿 .ag-quick / .qcmd */
+.wz-agent-panel .wz-ag-quick-row {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 5px;
+  padding: 8px 12px 4px;
+  overflow-x: auto;
+  background: var(--ide-pn-bg);
+}
+
+.wz-agent-panel .wz-quick-chip,
+.wz-agent-panel .wz-quick-chip.accent {
+  flex: 0 0 auto;
+  height: auto;
+  min-height: 27px;
+  padding: 5px 10px;
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  background: var(--ide-ed-bg);
+  color: var(--ide-t2);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.wz-agent-panel .wz-quick-chip:hover,
+.wz-agent-panel .wz-quick-chip.accent:hover {
+  border-color: color-mix(in srgb, var(--ide-accent) 40%, transparent) !important;
+  background: var(--ide-ed-bg);
+  color: var(--ide-accent);
+}
+
+/* 设计稿 .ag-input / .ag-input-box / .ag-input-row */
+.wz-agent-panel .wz-ag-composer {
+  flex: 0 0 auto;
+  padding: 8px 12px 10px;
+  border-top: 1px solid var(--ide-border);
+  background: var(--ide-pn-bg);
+}
+
+.wz-agent-panel .wz-composer-box {
+  padding: 9px 11px;
+  overflow: hidden;
+  border: 1px solid var(--ide-border);
+  border-radius: 10px;
+  background: var(--ide-ed-bg);
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-composer-box:focus-within {
+  border-color: var(--ide-accent);
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-composer-box textarea {
+  width: 100%;
+  min-height: 39px;
+  max-height: 110px;
+  display: block;
+  resize: none;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ide-t1);
+  font: 13px/1.5 var(--ide-font-ui, inherit);
+}
+
+.wz-agent-panel .wz-composer-box textarea::placeholder { color: var(--ide-t4); }
+
+.wz-agent-panel .wz-composer-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.wz-agent-panel .wz-cb-select {
+  width: auto;
+  max-width: 132px;
+  height: 24px;
+  padding: 3px 10px;
+  border: 1px solid var(--ide-border);
+  border-radius: 20px;
+  outline: 0;
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.wz-agent-panel .wz-cb-select:hover { background: var(--ide-hover); color: var(--ide-t1); }
+.wz-agent-panel .wz-cb-select option { background: var(--ide-pn-bg); color: var(--ide-t1); }
+
+.wz-agent-panel .wz-cb-btn {
+  width: auto;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 7px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ide-t3);
+  font-size: 11px;
+}
+
+.wz-agent-panel .wz-cb-btn:hover { background: var(--ide-hover); color: var(--ide-t1); }
+.wz-agent-panel .wz-cb-btn.on { background: var(--ide-accent-soft); color: var(--ide-accent); }
+
+.wz-agent-panel .wz-cb-send {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 8px;
+  background: var(--ide-accent);
+  color: #fff;
+  box-shadow: none;
+}
+
+.wz-agent-panel .wz-cb-send:hover:not(:disabled) {
+  transform: none;
+  filter: none;
+  background: #3f7df0;
+}
+
+
+/* 所有 SVG 遵循设计稿 currentColor；不再继承浅色主题的黑色描边 */
+.wz-agent-panel svg {
+  display: block;
+  color: inherit;
+  stroke: currentColor;
+}
+
+
+/* ══════ 20. v7 精确校正：ActivityBar / Toolbar / Workflow Picker ══════ */
+
+/* 20.1 ActivityBar —— HTML: 50px, item 42×42, icon 20px */
+.wz-activitybar {
+  width: 50px !important;
+  flex: 0 0 50px !important;
+  padding: 6px 0 !important;
+  background: var(--ide-ab-bg) !important;
+  border-left: 1px solid var(--ide-border) !important;
+}
+
+.wz-activitybar .wz-ab-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.wz-activitybar .wz-ab-item {
+  position: relative;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent !important;
+  color: var(--ide-t2) !important;
+  opacity: 1;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+}
+
+.wz-activitybar .wz-ab-item > svg,
+.wz-activitybar .wz-ab-item > span > svg {
+  width: 20px !important;
+  height: 20px !important;
+  display: block;
+  overflow: visible;
+  color: inherit !important;
+  stroke: currentColor !important;
+  stroke-width: 1.8;
+  opacity: 1 !important;
+  filter: none !important;
+  transition: transform 0.18s ease !important;
+}
+
+.wz-activitybar .wz-ab-item:hover:not(:disabled) {
+  background: var(--ide-hover) !important;
+  color: var(--ide-t1) !important;
+  transform: translateY(-1px);
+}
+.wz-activitybar .wz-ab-item:hover:not(:disabled) > svg,
+.wz-activitybar .wz-ab-item:hover:not(:disabled) > span > svg {
+  transform: scale(1.08);
+}
+
+.wz-activitybar .wz-ab-item.active {
+  background: transparent !important;
+  color: var(--ide-t1) !important;
+}
+
+.wz-activitybar .wz-ab-item.active::before {
+  right: -4px;
+  top: 8px;
+  bottom: 8px;
+  width: 2.5px;
+  border-radius: 3px;
+  background: var(--ide-accent);
+}
+
+.wz-activitybar .wz-ab-item:disabled {
+  color: var(--ide-t4) !important;
+  opacity: 0.62 !important;
+}
+
+.wz-activitybar .wz-ab-sep {
+  width: 24px;
+  height: 1px;
+  margin: 7px 0;
+  background: var(--ide-border-strong);
+}
+
+.wz-activitybar .wz-ab-badge {
+  top: 7px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid var(--ide-ab-bg);
+  background: var(--ide-green);
+  box-shadow: none;
+}
+
+/* 20.2 移除旋转书架后，让目录从侧栏顶部直接开始，匹配 HTML .sidebar */
+.wz-editor-sidebar {
+  padding-top: 0 !important;
+}
+
+/* 20.3 Toolbar —— 逐值照搬 HTML .toolbar / .tl-btn / .tl-chip */
+.wz-ide-toolbar {
+  flex: 0 0 40px !important;
+  height: 40px !important;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 2px !important;
+  padding: 0 8px !important;
+  background: var(--ide-ed-bg) !important;
+  border-bottom: 1px solid var(--ide-border) !important;
+  user-select: none;
+}
+
+.wz-ide-toolbar .wz-ide-icon-btn {
+  width: 28px !important;
+  height: 28px !important;
+  flex: 0 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ide-t2) !important;
+}
+
+.wz-ide-toolbar .wz-ide-icon-btn:hover:not(:disabled) {
+  background: var(--ide-hover);
+  color: var(--ide-t1) !important;
+}
+
+.wz-ide-toolbar .wz-ide-icon-btn:disabled {
+  background: transparent;
+  color: var(--ide-t4) !important;
+  opacity: 1;
+}
+
+.wz-ide-toolbar .wz-tb-sep {
+  width: 1px;
+  height: 18px;
+  margin: 0 6px;
+  background: var(--ide-border-strong);
+}
+
+.wz-ide-toolbar .wz-tl-chip {
+  width: auto;
+  height: auto;
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border: 1px solid var(--ide-border);
+  border-radius: 6px;
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+  font: 600 12px/1.35 var(--ide-font-ui, "Segoe UI", "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif);
+  white-space: nowrap;
+  box-shadow: none;
+}
+
+.wz-ide-toolbar .wz-tl-chip:hover {
+  border-color: var(--ide-border-strong);
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+
+/* HTML 中只有自动工坊是 accent；智能润色已从组件上移除 accent 类 */
+.wz-ide-toolbar .wz-tl-chip.accent {
+  border-color: var(--ide-accent);
+  background: var(--ide-accent);
+  color: #fff;
+}
+
+.wz-ide-toolbar .wz-tl-chip.accent:hover {
+  border-color: var(--ide-accent) !important;
+  background: var(--ide-accent) !important;
+  filter: brightness(1.1) !important;
+  color: #fff;
+}
+
+.wz-ide-toolbar .wz-tl-chip.engaged {
+  border-color: var(--ide-accent-line);
+  background: var(--ide-accent-soft);
+  color: var(--ide-accent);
+}
+
+.wz-ide-toolbar .wz-tl-chip svg {
+  flex: 0 0 auto;
+  color: inherit;
+  stroke: currentColor;
+}
+
+/* 智能润色菜单也使用设计稿同一深色面板，不再引用会变浅的全局变量 */
+.wz-review-menu {
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: var(--ide-pn-bg);
+  padding: 4px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38);
+}
+
+.wz-review-option {
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--ide-t2);
+}
+
+.wz-review-option:hover {
+  background: var(--ide-hover);
+}
+
+.wz-review-option > span:first-child { color: var(--ide-t1) !important; }
+.wz-review-option > span:last-child { color: var(--ide-t3) !important; }
+
+/* 20.4 Agent 工作流：替换原生白色 select 的自绘深色菜单 */
+.wz-agent-panel .wz-workflow-picker {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.wz-agent-panel .wz-workflow-picker > summary {
+  list-style: none;
+}
+
+.wz-agent-panel .wz-workflow-picker > summary::-webkit-details-marker {
+  display: none;
+}
+
+.wz-agent-panel .wz-workflow-trigger {
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border: 1px solid var(--ide-border);
+  border-radius: 20px;
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wz-agent-panel .wz-workflow-trigger:hover {
+  border-color: var(--ide-border-strong);
+  color: var(--ide-t1);
+}
+
+.wz-agent-panel .wz-workflow-trigger .zap {
+  color: var(--ide-amber);
+  font-size: 11px;
+}
+
+.wz-agent-panel .wz-workflow-trigger svg {
+  color: var(--ide-t3);
+  transition: transform 0.12s ease;
+}
+
+.wz-agent-panel .wz-workflow-picker[open] .wz-workflow-trigger svg {
+  transform: rotate(180deg);
+}
+
+.wz-agent-panel .wz-workflow-menu {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 7px);
+  z-index: 80;
+  width: 238px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 5px;
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: var(--ide-pn-bg);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.46);
+}
+
+.wz-agent-panel .wz-workflow-option {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 7px 9px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  text-align: left;
+}
+
+.wz-agent-panel .wz-workflow-option:hover,
+.wz-agent-panel .wz-workflow-option.on {
+  background: var(--ide-hover);
+}
+
+.wz-agent-panel .wz-workflow-option .label {
+  color: var(--ide-t1);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.wz-agent-panel .wz-workflow-option.on .label {
+  color: var(--ide-accent);
+}
+
+.wz-agent-panel .wz-workflow-option .desc {
+  color: var(--ide-t3);
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+
+/* 自绘工作流菜单需要越过输入卡向上展开，不能被旧 overflow:hidden 裁切。 */
+.wz-agent-panel .wz-composer-box {
+  overflow: visible;
+}
+
+
+/* ══════ 21. 完成版：整页结构与设计稿最终参数 ══════ */
+/* TitleBar */
+.wz-titlebar {
+  position: relative;
+  height: 38px !important;
+  flex: 0 0 38px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 8px 0 12px !important;
+  border-bottom: 1px solid var(--ide-border) !important;
+  background: var(--ide-ab-bg) !important;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+.wz-titlebar .wz-tb-logo { display:flex;align-items:center;gap:8px;margin-right:14px;padding:0!important;color:var(--ide-t1); }
+.wz-tb-logo-badge { width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#4f8ef7,#7a5cf5);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff; }
+.wz-titlebar .wz-tb-logo span { font-size:12px;font-weight:600;color:var(--ide-t1);letter-spacing:.02em; }
+.wz-tb-spacer{flex:1;min-width:8px}
+.wz-tb-cmd { display:flex;align-items:center;gap:6px;margin:0 auto;min-width:220px;justify-content:center;padding:3px 10px;border:1px solid var(--ide-border);border-radius:6px;background:var(--ide-hover);color:var(--ide-t3);font-size:12px;-webkit-app-region:no-drag; }
+.wz-tb-cmd:hover { color:var(--ide-t2);border-color:var(--ide-border-strong); }
+.wz-tb-title { position:absolute;left:50%;transform:translateX(-50%);font-size:12px;color:var(--ide-t2);white-space:nowrap; }
+.wz-titlebar .wz-tb-win { margin-left:auto;display:flex;align-items:center;gap:2px;-webkit-app-region:no-drag; }
+.wz-titlebar .wz-tb-win .wz-control-btn { width:38px!important;height:28px!important;display:flex;align-items:center;justify-content:center;padding:0;border-radius:4px;background:transparent;color:var(--ide-t2); }
+.wz-titlebar .wz-tb-win .wz-control-btn:hover { background:var(--ide-hover);color:var(--ide-t1); }
+.wz-titlebar .wz-tb-win .wz-control-btn-close:hover { background:#e81123;color:#fff; }
+
+/* Sidebar 252px + real chapter search */
+.wz-editor-sidebar { width:252px!important;flex:0 0 252px!important;padding:0!important;background:var(--ide-sb-bg)!important; }
+.wz-sb-actions {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin:10px 10px 6px;
+}
+.wz-sb-action {
+  height:30px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  border:1px solid var(--ide-border);
+  border-radius:8px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+  color:var(--ide-t2);
+  font-size:12px;
+  font-weight:600;
+  transition:background .15s, border-color .15s, color .15s, box-shadow .15s;
+}
+.wz-sb-action:hover {
+  color:var(--ide-t1);
+  border-color:var(--ide-border-strong);
+  background:linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+  box-shadow:0 1px 0 rgba(255,255,255,0.03);
+}
+.wz-sb-action.is-muted {
+  border-style:dashed;
+  color:var(--ide-t3);
+  background:transparent;
+}
+.wz-sb-action.is-muted:hover {
+  color:var(--ide-t1);
+  background:rgba(255,255,255,0.04);
+}
+.wz-sb-search {
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 10px 8px;
+  padding:7px 10px;
+  border:1px solid var(--ide-border);
+  border-radius:9px;
+  background:color-mix(in srgb, var(--ide-t1) 6%, transparent);
+  color:var(--ide-t4);
+  transition:border-color .15s, background .15s, color .15s;
+}
+.wz-sb-search:focus-within {
+  border-color:color-mix(in srgb, var(--ide-accent) 55%, var(--ide-border));
+  background:color-mix(in srgb, var(--ide-t1) 10%, transparent);
+  color:var(--ide-t2);
+}
+.wz-sb-search input {
+  width:100%;
+  min-width:0;
+  padding:0;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:var(--ide-t1);
+  font-size:12px;
+  line-height:1.4;
+}
+.wz-sb-search input::placeholder { color:var(--ide-t4); }
+.wz-sb-head {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin:2px 8px 6px;
+  padding:0 4px;
+}
+.wz-sb-title {
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.06em;
+  color:var(--ide-t3);
+  text-transform:none;
+}
+.wz-sb-tools {
+  display:inline-flex;
+  align-items:center;
+  gap:2px;
+}
+.wz-sb-tool {
+  height:26px;
+  min-width:26px;
+  padding:0 7px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  border:0;
+  border-radius:7px;
+  background:transparent;
+  color:var(--ide-t3);
+  font-size:11px;
+  transition:background .12s, color .12s;
+}
+.wz-sb-tool:hover {
+  background:rgba(255,255,255,0.05);
+  color:var(--ide-t1);
+}
+.wz-sb-tool .badge {
+  min-width:14px;
+  height:14px;
+  padding:0 4px;
+  border-radius:999px;
+  background:#ef4444;
+  color:#fff;
+  font-size:9px;
+  font-weight:700;
+  line-height:14px;
+}
+
+/* 分卷标题：作品相关 / 正文卷 */
+.wz-vol-section {
+  margin: 0 6px 6px;
+  padding: 2px 0 4px;
+  border-radius: 10px;
+}
+.wz-vol-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-height: 30px;
+  padding: 2px 4px 2px 2px;
+  border-radius: 8px;
+  transition: background .12s ease;
+}
+.wz-vol-head:hover {
+  background: rgba(255,255,255,0.035);
+}
+.wz-vol-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  flex: 1;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 7px;
+}
+.wz-vol-chev {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  color: var(--ide-t3);
+  transition: transform .15s ease, color .15s ease;
+}
+.wz-vol-chev.is-collapsed {
+  transform: rotate(-90deg);
+}
+.wz-vol-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ide-t1);
+}
+.wz-vol-title.is-misc {
+  color: var(--ide-t2);
+  font-weight: 650;
+}
+.wz-vol-count {
+  flex: 0 0 auto;
+  margin-left: 2px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+  color: var(--ide-t3);
+  font-size: 10.5px;
+  line-height: 16px;
+}
+.wz-vol-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  opacity: 0;
+  transition: opacity .12s ease;
+}
+.wz-vol-head:hover .wz-vol-actions,
+.group\/vol:hover .wz-vol-actions {
+  opacity: 1;
+}
+.wz-vol-action {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ide-t3);
+  cursor: pointer;
+}
+.wz-vol-action:hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--ide-t1);
+}
+
+.wz-chapter-item,.wz-chapter-item-active { min-height:26px!important;height:26px!important;padding:0 10px!important;font-size:12px!important;line-height:26px!important;contain-intrinsic-size:0 26px!important; }
+.wz-chapter-item-active { padding-left:8px!important;border-left:2px solid var(--ide-accent)!important; }
+.wz-chapter-item:hover { padding-left:10px!important; }
+.wz-chapter-item-active:hover { padding-left:8px!important; }
+.wz-ch-wc { font-size:10px!important; }
+
+/* Chapter tabs: pure chapter tabs + add */
+.wz-editor-main > .wz-editor-book-tabs { flex:0 0 36px!important;height:36px!important;background:var(--ide-sb-bg)!important; }
+.wz-editor-main .wz-ide-etab { position:relative;height:36px!important;display:flex;align-items:center;gap:7px;padding:0 12px!important;border:0!important;border-right:1px solid var(--ide-border)!important;border-radius:0!important;background:var(--ide-tab-bg)!important;color:var(--ide-t3)!important;font-size:12px;white-space:nowrap; }
+.wz-editor-main .wz-ide-etab:hover { color:var(--ide-t2)!important; }
+.wz-editor-main .wz-ide-etab.is-active { background:var(--ide-tab-active)!important;color:var(--ide-t1)!important; }
+.wz-editor-main .wz-ide-etab.is-active::after { content:"";position:absolute;left:0;right:0;top:0;height:1.5px;background:var(--ide-accent); }
+.wz-editor-main .wz-ide-etab-x { width:16px;height:16px;display:flex;align-items:center;justify-content:center;border-radius:4px;color:var(--ide-t3);opacity:0; }
+.wz-editor-main .wz-ide-etab:hover .wz-ide-etab-x { opacity:1; }
+.wz-editor-main .wz-ide-etab-x:hover { background:var(--ide-hover);color:var(--ide-t1); }
+.wz-ide-etab-add { width:32px;flex:0 0 32px;display:flex;align-items:center;justify-content:center;border:0;background:transparent;color:var(--ide-t3); }
+.wz-ide-etab-add:hover { color:var(--ide-t1);background:var(--ide-hover); }
+
+/* Agent model row exactly mirrors .ag-model */
+.wz-agent-panel .wz-ag-model-wrap {
+  position: relative;
+  max-width: 180px;
+}
+.wz-agent-panel .wz-ag-model {
+  max-width: 180px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: var(--ide-hover);
+  color: var(--ide-t2);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.wz-agent-panel .wz-ag-model:hover,
+.wz-agent-panel .wz-ag-model.open {
+  color: var(--ide-t1);
+  border-color: color-mix(in srgb, var(--ide-accent) 35%, var(--ide-border));
+}
+.wz-agent-panel .wz-ag-model .model-ico {
+  display: inline-flex;
+  color: var(--ide-accent);
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+.wz-agent-panel .wz-ag-model .model-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wz-agent-panel .wz-ag-model-menu {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 6px);
+  z-index: 80;
+  min-width: 220px;
+  max-width: 280px;
+  max-height: 260px;
+  overflow: auto;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--ide-border) 90%, transparent);
+  background: color-mix(in srgb, var(--ide-pn-bg, var(--surface)) 96%, #000 4%);
+  box-shadow: 0 12px 32px rgba(0,0,0,.45);
+  backdrop-filter: blur(12px);
+}
+.wz-agent-panel .wz-ag-model-menu-hd {
+  padding: 4px 8px 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--ide-t3);
+  letter-spacing: 0.04em;
+}
+.wz-agent-panel .wz-ag-model-menu-sub {
+  padding: 0 8px 6px;
+  font-size: 10px;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--ide-t3) 92%, transparent);
+}
+.wz-agent-panel .wz-ag-model-foot.probe {
+  color: color-mix(in srgb, var(--ide-accent) 88%, white);
+  font-weight: 650;
+}
+.wz-agent-panel .wz-ag-model-foot.probe:disabled {
+  opacity: .55;
+  cursor: default;
+}
+.wz-agent-panel .wz-ag-model-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--ide-t2);
+  font-size: 11.5px;
+  text-align: left;
+  cursor: pointer;
+}
+.wz-agent-panel .wz-ag-model-item:hover {
+  background: color-mix(in srgb, var(--ide-accent) 12%, transparent);
+  color: var(--ide-t1);
+}
+.wz-agent-panel .wz-ag-model-item.active {
+  background: color-mix(in srgb, var(--ide-accent) 16%, transparent);
+  color: var(--ide-t1);
+}
+.wz-agent-panel .wz-ag-model-item .name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wz-agent-panel .wz-ag-model-item .check {
+  flex-shrink: 0;
+  font-size: 10px;
+  color: var(--ide-accent);
+  font-weight: 700;
+}
+.wz-agent-panel .wz-ag-model-empty,
+.wz-agent-panel .wz-ag-model-foot {
+  width: 100%;
+  padding: 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--ide-t3);
+  font-size: 11px;
+  text-align: left;
+}
+.wz-agent-panel .wz-ag-model-foot:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+  cursor: pointer;
+}
+
+/* Bottom panel */
+.wz-ide-bottom-panel { flex:0 0 auto;border-top:1px solid var(--ide-border);background:var(--ide-pn-bg);display:flex;flex-direction:column; }
+.wz-ide-bp-bar { flex:0 0 34px!important;height:34px!important;display:flex;align-items:center;gap:2px;padding:0 8px!important; }
+.wz-ide-bp-tab { position:relative;padding:6px 12px!important;border:0;border-radius:6px;background:transparent;color:var(--ide-t3);font-size:11.5px!important;font-weight:600; }
+.wz-ide-bp-tab:hover { color:var(--ide-t2); }
+.wz-ide-bp-tab.is-active { color:var(--ide-t1); }
+.wz-ide-bp-tab.is-active::after { content:"";position:absolute;left:12px;right:12px;bottom:2px;height:1.5px;border-radius:2px;background:var(--ide-accent); }
+.wz-ide-bp-n { margin-left:4px;color:var(--ide-t4);font:10px var(--ide-font-mono); }
+.wz-ide-bp-body { height:150px!important;overflow-y:auto;padding:6px 14px 12px!important;color:var(--ide-t2);font:11.5px/1.7 var(--ide-font-mono); }
+.wz-ide-bp-body.is-collapsed { display:none!important; }
+
+/* Full statusbar */
+.wz-ide-statusbar { flex:0 0 24px!important;height:24px!important;display:flex!important;align-items:center;padding:0 4px!important;background:var(--ide-statusbar,#1473b8)!important;color:#dbe9f6!important;font-size:11.5px!important;user-select:none; }
+.wz-st-seg { height:24px;display:flex;align-items:center;gap:5px;padding:0 9px;border:0;background:transparent;color:inherit;white-space:nowrap; }
+.wz-st-seg:hover { background:rgba(255,255,255,.09); }
+.wz-st-seg.mono { font-family:var(--ide-font-mono); }
+.wz-st-seg.st-err { color:#ffd4d8; }
+.wz-st-seg.st-warn { color:#ffe4a3; }
+.wz-st-spacer { flex:1; }
+
+
+/* ══════ 22. 图标/结构完全一致收口 ══════ */
+
+/* Sidebar head like HTML .sb-head */
+.wz-sb-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 32px;
+  margin: 2px 8px 6px;
+  padding: 2px 4px !important;
+  border-bottom: 1px solid transparent;
+}
+.wz-sb-title {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  color: var(--ide-t3) !important;
+  text-transform: none !important;
+}
+.wz-sb-head [data-sb-extra="1"] {
+  opacity: 0.78;
+}
+.wz-sb-head [data-sb-extra="1"]:hover { opacity: 1; }
+
+/* Agent token bar = HTML .ag-token */
+.wz-agent-panel .wz-ag-token {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--ide-border);
+  background: var(--ide-pn-bg);
+}
+.wz-agent-panel .wz-ag-token-bar {
+  height: 4px;
+  border-radius: 3px;
+  background: var(--ide-ed-bg);
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+.wz-agent-panel .wz-ag-token-fill {
+  height: 100%;
+  min-width: 4%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--ide-green), #35b98a);
+}
+.wz-agent-panel .wz-ag-token-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 10.5px;
+  color: var(--ide-t3);
+  font-family: var(--ide-font-mono);
+}
+
+/* Agent head icon buttons exact */
+.wz-agent-panel .wz-ag-icon-btn.on {
+  color: var(--ide-accent);
+  background: var(--ide-accent-soft);
+}
+.wz-agent-panel .wz-ag-icon-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* ActivityBar / Toolbar SVGs inherit currentColor cleanly */
+.wz-activitybar .wz-ab-item > svg,
+.wz-ide-toolbar .wz-ide-icon-btn > svg,
+.wz-ide-toolbar .wz-tl-chip > svg {
+  display: block;
+  color: inherit;
+  stroke: currentColor;
+  flex: 0 0 auto;
+}
+
+/* Tab close is SVG now */
+.wz-editor-main .wz-ide-etab-x svg {
+  display: block;
+  width: 11px;
+  height: 11px;
+}
+
+/* Statusbar SVG sizing */
+.wz-ide-statusbar .wz-st-seg > svg {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  color: inherit;
+  stroke: currentColor;
+}
+
+
+/* ══════ 24. 正文铺展：满宽 + 行内留白 ══════ */
+
+
+/* ══════ 25. 弹窗悬浮与角色栏主题适配：消除白边白框 ══════ */
+/* 根因：部分组件用 border-white/*、!border-zinc-700、硬编码浅色 surface，
+   或 --panel-border-color/--border-color 在深色主题下仍偏亮。统一压到 IDE token。 */
+
+:root,
+:root[data-theme],
+:root[data-theme='dark'],
+:root[data-theme='matcha'],
+:root[data-theme='parchment'],
+:root[data-theme='light'] {
+  --border-color: var(--ide-border) !important;
+  --panel-border-color: var(--ide-border) !important;
+  --surface: var(--ide-ed-bg) !important;
+  --surface-strong: var(--ide-hover) !important;
+  --surface-hover: var(--ide-hover) !important;
+  --panel-bg: var(--ide-pn-bg) !important;
+  --bg-secondary: var(--ide-sb-bg) !important;
+}
+
+/* 右栏角色/大纲外壳 */
+.wz-editor-right-panel,
+.wz-editor-right-rail {
+  background: var(--ide-pn-bg) !important;
+  border-left: 1px solid var(--ide-border) !important;
+  box-shadow: none !important;
+  color: var(--ide-t2) !important;
+}
+.wz-editor-right-panel > div,
+.wz-editor-right-panel header,
+.wz-editor-right-panel [class*="border-b"],
+.wz-editor-right-panel [class*="border-l"],
+.wz-editor-right-panel [class*="border-t"],
+.wz-editor-right-panel [class*="border-r"] {
+  border-color: var(--ide-border) !important;
+}
+
+/* 角色栏内部常见白边：zinc/white 边框与浅底 */
+.wz-editor-right-panel [class*="border-white"],
+.wz-editor-right-panel [class*="!border-zinc"],
+.wz-editor-right-panel [class*="border-zinc"],
+.wz-editor-right-panel [class*="border-[var(--border-color)]"],
+.wz-editor-right-panel [class*="border-[var(--panel-border-color)]"] {
+  border-color: var(--ide-border) !important;
+}
+.wz-editor-right-panel [class*="!bg-zinc-900"],
+.wz-editor-right-panel [class*="!bg-zinc-800"],
+.wz-editor-right-panel [class*="bg-zinc-900"],
+.wz-editor-right-panel [class*="bg-zinc-800"],
+.wz-editor-right-panel [class*="bg-black"] {
+  background-color: var(--ide-ed-bg) !important;
+}
+.wz-editor-right-panel [class*="!text-zinc"],
+.wz-editor-right-panel [class*="text-zinc"] {
+  color: var(--ide-t2) !important;
+}
+.wz-editor-right-panel [class*="ring-"],
+.wz-editor-right-panel [class*="shadow-"] {
+  --tw-ring-color: color-mix(in srgb, var(--ide-accent) 22%, transparent) !important;
+  box-shadow: none;
+}
+
+/* 通用弹窗 / 悬浮层：fixed 遮罩上的卡片 */
+.fixed[class*="z-["] > [class*="border"],
+.fixed[class*="z-["] [class*="rounded-2xl"][class*="border"],
+.fixed[class*="z-["] [class*="rounded-xl"][class*="border"],
+.fixed[class*="z-["] [class*="rounded-lg"][class*="border"],
+.wz-modal-glass,
+.wz-modal-enter,
+[class*="wz-modal"] {
+  border-color: var(--ide-border) !important;
+  background-color: var(--ide-pn-bg) !important;
+  color: var(--ide-t2) !important;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55) !important;
+}
+
+/* 弹窗内分隔线与输入框 */
+.fixed[class*="z-["] [class*="border-b"],
+.fixed[class*="z-["] [class*="border-t"],
+.fixed[class*="z-["] [class*="border-l"],
+.fixed[class*="z-["] [class*="border-r"],
+.fixed[class*="z-["] input,
+.fixed[class*="z-["] textarea,
+.fixed[class*="z-["] select,
+.fixed[class*="z-["] pre {
+  border-color: var(--ide-border) !important;
+}
+.fixed[class*="z-["] input,
+.fixed[class*="z-["] textarea,
+.fixed[class*="z-["] select,
+.fixed[class*="z-["] pre {
+  background-color: var(--ide-ed-bg) !important;
+  color: var(--ide-t1) !important;
+}
+
+/* 硬编码白边透明度类（border-white/xx）在深色主题下改为 IDE 边框 */
+.border-white\/5,
+.border-white\/6,
+.border-white\/8,
+.border-white\/10,
+.border-white\/12,
+.border-white\/15,
+.border-white\/20,
+[class*="border-white/"] {
+  border-color: var(--ide-border) !important;
+}
+
+/* 浅色半透明白底在深色主题下压暗 */
+.bg-white\/5,
+.bg-white\/\[0\.02\],
+.bg-white\/\[0\.03\],
+.bg-white\/\[0\.04\],
+.bg-white\/\[0\.06\],
+[class*="bg-white/"] {
+  background-color: var(--ide-hover) !important;
+}
+
+/* Island / 菜单 / 悬浮卡片
+ * 注意：不要用 [class*="Island"] 硬盖灵动岛卡片，否则霓虹描边/渐变会被洗成纯黑块
+ */
+.wz-crystal,
+.wz-menu-themed,
+.fixed .shadow-2xl[class*="border"],
+.absolute .shadow-2xl[class*="border"],
+.absolute[class*="rounded"][class*="border"] {
+  border-color: var(--ide-border) !important;
+  background: var(--ide-pn-bg) !important;
+  color: var(--ide-t2) !important;
+}
+
+/* Toolbox / 上下文菜单 */
+.fixed.z-\[9999\],
+.fixed.z-\[99999\] > div,
+.fixed.z-\[10000\] > div,
+.fixed.z-\[1000\] > div {
+  border-color: var(--ide-border) !important;
+}
+
+
+/* ══════ 26. Agent 壳层：角色卡 / 大纲设定嵌入右侧 ══════ */
+.wz-agent-panel .wz-ag-shell-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--ide-pn-bg);
+  border-top: 1px solid var(--ide-border);
+}
+.wz-agent-panel .wz-ag-shell-body > * {
+  height: 100%;
+  min-height: 0;
+}
+
+
+/* ══════ 27. 设置齿轮到右上角 + 大纲/角色可读性 ══════ */
+.wz-titlebar .wz-tb-settings {
+  width: 32px;
+  height: 28px;
+  margin-right: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ide-t3);
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+.wz-titlebar .wz-tb-settings:hover {
+  background: var(--ide-hover);
+  color: var(--ide-t1);
+}
+.wz-titlebar .wz-tb-settings svg {
+  display: block;
+  color: inherit;
+  stroke: currentColor;
+}
+
+/* 角色卡 / 大纲设定嵌入 Agent 后：强制深色可读，压掉 bg-white / 浅灰字 */
+.wz-ag-shell-body,
+.wz-ag-shell-body * {
+  border-color: var(--ide-border) !important;
+}
+.wz-ag-shell-body {
+  color: var(--ide-t2) !important;
+  background: var(--ide-pn-bg) !important;
+}
+.wz-ag-shell-body .bg-white,
+.wz-ag-shell-body [class*="bg-white"],
+.wz-ag-shell-body [class*="dark:bg-zinc-800"],
+.wz-ag-shell-body [class*="bg-zinc-800"],
+.wz-ag-shell-body [class*="bg-gray-50"],
+.wz-ag-shell-body [class*="bg-[#dbeafe]"],
+.wz-ag-shell-body [class*="bg-[#cce0f5]"] {
+  background-color: var(--ide-ed-bg) !important;
+}
+.wz-ag-shell-body [class*="bg-white\/60"],
+.wz-ag-shell-body [class*="bg-black/20"],
+.wz-ag-shell-body [class*="dark:bg-black/20"] {
+  background-color: var(--ide-hover) !important;
+}
+.wz-ag-shell-body [class*="text-[#374151]"],
+.wz-ag-shell-body [class*="text-[#4b5563]"],
+.wz-ag-shell-body [class*="text-[#1f2937]"],
+.wz-ag-shell-body [class*="text-gray-200"],
+.wz-ag-shell-body [class*="text-gray-300"],
+.wz-ag-shell-body [class*="dark:text-gray"] {
+  color: var(--ide-t2) !important;
+}
+.wz-ag-shell-body input,
+.wz-ag-shell-body textarea,
+.wz-ag-shell-body select {
+  background: var(--ide-ed-bg) !important;
+  color: var(--ide-t1) !important;
+  border-color: var(--ide-border) !important;
+}
+.wz-ag-shell-body input::placeholder,
+.wz-ag-shell-body textarea::placeholder {
+  color: var(--ide-t4) !important;
+}
+/* 选中项：深色底 + 亮字，避免浅蓝底看不清 */
+.wz-ag-shell-body [class*="bg-[#dbeafe]"],
+.wz-ag-shell-body [class*="bg-[#cce0f5]"],
+.wz-ag-shell-body [class*="dark:bg-[#1d4ed8]/25"],
+.wz-ag-shell-body [class*="dark:bg-[#1e3a5f]"] {
+  background-color: var(--ide-list-active) !important;
+  color: var(--ide-t1) !important;
+}
+.wz-ag-shell-body [class*="text-[#1d4ed8]"],
+.wz-ag-shell-body [class*="text-[#2d73ff]"],
+.wz-ag-shell-body [class*="dark:text-blue-200"] {
+  color: var(--ide-accent) !important;
+}
+/* 下拉菜单 / 右键菜单 */
+.wz-ag-shell-body .absolute[class*="shadow"],
+.wz-ag-shell-body .fixed[class*="shadow"],
+.wz-ag-shell-body [class*="bg-white"][class*="shadow"] {
+  background: var(--ide-pn-bg) !important;
+  border: 1px solid var(--ide-border) !important;
+  color: var(--ide-t2) !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,.45) !important;
+}
+.wz-ag-shell-body button[class*="hover:bg-black/5"],
+.wz-ag-shell-body button[class*="hover:bg-gray-50"] {
+  color: var(--ide-t2) !important;
+}
+.wz-ag-shell-body button:hover {
+  background: var(--ide-hover) !important;
+}
+/* 主按钮保持 accent，不要被上面 hover 规则洗掉 */
+.wz-ag-shell-body button[class*="bg-[#2d73ff]"],
+.wz-ag-shell-body button.bg-\[\#2d73ff\] {
+  background: var(--ide-accent) !important;
+  color: #fff !important;
+  border-color: var(--ide-accent) !important;
+}
+.wz-ag-shell-body button[class*="bg-[#2d73ff]"]:hover {
+  background: #3f7df0 !important;
+  color: #fff !important;
+}
+
+
+/* ══════ 28. VIP 弹窗适配 + Agent 上下文移除 ══════ */
+.wz-vip-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2px 0 4px;
+}
+.wz-vip-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ide-t1);
+  letter-spacing: 0.02em;
+}
+.wz-vip-sub {
+  text-align: center;
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--ide-t3);
+  margin-bottom: 4px;
+}
+.wz-vip-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: var(--ide-ed-bg);
+  color: var(--ide-t2);
+  cursor: pointer;
+  transition: border-color .12s, background .12s;
+}
+.wz-vip-plan:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--ide-accent) 45%, transparent);
+  background: var(--ide-hover);
+}
+.wz-vip-plan:disabled { opacity: 0.55; cursor: default; }
+.wz-vip-plan-left { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.wz-vip-plan-name { font-size: 13px; font-weight: 700; color: var(--ide-t1); }
+.wz-vip-plan-desc { font-size: 11px; color: var(--ide-t3); }
+.wz-vip-plan-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--ide-accent-soft);
+  color: var(--ide-accent);
+  border: 1px solid color-mix(in srgb, var(--ide-accent) 28%, transparent);
+}
+.wz-vip-plan-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ide-accent);
+  font-variant-numeric: tabular-nums;
+}
+.wz-vip-polling { text-align: center; font-size: 12px; color: var(--ide-accent); padding: 6px 0; }
+.wz-vip-error { text-align: center; font-size: 12px; color: #f87171; }
+.wz-vip-ok { text-align: center; font-size: 12px; font-weight: 600; color: var(--ide-green); }
+.wz-vip-note { text-align: center; font-size: 10px; color: var(--ide-t4); line-height: 1.45; }
+.wz-vip-back {
+  margin-top: 2px;
+  border: 0;
+  background: transparent;
+  color: var(--ide-t3);
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px;
+}
+.wz-vip-back:hover { color: var(--ide-t1); }
+
+/* 账号弹窗外壳：深色边与底，去掉过亮描边感 */
+.fixed [class*="shadow"][style*="background"],
+.fixed > div[style*="borderRadius"][style*="padding"] {
+  /* 仅辅助；具体 buyVip 内容已 class 化 */
+}
+
+
+/* ══════ 29. 移除顶栏搜索框 ══════ */
+.wz-titlebar .wz-tb-cmd{display:none!important}
+.wz-titlebar .wz-tb-spacer{flex:1;min-width:8px}
+
+
+/* ══════ 30. 写梨眼图标 + 大纲看板白框压暗 ══════ */
+.wz-tb-logo-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  object-fit: cover;
+  display: block;
+  flex: 0 0 20px;
+  box-shadow: 0 0 0 1px var(--ide-border);
+}
+.wz-tb-logo-badge { display: none !important; }
+
+.wz-msg-avatar-app,
+.wz-agent-panel .wz-msg-avatar.wz-msg-avatar-app,
+.wz-agent-panel .wz-ag-empty-mark.wz-msg-avatar-app {
+  padding: 0 !important;
+  overflow: hidden;
+  background: transparent !important;
+  color: transparent !important;
+  border: 1px solid var(--ide-border) !important;
+  box-shadow: none !important;
+}
+.wz-msg-avatar-app img,
+.wz-agent-panel .wz-msg-avatar-app img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 大纲看板独立窗口：压白框/亮边 */
+body:has(#root) .border-white\/10,
+body:has(#root) .border-white\/5,
+body:has(#root) .dark\:border-white\/5 {
+  border-color: var(--ide-border) !important;
+}
+
+/* OutlineBoard 卡片/区域边框统一到 IDE token */
+.wz-ob-brand-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--ide-border);
+  background: var(--ide-ed-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 22px;
+}
+.wz-ob-brand-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 章节卡片外框：去掉发白 ring / 过亮边 */
+[class*="rounded-xl"][class*="border"][class*="shadow-sm"],
+[class*="rounded-lg"][class*="border"][class*="shadow-sm"] {
+  border-color: var(--ide-border) !important;
+  box-shadow: none !important;
+}
+[class*="ring-1"][class*="ring-black"] {
+  --tw-ring-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* ══════ 31. IDE 层次感：工具栏 chip / Agent 页签 / 快捷指令与输入区 ══════ */
+/*
+ * 设计原则（VS Code / Cursor 风格）：
+ * L0 画布底  --ide-ed-bg / --ide-pn-bg
+ * L1 槽位底  更深一档 inset well
+ * L2 浮起面  略亮 + 细边 + 轻阴影
+ * L3 激活态  accent 或 list-active，明确“选中层级”
+ */
+
+/* ---------- 31.1 工具栏：图标钮安静，文字 chip 分层，主 CTA 突起 ---------- */
+.wz-ide-toolbar {
+  background: var(--ide-tab-bg) !important;
+  border-bottom: 1px solid var(--ide-border) !important;
+  box-shadow: none !important;
+}
+
+/* 普通图标按钮：无底，hover 才浮起 */
+.wz-ide-toolbar .wz-ide-icon-btn {
+  background: transparent !important;
+  color: var(--ide-t3) !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+}
+.wz-ide-toolbar .wz-ide-icon-btn:hover:not(:disabled) {
+  background: var(--ide-hover) !important;
+  color: var(--ide-t1) !important;
+  border-color: var(--ide-border) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset !important;
+}
+
+/* 次级文字 chip：L2 浮起面 */
+.wz-ide-toolbar .wz-tl-chip {
+  height: 28px !important;
+  padding: 0 11px !important;
+  gap: 6px !important;
+  border-radius: 7px !important;
+  border: 1px solid var(--ide-border) !important;
+  background: var(--ide-pn-bg) !important;
+  color: var(--ide-t2) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+.wz-ide-toolbar .wz-tl-chip:hover {
+  border-color: var(--ide-border-strong) !important;
+  color: var(--ide-t1) !important;
+  background: var(--ide-hover) !important;
+}
+.wz-ide-toolbar .wz-tl-chip span {
+  color: inherit !important;
+}
+.wz-ide-toolbar .wz-tl-chip svg {
+  opacity: 0.85;
+}
+.wz-ide-toolbar .wz-tl-chip.is-memory svg {
+  color: var(--ide-accent) !important;
+}
+.wz-ide-toolbar .wz-tl-chip.is-route svg {
+  color: var(--ide-green) !important;
+}
+.wz-ide-toolbar .wz-tl-chip.is-workshop svg {
+  color: var(--ide-purple) !important;
+}
+.wz-ide-toolbar .wz-tl-chip.wz-review-trigger svg {
+  color: var(--ide-amber) !important;
+}
+
+/* 主 CTA：自动工坊 — L3 实心 accent，明显高于次级 chip */
+.wz-ide-toolbar .wz-tl-chip.accent {
+  border-color: var(--ide-accent) !important;
+  background: var(--ide-accent) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.wz-ide-toolbar .wz-tl-chip.accent:hover {
+  border-color: var(--ide-accent) !important;
+  background: var(--ide-accent) !important;
+  filter: brightness(1.1) !important;
+  color: #fff !important;
+}
+.wz-ide-toolbar .wz-tl-chip.accent svg {
+  opacity: 1;
+  color: #fff !important;
+}
+
+/* 已进入工坊：降一档，软底 + 描边，和主 CTA 可区分 */
+.wz-ide-toolbar .wz-tl-chip.engaged {
+  border-color: var(--ide-accent) !important;
+  background: var(--ide-accent-soft) !important;
+  color: var(--ide-accent) !important;
+  box-shadow: none !important;
+}
+
+.wz-ide-toolbar .wz-tb-sep {
+  width: 1px !important;
+  height: 16px !important;
+  margin: 0 8px !important;
+  background: linear-gradient(180deg, transparent, #3a3a44, transparent) !important;
+  opacity: 1 !important;
+}
+
+/* ---------- 31.2 Agent 顶栏页签：深槽 + 激活浮块 ---------- */
+.wz-agent-panel .wz-ag-head {
+  background: var(--ide-pn-bg) !important;
+  border-bottom: 1px solid var(--ide-border) !important;
+  box-shadow: none !important;
+}
+
+/* L1 槽：比面板更深，像 segmented control well */
+.wz-agent-panel .wz-ag-modes {
+  background: var(--ide-ed-bg) !important;
+  border: 1px solid var(--ide-border) !important;
+  border-radius: 8px !important;
+  padding: 3px !important;
+  gap: 2px !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 未选中：融进槽里 */
+.wz-agent-panel .wz-ag-mode {
+  min-height: 26px !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  color: var(--ide-t3) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+.wz-agent-panel .wz-ag-mode:hover {
+  color: var(--ide-t2) !important;
+  background: var(--ide-hover) !important;
+}
+
+/* 选中：L2 浮起块，明显跳出槽位 */
+.wz-agent-panel .wz-ag-mode.on {
+  color: var(--ide-t1) !important;
+  background: var(--ide-list-active) !important;
+  border-color: var(--ide-border) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+}
+
+.wz-agent-panel .wz-ag-icon-btn {
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  color: var(--ide-t3) !important;
+}
+.wz-agent-panel .wz-ag-icon-btn:hover {
+  background: var(--ide-hover) !important;
+  border-color: var(--ide-border) !important;
+  color: var(--ide-t1) !important;
+}
+
+/* ---------- 31.3 快捷指令 + 输入区：底栏托盘 / 指令胶囊 / 主输入卡 ---------- */
+.wz-agent-panel .wz-ag-quick-row {
+  padding: 8px 12px 6px !important;
+  background: transparent !important;
+  border-top: 1px solid var(--ide-border) !important;
+  gap: 6px !important;
+}
+
+.wz-agent-panel .wz-quick-chip,
+.wz-agent-panel .wz-quick-chip.accent {
+  height: 26px !important;
+  padding: 0 10px !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--ide-border) !important;
+  background: var(--ide-ed-bg) !important;
+  color: var(--ide-t2) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+.wz-agent-panel .wz-quick-chip:hover,
+.wz-agent-panel .wz-quick-chip.accent:hover {
+  border-color: color-mix(in srgb, var(--ide-accent) 45%, transparent) !important;
+  color: var(--ide-accent) !important;
+  background: var(--ide-hover) !important;
+}
+/* accent 快捷指令：左边一点 accent 提示，但仍低于主发送键 */
+.wz-agent-panel .wz-quick-chip.accent {
+  border-color: color-mix(in srgb, var(--ide-accent) 28%, transparent) !important;
+  color: var(--ide-accent) !important;
+  background: var(--ide-accent-soft) !important;
+}
+
+/* 输入托盘：比面板略深，托住输入卡 */
+.wz-agent-panel .wz-ag-composer {
+  padding: 0 !important;
+  border-top: 1px solid var(--ide-border) !important;
+  background: var(--ide-pn-bg) !important;
+}
+
+/* 主输入卡：L2 最大浮起面 */
+.wz-agent-panel .wz-composer-box {
+  background: var(--ide-ed-bg) !important;
+  border: 1px solid var(--ide-border) !important;
+  border-radius: 12px !important;
+  padding: 10px 12px 8px !important;
+  box-shadow: none !important;
+}
+.wz-agent-panel .wz-composer-box:focus-within {
+  border-color: var(--ide-accent) !important;
+  box-shadow: 0 0 0 3px var(--ide-accent-soft) !important;
+}
+.wz-agent-panel .wz-composer-box textarea {
+  color: var(--ide-t1) !important;
+  min-height: 40px !important;
+}
+.wz-agent-panel .wz-composer-box textarea::placeholder {
+  color: var(--ide-t3) !important;
+}
+
+/* 工具行：模型胶囊沉一点，发送键最高 */
+.wz-agent-panel .wz-composer-bar {
+  margin-top: 6px !important;
+  padding-top: 6px !important;
+  border-top: 1px solid var(--ide-border) !important;
+}
+.wz-agent-panel .wz-ag-model {
+  background: var(--ide-tab-bg) !important;
+  border: 1px solid var(--ide-border) !important;
+  color: var(--ide-t2) !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+}
+.wz-agent-panel .wz-ag-model:hover,
+.wz-agent-panel .wz-ag-model.open {
+  border-color: var(--ide-border-strong) !important;
+  background: var(--ide-hover) !important;
+  color: var(--ide-t1) !important;
+}
+.wz-agent-panel .wz-ag-model .model-ico {
+  color: var(--ide-accent) !important;
+}
+.wz-agent-panel .wz-ag-icon-btn,
+.wz-agent-panel .wz-cb-btn {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 7px !important;
+  border: 1px solid transparent !important;
+  color: var(--ide-t3) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-icon-btn:hover,
+.wz-agent-panel .wz-cb-btn:hover {
+  background: var(--ide-hover) !important;
+  border-color: var(--ide-border) !important;
+  color: var(--ide-t1) !important;
+}
+.wz-agent-panel .wz-cb-btn.on,
+.wz-agent-panel .wz-ag-icon-btn.on {
+  background: var(--ide-accent-soft) !important;
+  border-color: var(--ide-accent) !important;
+  color: var(--ide-t1) !important;
+}
+
+/* 发送键：全面板最高层级 */
+.wz-agent-panel .wz-cb-send {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 9px !important;
+  background: var(--ide-accent) !important;
+  color: #fff !important;
+  border: 1px solid var(--ide-accent) !important;
+  box-shadow: none !important;
+}
+.wz-agent-panel .wz-cb-send:hover:not(:disabled) {
+  background: var(--ide-accent-hover, var(--ide-accent)) !important;
+  border-color: var(--ide-accent-hover, var(--ide-accent)) !important;
+  filter: brightness(1.1) !important;
+}
+.wz-agent-panel .wz-cb-send:disabled {
+  opacity: 0.4 !important;
+  box-shadow: none !important;
+}
+
+.wz-agent-panel .wz-ag-meta {
+  background: transparent !important;
+  border-top: 0 !important;
+  padding-top: 4px !important;
+  color: var(--ide-t3) !important;
+}
+
+
+/* ══════ 32. Agent 流式输出 + 富文本高亮（去 ** 星号） ══════ */
+.wz-agent-panel .wz-ag-md {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: var(--ide-t1) !important;
+}
+.wz-agent-panel .wz-ag-md .wz-ag-hl {
+  font-weight: 700;
+  padding: 0;
+  border-radius: 0;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .wz-ag-heading {
+  display: inline;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: inherit;
+  letter-spacing: 0.01em;
+  padding: 0;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-green {
+  color: var(--ide-green) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-red {
+  color: var(--ide-red) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-amber {
+  color: var(--ide-amber) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-cyan {
+  color: var(--ide-accent) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-purple {
+  color: var(--ide-purple) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-blue {
+  color: var(--ide-accent) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-line {
+  color: var(--ide-green) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .hl-game {
+  color: var(--ide-accent) !important;
+  background: transparent !important;
+}
+.wz-agent-panel .wz-ag-md .wz-ag-em {
+  font-style: italic;
+  color: var(--ide-t1) !important;
+  opacity: 0.88;
+}
+
+/* 流式光标 */
+.wz-agent-panel .wz-ag-caret {
+  display: inline-block;
+  width: 7px;
+  height: 1.05em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--ide-accent);
+  border-radius: 1px;
+  animation: wz-ag-blink 1s steps(1) infinite;
+}
+@keyframes wz-ag-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+/* 思考过程块 */
+.wz-agent-panel .wz-ag-think-box {
+  margin: 0 0 10px;
+  border: 1px solid var(--ide-border);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+.wz-agent-panel .wz-ag-think-box > summary {
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  padding: 7px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ide-t3);
+  border-bottom: 1px solid transparent;
+}
+.wz-agent-panel .wz-ag-think-box[open] > summary {
+  border-bottom-color: var(--ide-border);
+  color: var(--ide-t2);
+}
+.wz-agent-panel .wz-ag-think-box > summary::-webkit-details-marker { display: none; }
+.wz-agent-panel .wz-ag-thinking {
+  padding: 8px 10px 10px;
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: var(--ide-t3);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 180px;
+  overflow-y: auto;
+  font-family: var(--ide-font-mono);
+}
+
+
+/* ── Agent 思维流（纯展示，不抢正文） ───────────────────────── */
+.wz-think-stream {
+  margin: 6px 0 8px;
+  border: 1px solid color-mix(in srgb, var(--ide-border, #2a2a32) 88%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--ide-pn-bg, #141418) 92%, #6b8cae 8%);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.wz-think-stream.is-active {
+  border-color: color-mix(in srgb, #7aa2c7 45%, var(--ide-border, #2a2a32));
+}
+.wz-think-stream-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 0;
+  background: transparent;
+  color: var(--text-secondary, #a8a8b3);
+  cursor: pointer;
+  text-align: left;
+  font-size: 12px;
+}
+.wz-think-stream-head:hover {
+  color: var(--text-primary, #e8e8ed) !important;
+  background: var(--ide-hover) !important;
+}
+.wz-think-stream-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.wz-think-live {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--ide-accent) !important;
+  background: var(--ide-accent-soft) !important;
+}
+.wz-think-stream-meta {
+  opacity: 0.75;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.wz-think-stream-list {
+  max-height: 148px;
+  overflow-y: auto;
+  padding: 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.wz-think-stream-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: color-mix(in srgb, #000 18%, transparent);
+  color: color-mix(in srgb, var(--text-primary, #e8e8ed) 88%, transparent);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.wz-think-icon {
+  flex-shrink: 0;
+  width: 1.25em;
+  text-align: center;
+  opacity: 0.9;
+}
+.wz-think-text {
+  min-width: 0;
+  word-break: break-word;
+}
+.wz-think-step {
+  opacity: 0.65;
+}
+.wz-think-stream.is-collapsed .wz-think-stream-list {
+  display: none;
+}
+.wz-agent-panel .wz-think-stream {
+  margin-top: 0;
+}
+.wz-ag-assistant-bubble .wz-think-stream {
+  margin: 0 0 10px;
+}
+
+
+/* Agent 多选删除：贴合主题 */
+.wz-ag-msg-row.is-selecting.is-selected {
+  background: color-mix(in srgb, var(--ide-accent) 14%, transparent);
+  border-color: color-mix(in srgb, var(--ide-accent) 42%, var(--ide-line));
+}
+.wz-del-check.on {
+  background: color-mix(in srgb, var(--ide-accent) 88%, #6366f1);
+  border-color: transparent;
+}
+.wz-ag-delbar {
+  border-top-color: color-mix(in srgb, var(--ide-accent) 22%, var(--ide-line));
+  background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
+}
+
+
+/* Agent composer 顶满 + 更紧凑 */
+.wz-agent-panel .wz-ag-composer {
+  padding: 6px 10px 8px !important;
+}
+.wz-agent-panel .wz-composer-box {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 8px 10px 6px !important;
+  border-radius: 12px !important;
+}
+.wz-agent-panel .wz-composer-box textarea,
+.wz-agent-panel [data-agent-composer] {
+  width: 100% !important;
+  min-height: 40px !important;
+  max-height: 140px !important;
+  padding: 0 !important;
+}
+.wz-agent-panel .wz-composer-bar {
+  margin-top: 6px !important;
+  padding: 0 !important;
+}
+.wz-agent-panel .wz-ag-session-menu {
+  z-index: 100000 !important;
+}
+
+/* ══════ 28. 全局控件与字体美化统一（选项、字体、弹窗、悬浮窗、侧栏等） ══════ */
+/* 强制所有输入/选择/按钮控件使用统一的系统界面字体 */
+input, textarea, select, option, button, optgroup {
+  font-family: var(--ide-font-ui) !important;
+}
+
+/* 统一输入框与选择框的背景、文字、边框颜色，实现全套主题无缝适配 */
+input, textarea, select {
+  background-color: var(--ide-ed-bg) !important;
+  color: var(--ide-t1) !important;
+  border-color: var(--ide-border) !important;
+}
+select option {
+  background-color: var(--ide-pn-bg) !important;
+  color: var(--ide-t1) !important;
+}
+
+/* 输入框占位符样式统一 */
+input::placeholder, textarea::placeholder {
+  color: var(--ide-t3) !important;
+  opacity: 0.8;
+}
+
+/* 悬浮窗、下拉菜单、工具提示（Popups/Dropdowns/Tooltips）全局边框与阴影统一 */
+.wz-crystal,
+.wz-menu-themed,
+.wz-hover-card,
+[class*="wz-modal"],
+.fixed[class*="z-["] > [class*="border"],
+.fixed .shadow-2xl[class*="border"],
+.absolute .shadow-2xl[class*="border"],
+.absolute[class*="rounded"][class*="border"] {
+  border-color: var(--ide-border) !important;
+  background-color: var(--ide-pn-bg) !important;
+  color: var(--ide-t2) !important;
+  box-shadow: var(--dz-shadow) !important;
+}
+
+/* 浅色/暖色写作主题微调，确保轻质底色下悬浮遮罩及弹窗的立体质感，防止出现死黑阴影 */
+:root[data-theme='parchment'],
+:root[data-theme='light'],
+:root[data-theme='matcha'] {
+  --shadow-color: rgba(60, 45, 20, 0.08) !important;
+  --dz-shadow: 0 12px 42px rgba(60, 45, 20, 0.12) !important;
+}
+
+
+

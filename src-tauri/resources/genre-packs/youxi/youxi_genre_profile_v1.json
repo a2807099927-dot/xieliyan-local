@@ -1,0 +1,222 @@
+{
+  "_comment": "游戏题材 genre_profiles 完整配置 v1（三层分析整合）",
+  "_version": "1.0",
+  "_anonymized": true,
+  "_source": "三层分析",
+
+  "genre": "youxi",
+  "display_name": "游戏",
+
+  "reflector_threshold": {
+    "pass_total": 18,
+    "max_total": 25,
+    "key_dimensions": ["beats", "persona"],
+    "key_min_score": 3,
+    "dimensions": {
+      "beats": {
+        "weight": 5,
+        "description": "必选剧情节点是否到位",
+        "objective_check": "required_beats命中率 >= 80%"
+      },
+      "persona": {
+        "weight": 5,
+        "description": "与角色快照是否冲突",
+        "objective_check": "persona_conflict_rate <= 0.3/千字",
+        "forbidden_behaviors": [
+          "主角主动道歉或寻求和解",
+          "主角表现出胆怯或退缩",
+          "主角进行脱离情境的哲学思辨",
+          "主角进行复杂的道德挣扎和自我剖析",
+          "主角对敌人产生文学性的同情揣测",
+          "主角在战斗中犹豫不决或优柔寡断",
+          "主角使用冗长礼貌的开场白"
+        ]
+      },
+      "emotion": {
+        "weight": 5,
+        "description": "是否体现目标情绪递进",
+        "objective_check": "情绪曲线波峰在章节中间或末尾，每1-2章至少一次波峰"
+      },
+      "causality": {
+        "weight": 5,
+        "description": "事件推进是否有因果链",
+        "objective_check": "每个冲突必须有明确触发条件，冲突-解决-奖励循环完整"
+      },
+      "style": {
+        "weight": 5,
+        "description": "是否偏离style_profile",
+        "objective_ratio": 3,
+        "ai_ratio": 2,
+        "objective_checks": [
+          "平均句长在sentence_len_range范围内",
+          "紧张场景短句比率达标",
+          "无banned_words出现",
+          "对话段落平均行数在1-2行范围内",
+          "叙述段落平均行数在2-4行范围内",
+          "无超过150字的连续说明段落（非设定章节）"
+        ]
+      }
+    }
+  },
+
+  "style_profile": {
+    "sentence_len_range": {
+      "tense_scene": [3, 12],
+      "normal_scene": [14, 28],
+      "relaxed_scene": [20, 35]
+    },
+    "perspective": "third_person_limited_protagonist",
+    "psychology_depth_ratio": {
+      "surface_level_thought": 0.40,
+      "direct_inner_monologue": 0.55,
+      "deep_subconscious": 0.05
+    },
+    "banned_words": [
+      "不知不觉中", "岁月如梭", "光阴似箭",
+      "像仙女一样", "天空很蓝，白云很白",
+      "生命的意义在于", "宇宙般的孤独",
+      "在善与恶的天平上", "渴望温暖的心"
+    ],
+    "banned_scene_types": [
+      "纯景物抒情段落（无叙事功能）",
+      "道德自省独白",
+      "脱离情境的哲学思辨",
+      "冗长礼貌的社交开场",
+      "超过150字的连续说明段落",
+      "意识流或蒙太奇手法",
+      "非线性叙事结构",
+      "超过3章的纯日常无冲突段落"
+    ],
+    "tone": "fast_action_utilitarian_with_humor",
+    "paragraph_avg_lines": {
+      "dialogue": 1.5,
+      "narration": 3,
+      "description": 5.5
+    },
+    "conflict_short_sentence_ratio": 0.80,
+    "dialogue_narration_interval": "最多7轮连续对话",
+    "narration_insert_avg_chars": 35,
+    "description_order": ["整体氛围/状态", "吸引眼球的局部细节（脸、胸、腿）"],
+    "description_first_appearance_avg_chars": 120,
+    "sensory_channels": {
+      "visual": 0.70,
+      "auditory": 0.15,
+      "olfactory": 0.10,
+      "tactile": 0.05
+    },
+    "chapter_structure": {
+      "opening_types": {
+        "action_start": 0.50,
+        "environment_start": 0.25,
+        "dialogue_start": 0.25,
+        "suspense_start": 0.00
+      },
+      "climax_position_range": [0.50, 0.90],
+      "ending_types": {
+        "action_cliffhanger": 0.40,
+        "suspense_hook": 0.30,
+        "emotional_resonance": 0.30
+      },
+      "closure_type": "semi_open",
+      "event_cycle_chapters": [1, 1.5],
+      "foreshadowing_recovery_span": [1, 2]
+    },
+    "conflict_resolution_logic": {
+      "vs_weaker_enemy": "一击秒杀+轻蔑收场",
+      "vs_equal_enemy": "激烈战斗+技巧取胜",
+      "vs_stronger_enemy": "战略撤退或奇遇突破",
+      "decision_basis": "实力对比+任务优先级"
+    },
+    "info_density": {
+      "new_info_points_per_chapter": [3, 5],
+      "delivery_method": "system_prompt_and_object_detail_primary",
+      "position": "evenly_distributed_with_plot_turns",
+      "foreshadowing_payoff_span": [1, 2]
+    },
+    "game_specific_elements": {
+      "system_notifications": true,
+      "onomatopoeia_frequency": "High",
+      "game_terminology_integration": true,
+      "reward_cycle": "conflict_resolution_immediate_reward"
+    }
+  },
+
+  "optimizer_gate": {
+    "silent_lt": 10,
+    "freq_only_lt": 20,
+    "full_advice_gte": 20
+  },
+
+  "optimization_map": {
+    "pace_fast": [
+      {"action": "raise_word_count_min", "value": 0.2, "unit": "percent"},
+      {"action": "add_required_beats", "value": 1, "unit": "count"}
+    ],
+    "pace_slow": [
+      {"action": "lower_word_count_max", "value": 0.15, "unit": "percent"},
+      {"action": "inject_craft_pattern", "value": "场景转场句", "unit": "pattern_name"},
+      {"action": "inject_craft_pattern", "value": "章节收尾钩子句", "unit": "pattern_name"}
+    ],
+    "persona_ooc": [
+      {"action": "persona_weight", "value": 1, "unit": "score_delta"},
+      {"action": "refresh_character_snapshot", "value": true, "unit": "bool"},
+      {"action": "inject_forbidden_behaviors", "value": true, "unit": "bool"},
+      {"action": "inject_craft_pattern", "value": "冲突降温句", "unit": "pattern_name"}
+    ],
+    "style_drift": [
+      {"action": "inject_style_constraints", "value": 0.2, "unit": "percent"},
+      {"action": "banned_words_strict", "value": true, "unit": "bool"},
+      {"action": "inject_craft_pattern", "value": "节奏控制规则", "unit": "pattern_name"}
+    ],
+    "not_connected_prev": [
+      {"action": "nearby_recall", "value": 5, "unit": "count_delta"},
+      {"action": "anchor_prev_event_strict", "value": true, "unit": "bool"}
+    ],
+    "emotion_flat": [
+      {"action": "inject_craft_pattern", "value": "冲突升级信号词", "unit": "pattern_name"},
+      {"action": "emotion_arc_strict", "value": true, "unit": "bool"},
+      {"action": "inject_craft_pattern", "value": "心理独白句（主角自身）", "unit": "pattern_name"}
+    ],
+    "dialogue_unnatural": [
+      {"action": "inject_craft_pattern", "value": "对话开场句", "unit": "pattern_name"},
+      {"action": "inject_craft_pattern", "value": "冲突降温句", "unit": "pattern_name"}
+    ],
+    "chapter_ending_weak": [
+      {"action": "inject_craft_pattern", "value": "章节收尾钩子句", "unit": "pattern_name"},
+      {"action": "forbidden_ending_types", "value": ["完全闭合", "纯抒情", "总结陈词"], "unit": "list"}
+    ],
+    "game_immersion_weak": [
+      {"action": "inject_craft_pattern", "value": "游戏系统音效节奏", "unit": "pattern_name"},
+      {"action": "onomatopoeia_density_increase", "value": true, "unit": "bool"}
+    ]
+  },
+
+  "conflict_signals": {
+    "undercurrent": [
+      "咦？", "XX皱了皱眉", "我有些不耐烦了",
+      "目光一瞥，却发现……", "闻到了阴谋的味道",
+      "不妙", "总觉得哪里不对", "心里一咯噔"
+    ],
+    "open_conflict": [
+      "你TMD……", "少废话！", "不由分说的打了上来",
+      "狞笑着扑了过来", "给我开门！", "宰了他！",
+      "找死！", "你活腻了？", "别怪我不客气"
+    ],
+    "explosion": [
+      "嘭！", "噗！", "嘎……",
+      "电光火石间", "巨响声", "重重一拳/一击/打在",
+      "飞起一脚", "刷！", "咔嚓一声"
+    ]
+  },
+
+  "craft_fingerprint": {
+    "dialogue_style": "强动作导向的实用主义风格——对话简短，重在推动情节而非塑造人物内心，游戏术语自然融入",
+    "rhythm_style": "高频切换的快-慢交替节奏——利用极短句、拟声词和单行段落制造冲击感，与平铺直叙的叙述形成鲜明对比",
+    "description_style": "功能性与选择性细节并存——环境描写简洁，对特定角色（女性）和关键物品（装备）进行高光特写",
+    "structure_style": "典型强情节快节奏网文结构——以冲突-解决-奖励的微循环为基础，章节间强关联，钩子密集，事件弧极短",
+    "psychology_style": "直接心理呈现——通过'XXX想''XXX觉得'直接陈述，信息传递效率高，牺牲心理复杂性换取节奏",
+    "info_style": "系统化信息投放——游戏系统提示和物件细节是天然信息载体，伏笔回收极快（1-2章），每章稳定4个新信息点"
+  },
+
+  "core_emotional_loop": "进入新场景/接受任务（期待感）→ 遭遇强敌或意外障碍（紧张/危机）→ 利用系统/技能/智慧逆转局面（爽点）→ 获得奖励/升级/稀有物品（即时满足）→ 更强的敌人或更大的谜题浮现（循环触发）"
+}

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>写梨眼 · IDE 写作工作台（设计稿 v4）</title>
+<style>
+:root{
+  --ab-bg:#17171a;
+  --sb-bg:#1e1e22;
+  --ed-bg:#1b1b1f;
+  --pn-bg:#202024;
+  --tab-bg:#26262b;
+  --tab-active:#1b1b1f;
+  --hover:#2a2a30;
+  --list-active:#2b2b33;
+  --border:#2b2b31;
+  --border-strong:#3a3a42;
+  --t1:#e9e9ec;
+  --t2:#a6a6ae;
+  --t3:#6d6d76;
+  --t4:#52525a;
+  --accent:#4f8ef7;
+  --accent-soft:rgba(79,142,247,.16);
+  --green:#4ec9a0;
+  --green-soft:rgba(78,201,160,.13);
+  --green-line:rgba(78,201,160,.35);
+  --amber:#e0af68;
+  --red:#e06c75;
+  --statusbar:#0b5fab;
+  --statusbar-2:#0a4d86;
+  --ui:"Segoe UI","Microsoft YaHei UI","PingFang SC",system-ui,sans-serif;
+  --serif:"Source Han Serif SC","Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --mono:"JetBrains Mono","Cascadia Code",Consolas,"Courier New",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{font-family:var(--ui);font-size:13px;color:var(--t1);background:var(--ed-bg);-webkit-font-smoothing:antialiased}
+button{font-family:var(--ui);border:none;background:none;color:inherit;cursor:pointer}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#3a3a42;border-radius:6px;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-thumb:hover{background:#4a4a54;background-clip:content-box;border:2px solid transparent}
+::-webkit-scrollbar-track{background:transparent}
+svg{display:block}
+
+.app{display:flex;flex-direction:column;height:100vh}
+
+/* ══════════ TitleBar ══════════ */
+.titlebar{height:38px;flex:0 0 38px;display:flex;align-items:center;background:var(--ab-bg);border-bottom:1px solid var(--border);padding:0 8px 0 12px;user-select:none;-webkit-app-region:drag}
+.tb-logo{display:flex;align-items:center;gap:8px;margin-right:14px}
+.tb-logo-badge{width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,#4f8ef7,#7a5cf5);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff}
+.tb-logo span{font-size:12px;font-weight:600;color:var(--t1);letter-spacing:.02em}
+.tb-title{position:absolute;left:50%;transform:translateX(-50%);font-size:12px;color:var(--t2);display:flex;align-items:center;gap:7px;white-space:nowrap}
+.tb-title .dirty{width:7px;height:7px;border-radius:50%;background:var(--amber);display:inline-block}
+.tb-cmd{display:flex;align-items:center;gap:6px;margin:0 auto;background:var(--hover);border:1px solid var(--border);border-radius:6px;padding:3px 10px;color:var(--t3);font-size:12px;min-width:220px;justify-content:center}
+.tb-win{margin-left:auto;display:flex;align-items:center;gap:2px;-webkit-app-region:no-drag}
+.tb-win button{width:38px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--t2);border-radius:4px}
+.tb-win button:hover{background:var(--hover);color:var(--t1)}
+.tb-win .close:hover{background:#e81123;color:#fff}
+
+/* ══════════ Workbench ══════════ */
+.workbench{display:flex;flex:1;min-height:0}
+
+/* ── ActivityBar ── */
+.activitybar{width:50px;flex:0 0 50px;background:var(--ab-bg);border-right:1px solid var(--border);display:flex;flex-direction:column;align-items:center;padding:6px 0;user-select:none}
+.ab-group{display:flex;flex-direction:column;align-items:center;gap:2px;width:100%}
+.ab-item{position:relative;width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:var(--t3);border-radius:8px;transition:color .12s,background .12s}
+.ab-item:hover{color:var(--t1);background:var(--hover)}
+.ab-item.active{color:var(--t1)}
+.ab-item.active::before{content:"";position:absolute;left:-4px;top:8px;bottom:8px;width:2.5px;border-radius:3px;background:var(--accent)}
+.ab-item .badge{position:absolute;top:7px;right:7px;width:7px;height:7px;border-radius:50%;background:var(--green);border:1.5px solid var(--ab-bg)}
+.ab-sep{width:24px;height:1px;background:var(--border-strong);margin:7px 0}
+.ab-spacer{flex:1}
+.ab-avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#6366f1);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;border:2px solid transparent}
+.ab-avatar:hover{border-color:var(--accent)}
+.ab-item.ab-av{height:46px}
+
+/* ── SideBar ── */
+.sidebar{width:252px;flex:0 0 252px;background:var(--sb-bg);border-right:1px solid var(--border);display:flex;flex-direction:column;min-height:0}
+.sb-head{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 12px 8px}
+.sb-head .sb-title{font-size:11px;font-weight:700;letter-spacing:.09em;color:var(--t2)}
+.sb-head .sb-actions{display:flex;gap:2px}
+.sb-icon-btn{width:24px;height:24px;display:flex;align-items:center;justify-content:center;color:var(--t3);border-radius:5px}
+.sb-icon-btn:hover{background:var(--hover);color:var(--t1)}
+.sb-search{margin:0 10px 8px;display:flex;align-items:center;gap:7px;background:var(--ed-bg);border:1px solid var(--border);border-radius:6px;padding:5px 9px;color:var(--t3)}
+.sb-search input{flex:1;background:none;border:none;outline:none;color:var(--t1);font-size:12px;font-family:var(--ui)}
+.sb-search input::placeholder{color:var(--t4)}
+.sb-tree{flex:1;min-height:0;overflow-y:auto;padding:2px 6px 10px}
+.tree-vol{display:flex;align-items:center;gap:4px;padding:3px 4px;border-radius:5px;color:var(--t2);font-size:12px;font-weight:600;cursor:pointer;user-select:none}
+.tree-vol:hover{background:var(--hover);color:var(--t1)}
+.tree-vol .chev{transition:transform .12s;color:var(--t3)}
+.tree-vol.closed .chev{transform:rotate(-90deg)}
+.tree-vol .vol-count{margin-left:auto;font-size:10px;color:var(--t4);font-weight:500;font-family:var(--mono)}
+.tree-ch{display:flex;align-items:center;gap:6px;padding:0 6px 0 20px;height:26px;border-radius:5px;font-size:12px;color:var(--t2);cursor:pointer;user-select:none;position:relative}
+.tree-ch:hover{background:var(--hover);color:var(--t1)}
+.tree-ch .ch-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tree-ch .ch-wc{font-size:10px;color:var(--t4);font-family:var(--mono)}
+.tree-ch .ch-dot{width:5px;height:5px;border-radius:50%;background:var(--green);flex:0 0 5px;opacity:.85}
+.tree-ch .ch-dot.saved{background:var(--t4)}
+.tree-ch.active{background:var(--list-active);color:var(--t1)}
+.tree-ch.active::before{content:"";position:absolute;left:6px;top:5px;bottom:5px;width:2px;border-radius:2px;background:var(--accent)}
+.tree-children{overflow:hidden}
+.sb-foot{flex:0 0 auto;display:flex;gap:6px;padding:8px 10px;border-top:1px solid var(--border)}
+.sb-foot button{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:6px 0;font-size:11.5px;font-weight:600;color:var(--t2);background:var(--hover);border:1px solid var(--border);border-radius:6px}
+.sb-foot button:hover{color:var(--t1);border-color:var(--border-strong)}
+.sb-foot button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.sb-foot button.primary:hover{background:#3f7df0}
+
+/* ── Main (Editor + BottomPanel) ── */
+.main{flex:1;min-width:0;display:flex;flex-direction:column;background:var(--ed-bg)}
+.editor-area{flex:1;min-height:0;display:flex;flex-direction:column}
+
+/* Editor Tabs */
+.etabs{flex:0 0 36px;display:flex;align-items:stretch;background:var(--sb-bg);border-bottom:1px solid var(--border);overflow-x:auto;overflow-y:hidden}
+.etabs::-webkit-scrollbar{height:0}
+.etab{display:flex;align-items:center;gap:7px;padding:0 12px;font-size:12px;color:var(--t3);background:var(--tab-bg);border-right:1px solid var(--border);cursor:pointer;white-space:nowrap;user-select:none;position:relative}
+.etab:hover{color:var(--t2)}
+.etab.active{background:var(--tab-active);color:var(--t1)}
+.etab.active::after{content:"";position:absolute;left:0;right:0;top:0;height:1.5px;background:var(--accent)}
+.etab .dirty{width:7px;height:7px;border-radius:50%;background:var(--amber)}
+.etab .x{width:16px;height:16px;display:flex;align-items:center;justify-content:center;border-radius:4px;color:var(--t3);opacity:0}
+.etab:hover .x{opacity:1}
+.etab .x:hover{background:var(--hover);color:var(--t1)}
+.etab-add{width:32px;display:flex;align-items:center;justify-content:center;color:var(--t3)}
+.etab-add:hover{color:var(--t1);background:var(--hover)}
+
+/* Toolbar */
+.toolbar{flex:0 0 40px;display:flex;align-items:center;gap:2px;padding:0 8px;background:var(--ed-bg);border-bottom:1px solid var(--border);user-select:none}
+.tl-btn{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--t2);border-radius:6px}
+.tl-btn:hover{background:var(--hover);color:var(--t1)}
+.tl-btn:disabled{color:var(--t4);cursor:default}
+.tl-btn:disabled:hover{background:none;color:var(--t4)}
+.tl-sep{width:1px;height:18px;background:var(--border-strong);margin:0 6px}
+.tl-flex{flex:1}
+.tl-chip{display:flex;align-items:center;gap:6px;padding:5px 11px;font-size:12px;font-weight:600;color:var(--t2);background:var(--hover);border:1px solid var(--border);border-radius:6px;white-space:nowrap}
+.tl-chip:hover{color:var(--t1);border-color:var(--border-strong)}
+.tl-chip.accent{color:#fff;background:var(--accent);border-color:var(--accent)}
+.tl-chip.accent:hover{background:#3f7df0}
+.tl-chip .caret{color:inherit;opacity:.7}
+
+/* Editor Content */
+.editor-content{flex:1;min-height:0;overflow-y:auto;display:flex;justify-content:center}
+.doc{width:100%;max-width:760px;padding:48px 56px 120px;font-family:var(--serif)}
+.doc-meta{font-family:var(--ui);font-size:11px;color:var(--t4);margin-bottom:14px;letter-spacing:.04em}
+.doc h1{font-size:27px;font-weight:600;color:var(--t1);line-height:1.4;margin-bottom:6px;letter-spacing:.02em}
+.doc .h1-sub{font-family:var(--ui);font-size:12px;color:var(--t3);margin-bottom:34px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.doc p{font-size:16.5px;line-height:2.05;color:#c9c9cf;margin-bottom:1.2em;text-align:justify;letter-spacing:.01em}
+.doc .scene{text-align:center;color:var(--t4);font-family:var(--ui);font-size:13px;letter-spacing:.6em;margin:2.2em 0 2em}
+.doc .ai-ins{background:var(--green-soft);border-left:3px solid var(--green);border-radius:0 6px 6px 0;padding:10px 14px;margin:1.4em 0;position:relative}
+.doc .ai-ins p{margin:0;color:#c4e8d9}
+.doc .ai-tag{position:absolute;top:-11px;left:10px;font-family:var(--ui);font-size:10px;font-weight:600;color:var(--green);background:var(--ed-bg);border:1px solid var(--green-line);border-radius:4px;padding:1px 7px}
+.doc .role{color:#8ab8f0;border-bottom:1px dotted rgba(138,184,240,.4);cursor:pointer}
+
+/* Bottom Panel */
+.bottom-panel{flex:0 0 auto;border-top:1px solid var(--border);background:var(--pn-bg);display:flex;flex-direction:column;transition:height .15s}
+.bp-bar{flex:0 0 34px;display:flex;align-items:center;gap:2px;padding:0 8px;user-select:none}
+.bp-tab{padding:6px 12px;font-size:11.5px;font-weight:600;color:var(--t3);border-radius:6px;position:relative}
+.bp-tab:hover{color:var(--t2)}
+.bp-tab.active{color:var(--t1)}
+.bp-tab.active::after{content:"";position:absolute;left:12px;right:12px;bottom:2px;height:1.5px;background:var(--accent);border-radius:2px}
+.bp-tab .n{font-family:var(--mono);font-size:10px;margin-left:4px;color:var(--t4)}
+.bp-body{height:150px;overflow-y:auto;padding:6px 14px 12px;font-family:var(--mono);font-size:11.5px;line-height:1.7;color:var(--t2)}
+.bp-body.collapsed{display:none}
+.bp-line{display:flex;gap:10px}
+.bp-line .tm{color:var(--t4)}
+.bp-ok{color:var(--green)}
+.bp-warn{color:var(--amber)}
+.bp-err{color:var(--red)}
+.bp-info{color:var(--accent)}
+
+/* ── Agent Panel ── */
+.agent-panel{width:404px;flex:0 0 404px;background:var(--pn-bg);border-left:1px solid var(--border);display:flex;flex-direction:column;min-height:0}
+.ag-head{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--border);user-select:none}
+.ag-tabs{display:flex;gap:2px;background:var(--ed-bg);border:1px solid var(--border);border-radius:7px;padding:2px}
+.ag-tab{padding:4px 12px;font-size:12px;font-weight:600;color:var(--t3);border-radius:5px}
+.ag-tab.active{background:var(--list-active);color:var(--t1)}
+.ag-head .spacer{flex:1}
+.ag-ctx{flex:0 0 auto;padding:9px 12px;border-bottom:1px solid var(--border)}
+.ag-ctx-label{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--t4);margin-bottom:7px}
+.ag-chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--t2);background:var(--ed-bg);border:1px solid var(--border);border-radius:20px;padding:3px 9px}
+.chip:hover{border-color:var(--border-strong);color:var(--t1)}
+.chip .dot{width:5px;height:5px;border-radius:50%}
+.chip.c-ch .dot{background:var(--accent)}
+.chip.c-role .dot{background:#c586f0}
+.chip.c-mem .dot{background:var(--amber)}
+.chip.c-out .dot{background:var(--green)}
+.ag-token{flex:0 0 auto;padding:8px 12px;border-bottom:1px solid var(--border)}
+.ag-token-bar{height:4px;border-radius:3px;background:var(--ed-bg);overflow:hidden;margin-bottom:6px}
+.ag-token-fill{height:100%;width:32%;border-radius:3px;background:linear-gradient(90deg,var(--green),#35b98a)}
+.ag-token-text{display:flex;justify-content:space-between;font-size:10.5px;color:var(--t3);font-family:var(--mono)}
+.ag-msgs{flex:1;min-height:0;overflow-y:auto;padding:14px 12px}
+.msg{display:flex;gap:9px;margin-bottom:16px}
+.msg .m-av{width:26px;height:26px;flex:0 0 26px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+.msg.user .m-av{background:var(--hover);color:var(--t2)}
+.msg.agent .m-av{background:linear-gradient(135deg,#4ec9a0,#2fa584);color:#06281e}
+.msg-body{flex:1;min-width:0}
+.msg-name{font-size:11px;font-weight:700;color:var(--t3);margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.msg-name .mt{font-weight:500;color:var(--t4);font-family:var(--mono);font-size:10px}
+.msg.user .msg-text{background:var(--accent-soft);border:1px solid rgba(79,142,247,.25);border-radius:2px 10px 10px 10px;padding:8px 11px;font-size:13px;line-height:1.65;color:var(--t1)}
+.msg.agent .msg-text{font-size:13px;line-height:1.7;color:var(--t2)}
+.msg.agent .msg-text b{color:var(--t1);font-weight:600}
+.msg-text code{font-family:var(--mono);font-size:11.5px;background:var(--ed-bg);border:1px solid var(--border);border-radius:4px;padding:1px 5px;color:#9ecbff}
+
+/* tool call card */
+.tool{margin:10px 0;border:1px solid var(--border);border-radius:8px;background:var(--ed-bg);overflow:hidden}
+.tool-head{display:flex;align-items:center;gap:8px;padding:7px 10px;cursor:pointer;user-select:none}
+.tool-head:hover{background:var(--hover)}
+.tool-ic{width:18px;height:18px;flex:0 0 18px;display:flex;align-items:center;justify-content:center;color:var(--green)}
+.tool-head .t-name{font-size:11.5px;font-weight:600;color:var(--t2);font-family:var(--mono)}
+.tool-head .t-stat{margin-left:auto;font-size:10px;color:var(--green);font-family:var(--mono)}
+.tool-head .chev{color:var(--t4);transition:transform .12s}
+.tool.open .chev{transform:rotate(90deg)}
+.tool-body{display:none;padding:8px 11px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;line-height:1.65;color:var(--t3)}
+.tool.open .tool-body{display:block}
+.tool-body .k{color:var(--t4)}
+.tool-body .v{color:var(--t2)}
+
+/* AI suggestion diff block */
+.sugg{margin:10px 0;border:1px solid var(--green-line);border-radius:8px;background:var(--ed-bg);overflow:hidden}
+.sugg-head{display:flex;align-items:center;gap:7px;padding:7px 10px;background:var(--green-soft);border-bottom:1px solid var(--green-line)}
+.sugg-head .s-title{font-size:11.5px;font-weight:700;color:var(--green)}
+.sugg-head .s-meta{margin-left:auto;font-size:10px;color:var(--t3);font-family:var(--mono)}
+.sugg-body{padding:9px 11px;font-family:var(--serif);font-size:12.5px;line-height:1.75}
+.sugg-add{background:var(--green-soft);color:#bfe8d6;border-radius:4px;padding:3px 6px;display:block;margin:3px 0}
+.sugg-del{background:rgba(224,108,117,.1);color:#e8a2a8;text-decoration:line-through;border-radius:4px;padding:3px 6px;display:block;margin:3px 0}
+.sugg-ctx{color:var(--t3);display:block;margin:3px 0;padding:3px 6px}
+.sugg-foot{display:flex;gap:6px;padding:8px 10px;border-top:1px solid var(--border)}
+.sugg-foot button{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:6px 0;font-size:11.5px;font-weight:600;border-radius:6px}
+.btn-accept{background:var(--green);color:#06281e}
+.btn-accept:hover{background:#3fb88f}
+.btn-reject{background:var(--hover);color:var(--t2);border:1px solid var(--border)}
+.btn-reject:hover{color:var(--t1)}
+.btn-retry{background:none;color:var(--t3);border:1px solid var(--border);flex:0 0 auto;padding:6px 10px}
+.btn-retry:hover{color:var(--t1)}
+
+/* quick cmds */
+.ag-quick{flex:0 0 auto;display:flex;gap:5px;padding:8px 12px 4px;overflow-x:auto;user-select:none}
+.ag-quick::-webkit-scrollbar{height:0}
+.qcmd{flex:0 0 auto;display:flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--t2);background:var(--ed-bg);border:1px solid var(--border);border-radius:6px;padding:5px 10px;white-space:nowrap}
+.qcmd:hover{color:var(--accent);border-color:rgba(79,142,247,.4)}
+.qcmd .slash{color:var(--accent);font-family:var(--mono);font-weight:700}
+
+/* input */
+.ag-input{flex:0 0 auto;padding:8px 12px 10px;border-top:1px solid var(--border)}
+.ag-input-box{background:var(--ed-bg);border:1px solid var(--border);border-radius:10px;padding:9px 11px;transition:border-color .12s}
+.ag-input-box:focus-within{border-color:var(--accent)}
+.ag-input-box textarea{width:100%;background:none;border:none;outline:none;resize:none;color:var(--t1);font-family:var(--ui);font-size:13px;line-height:1.5;max-height:110px}
+.ag-input-box textarea::placeholder{color:var(--t4)}
+.ag-input-row{display:flex;align-items:center;gap:6px;margin-top:8px}
+.ag-model{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--t2);background:var(--hover);border:1px solid var(--border);border-radius:20px;padding:3px 10px}
+.ag-model:hover{color:var(--t1)}
+.ag-model .zap{color:var(--amber)}
+.ag-icon-btn{width:26px;height:26px;display:flex;align-items:center;justify-content:center;color:var(--t3);border-radius:6px}
+.ag-icon-btn:hover{background:var(--hover);color:var(--t1)}
+.ag-send{margin-left:auto;width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:8px}
+.ag-send:hover{background:#3f7df0}
+.ag-foot{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:5px 14px;font-size:10px;color:var(--t4);font-family:var(--mono);border-top:1px solid var(--border)}
+
+/* ── StatusBar ── */
+.statusbar{flex:0 0 24px;display:flex;align-items:center;background:var(--statusbar);color:#dbe9f6;font-size:11.5px;user-select:none;padding:0 4px}
+.st-seg{display:flex;align-items:center;gap:5px;padding:0 9px;height:24px;cursor:pointer}
+.st-seg:hover{background:var(--statusbar-2)}
+.st-seg .mono{font-family:var(--mono)}
+.st-spacer{flex:1}
+.st-err{color:#ffd7d7}
+.st-warn{color:#ffe9b8}
+
+.hidden-view{display:none!important}
+.tool-inline-note{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--t3);font-family:var(--mono);margin:6px 0}
+.spin{width:11px;height:11px;border:2px solid var(--green);border-top-color:transparent;border-radius:50%;animation:sp 0.8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.typing::after{content:"▍";color:var(--green);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ══════ TitleBar ══════ -->
+  <header class="titlebar">
+    <div class="tb-logo"><div class="tb-logo-badge">梨</div><span>写梨眼</span></div>
+    <div class="tb-cmd">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      搜索章节、角色、设定、命令…（Ctrl+P）
+    </div>
+    <div class="tb-win">
+      <button title="最小化"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg></button>
+      <button title="最大化"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/></svg></button>
+      <button class="close" title="关闭"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+  </header>
+  <div class="tb-title" style="top:10px">网文之洞帝豪行 · 第542章 备有艰难 <span class="dirty"></span></div>
+
+  <div class="workbench">
+
+    <!-- ══════ ActivityBar（14 入口全保留） ══════ -->
+    <nav class="activitybar">
+      <div class="ab-group">
+        <button class="ab-item" title="书架" data-view="shelf">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </button>
+        <button class="ab-item active" title="写作" data-view="write">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        </button>
+      </div>
+      <div class="ab-sep"></div>
+      <div class="ab-group">
+        <button class="ab-item" title="角色档案" data-view="roles">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </button>
+        <button class="ab-item" title="大纲与设定" data-view="outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7M9 11h7"/></svg>
+        </button>
+        <button class="ab-item" title="剧情档案" data-view="memory">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="5" rx="1"/><path d="M5 8v11a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
+        </button>
+        <button class="ab-item" title="大纲看板" data-view="kanban">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7v7"/><path d="M12 7v4"/><path d="M16 7v9"/></svg>
+        </button>
+      </div>
+      <div class="ab-sep"></div>
+      <div class="ab-group">
+        <button class="ab-item" title="拆书神器" data-view="lab">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+        </button>
+        <button class="ab-item" title="网文风向标" data-view="sweep">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </button>
+        <button class="ab-item" title="思维市场" data-view="mind">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+          <span class="badge"></span>
+        </button>
+        <button class="ab-item" title="AI 网页（VIP）" data-view="aiweb">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="badge"></span>
+        </button>
+      </div>
+      <div class="ab-spacer"></div>
+      <div class="ab-group">
+        <button class="ab-item" title="QQ 交流群" data-view="qq">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+        </button>
+        <button class="ab-item" title="检查更新" data-view="update">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        </button>
+        <button class="ab-item" title="设置" data-view="settings">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M4.2 4.2l2.8 2.8m10 10 2.8 2.8M1 12h4m14 0h4M4.2 19.8l2.8-2.8m10-10 2.8-2.8"/></svg>
+        </button>
+        <button class="ab-item ab-av" title="雪见（VIP）" data-view="user">
+          <div class="ab-avatar">雪</div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ══════ SideBar ══════ -->
+    <aside class="sidebar">
+      <!-- 章节视图 -->
+      <div id="view-write" class="sb-view" style="display:flex;flex-direction:column;flex:1;min-height:0">
+        <div class="sb-head">
+          <span class="sb-title">章节目录</span>
+          <div class="sb-actions">
+            <button class="sb-icon-btn" title="新建章"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+            <button class="sb-icon-btn" title="排序"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5h10M11 9h7M11 13h4M3 17l3 3 3-3M6 5v15"/></svg></button>
+            <button class="sb-icon-btn" title="折叠全部"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v4a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-4a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v4"/></svg></button>
+          </div>
+        </div>
+        <div class="sb-search">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input placeholder="搜索章节…">
+        </div>
+        <div class="sb-tree">
+          <div class="tree-vol"><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>作品相关<span class="vol-count">0</span></div>
+          <div class="tree-vol"><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>正文卷<span class="vol-count">544</span></div>
+          <div class="tree-children">
+            <div class="tree-ch"><span class="ch-dot saved"></span><span class="ch-name">第545章</span><span class="ch-wc">0字</span></div>
+            <div class="tree-ch"><span class="ch-dot saved"></span><span class="ch-name">第544章 花萎税家</span><span class="ch-wc">4007</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第543章 噬杀八玄蛇</span><span class="ch-wc">4501</span></div>
+            <div class="tree-ch active"><span class="ch-dot"></span><span class="ch-name">第542章 备有艰难</span><span class="ch-wc">3941</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第541章 烟雨浩</span><span class="ch-wc">3802</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第540章 踏雪璃子</span><span class="ch-wc">4210</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第539章 黑铁残片</span><span class="ch-wc">3655</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第538章 吸掌之威</span><span class="ch-wc">3988</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第537章 修炼塔</span><span class="ch-wc">3720</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第536章 萧宁之约</span><span class="ch-wc">4102</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第535章 冲突再起</span><span class="ch-wc">3567</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第534章 玄阶斗技</span><span class="ch-wc">4290</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第533章 残酷训练</span><span class="ch-wc">3811</span></div>
+            <div class="tree-ch"><span class="ch-dot"></span><span class="ch-name">第532章 拍卖前夜</span><span class="ch-wc">3954</span></div>
+          </div>
+        </div>
+        <div class="sb-foot">
+          <button class="primary"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>新建章</button>
+          <button><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>新建卷</button>
+        </div>
+      </div>
+
+      <!-- 角色视图 -->
+      <div id="view-roles" class="sb-view hidden-view" style="display:flex;flex-direction:column;flex:1;min-height:0">
+        <div class="sb-head"><span class="sb-title">角色档案</span>
+          <div class="sb-actions"><button class="sb-icon-btn" title="新建角色"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></div>
+        </div>
+        <div class="sb-search"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input placeholder="搜索角色…"></div>
+        <div class="sb-tree" id="rolesTree"></div>
+      </div>
+
+      <!-- 大纲视图 -->
+      <div id="view-outline" class="sb-view hidden-view" style="display:flex;flex-direction:column;flex:1;min-height:0">
+        <div class="sb-head"><span class="sb-title">大纲与设定</span>
+          <div class="sb-actions"><button class="sb-icon-btn" title="打开大纲看板"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button></div>
+        </div>
+        <div class="sb-tree" id="outlineTree"></div>
+      </div>
+
+      <!-- 剧情档案视图 -->
+      <div id="view-memory" class="sb-view hidden-view" style="display:flex;flex-direction:column;flex:1;min-height:0">
+        <div class="sb-head"><span class="sb-title">剧情档案</span>
+          <div class="sb-actions"><button class="sb-icon-btn" title="打开完整记忆库"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button></div>
+        </div>
+        <div class="sb-tree" id="memoryTree"></div>
+      </div>
+    </aside>
+
+    <!-- ══════ Main ══════ -->
+    <main class="main">
+      <div class="editor-area">
+        <!-- Tabs -->
+        <div class="etabs">
+          <div class="etab"><span>第541章 烟雨浩</span><span class="x"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span></div>
+          <div class="etab active"><span>第542章 备有艰难</span><span class="dirty"></span><span class="x"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span></div>
+          <div class="etab"><span>第543章 噬杀八玄蛇</span><span class="x"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span></div>
+          <button class="etab-add" title="打开章节"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        </div>
+
+        <!-- Toolbar（10 入口全保留） -->
+        <div class="toolbar">
+          <button class="tl-btn" title="章节列表（收起/展开）" id="tlSidebar"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg></button>
+          <button class="tl-btn" title="撤销"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg></button>
+          <button class="tl-btn" title="重做" disabled><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7v6h-6"/><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7"/></svg></button>
+          <button class="tl-btn" title="智能排版"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg></button>
+          <div class="tl-sep"></div>
+          <button class="tl-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="5" rx="1"/><path d="M5 8v11a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>剧情档案</button>
+          <div class="tl-flex"></div>
+          <button class="tl-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M12 19h4.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H12"/></svg>剧情导航</button>
+          <button class="tl-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3z"/></svg>智能润色<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+          <button class="tl-chip accent"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="14" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/></svg>自动工坊</button>
+          <div class="tl-flex"></div>
+          <button class="tl-btn" title="查找替换"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+          <button class="tl-btn" title="章节历史"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg></button>
+          <button class="tl-btn" title="分屏"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/></svg></button>
+        </div>
+
+        <!-- Content -->
+        <div class="editor-content">
+          <div class="doc">
+            <div class="doc-meta">第542章 · 3941 字 · 已修订 · 14:32 自动保存</div>
+            <h1>第542章 备有艰难</h1>
+            <div class="h1-sub">立意 · 奔赴与代价 · 本卷第 12 章</div>
+            <p>上午八九点，开本抵达目的地。隔着两条街，远远看见楼顶那个醒目的拍卖场标志。他把车停在咖啡店门前，透过卷后的落地镜，一眼便看到了坐在角落里的身影。</p>
+            <p><span class="role">邢天</span>来得比他还要早。身上依旧套着那套旧队服，头发像晨刚洗过不久，乱糟糟地搭在额前。面前放着一杯咖啡，却似乎没喝几口，只是低着头看手机。</p>
+            <p>推门进去。门风铃发出一声清脆声响，<span class="role">邢天</span>下意识抬起头来，看见来人后，立刻挺身招了招手："怎么来得这么早？"</p>
+            <div class="scene">·&nbsp;·&nbsp;·</div>
+            <p>拍卖场的门被两名侍卫推开时，一股混杂着各种气味的闷热气息扑面而来。<span class="role">萧炎</span>脚步顿了顿，目光扫过场内。巨大的会场呈圆形，中央是一方高台，四周的看台上坐满了人，粗略一扫，怕是不下三四百人。</p>
+            <div class="ai-ins">
+              <span class="ai-tag">AI 建议插入 · 待确认</span>
+              <p>他低着头在角落找了个空位坐下，黑袍将整个人裹得严严实实。高台上，一位白发老者正在介绍拍品，声音透过扩音法阵传遍全场。</p>
+            </div>
+            <p>"下一件，玄阶低级斗技，碎石掌。"老者话音一落，台下便响起一阵骚动。竞价声此起彼伏，最终以八千金币成交。</p>
+            <p><span class="role">萧炎</span>静静坐在角落，目光在人群中扫过。他看到了几个熟悉的身影——萧家的几位执事，还有加列家族的<span class="role">加列奥</span>。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Panel（可折叠） -->
+      <div class="bottom-panel" id="bp">
+        <div class="bp-bar">
+          <button class="bp-tab active">AI 日志<span class="n">12</span></button>
+          <button class="bp-tab">查找替换</button>
+          <button class="bp-tab">灵感搜索</button>
+          <button class="bp-tab">输出</button>
+          <div style="flex:1"></div>
+          <button class="sb-icon-btn" title="清空"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></button>
+          <button class="sb-icon-btn" title="折叠/展开" id="bpToggle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></button>
+        </div>
+        <div class="bp-body" id="bpBody">
+          <div class="bp-line"><span class="tm">14:32:07</span><span class="bp-info">[continuation]</span><span>流式续写完成 · 第542章 · +612 字 · 11.2s · deepseek-v4</span></div>
+          <div class="bp-line"><span class="tm">14:32:07</span><span class="bp-ok">[save]</span><span>章节已自动保存 · 3941 字</span></div>
+          <div class="bp-line"><span class="tm">14:31:48</span><span class="bp-info">[memory]</span><span>记忆库检索 · 命中 3 条（萧炎 / 筑基灵液 / 拍卖会）</span></div>
+          <div class="bp-line"><span class="tm">14:30:55</span><span class="bp-warn">[extract]</span><span>角色提取建议：检测到新角色「白发老者」，待确认建卡</span></div>
+          <div class="bp-line"><span class="tm">14:29:12</span><span class="bp-ok">[webdav]</span><span>云同步完成 · 坚果云 · 上传 books.zip · 2.4MB</span></div>
+          <div class="bp-line"><span class="tm">14:28:03</span><span class="bp-err">[ai]</span><span>gemini-2.5-pro 连接超时，已自动回退 deepseek-v4</span></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ══════ Agent Panel（核心交互） ══════ -->
+    <aside class="agent-panel" id="agentPanel">
+      <div class="ag-head">
+        <div class="ag-tabs">
+          <button class="ag-tab active">Agent</button>
+          <button class="ag-tab">续写</button>
+          <button class="ag-tab">大纲</button>
+        </div>
+        <div class="spacer"></div>
+        <button class="ag-icon-btn" title="历史会话"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg></button>
+        <button class="ag-icon-btn" title="新会话"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <button class="ag-icon-btn" title="收起面板" id="agClose"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg></button>
+      </div>
+
+      <div class="ag-ctx">
+        <div class="ag-ctx-label">上下文 CONTEXT</div>
+        <div class="ag-chips">
+          <span class="chip c-ch"><span class="dot"></span>第542章</span>
+          <span class="chip c-role"><span class="dot"></span>角色卡 ×3</span>
+          <span class="chip c-mem"><span class="dot"></span>记忆库</span>
+          <span class="chip c-out"><span class="dot"></span>大纲</span>
+          <span class="chip" style="cursor:pointer">+ 添加</span>
+        </div>
+      </div>
+
+      <div class="ag-token">
+        <div class="ag-token-bar"><div class="ag-token-fill"></div></div>
+        <div class="ag-token-text"><span>上下文 58.6K / 183.6K</span><span>本次输出 2.1K</span></div>
+      </div>
+
+      <div class="ag-msgs" id="agMsgs">
+        <!-- user -->
+        <div class="msg user">
+          <div class="m-av">雪</div>
+          <div class="msg-body">
+            <div class="msg-name">你 <span class="mt">14:31</span></div>
+            <div class="msg-text">续写第542章拍卖会后半段，让筑基灵液登场，萧炎要暗中盯上加列奥。注意保持压抑的氛围。</div>
+          </div>
+        </div>
+
+        <!-- agent thinking -->
+        <div class="msg agent">
+          <div class="m-av">A</div>
+          <div class="msg-body">
+            <div class="msg-name">写梨眼 Agent <span class="mt">14:31 · deepseek-v4</span></div>
+            <div class="msg-text">好的。我先读取当前章节与上下文，确认剧情衔接点，再为你续写。</div>
+
+            <div class="tool open">
+              <div class="tool-head" onclick="this.parentElement.classList.toggle('open')">
+                <span class="tool-ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+                <span class="t-name">read_chapter</span>
+                <span class="t-stat">✓ 0.4s</span>
+                <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="tool-body">
+                <div><span class="k">chapter:</span> <span class="v">第542章 备有艰难</span></div>
+                <div><span class="k">words:</span> <span class="v">3941</span></div>
+                <div><span class="k">tail:</span> <span class="v">"…还有加列家族的加列奥。"</span></div>
+              </div>
+            </div>
+
+            <div class="tool open">
+              <div class="tool-head" onclick="this.parentElement.classList.toggle('open')">
+                <span class="tool-ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="5" rx="1"/><path d="M5 8v11a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg></span>
+                <span class="t-name">search_memory</span>
+                <span class="t-stat">✓ 命中 3 条</span>
+                <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="tool-body">
+                <div><span class="k">query:</span> <span class="v">筑基灵液 / 加列奥 / 拍卖会</span></div>
+                <div><span class="k">hits:</span> <span class="v">萧炎(主角) · 加列奥(反派) · 筑基灵液(物品)</span></div>
+              </div>
+            </div>
+
+            <div class="tool">
+              <div class="tool-head" onclick="this.parentElement.classList.toggle('open')">
+                <span class="tool-ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M12 19h4.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H12"/></svg></span>
+                <span class="t-name">read_outline</span>
+                <span class="t-stat">✓ 0.2s</span>
+                <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <div class="tool-body">
+                <div><span class="k">arc:</span> <span class="v">拍卖会 · 中段 · 铺垫冲突</span></div>
+                <div><span class="k">beat:</span> <span class="v">灵液登场 → 加列奥抬价 → 萧炎暗中结怨</span></div>
+              </div>
+            </div>
+
+            <div class="msg-text" style="margin-top:10px">上下文已就绪。按 <b>压抑氛围 + 灵液登场 + 暗中结怨</b> 的方向续写，以下是建议插入的内容：</div>
+
+            <div class="sugg">
+              <div class="sugg-head">
+                <span class="s-title">✦ 建议插入 · 第542章末尾</span>
+                <span class="s-meta">+3 段 · 约 480 字</span>
+              </div>
+              <div class="sugg-body">
+                <span class="sugg-ctx">…还有加列家族的加列奥。</span>
+                <span class="sugg-add">就在这时，高台上的红布被掀开。一只白玉小瓶静静躺在丝绒之上，瓶身温润，隐有流光。</span>
+                <span class="sugg-add">"筑基灵液。"白发老者声音不高，却让全场骤然安静，"可助斗之气九段者，一举凝聚斗之气旋。"</span>
+                <span class="sugg-add">萧炎呼吸一滞，兜帽下的目光骤然锐利。而斜对面，加列奥已缓缓举起了手中的号牌。</span>
+              </div>
+              <div class="sugg-foot">
+                <button class="btn-accept"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>插入正文</button>
+                <button class="btn-reject">跳过</button>
+                <button class="btn-retry"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/></svg>再生成</button>
+              </div>
+            </div>
+
+            <div class="tool-inline-note"><span class="spin"></span>检测到新角色「白发老者」，已生成建卡建议，待你确认…</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ag-quick">
+        <button class="qcmd"><span class="slash">/</span>续写本章</button>
+        <button class="qcmd"><span class="slash">/</span>整卷体检</button>
+        <button class="qcmd"><span class="slash">/</span>创建角色</button>
+        <button class="qcmd"><span class="slash">/</span>出细纲</button>
+        <button class="qcmd"><span class="slash">/</span>润色段落</button>
+        <button class="qcmd"><span class="slash">/</span>灵感讨论</button>
+      </div>
+
+      <div class="ag-input">
+        <div class="ag-input-box">
+          <textarea rows="2" placeholder="向 Agent 提问，/ 快捷指令，@ 引用章节或角色…"></textarea>
+          <div class="ag-input-row">
+            <button class="ag-model"><span class="zap">⚡</span>DeepSeek V4<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+            <button class="ag-icon-btn" title="@ 引用上下文"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg></button>
+            <button class="ag-icon-btn" title="附件/图片"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></button>
+            <button class="ag-send" title="发送 (Enter)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="ag-foot"><span>本地检索不耗 token</span><span>5 级循环上限 · 工具白名单</span></div>
+    </aside>
+  </div>
+
+  <!-- ══════ StatusBar ══════ -->
+  <footer class="statusbar">
+    <span class="st-seg"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>网文之洞帝豪行</span>
+    <span class="st-seg mono">543 章 · 464,254 字</span>
+    <span class="st-seg st-err"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>0</span>
+    <span class="st-seg st-warn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>1</span>
+    <span class="st-spacer"></span>
+    <span class="st-seg"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>已保存 14:32</span>
+    <span class="st-seg"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>云同步</span>
+    <span class="st-seg">⚡ DeepSeek V4</span>
+    <span class="st-seg mono">58.6K/183.6K</span>
+    <span class="st-seg">UTF-8</span>
+    <span class="st-seg">100%</span>
+  </footer>
+</div>
+
+<script>
+// ── ActivityBar 切换 SideBar 视图 + active 态 ──
+const views={roles:'view-roles',outline:'view-outline',memory:'view-memory'};
+document.querySelectorAll('.ab-item').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.ab-item').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const v=btn.dataset.view;
+    // 默认显示写作(章节)视图
+    ['view-write','view-roles','view-outline','view-memory'].forEach(id=>{
+      const el=document.getElementById(id); if(!el)return;
+      const show = v==='roles'&&id==='view-roles' || v==='outline'&&id==='view-outline' || v==='memory'&&id==='view-memory' || (!views[v]&&id==='view-write');
+      el.classList.toggle('hidden-view',!show);
+    });
+  });
+});
+
+// ── SideBar 卷折叠 ──
+document.querySelectorAll('.tree-vol').forEach(v=>{
+  v.addEventListener('click',()=>{
+    v.classList.toggle('closed');
+    const next=v.nextElementSibling;
+    if(next&&next.classList.contains('tree-children')) next.style.display=v.classList.contains('closed')?'none':'block';
+  });
+});
+
+// ── Editor Tab 切换 ──
+document.querySelectorAll('.etab').forEach(t=>{
+  t.addEventListener('click',e=>{
+    if(e.target.closest('.x'))return;
+    document.querySelectorAll('.etab').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+  });
+});
+
+// ── Bottom Panel 折叠 ──
+const bpBody=document.getElementById('bpBody');
+document.getElementById('bpToggle').addEventListener('click',()=>{
+  bpBody.classList.toggle('collapsed');
+});
+
+// ── SideBar 章节选中 ──
+document.querySelectorAll('.tree-ch').forEach(ch=>{
+  ch.addEventListener('click',()=>{
+    document.querySelectorAll('.tree-ch').forEach(x=>x.classList.remove('active'));
+    ch.classList.add('active');
+  });
+});
+
+// ── Agent 面板收起 ──
+document.getElementById('agClose').addEventListener('click',()=>{
+  const p=document.getElementById('agentPanel');
+  p.style.display=p.style.display==='none'?'flex':'none';
+});
+
+// ── SideBar 折叠（工具栏按钮）──
+document.getElementById('tlSidebar').addEventListener('click',()=>{
+  const sb=document.querySelector('.sidebar');
+  sb.style.display=sb.style.display==='none'?'flex':'none';
+});
+
+// ── 填充角色/大纲/档案 侧栏数据 ──
+const roles=[['主角',['萧炎 · 斗之气八段','熏儿 · 古族千金']],['反派',['加列奥 · 加列家族','柳席 · 一品炼药师']],['配角',['白发老者 · 拍卖师','萧战 · 族长','萧宁 · 同辈']]];
+document.getElementById('rolesTree').innerHTML=roles.map(([g,items])=>`
+  <div class="tree-vol"><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>${g}<span class="vol-count">${items.length}</span></div>
+  <div class="tree-children">${items.map(n=>`<div class="tree-ch"><span class="ch-dot" style="background:#c586f0"></span><span class="ch-name">${n}</span></div>`).join('')}</div>`).join('');
+
+const outline=[['第一卷 拍卖风云',['542 备有艰难 ✎','543 噬杀八玄蛇','544 花萎税家','545 灵液争夺']],['第二卷 宗门试炼',['546 山门初临','547 久多岁时']]];
+document.getElementById('outlineTree').innerHTML=outline.map(([g,items])=>`
+  <div class="tree-vol"><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>${g}<span class="vol-count">${items.length}</span></div>
+  <div class="tree-children">${items.map(n=>`<div class="tree-ch"><span class="ch-dot" style="background:var(--green)"></span><span class="ch-name">${n}</span></div>`).join('')}</div>`).join('');
+
+const memory=[['角色',['萧炎·实力线','加列奥·结怨线']],['物品',['筑基灵液·待登场','黑铁残片·伏笔']],['伏笔',['拍卖会·神秘买家','古族·暗中守护']]];
+document.getElementById('memoryTree').innerHTML=memory.map(([g,items])=>`
+  <div class="tree-vol"><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>${g}<span class="vol-count">${items.length}</span></div>
+  <div class="tree-children">${items.map(n=>`<div class="tree-ch"><span class="ch-dot" style="background:var(--amber)"></span><span class="ch-name">${n}</span></div>`).join('')}</div>`).join('');
+</script>
+</body>
+</html>

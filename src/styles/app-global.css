@@ -1,0 +1,154 @@
+:root {
+ --dz-bg: var(--bg-primary, #0d0d0f);
+ --dz-surface: var(--surface, rgba(255, 255, 255, 0.05));
+ --dz-panel: var(--surface-strong, rgba(255, 255, 255, 0.08));
+ --dz-border: var(--border-color, rgba(255, 255, 255, 0.12));
+ --dz-text: var(--text-primary, rgba(255, 255, 255, 0.9));
+ --dz-muted: var(--text-muted, rgba(148, 163, 184, 0.75));
+ --dz-primary: rgba(129, 140, 248, 0.92);
+ --dz-primary-strong: rgba(109, 115, 255, 0.98);
+ --dz-primary-soft: rgba(109, 115, 255, 0.14);
+ --dz-danger: #fb7185;
+ --dz-shadow: 0 10px 34px rgba(6, 7, 16, 0.36);
+}
+
+.wz-dz-shell {
+ background: transparent;
+ color: var(--dz-text);
+}
+
+.wz-dz-card {
+ border: 1px solid var(--dz-border);
+ border-radius: 0;
+ background: var(--dz-surface);
+ box-shadow: var(--dz-shadow);
+ backdrop-filter: blur(8px) saturate(180%);
+}
+
+.wz-dz-tab {
+ border-bottom: 2px solid transparent;
+ color: var(--dz-muted);
+ transition: all 0.15s ease;
+}
+
+.wz-dz-tab:hover {
+ color: var(--dz-text);
+}
+
+.wz-dz-tab.is-active {
+ color: var(--dz-primary);
+ border-bottom-color: var(--dz-primary);
+}
+
+.wz-dz-chip {
+ border: 1px solid rgba(199, 184, 255, 0.45);
+ border-radius: 0;
+ background: var(--dz-primary-soft);
+ color: var(--dz-primary-strong);
+}
+
+.wz-dz-btn-primary {
+ background: var(--accent);
+ color: #fff;
+ color: #fff;
+ border: 1px solid transparent;
+ border-radius: 0;
+ transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wz-dz-btn-primary:hover {
+ transform: translateY(-1px);
+ box-shadow: 0 8px 18px rgba(92, 87, 230, 0.28);
+}
+
+.wz-dz-btn-danger {
+ border: 1px solid rgba(251, 113, 133, 0.45);
+ border-radius: 0;
+ color: var(--dz-danger);
+ background: rgba(251, 113, 133, 0.08);
+}
+
+.wz-dz-btn-secondary {
+ border: 1px solid var(--dz-border);
+ border-radius: 0;
+ background: var(--dz-panel);
+ color: var(--dz-text);
+ transition: all 0.15s ease;
+ backdrop-filter: blur(8px) saturate(180%);
+}
+
+.wz-dz-btn-secondary:hover {
+ border-color: rgba(199, 184, 255, 0.55);
+ background: rgba(124, 117, 255, 0.18);
+}
+
+.wz-dz-btn-ghost {
+ border: 1px solid transparent;
+ border-radius: 0;
+ color: var(--dz-muted);
+ transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+ position: relative;
+}
+
+.wz-dz-btn-ghost:hover {
+ background: color-mix(in srgb, var(--accent) 12%, rgba(255, 255, 255, 0.08));
+ color: var(--text-primary);
+ border-color: color-mix(in srgb, var(--accent) 25%, rgba(255, 255, 255, 0.15));
+ box-shadow: 
+ 0 4px 12px rgba(0, 0, 0, 0.15),
+ inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+ transform: translateY(-1px);
+}
+
+.wz-dz-btn-ghost:active {
+ transform: translateY(0.5px) scale(0.96);
+ background: color-mix(in srgb, var(--accent) 18%, rgba(255, 255, 255, 0.05));
+ transition: all 0.1s;
+}
+
+.wz-dz-btn-ghost:disabled {
+ opacity: 0.3;
+ pointer-events: none;
+}
+
+/* 选项岛屿：用于对齐多个选项，使其在视觉上成为一个逻辑整体 */
+.wz-option-island {
+ display: inline-flex;
+ align-items: center;
+ background: rgba(0, 0, 0, 0.12);
+ border: 1px solid rgba(255, 255, 255, 0.06);
+ padding: 4px;
+ border-radius: 0;
+ gap: 2px;
+ box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.wz-dz-section {
+ border: 1px solid var(--dz-border);
+ border-radius: 0;
+ background: var(--dz-surface);
+ backdrop-filter: blur(8px) saturate(180%);
+}
+
+.wz-dz-pill {
+ border: 1px solid var(--dz-border);
+ border-radius: 9999px;
+ background: var(--dz-panel);
+ color: var(--dz-muted);
+}
+
+.wz-dz-pill.is-active {
+  border-color: rgba(199, 184, 255, 0.55);
+  background: linear-gradient(135deg, rgba(123, 116, 255, 0.28), rgba(89, 96, 226, 0.24));
+  color: var(--dz-primary-strong);
+}
+
+/* 设置面板右侧滑入动画 */
+@keyframes slide-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+.animate-slide-in-right {
+  animation: slide-in-right 0.2s ease-out;
+}

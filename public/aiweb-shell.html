@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Web</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #171a22;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      user-select: none;
+    }
+    .bar {
+      position: relative;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      box-sizing: border-box;
+      padding: 0 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: #171a22;
+      /* 拉到最上层，避免 child webview 因布局误差遮挡按钮（高 DPI 下尤为关键） */
+      z-index: 2147483647;
+    }
+    .tab {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0 10px;
+      border: 0;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.56);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .tab:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .tab.active {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      box-shadow: inset 0 -2px 0 var(--c);
+    }
+    .tab i {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--c);
+    }
+    .brand {
+      margin-right: 4px;
+      color: rgba(255, 255, 255, 0.48);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .spacer { flex: 1; }
+    .icon {
+      width: 28px;
+      height: 28px;
+      border: 0;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .icon:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .close:hover {
+      background: rgba(244, 63, 94, 0.22);
+      color: #ffe4e6;
+    }
+  </style>
+</head>
+<body>
+  <div class="bar" id="aiweb-bar">
+    <div class="brand">AI Web</div>
+    <button class="tab active" data-action="switch:chatgpt"  data-site="chatgpt"  style="--c:#10a37f"><i></i>ChatGPT</button>
+    <button class="tab"        data-action="switch:gemini"   data-site="gemini"   style="--c:#4285f4"><i></i>Gemini</button>
+    <button class="tab"        data-action="switch:aistudio" data-site="aistudio" style="--c:#1a73e8"><i></i>Studio</button>
+    <button class="tab"        data-action="switch:claude"   data-site="claude"   style="--c:#d97a47"><i></i>Claude</button>
+    <div class="spacer"></div>
+    <button class="icon"       data-action="reload" title="Reload">&#8635;</button>
+    <button class="icon close" data-action="hide"   title="Hide">&times;</button>
+  </div>
+
+  <script>
+    // 优先使用后端 initialization_script 注入的 xlyAiwebSend；
+    // 任何环境异常时再走本页内的兜底链路（与初始化器逻辑保持一致）。
+    function send(action) {
+      try { document.body.setAttribute('data-last-action', action); } catch (e) {}
+      try {
+        if (typeof window.xlyAiwebSend === 'function') {
+          window.xlyAiwebSend(action);
+          return;
+        }
+      } catch (e) {}
+      fallbackSend(action);
+    }
+
+    function fallbackSend(action) {
+      // 通道 1：__TAURI_INTERNALS__.invoke
+      try {
+        var t = window.__TAURI_INTERNALS__;
+        if (t && typeof t.invoke === 'function') {
+          var p = t.invoke('aiweb_shell_action', { action: action });
+          if (p && typeof p.catch === 'function') {
+            p.catch(function () { bridgeFallback(action); });
+          }
+          return;
+        }
+      } catch (e) {}
+      bridgeFallback(action);
+    }
+
+    function bridgeFallback(action) {
+      var payload = encodeURIComponent(action);
+      var urls = [
+        'http://aiweb-bridge.localhost/shell?a=' + payload,
+        'https://aiweb-bridge.localhost/shell?a=' + payload,
+        'aiweb-bridge://localhost/shell?a=' + payload
+      ];
+      var ok = false;
+      for (var i = 0; i < urls.length && !ok; i++) {
+        try { if (navigator.sendBeacon && navigator.sendBeacon(urls[i])) ok = true; } catch (e) {}
+      }
+      if (!ok) {
+        for (var j = 0; j < urls.length; j++) {
+          try { fetch(urls[j], { method: 'POST', mode: 'no-cors', keepalive: true }).catch(function () {}); } catch (e) {}
+        }
+        try { var img = new Image(); img.src = urls[0] + '&t=' + Date.now(); } catch (e) {}
+      }
+    }
+
+    function setActive(id) {
+      document.querySelectorAll('.tab').forEach(function (el) {
+        el.classList.toggle('active', el.getAttribute('data-site') === id);
+      });
+    }
+
+    // 用 addEventListener + 事件委托替代 inline onclick，避免某些 WebView2 CSP 处理路径下的 inline-handler 失效问题
+    document.getElementById('aiweb-bar').addEventListener('click', function (ev) {
+      var btn = ev.target.closest('button[data-action]');
+      if (!btn) return;
+      var action = btn.getAttribute('data-action');
+      if (!action) return;
+      if (action.indexOf('switch:') === 0) {
+        setActive(action.slice(7));
+      }
+      send(action);
+    });
+
+    // 优先使用 initialization_script 注入的当前选中标识；其次读 query；再次默认 chatgpt
+    try {
+      var active = window.__xlyActiveAi;
+      if (!active) {
+        var params = new URLSearchParams(location.search);
+        active = params.get('active') || 'chatgpt';
+      }
+      setActive(active);
+    } catch (e) {}
+  </script>
+</body>
+</html>

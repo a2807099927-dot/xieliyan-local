@@ -1,0 +1,744 @@
+{
+  "query": "battles_-100_0_all",
+  "timestamp": 1779901131266,
+  "data": [
+    {
+      "id": "Q203681",
+      "name": "法萨卢斯战役",
+      "type": "battle",
+      "description": "48 BCE decisive battle of Caesar's Civil War",
+      "lon": 22.38333333,
+      "lat": 39.3,
+      "startYear": null
+    },
+    {
+      "id": "Q203681",
+      "name": "法萨卢斯战役",
+      "type": "battle",
+      "description": "48 BCE decisive battle of Caesar's Civil War",
+      "lon": 22.38333333,
+      "lat": 39.3,
+      "startYear": null
+    },
+    {
+      "id": "Q203681",
+      "name": "法萨卢斯战役",
+      "type": "battle",
+      "description": "48 BCE decisive battle of Caesar's Civil War",
+      "lon": 22.38333333,
+      "lat": 39.3,
+      "startYear": null
+    },
+    {
+      "id": "Q205887",
+      "name": "卡莱战役",
+      "type": "battle",
+      "description": "ancient battle between Roman Republic and Parthian Empire in 53 BCE near modern Harran, Turkey",
+      "lon": 39.033333,
+      "lat": 36.866667,
+      "startYear": null
+    },
+    {
+      "id": "Q233344",
+      "name": "Battle of the Silarius River",
+      "type": "battle",
+      "description": "last battle of the Roman Servile War, 71 BC",
+      "lon": 14.942531111,
+      "lat": 40.481628055,
+      "startYear": null
+    },
+    {
+      "id": "Q233352",
+      "name": "Battle of Chaeronea",
+      "type": "battle",
+      "description": "battle in 86 BCE",
+      "lon": 22.864,
+      "lat": 38.501,
+      "startYear": null
+    },
+    {
+      "id": "Q137567",
+      "name": "Battle of Asculum",
+      "type": "battle",
+      "description": "88 BCE battle",
+      "lon": 13.547222,
+      "lat": 41.995,
+      "startYear": null
+    },
+    {
+      "id": "Q384729",
+      "name": "Second Battle of Clusium",
+      "type": "battle",
+      "description": "battle",
+      "lon": 11.95,
+      "lat": 43.016667,
+      "startYear": null
+    },
+    {
+      "id": "Q968551",
+      "name": "Battle of Mount Scorobas",
+      "type": "battle",
+      "description": "battle",
+      "lon": 30.633333,
+      "lat": 41.116667,
+      "startYear": null
+    },
+    {
+      "id": "Q971507",
+      "name": "泽拉战役",
+      "type": "battle",
+      "description": "47 BCE battle of Julius Caesar's Pontic Campaign",
+      "lon": 35.88333333,
+      "lat": 40.3,
+      "startYear": null
+    },
+    {
+      "id": "Q972445",
+      "name": "基齐库斯之圍",
+      "type": "battle",
+      "description": "battle of the Third Mithridatic War",
+      "lon": 27.799873,
+      "lat": 40.399836,
+      "startYear": null
+    },
+    {
+      "id": "Q1230563",
+      "name": "Battle of the Colline Gate",
+      "type": "battle",
+      "description": "82 BCE battle",
+      "lon": 12.498611,
+      "lat": 41.907222,
+      "startYear": null
+    },
+    {
+      "id": "Q2236672",
+      "name": "Battle of Vingeanne",
+      "type": "battle",
+      "description": "battle of the Gallic War",
+      "lon": 3.125,
+      "lat": 45.708333333,
+      "startYear": null
+    },
+    {
+      "id": "Q2299845",
+      "name": "Battle of Tigranocerta",
+      "type": "battle",
+      "description": "battle fought in 69 BCE",
+      "lon": 41.0014,
+      "lat": 38.1422,
+      "startYear": null
+    },
+    {
+      "id": "Q2331925",
+      "name": "Battle of Chalcedon",
+      "type": "battle",
+      "description": "battle of the Third Mithridatic War",
+      "lon": 29.033333,
+      "lat": 40.983333,
+      "startYear": null
+    },
+    {
+      "id": "Q516760",
+      "name": "蒙达战役",
+      "type": "battle",
+      "description": "凯撒内战战役",
+      "lon": -4.85,
+      "lat": 37.55,
+      "startYear": null
+    },
+    {
+      "id": "Q525325",
+      "name": "底拉西乌姆会战",
+      "type": "battle",
+      "description": "battle of Caesar's Civil War in the area of the city of Dyrrachium (in what is now Albania)",
+      "lon": 19.45,
+      "lat": 41.316666666,
+      "startYear": null
+    },
+    {
+      "id": "Q742306",
+      "name": "凯撒入侵不列颠",
+      "type": "battle",
+      "description": "战争",
+      "lon": 1.3089,
+      "lat": 51.1295,
+      "startYear": null
+    },
+    {
+      "id": "Q762458",
+      "name": "魯斯皮納戰役",
+      "type": "battle",
+      "description": "46 BCE battle between the Republican forces of the Optimates and forces loyal to Julius Caesar",
+      "lon": 10.816666666,
+      "lat": 35.766666666,
+      "startYear": null
+    },
+    {
+      "id": "Q1260622",
+      "name": "阿松娜战役",
+      "type": "battle",
+      "description": "battle between the Roman army of Gaius Julius Caesar and the Belgae",
+      "lon": 2.846944,
+      "lat": 49.433611,
+      "startYear": null
+    },
+    {
+      "id": "Q1260622",
+      "name": "阿松娜战役",
+      "type": "battle",
+      "description": "battle between the Roman army of Gaius Julius Caesar and the Belgae",
+      "lon": 3.8459,
+      "lat": 49.4045,
+      "startYear": null
+    },
+    {
+      "id": "Q1267513",
+      "name": "佛日战役",
+      "type": "battle",
+      "description": "battle between the Germanic tribe of the Suebi under the leadership of Ariovistus against six Roman legions under the command of Gaius Julius Caesar in 58 BCE",
+      "lon": 7.333333,
+      "lat": 47.75,
+      "startYear": null
+    },
+    {
+      "id": "Q1268733",
+      "name": "萨比斯战役",
+      "type": "battle",
+      "description": "battle between the legions of the Roman Republic and an association of Belgic tribes, principally the Nervii",
+      "lon": 3.441666666,
+      "lat": 50.233333333,
+      "startYear": null
+    },
+    {
+      "id": "Q1274566",
+      "name": "阿拉尔战役",
+      "type": "battle",
+      "description": "battle between the migrating tribes of the Helvetii, and four Roman legions (Legions VII, VIII, IX, and X) under the command of Gaius Julius Caesar",
+      "lon": 4.817778,
+      "lat": 45.7275,
+      "startYear": null
+    },
+    {
+      "id": "Q604993",
+      "name": "Battle of Cabira",
+      "type": "battle",
+      "description": "battle",
+      "lon": 36.966667,
+      "lat": 40.583333,
+      "startYear": null
+    },
+    {
+      "id": "Q619030",
+      "name": "巴格拉達斯戰役",
+      "type": "battle",
+      "description": "between Julius Caesar's general Gaius Scribonius Curio and the Pompeian Republicans under Publius Attius Varus and King Juba I of Numidia",
+      "lon": 9.965,
+      "lat": 36.88,
+      "startYear": null
+    },
+    {
+      "id": "Q2416094",
+      "name": "Battle of Utica",
+      "type": "battle",
+      "description": "Battle of Caesar's Civil War",
+      "lon": 10.06259722,
+      "lat": 37.05794444,
+      "startYear": null
+    },
+    {
+      "id": "Q2464364",
+      "name": "Battle of Zela",
+      "type": "battle",
+      "description": "67 BCE battle of the Third Mithridatic War",
+      "lon": 35.88333333,
+      "lat": 40.3,
+      "startYear": null
+    },
+    {
+      "id": "Q846491",
+      "name": "凡薩利战役",
+      "type": "battle",
+      "description": "Final battle of the Cimbrian war",
+      "lon": 8.416667,
+      "lat": 45.316667,
+      "startYear": null
+    },
+    {
+      "id": "Q849653",
+      "name": "塔普蘇斯戰役",
+      "type": "battle",
+      "description": "battle in Caesar's Civil War",
+      "lon": 11.047777777,
+      "lat": 35.624444444,
+      "startYear": null
+    },
+    {
+      "id": "Q1628304",
+      "name": "马格托布里加战役",
+      "type": "battle",
+      "description": "early battle of the Gallic Wars",
+      "lon": 6.493611,
+      "lat": 47.8375,
+      "startYear": null
+    },
+    {
+      "id": "Q1509221",
+      "name": "Battle of Orchomenus",
+      "type": "battle",
+      "description": "85 BCE battle",
+      "lon": 22.98,
+      "lat": 38.48,
+      "startYear": null
+    },
+    {
+      "id": "Q635028",
+      "name": "比布拉克特战役",
+      "type": "battle",
+      "description": "battle in 58 BC",
+      "lon": 4.033333,
+      "lat": 46.916667,
+      "startYear": null
+    },
+    {
+      "id": "Q647463",
+      "name": "Battle of Artaxata",
+      "type": "battle",
+      "description": "battle between the Roman Republic and the Kingdom of Armenia",
+      "lon": 44.55056,
+      "lat": 39.95389,
+      "startYear": null
+    },
+    {
+      "id": "Q647463",
+      "name": "Battle of Artaxata",
+      "type": "battle",
+      "description": "battle between the Roman Republic and the Kingdom of Armenia",
+      "lon": 44.576208,
+      "lat": 39.885,
+      "startYear": null
+    },
+    {
+      "id": "Q2889520",
+      "name": "Battle of Nicopolis",
+      "type": "battle",
+      "description": "48 BCE battle",
+      "lon": 37.83333333,
+      "lat": 40.3,
+      "startYear": null
+    },
+    {
+      "id": "Q2505574",
+      "name": "安比奧里克斯起義",
+      "type": "battle",
+      "description": "53 BCE battle",
+      "lon": 5.466667,
+      "lat": 50.783333,
+      "startYear": null
+    },
+    {
+      "id": "Q1972070",
+      "name": "卢泰西亚战役",
+      "type": "battle",
+      "description": "51 BCE battle",
+      "lon": 2.35,
+      "lat": 48.85,
+      "startYear": null
+    },
+    {
+      "id": "Q1975400",
+      "name": "Battle of the Nile",
+      "type": "battle",
+      "description": "47 BCE battle between Julius Caesar and Ptolemy XIII",
+      "lon": 31.11666667,
+      "lat": 30.9,
+      "startYear": null
+    },
+    {
+      "id": "Q2890308",
+      "name": "Battle of Vernix",
+      "type": "battle",
+      "description": "battle in Vernix during the Gallic War",
+      "lon": -1.2236,
+      "lat": 48.7164,
+      "startYear": null
+    },
+    {
+      "id": "Q3498428",
+      "name": "Battle of Mount Gindarus",
+      "type": "battle",
+      "description": "battle of Mount Gindarus",
+      "lon": 36.688889,
+      "lat": 36.394722,
+      "startYear": null
+    },
+    {
+      "id": "Q2707112",
+      "name": "Battle of the Lycus",
+      "type": "battle",
+      "description": "66 BCE battle of the Third Mithridatic War",
+      "lon": 37.830556,
+      "lat": 40.305278,
+      "startYear": null
+    },
+    {
+      "id": "Q2708535",
+      "name": "Battle of the River Amnias",
+      "type": "battle",
+      "description": "89 BCE battle",
+      "lon": 34.136,
+      "lat": 40.4238,
+      "startYear": null
+    },
+    {
+      "id": "Q2841547",
+      "name": "Battle of Faventia",
+      "type": "battle",
+      "description": "81 BCE battle",
+      "lon": 11.883333,
+      "lat": 44.283333,
+      "startYear": null
+    },
+    {
+      "id": "Q2095250",
+      "name": "Battle of the Rhyndacus",
+      "type": "battle",
+      "description": "during the Third Mithridatic War between Mithridates VI of Pontus and the Romans under Lucullus",
+      "lon": 28.3978,
+      "lat": 40.2125,
+      "startYear": null
+    },
+    {
+      "id": "Q3636387",
+      "name": "Battle of Chaeronea",
+      "type": "battle",
+      "description": "87 BCE battle",
+      "lon": 22.864,
+      "lat": 38.501,
+      "startYear": null
+    },
+    {
+      "id": "Q4870221",
+      "name": "Battle of Agendicum",
+      "type": "battle",
+      "description": "51 BCE battle",
+      "lon": 2.35,
+      "lat": 48.85,
+      "startYear": null
+    },
+    {
+      "id": "Q4870287",
+      "name": "Battle of Amanus Pass",
+      "type": "battle",
+      "description": "Roman victory over Parthian army in 39BC",
+      "lon": 36.232,
+      "lat": 36.4795,
+      "startYear": null
+    },
+    {
+      "id": "Q4087405",
+      "name": "阿瓦里库姆战役",
+      "type": "battle",
+      "description": "battle of the Gallic Wars",
+      "lon": 2.395555555,
+      "lat": 47.083611111,
+      "startYear": null
+    },
+    {
+      "id": "Q4871811",
+      "name": "Battle of Mount Tifata",
+      "type": "battle",
+      "description": "82 BCE battle",
+      "lon": 14.170014,
+      "lat": 41.065864,
+      "startYear": null
+    },
+    {
+      "id": "Q2984753",
+      "name": "Battle of Cavillonum",
+      "type": "battle",
+      "description": "battle of the Gallic War",
+      "lon": 4.852778,
+      "lat": 46.780556,
+      "startYear": null
+    },
+    {
+      "id": "Q5452512",
+      "name": "First Battle of Clusium",
+      "type": "battle",
+      "description": "81 BCE battle",
+      "lon": 11.671364039,
+      "lat": 43.050054883,
+      "startYear": null
+    },
+    {
+      "id": "Q5452512",
+      "name": "First Battle of Clusium",
+      "type": "battle",
+      "description": "81 BCE battle",
+      "lon": 11.95,
+      "lat": 43.016667,
+      "startYear": null
+    },
+    {
+      "id": "Q4872891",
+      "name": "Battle of the Cilician Gates",
+      "type": "battle",
+      "description": "39 BCE Roman victory over the Parthian army",
+      "lon": 34.794444,
+      "lat": 37.327778,
+      "startYear": null
+    },
+    {
+      "id": "Q4872231",
+      "name": "Battle of Sacriporto",
+      "type": "battle",
+      "description": "82 BCE conflict in Sulla's Second Civil War,battle",
+      "lon": 13.05,
+      "lat": 41.7,
+      "startYear": null
+    },
+    {
+      "id": "Q12156091",
+      "name": "Battle of Sena Gallica",
+      "type": "battle",
+      "description": "82 BCE battle",
+      "lon": 13.216667,
+      "lat": 43.716667,
+      "startYear": null
+    },
+    {
+      "id": "Q15710625",
+      "name": "Battle of Protopachium",
+      "type": "battle",
+      "description": "battle 89 BCE",
+      "lon": 35,
+      "lat": 41.6,
+      "startYear": null
+    },
+    {
+      "id": "Q4871013",
+      "name": "Battle of Fidentia",
+      "type": "battle",
+      "description": "battle of Sulla's Second Civil War",
+      "lon": 10.066667,
+      "lat": 44.866667,
+      "startYear": null
+    },
+    {
+      "id": "Q4872835",
+      "name": "Battle of the Asio River",
+      "type": "battle",
+      "description": "civil War",
+      "lon": 13.366667,
+      "lat": 43.65,
+      "startYear": null
+    },
+    {
+      "id": "Q15934409",
+      "name": "Siege of Namur",
+      "type": "battle",
+      "description": "siege during the Gallic War",
+      "lon": 4.86666667,
+      "lat": 50.46666667,
+      "startYear": null
+    },
+    {
+      "id": "Q4871069",
+      "name": "Battle of Fucine Lake",
+      "type": "battle",
+      "description": "88 BCE battle",
+      "lon": 13.547221944,
+      "lat": 41.995,
+      "startYear": null
+    },
+    {
+      "id": "Q17277303",
+      "name": "Battle of Halys",
+      "type": "battle",
+      "description": "battle between the Roman Republic and the Kingdom of Pontus, 82 BCE",
+      "lon": 35.956389,
+      "lat": 41.734444,
+      "startYear": null
+    },
+    {
+      "id": "Q85745835",
+      "name": "Battle of Firmum",
+      "type": "battle",
+      "description": "",
+      "lon": 13.715833333,
+      "lat": 43.160833333,
+      "startYear": null
+    },
+    {
+      "id": "Q60524410",
+      "name": "Battle of Italica",
+      "type": "battle",
+      "description": "75 BCE battle of the Sertorian War",
+      "lon": -6.046667,
+      "lat": 37.443889,
+      "startYear": null
+    },
+    {
+      "id": "Q60524412",
+      "name": "Battle of Lauron",
+      "type": "battle",
+      "description": "76 BCE battle of the Sertorian War",
+      "lon": -0.4425,
+      "lat": 39.152222222,
+      "startYear": null
+    },
+    {
+      "id": "Q60524449",
+      "name": "Battle of Sucro",
+      "type": "battle",
+      "description": "75 BCE battle of the Sertorian War",
+      "lon": -0.251667,
+      "lat": 39.163889,
+      "startYear": null
+    },
+    {
+      "id": "Q60524464",
+      "name": "Battle of Valentia",
+      "type": "battle",
+      "description": "75 BCE battle of the Sertorian War",
+      "lon": -0.375,
+      "lat": 39.466667,
+      "startYear": null
+    },
+    {
+      "id": "Q28729885",
+      "name": "Battle of Tenedos",
+      "type": "battle",
+      "description": "73 BCE battle between the fleets of Rome and Pontus in the Third Mithridatic War",
+      "lon": 26.028889,
+      "lat": 39.821944,
+      "startYear": null
+    },
+    {
+      "id": "Q29513472",
+      "name": "勞羅戰役",
+      "type": "battle",
+      "description": "45 BCE battle",
+      "lon": -4.81666667,
+      "lat": 37.26666667,
+      "startYear": null
+    },
+    {
+      "id": "Q109377210",
+      "name": "Siege of Antioch",
+      "type": "battle",
+      "description": "51 BCE battle between Roman and Parthian armies",
+      "lon": 36.1813,
+      "lat": 36.2045,
+      "startYear": null
+    },
+    {
+      "id": "Q85745937",
+      "name": "Battle of Taenum",
+      "type": "battle",
+      "description": "Roman battle of the Social War",
+      "lon": 14.066667,
+      "lat": 41.25,
+      "startYear": null
+    },
+    {
+      "id": "Q46861274",
+      "name": "Siege of the Atuatuci",
+      "type": "battle",
+      "description": "56 BCE siege",
+      "lon": 5.46306,
+      "lat": 50.77944,
+      "startYear": null
+    },
+    {
+      "id": "Q160387",
+      "name": "亞克興海戰",
+      "type": "battle",
+      "description": "31 BCE decisive confrontation of the Final War of the Roman Republic",
+      "lon": 20.725,
+      "lat": 38.925,
+      "startYear": null
+    },
+    {
+      "id": "Q1546379",
+      "name": "Battle of Lake Constance",
+      "type": "battle",
+      "description": "battle",
+      "lon": 9.424906,
+      "lat": 47.59371,
+      "startYear": null
+    },
+    {
+      "id": "Q2462109",
+      "name": "Battle of Morbihan",
+      "type": "battle",
+      "description": "56 BCE naval battle of the Gallic War",
+      "lon": -2.866666666,
+      "lat": 47.5,
+      "startYear": null
+    },
+    {
+      "id": "Q676692",
+      "name": "納洛丘斯戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 15.65,
+      "lat": 38.25,
+      "startYear": null
+    },
+    {
+      "id": "Q106855846",
+      "name": "Battle of Ascurum",
+      "type": "battle",
+      "description": "ancient Roman battle",
+      "lon": 13.57,
+      "lat": 42.85,
+      "startYear": null
+    },
+    {
+      "id": "Q107304813",
+      "name": "Siege of Curicta",
+      "type": "battle",
+      "description": "siege in 49 BCE",
+      "lon": 14.6,
+      "lat": 45.066666666,
+      "startYear": null
+    },
+    {
+      "id": "Q3268397",
+      "name": "Battle of Tenedos",
+      "type": "battle",
+      "description": "86 BCE naval battle between the forces of Mithridates VI of Pontus and the Roman Republic",
+      "lon": 26.05,
+      "lat": 39.816667,
+      "startYear": null
+    },
+    {
+      "id": "Q3310201",
+      "name": "科拉克森战役",
+      "type": "battle",
+      "description": "naval battle",
+      "lon": 32.01,
+      "lat": 36.53,
+      "startYear": null
+    },
+    {
+      "id": "Q11688130",
+      "name": "Battle of Tauris",
+      "type": "battle",
+      "description": "47 BCE naval battle",
+      "lon": 16.7,
+      "lat": 43.083333,
+      "startYear": null
+    },
+    {
+      "id": "Q28662986",
+      "name": "希波城戰役",
+      "type": "battle",
+      "description": "sea battle in 46 BC",
+      "lon": 7.751889,
+      "lat": 36.883222,
+      "startYear": null
+    }
+  ]
+}

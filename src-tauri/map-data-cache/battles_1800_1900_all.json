@@ -1,0 +1,906 @@
+{
+  "query": "battles_1800_1900_all",
+  "timestamp": 1779899556038,
+  "data": [
+    {
+      "id": "Q184320",
+      "name": "博罗金诺战役",
+      "type": "battle",
+      "description": "1812 battle during the French invasion of Russia",
+      "lon": 35.816666666,
+      "lat": 55.516666666,
+      "startYear": 1812
+    },
+    {
+      "id": "Q193993",
+      "name": "皮里奇之役",
+      "type": "battle",
+      "description": "南北战争战役",
+      "lon": -94.034694444,
+      "lat": 36.454388888,
+      "startYear": 1862
+    },
+    {
+      "id": "Q194329",
+      "name": "五叉战役",
+      "type": "battle",
+      "description": "1865 American Civil War history",
+      "lon": -77.622777777,
+      "lat": 37.139444444,
+      "startYear": 1865
+    },
+    {
+      "id": "Q195118",
+      "name": "Battle of Old Church",
+      "type": "battle",
+      "description": "1864 battle",
+      "lon": -77.2209,
+      "lat": 37.6444,
+      "startYear": 1864
+    },
+    {
+      "id": "Q200682",
+      "name": "昆士顿高地战斗",
+      "type": "battle",
+      "description": "war of 1812 battle",
+      "lon": -79.050555555,
+      "lat": 43.161944444,
+      "startYear": 1812
+    },
+    {
+      "id": "Q205422",
+      "name": "小大角战役",
+      "type": "battle",
+      "description": "June 1876 battle of the Great Sioux War",
+      "lon": -107.428888888,
+      "lat": 45.565,
+      "startYear": 1876
+    },
+    {
+      "id": "Q209359",
+      "name": "維美洛戰役",
+      "type": "battle",
+      "description": "1808 battle during the Peninsular War",
+      "lon": -9.31667,
+      "lat": 39.175,
+      "startYear": 1808
+    },
+    {
+      "id": "Q209721",
+      "name": "卡韦松之战",
+      "type": "battle",
+      "description": "1808 battle in Peninsular War",
+      "lon": -4.64639,
+      "lat": 41.7333,
+      "startYear": 1808
+    },
+    {
+      "id": "Q221469",
+      "name": "第一次馬納沙斯之役",
+      "type": "battle",
+      "description": "1861 first major land battle of the American Civil War",
+      "lon": -77.5225,
+      "lat": 38.815,
+      "startYear": 1861
+    },
+    {
+      "id": "Q233343",
+      "name": "第二次馬納沙斯之役",
+      "type": "battle",
+      "description": "1862 major battle of the American Civil War",
+      "lon": -77.52131,
+      "lat": 38.81246,
+      "startYear": 1862
+    },
+    {
+      "id": "Q233356",
+      "name": "Battle of Lacolle Mills",
+      "type": "battle",
+      "description": "battle on 30 March 1814 during the War of 1812",
+      "lon": -73.343809,
+      "lat": 45.067564,
+      "startYear": 1814
+    },
+    {
+      "id": "Q233405",
+      "name": "第二次波尔图之战",
+      "type": "battle",
+      "description": "1809 battle during the Peninsular War",
+      "lon": -8.610833,
+      "lat": 41.149444,
+      "startYear": 1809
+    },
+    {
+      "id": "Q241108",
+      "name": "弗里德蘭戰役",
+      "type": "battle",
+      "description": "1807 battle during the War of the Fourth Coalition",
+      "lon": 21.016666666,
+      "lat": 54.45,
+      "startYear": 1807
+    },
+    {
+      "id": "Q243640",
+      "name": "Second Battle of Sabine Pass",
+      "type": "battle",
+      "description": "1863 battle",
+      "lon": -93.870747222,
+      "lat": 29.720513888,
+      "startYear": 1863
+    },
+    {
+      "id": "Q245773",
+      "name": "托尔梅斯河畔阿尔瓦之战",
+      "type": "battle",
+      "description": "1809 battle during the Peninsular War",
+      "lon": -5.5,
+      "lat": 40.83333333,
+      "startYear": 1809
+    },
+    {
+      "id": "Q245874",
+      "name": "埃武拉戰役",
+      "type": "battle",
+      "description": "1808 battle during the Peninsular War",
+      "lon": -7.90861111,
+      "lat": 38.57138889,
+      "startYear": 1808
+    },
+    {
+      "id": "Q29802",
+      "name": "Battle of Rodeo del Medio",
+      "type": "battle",
+      "description": "1841 battle of the Argentine Civil Wars",
+      "lon": -68.683333333,
+      "lat": -32.966666666,
+      "startYear": 1841
+    },
+    {
+      "id": "Q41894",
+      "name": "新奥尔良战役",
+      "type": "battle",
+      "description": "1812年戰爭之戰",
+      "lon": -89.990833333,
+      "lat": 29.9425,
+      "startYear": 1815
+    },
+    {
+      "id": "Q48163",
+      "name": "库斯托扎战役",
+      "type": "battle",
+      "description": "1866 III Italian Independence War battle",
+      "lon": 10.79583333,
+      "lat": 45.37888889,
+      "startYear": 1866
+    },
+    {
+      "id": "Q48202",
+      "name": "庫斯托扎戰役 (1848年)",
+      "type": "battle",
+      "description": "1848 battle of the First Italian War of Independence",
+      "lon": 10.79583333,
+      "lat": 45.37888889,
+      "startYear": 1848
+    },
+    {
+      "id": "Q48314",
+      "name": "滑鐵盧之戰",
+      "type": "battle",
+      "description": "1815 battle during the War of the Seventh Coalition",
+      "lon": 4.412222222,
+      "lat": 50.678055555,
+      "startYear": 1815
+    },
+    {
+      "id": "Q48776",
+      "name": "Battle of Palmito Ranch",
+      "type": "battle",
+      "description": "1865 American Civil War battle",
+      "lon": -97.28528,
+      "lat": 25.94667,
+      "startYear": 1865
+    },
+    {
+      "id": "Q55635",
+      "name": "拉斯克鲁塞斯山口之战",
+      "type": "battle",
+      "description": "1810 battle of the early Mexican War of Independence",
+      "lon": -99.3164,
+      "lat": 19.3294,
+      "startYear": 1810
+    },
+    {
+      "id": "Q76914",
+      "name": "塞佩達戰役 (1859年)",
+      "type": "battle",
+      "description": "battle 1859",
+      "lon": -60.58305556,
+      "lat": -33.38138889,
+      "startYear": 1859
+    },
+    {
+      "id": "Q82702",
+      "name": "Battle of Phaleron",
+      "type": "battle",
+      "description": "1827 battle during the Greek War of Independence",
+      "lon": 23.7,
+      "lat": 37.933333333,
+      "startYear": 1827
+    },
+    {
+      "id": "Q246200",
+      "name": "里奧塞科城戰役",
+      "type": "battle",
+      "description": "1808 battle during the Peninsular War",
+      "lon": -4.993611111,
+      "lat": 41.894166666,
+      "startYear": 1808
+    },
+    {
+      "id": "Q247871",
+      "name": "Battle of Talana Hill",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 30.267777777,
+      "lat": -28.163888888,
+      "startYear": 1899
+    },
+    {
+      "id": "Q248979",
+      "name": "Battle of Modder River",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 24.62638889,
+      "lat": -29.03916667,
+      "startYear": 1899
+    },
+    {
+      "id": "Q254797",
+      "name": "第一次勒布爾熱战役",
+      "type": "battle",
+      "description": "1870 battle during the Siege of Paris of the Franco-Prussian War",
+      "lon": 2.42556,
+      "lat": 48.9353,
+      "startYear": 1870
+    },
+    {
+      "id": "Q258069",
+      "name": "Battle of Segesvár",
+      "type": "battle",
+      "description": "1849 battle",
+      "lon": 24.846,
+      "lat": 46.236277777,
+      "startYear": 1849
+    },
+    {
+      "id": "Q262648",
+      "name": "胡赫斯特戰役",
+      "type": "battle",
+      "description": "1800 battle",
+      "lon": 10.55,
+      "lat": 48.6,
+      "startYear": 1800
+    },
+    {
+      "id": "Q263950",
+      "name": "伊蘭斯拉格特戰役",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 29.95,
+      "lat": -28.4,
+      "startYear": 1899
+    },
+    {
+      "id": "Q265106",
+      "name": "Battle of Estrelleta",
+      "type": "battle",
+      "description": "1845 major battle of the Dominican War of Independence",
+      "lon": -71.7,
+      "lat": 18.88333333,
+      "startYear": 1845
+    },
+    {
+      "id": "Q273011",
+      "name": "马伦哥战役",
+      "type": "battle",
+      "description": "1800 battle during the War of the Second Coalition",
+      "lon": 8.683333333,
+      "lat": 44.883333333,
+      "startYear": 1800
+    },
+    {
+      "id": "Q275736",
+      "name": "Battle of San Francisco",
+      "type": "battle",
+      "description": "1879 battle",
+      "lon": -69.95,
+      "lat": -19.66666667,
+      "startYear": 1879
+    },
+    {
+      "id": "Q276059",
+      "name": "维多利亚战役",
+      "type": "battle",
+      "description": "1813 battle of the Peninsular War",
+      "lon": -2.683333333,
+      "lat": 42.85,
+      "startYear": 1813
+    },
+    {
+      "id": "Q281850",
+      "name": "Battle of Stanwix Station",
+      "type": "battle",
+      "description": "1862 battle",
+      "lon": -113.39255,
+      "lat": 32.93352,
+      "startYear": 1862
+    },
+    {
+      "id": "Q302519",
+      "name": "阿杜瓦战役",
+      "type": "battle",
+      "description": "battle between the Ethiopian Empire and the Kingdom of Italy near the town of Adwa, the climactic battle of the First Italo-Ethiopian War, securing Ethiopian sovereignty",
+      "lon": 38.973333333,
+      "lat": 14.018888888,
+      "startYear": 1896
+    },
+    {
+      "id": "Q303176",
+      "name": "马尼拉战役",
+      "type": "battle",
+      "description": "mock battle in 1898 during the Spanish–American War",
+      "lon": 121,
+      "lat": 14.583333333,
+      "startYear": 1898
+    },
+    {
+      "id": "Q304655",
+      "name": "First Battle of Auburn",
+      "type": "battle",
+      "description": "1863 battle of the American Civil War",
+      "lon": -77.7,
+      "lat": 38.7,
+      "startYear": 1863
+    },
+    {
+      "id": "Q305331",
+      "name": "Battle of Carlisle",
+      "type": "battle",
+      "description": "1863 battle",
+      "lon": -77.1845,
+      "lat": 40.2011,
+      "startYear": 1863
+    },
+    {
+      "id": "Q323365",
+      "name": "Battle of Kissingen",
+      "type": "battle",
+      "description": "1866 battle between Bavarian and Prussian troops in the Austrian-Prussian War",
+      "lon": 10.066667,
+      "lat": 50.2,
+      "startYear": 1866
+    },
+    {
+      "id": "Q324344",
+      "name": "羅利薩戰役",
+      "type": "battle",
+      "description": "1808 battle during the Peninsular War",
+      "lon": -9.18361,
+      "lat": 39.3136,
+      "startYear": 1808
+    },
+    {
+      "id": "Q324916",
+      "name": "索尔费里诺战役",
+      "type": "battle",
+      "description": "1859 major battle of the Second Italian War of Independence",
+      "lon": 10.566388888,
+      "lat": 45.367222222,
+      "startYear": 1859
+    },
+    {
+      "id": "Q329534",
+      "name": "呂岑會戰",
+      "type": "battle",
+      "description": "1813年第六次聯合戰爭期間的戰鬥",
+      "lon": 12.1833,
+      "lat": 51.2167,
+      "startYear": 1813
+    },
+    {
+      "id": "Q333088",
+      "name": "Second Battle of Cancha Rayada",
+      "type": "battle",
+      "description": "1818 battle",
+      "lon": -71.645833303,
+      "lat": -35.40545938,
+      "startYear": 1818
+    },
+    {
+      "id": "Q337960",
+      "name": "雷根斯堡戰役",
+      "type": "battle",
+      "description": "1809 battle of the War of the Fifth Coalition",
+      "lon": 12.1,
+      "lat": 49.016666666,
+      "startYear": 1809
+    },
+    {
+      "id": "Q339052",
+      "name": "葛羅比忍戰役",
+      "type": "battle",
+      "description": "1813 battle during the War of the Sixth Coalition",
+      "lon": 13.3,
+      "lat": 52.35,
+      "startYear": 1813
+    },
+    {
+      "id": "Q348998",
+      "name": "伊斯利战役",
+      "type": "battle",
+      "description": "1844 battle",
+      "lon": -1.93,
+      "lat": 34.69,
+      "startYear": 1844
+    },
+    {
+      "id": "Q364322",
+      "name": "伦迪巷之战",
+      "type": "battle",
+      "description": "1814 battle of the War of 1812",
+      "lon": -79.095456,
+      "lat": 43.089152,
+      "startYear": 1814
+    },
+    {
+      "id": "Q365640",
+      "name": "河狸壩戰役",
+      "type": "battle",
+      "description": "war of 1812 battle",
+      "lon": -79.185388888,
+      "lat": 43.117583333,
+      "startYear": 1813
+    },
+    {
+      "id": "Q367966",
+      "name": "蘭茨胡特戰役",
+      "type": "battle",
+      "description": "1809 battle of the War of the Fifth Coalition",
+      "lon": 12.15083,
+      "lat": 48.53944,
+      "startYear": 1809
+    },
+    {
+      "id": "Q369859",
+      "name": "Battle of Belmont",
+      "type": "battle",
+      "description": "1899 battle of the Second Boer War",
+      "lon": 24.36666667,
+      "lat": -29.41666667,
+      "startYear": 1899
+    },
+    {
+      "id": "Q369893",
+      "name": "安加莫斯海战",
+      "type": "battle",
+      "description": "1879 naval encounter of the War of the Pacific",
+      "lon": -71,
+      "lat": -23,
+      "startYear": 1879
+    },
+    {
+      "id": "Q369893",
+      "name": "安加莫斯海战",
+      "type": "battle",
+      "description": "1879 naval encounter of the War of the Pacific",
+      "lon": -70.591967,
+      "lat": -23.032919,
+      "startYear": 1879
+    },
+    {
+      "id": "Q370307",
+      "name": "Battle of Kandahar",
+      "type": "battle",
+      "description": "1880 battle",
+      "lon": 65.71666667,
+      "lat": 31.61666667,
+      "startYear": 1880
+    },
+    {
+      "id": "Q370671",
+      "name": "第二次富蘭克林戰役",
+      "type": "battle",
+      "description": "1864 battle of the American Civil War",
+      "lon": -86.8733,
+      "lat": 35.9174,
+      "startYear": 1864
+    },
+    {
+      "id": "Q376727",
+      "name": "Battle of Las Cumbres",
+      "type": "battle",
+      "description": "1862 battle",
+      "lon": -97.316666666,
+      "lat": 18.716666666,
+      "startYear": 1862
+    },
+    {
+      "id": "Q377681",
+      "name": "Battle of Oak Grove",
+      "type": "battle",
+      "description": "1862 battle",
+      "lon": -77.3292,
+      "lat": 37.5154,
+      "startYear": 1862
+    },
+    {
+      "id": "Q379346",
+      "name": "提匹肯奴河畔戰役",
+      "type": "battle",
+      "description": "1811 battle",
+      "lon": -86.843888888,
+      "lat": 40.506944444,
+      "startYear": 1811
+    },
+    {
+      "id": "Q383067",
+      "name": "萨拉加希之战",
+      "type": "battle",
+      "description": "1897 battle in British India",
+      "lon": 70.886904138,
+      "lat": 33.55474665,
+      "startYear": 1897
+    },
+    {
+      "id": "Q385180",
+      "name": "黃海海戰",
+      "type": "battle",
+      "description": "1894年中日海戰",
+      "lon": 123.126388888,
+      "lat": 39.213888888,
+      "startYear": 1894
+    },
+    {
+      "id": "Q388210",
+      "name": "卡拉沃沃战役",
+      "type": "battle",
+      "description": "1821 decisive battle of the Venezuelan War of Independence",
+      "lon": -68.1657,
+      "lat": 10.0045,
+      "startYear": 1821
+    },
+    {
+      "id": "Q388689",
+      "name": "约克战役",
+      "type": "battle",
+      "description": "1812 年约克之战",
+      "lon": -79.40403,
+      "lat": 43.63887,
+      "startYear": 1813
+    },
+    {
+      "id": "Q389349",
+      "name": "布薩高戰役",
+      "type": "battle",
+      "description": "1810 battle during the Peninsular War",
+      "lon": -8.3375,
+      "lat": 40.344444444,
+      "startYear": 1810
+    },
+    {
+      "id": "Q399224",
+      "name": "卡梅倫戰役",
+      "type": "battle",
+      "description": "1863 battle",
+      "lon": -96.613611111,
+      "lat": 19.023125,
+      "startYear": 1863
+    },
+    {
+      "id": "Q404761",
+      "name": "Battle of Saint-Dizier",
+      "type": "battle",
+      "description": "1814 battle during the War of the Sixth Coalition",
+      "lon": 4.949722222,
+      "lat": 48.638333333,
+      "startYear": 1814
+    },
+    {
+      "id": "Q429655",
+      "name": "雪松山之役",
+      "type": "battle",
+      "description": "1862 battle of the American Civil War",
+      "lon": -78.0658,
+      "lat": 38.40137778,
+      "startYear": 1862
+    },
+    {
+      "id": "Q431767",
+      "name": "Battle of Zornoza",
+      "type": "battle",
+      "description": "1808 battle during the Peninsular War",
+      "lon": -2.718888888,
+      "lat": 43.209722222,
+      "startYear": 1808
+    },
+    {
+      "id": "Q431849",
+      "name": "Battle of Stormberg",
+      "type": "battle",
+      "description": "1899 battle",
+      "lon": 26.25480833,
+      "lat": -31.29795556,
+      "startYear": 1899
+    },
+    {
+      "id": "Q451711",
+      "name": "卡尼菲克斯渡口之役",
+      "type": "battle",
+      "description": "1861 battle of the American Civil War",
+      "lon": -80.938611111,
+      "lat": 38.208888888,
+      "startYear": 1861
+    },
+    {
+      "id": "Q460143",
+      "name": "劳伦斯大屠杀",
+      "type": "battle",
+      "description": "1863 raid in the American Civil War",
+      "lon": -95.2359,
+      "lat": 38.96427,
+      "startYear": 1863
+    },
+    {
+      "id": "Q464512",
+      "name": "巴拉克拉瓦战役",
+      "type": "battle",
+      "description": "1854 battle of the Crimean War",
+      "lon": 33.57309444,
+      "lat": 44.57175833,
+      "startYear": 1854
+    },
+    {
+      "id": "Q466391",
+      "name": "雲納河戰役",
+      "type": "battle",
+      "description": "1866 the first battle of the Austro-Prussian War",
+      "lon": 14.8041556,
+      "lat": 50.586029,
+      "startYear": 1866
+    },
+    {
+      "id": "Q475544",
+      "name": "梅斯基希戰役",
+      "type": "battle",
+      "description": "1800 battle",
+      "lon": 9.1127,
+      "lat": 47.993,
+      "startYear": 1800
+    },
+    {
+      "id": "Q475957",
+      "name": "聖費爾莫戰役",
+      "type": "battle",
+      "description": "1859 battle",
+      "lon": 9.046155161,
+      "lat": 45.810349115,
+      "startYear": 1859
+    },
+    {
+      "id": "Q479979",
+      "name": "阿本斯貝格戰役",
+      "type": "battle",
+      "description": "1809 battle of the War of the Fifth Coalition",
+      "lon": 11.863611111,
+      "lat": 48.809166666,
+      "startYear": 1809
+    },
+    {
+      "id": "Q2032250",
+      "name": "Battle of Kulevicha",
+      "type": "battle",
+      "description": "1829 battle of Kulevicha",
+      "lon": 27.11611111,
+      "lat": 43.25722222,
+      "startYear": 1829
+    },
+    {
+      "id": "Q2036970",
+      "name": "Battle of Rivers' Bridge",
+      "type": "battle",
+      "description": "1865 battle of the Western Theater of the American Civil War",
+      "lon": -81.09972222,
+      "lat": 33.05277778,
+      "startYear": 1865
+    },
+    {
+      "id": "Q2043320",
+      "name": "Battle of Jackson",
+      "type": "battle",
+      "description": "1863 battle of the American Civil War",
+      "lon": -90.2,
+      "lat": 32.2875,
+      "startYear": 1863
+    },
+    {
+      "id": "Q2052376",
+      "name": "第一次克恩斯鎮之役",
+      "type": "battle",
+      "description": "1862 battle of the American Civil War",
+      "lon": -78.2,
+      "lat": 39.145,
+      "startYear": 1862
+    },
+    {
+      "id": "Q2059030",
+      "name": "Battle of Hunterstown",
+      "type": "battle",
+      "description": "1863 battle of the American Civil War",
+      "lon": -77.161783,
+      "lat": 39.88255,
+      "startYear": 1863
+    },
+    {
+      "id": "Q2060982",
+      "name": "法迈拉战役",
+      "type": "battle",
+      "description": "1841 battle",
+      "lon": -65.41027778,
+      "lat": -27.03416667,
+      "startYear": 1841
+    },
+    {
+      "id": "Q2063236",
+      "name": "Majuba Hill",
+      "type": "battle",
+      "description": "1881 final battle of the First Boer War",
+      "lon": 29.8613,
+      "lat": -27.4616,
+      "startYear": 1881
+    },
+    {
+      "id": "Q2067243",
+      "name": "Battle of Mansura",
+      "type": "battle",
+      "description": "1864 battle of the American Civil War",
+      "lon": -92.04777778,
+      "lat": 31.055,
+      "startYear": 1864
+    },
+    {
+      "id": "Q2076671",
+      "name": "Battle of Okolona",
+      "type": "battle",
+      "description": "1864 battle of the American Civil War",
+      "lon": -88.7556,
+      "lat": 34.0021,
+      "startYear": 1864
+    },
+    {
+      "id": "Q2079873",
+      "name": "奧爾泰戰役",
+      "type": "battle",
+      "description": "1814 battle during the Peninsular War",
+      "lon": -0.776111111,
+      "lat": 43.505277777,
+      "startYear": 1814
+    },
+    {
+      "id": "Q2088199",
+      "name": "佔領關島",
+      "type": "battle",
+      "description": "US capture of Guam during the Spanish-American War",
+      "lon": 144.6907,
+      "lat": 13.4671,
+      "startYear": 1898
+    },
+    {
+      "id": "Q2090505",
+      "name": "古特施塔特-代彭之战",
+      "type": "battle",
+      "description": "1807 battle during the War of the Fourth Coalition",
+      "lon": 20.4,
+      "lat": 53.98333333,
+      "startYear": 1807
+    },
+    {
+      "id": "Q2091915",
+      "name": "保瑪爾宋特",
+      "type": "battle",
+      "description": "August 1854 Crimean War battle",
+      "lon": 20.238333333,
+      "lat": 60.212222222,
+      "startYear": 1854
+    },
+    {
+      "id": "Q2093780",
+      "name": "Battle of Skuleni",
+      "type": "battle",
+      "description": "1821 battle of the Greek War of Independence",
+      "lon": 27.633333333,
+      "lat": 47.316666666,
+      "startYear": 1821
+    },
+    {
+      "id": "Q2095199",
+      "name": "Battle of Vaught's Hill",
+      "type": "battle",
+      "description": "1863 battle of the American Civil War",
+      "lon": -86.2047,
+      "lat": 35.92523,
+      "startYear": 1863
+    },
+    {
+      "id": "Q2095678",
+      "name": "阿瑟耶戰役",
+      "type": "battle",
+      "description": "1803 battle of the Second Anglo-Maratha War",
+      "lon": 75.8875,
+      "lat": 20.235,
+      "startYear": 1803
+    },
+    {
+      "id": "Q2096968",
+      "name": "Battle of Hanover Court House",
+      "type": "battle",
+      "description": "1862 battle of the American Civil War",
+      "lon": -77.3763,
+      "lat": 37.7222,
+      "startYear": 1862
+    },
+    {
+      "id": "Q2103752",
+      "name": "Battle of Iuka",
+      "type": "battle",
+      "description": "1862 battle of the American Civil War",
+      "lon": -88.2101,
+      "lat": 34.7936,
+      "startYear": 1862
+    },
+    {
+      "id": "Q2106454",
+      "name": "第一次溫徹斯特之役",
+      "type": "battle",
+      "description": "1862 American Civil War engagement in Virginia",
+      "lon": -78.1744,
+      "lat": 39.1773,
+      "startYear": 1862
+    },
+    {
+      "id": "Q2125491",
+      "name": "Battle of Front Royal",
+      "type": "battle",
+      "description": "1862 battle of the American Civil War",
+      "lon": -78.1923,
+      "lat": 38.936,
+      "startYear": 1862
+    },
+    {
+      "id": "Q2128905",
+      "name": "Action at Springfield",
+      "type": "battle",
+      "description": "1861 battle of the Trans-Mississippi Theater of the American Civil War",
+      "lon": -93.3205,
+      "lat": 37.2035,
+      "startYear": 1861
+    },
+    {
+      "id": "Q2134266",
+      "name": "圣约翰河崖战役",
+      "type": "battle",
+      "description": "1862 battle of the American Civil War",
+      "lon": -81.4998,
+      "lat": 30.3852,
+      "startYear": 1862
+    },
+    {
+      "id": "Q2140288",
+      "name": "威廉斯堡之戰",
+      "type": "battle",
+      "description": "1862 battle of the American Civil War",
+      "lon": -76.6659,
+      "lat": 37.2642,
+      "startYear": 1862
+    }
+  ]
+}

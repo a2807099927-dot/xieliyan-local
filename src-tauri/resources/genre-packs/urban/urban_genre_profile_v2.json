@@ -1,0 +1,198 @@
+{
+  "_comment": "都市题材 genre_profiles 完整配置 v2（整合两轮分析）",
+  "_version": "2.0",
+  "_anonymized": true,
+
+  "genre": "urban",
+  "display_name": "都市",
+
+  "reflector_threshold": {
+    "pass_total": 18,
+    "max_total": 25,
+    "key_dimensions": ["beats", "persona"],
+    "key_min_score": 3,
+    "dimensions": {
+      "beats": {
+        "weight": 5,
+        "description": "必选剧情节点是否到位",
+        "objective_check": "required_beats命中率 >= 80%"
+      },
+      "persona": {
+        "weight": 5,
+        "description": "与角色快照是否冲突",
+        "objective_check": "persona_conflict_rate <= 0.3/千字",
+        "forbidden_behaviors": [
+          "主角主动暴露脆弱（哭泣/求饶/真诚道歉）",
+          "主角对同级或下级使用礼貌开场",
+          "主角产生道德自省独白",
+          "主角表现迷茫或恐惧",
+          "面对同级竞争者选择太极化解而非硬刚"
+        ]
+      },
+      "emotion": {
+        "weight": 5,
+        "description": "是否体现目标情绪递进",
+        "objective_check": "情绪曲线波峰在章节60-80%位置"
+      },
+      "causality": {
+        "weight": 5,
+        "description": "事件推进是否有因果链",
+        "objective_check": "每个冲突必须有明确触发条件，化解or激化必须有利弊判断"
+      },
+      "style": {
+        "weight": 5,
+        "description": "是否偏离style_profile",
+        "objective_ratio": 3,
+        "ai_ratio": 2,
+        "objective_checks": [
+          "平均句长在sentence_len_range范围内",
+          "视角词频符合perspective设定",
+          "无banned_words出现",
+          "段落平均行数在2-4行范围内",
+          "无超过150字的长段落"
+        ]
+      }
+    }
+  },
+
+  "style_profile": {
+    "sentence_len_range": {
+      "tense_scene": [4, 10],
+      "normal_scene": [14, 30],
+      "relaxed_scene": [15, 25]
+    },
+    "perspective": "third_limited_protagonist_centric",
+    "psychology_depth_ratio": {
+      "surface_level_thought": 0.6,
+      "strategic_planning": 0.35,
+      "deep_emotional_reflection": 0.05
+    },
+    "banned_words": [
+      "忽然间", "猛地一颤", "不知不觉中", "岁月如梭",
+      "光阴似箭，日月如梭", "像仙女一样", "天空很蓝，白云很白",
+      "生命的意义在于", "宇宙般的孤独"
+    ],
+    "banned_scene_types": [
+      "纯景物抒情段落（无叙事功能）",
+      "道德自省独白",
+      "无目的性日常活动",
+      "文艺式慢节奏开场",
+      "超过150字的长段落",
+      "意识流或蒙太奇手法",
+      "非线性叙事结构"
+    ],
+    "tone": "tense_fast_utilitarian",
+    "paragraph_avg_lines": 2.8,
+    "paragraph_max_lines": 6,
+    "conflict_short_sentence_ratio": 0.85,
+    "dialogue_narration_interval": "3-5轮对话插入1次叙述",
+    "narration_insert_max_chars": 15,
+    "description_order": ["整体气质/动态", "局部特征", "服饰配饰"],
+    "description_first_appearance_max_chars": 50,
+    "sensory_channels": {
+      "visual": 0.9,
+      "auditory": 0.05,
+      "tactile": 0.04,
+      "olfactory": 0.01
+    },
+    "chapter_structure": {
+      "opening_types": {
+        "action_start": 0.6,
+        "dialogue_start": 0.3,
+        "environment_start": 0.1
+      },
+      "climax_position_range": [0.6, 0.8],
+      "ending_types": {
+        "suspense_hook": 0.5,
+        "action_cliffhanger": 0.3,
+        "emotional_resonance": 0.2
+      },
+      "closure_type": "semi_open",
+      "event_cycle_chapters": [1, 3],
+      "foreshadowing_recovery_span": [2, 5]
+    },
+    "conflict_resolution_logic": {
+      "vs_authority_with_resources": "太极化解",
+      "vs_peer_competitor": "直接硬刚",
+      "decision_basis": "利弊判断，非情绪"
+    },
+    "info_density": {
+      "new_info_points_per_chapter": [3, 4],
+      "delivery_method": "dialogue_and_action_primary",
+      "position": "chapter_ending_dense"
+    }
+  },
+
+  "optimizer_gate": {
+    "silent_lt": 10,
+    "freq_only_lt": 20,
+    "full_advice_gte": 20
+  },
+
+  "optimization_map": {
+    "pace_fast": [
+      {"action": "raise_word_count_min", "value": 0.2, "unit": "percent"},
+      {"action": "add_required_beats", "value": 1, "unit": "count"}
+    ],
+    "pace_slow": [
+      {"action": "lower_word_count_max", "value": 0.15, "unit": "percent"},
+      {"action": "inject_craft_pattern", "value": "场景转场句", "unit": "pattern_name"}
+    ],
+    "persona_ooc": [
+      {"action": "persona_weight", "value": 1, "unit": "score_delta"},
+      {"action": "refresh_character_snapshot", "value": true, "unit": "bool"},
+      {"action": "inject_forbidden_behaviors", "value": true, "unit": "bool"}
+    ],
+    "style_drift": [
+      {"action": "inject_style_constraints", "value": 0.2, "unit": "percent"},
+      {"action": "banned_words_strict", "value": true, "unit": "bool"},
+      {"action": "inject_craft_pattern", "value": "节奏控制规则", "unit": "pattern_name"}
+    ],
+    "not_connected_prev": [
+      {"action": "nearby_recall", "value": 5, "unit": "count_delta"},
+      {"action": "anchor_prev_event_strict", "value": true, "unit": "bool"}
+    ],
+    "emotion_flat": [
+      {"action": "inject_craft_pattern", "value": "冲突升级信号词", "unit": "pattern_name"},
+      {"action": "emotion_arc_strict", "value": true, "unit": "bool"}
+    ],
+    "dialogue_unnatural": [
+      {"action": "inject_craft_pattern", "value": "对话开场句", "unit": "pattern_name"},
+      {"action": "inject_craft_pattern", "value": "冲突降温句", "unit": "pattern_name"}
+    ],
+    "chapter_ending_weak": [
+      {"action": "inject_craft_pattern", "value": "章节收尾钩子句", "unit": "pattern_name"},
+      {"action": "forbidden_ending_types", "value": ["完全闭合", "纯抒情", "总结陈词"], "unit": "list"}
+    ]
+  },
+
+  "conflict_signals": {
+    "undercurrent": [
+      "笑了笑", "没吭声", "若有所思", "斜睨一眼", "撇撇嘴",
+      "冷笑一声", "不屑地说道", "眼神交汇", "沉默许久", "冷脸",
+      "眼角带火", "是吗？", "开始布局", "话里有话"
+    ],
+    "open_conflict": [
+      "皱眉", "语气冷淡", "反问", "不搭理", "摔门",
+      "拍桌子", "冷笑", "放屁！", "你敢！",
+      "你他妈怎么说话的", "吵个毛", "狗几把的",
+      "当面嘲讽", "挑衅", "数据对比"
+    ],
+    "explosion": [
+      "骂人", "摔东西", "动手", "掀桌子",
+      "啪的一声", "我靠！", "一把抓住", "咣当一声",
+      "大吼一声", "砸车", "彻底决裂", "毁约"
+    ]
+  },
+
+  "craft_fingerprint": {
+    "dialogue_style": "对话即谈判——策略因对象分层，同级降维打击，上级太极化解",
+    "rhythm_style": "目的驱动节奏——目的未达持续紧绷，达成立即转场，不拖情绪尾巴",
+    "description_style": "消费符号+行为暗示——用物件和动作替代形容词，描写关联社会处境",
+    "structure_style": "利益链式结构——获取资源-建立人脉-压制对手-获利的闭环链条",
+    "psychology_style": "掌控全局愉悦感——内心与口头反差塑造城府，绝不暴露脆弱",
+    "info_style": "信息即权力——精准投放建立话语权，因对象不同策略截然不同"
+  },
+
+  "core_emotional_loop": "被轻视/刁难（波谷）→ 内心冷静盘算（蓄力）→ 降维反击/资源碾压（爽点）→ 对手哑口无言/狼狈收场 → 新威胁或更大棋局浮现（循环触发）"
+}

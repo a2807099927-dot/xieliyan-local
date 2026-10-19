@@ -1,0 +1,429 @@
+{
+  "query": "battles_-460_-360_all",
+  "timestamp": 1779901133411,
+  "data": [
+    {
+      "id": "Q278903",
+      "name": "利開翁之役",
+      "type": "battle",
+      "description": "科林斯戰爭中一場由雅典獲勝的戰役",
+      "lon": 22.884225,
+      "lat": 37.934142,
+      "startYear": null
+    },
+    {
+      "id": "Q1424844",
+      "name": "德林亩之战",
+      "type": "battle",
+      "description": "424 BCE battle",
+      "lon": 23.6492,
+      "lat": 38.3481,
+      "startYear": null
+    },
+    {
+      "id": "Q1475533",
+      "name": "Battle of Spartolos",
+      "type": "battle",
+      "description": "battle during the Peloponnesian War",
+      "lon": 23.29539299,
+      "lat": 40.28319246,
+      "startYear": null
+    },
+    {
+      "id": "Q975376",
+      "name": "奥诺菲塔之战",
+      "type": "battle",
+      "description": "456 BCE battle",
+      "lon": 23.633333333,
+      "lat": 38.3,
+      "startYear": null
+    },
+    {
+      "id": "Q174253",
+      "name": "Battle of Tegyra",
+      "type": "battle",
+      "description": "374 BCE battle",
+      "lon": 22.957728,
+      "lat": 38.534199,
+      "startYear": null
+    },
+    {
+      "id": "Q176416",
+      "name": "斯法克特里亚之战",
+      "type": "battle",
+      "description": "Athenian victory in the Peloponnesian War",
+      "lon": 21.665725,
+      "lat": 36.930136,
+      "startYear": null
+    },
+    {
+      "id": "Q233399",
+      "name": "曼丁尼亚战役",
+      "type": "battle",
+      "description": "battle in 362 BCE",
+      "lon": 22.4,
+      "lat": 37.6,
+      "startYear": null
+    },
+    {
+      "id": "Q1151812",
+      "name": "Battle of Cnidus",
+      "type": "battle",
+      "description": "battle during the Corinthian War",
+      "lon": 27.375,
+      "lat": 36.685833,
+      "startYear": null
+    },
+    {
+      "id": "Q1187461",
+      "name": "塔纳格拉之战",
+      "type": "battle",
+      "description": "456 BCE battle",
+      "lon": 23.533333333,
+      "lat": 38.316666666,
+      "startYear": null
+    },
+    {
+      "id": "Q930550",
+      "name": "科罗尼亚之战",
+      "type": "battle",
+      "description": "battle of First Peloponnesian War, 447 BCE",
+      "lon": 22.966666666,
+      "lat": 38.35,
+      "startYear": null
+    },
+    {
+      "id": "Q1671704",
+      "name": "Battle of Nemea",
+      "type": "battle",
+      "description": "394 BCE land battle during the Corinthian War",
+      "lon": 22.710278,
+      "lat": 37.808889,
+      "startYear": null
+    },
+    {
+      "id": "Q1671704",
+      "name": "Battle of Nemea",
+      "type": "battle",
+      "description": "394 BCE land battle during the Corinthian War",
+      "lon": 22.7103,
+      "lat": 37.8089,
+      "startYear": null
+    },
+    {
+      "id": "Q617924",
+      "name": "奥尔匹之战",
+      "type": "battle",
+      "description": "425 BCE battle",
+      "lon": 21.149835,
+      "lat": 38.949996,
+      "startYear": null
+    },
+    {
+      "id": "Q2118879",
+      "name": "哈里亚图斯之战",
+      "type": "battle",
+      "description": "Spartan setback against Thebes in 395 BCE",
+      "lon": 23.0878,
+      "lat": 38.3792,
+      "startYear": null
+    },
+    {
+      "id": "Q1278821",
+      "name": "Battle of Selinus",
+      "type": "battle",
+      "description": "5th-century BCE battle in Sicily",
+      "lon": 12.824722222,
+      "lat": 37.583611111,
+      "startYear": null
+    },
+    {
+      "id": "Q1287213",
+      "name": "Battle of Himera",
+      "type": "battle",
+      "description": "Greek-Carthaginian battle, 409 BCE, Sicily",
+      "lon": 13.7,
+      "lat": 37.983333333,
+      "startYear": null
+    },
+    {
+      "id": "Q431205",
+      "name": "庫那克薩戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 44.08,
+      "lat": 33.325,
+      "startYear": null
+    },
+    {
+      "id": "Q461599",
+      "name": "留克特拉戰役",
+      "type": "battle",
+      "description": "battle between Thebes and Sparta, 371 BCE",
+      "lon": 23.166666666,
+      "lat": 38.265555555,
+      "startYear": null
+    },
+    {
+      "id": "Q1356189",
+      "name": "波提达亚之战",
+      "type": "battle",
+      "description": "431 BCE battle",
+      "lon": 23.3278,
+      "lat": 40.1937,
+      "startYear": null
+    },
+    {
+      "id": "Q1356189",
+      "name": "波提达亚之战",
+      "type": "battle",
+      "description": "431 BCE battle",
+      "lon": 23.333333,
+      "lat": 40.2,
+      "startYear": null
+    },
+    {
+      "id": "Q1362053",
+      "name": "曼提尼亞戰役",
+      "type": "battle",
+      "description": "significant engagement in the Peloponnesian War in 418 BC",
+      "lon": 22.4,
+      "lat": 37.6,
+      "startYear": null
+    },
+    {
+      "id": "Q637544",
+      "name": "安菲波利斯战役",
+      "type": "battle",
+      "description": "422 BCE military investment of Amphipolis by Sparta",
+      "lon": 23.84705,
+      "lat": 40.823681,
+      "startYear": null
+    },
+    {
+      "id": "Q655777",
+      "name": "阿利亚之战",
+      "type": "battle",
+      "description": "early 4th-century BCE battle between Gauls and Roman Republic",
+      "lon": 12.52,
+      "lat": 42.0175,
+      "startYear": null
+    },
+    {
+      "id": "Q2334746",
+      "name": "Battle of Cynoscephalae",
+      "type": "battle",
+      "description": "part of Thebes campaign against Alexander of Pherea",
+      "lon": 22.83,
+      "lat": 39.36,
+      "startYear": null
+    },
+    {
+      "id": "Q2628112",
+      "name": "Battle of Gela",
+      "type": "battle",
+      "description": "5th-century BCE battle in Sicily,battle",
+      "lon": 14.25,
+      "lat": 37.066666666,
+      "startYear": null
+    },
+    {
+      "id": "Q2705449",
+      "name": "Mons Algidus战役",
+      "type": "battle",
+      "description": "458 BCE battle between the Roman Republic and the Aequi",
+      "lon": 12.769444,
+      "lat": 41.723056,
+      "startYear": null
+    },
+    {
+      "id": "Q665716",
+      "name": "Capture of Fidenae",
+      "type": "battle",
+      "description": "battle between the Fidenates and Rome",
+      "lon": 12.513333,
+      "lat": 41.974444,
+      "startYear": null
+    },
+    {
+      "id": "Q2518498",
+      "name": "Battle of Corbio",
+      "type": "battle",
+      "description": "446 BCE Roman victory over the Aequi and Volsci tribes",
+      "lon": 12.917667,
+      "lat": 41.777306,
+      "startYear": null
+    },
+    {
+      "id": "Q3636427",
+      "name": "Battle of Fidenae",
+      "type": "battle",
+      "description": "426 BCE battle",
+      "lon": 12.513333,
+      "lat": 41.974444,
+      "startYear": null
+    },
+    {
+      "id": "Q733113",
+      "name": "喀罗尼亚战役",
+      "type": "battle",
+      "description": "battle of Corinthian War, 394 BCE",
+      "lon": 22.96666667,
+      "lat": 38.35,
+      "startYear": null
+    },
+    {
+      "id": "Q4207050",
+      "name": "Battle of Abacaenum",
+      "type": "battle",
+      "description": "battle in Sicily in 393 BCE",
+      "lon": 15.1,
+      "lat": 38.05,
+      "startYear": null
+    },
+    {
+      "id": "Q4244801",
+      "name": "Battle of Messene",
+      "type": "battle",
+      "description": "4th-century BCE battle in Sicily",
+      "lon": 15.55,
+      "lat": 38.183333333,
+      "startYear": null
+    },
+    {
+      "id": "Q2889436",
+      "name": "米洛斯圍城戰",
+      "type": "battle",
+      "description": "peloponnesian War, 416 BCE",
+      "lon": 24.416666666,
+      "lat": 36.683333333,
+      "startYear": null
+    },
+    {
+      "id": "Q11908757",
+      "name": "Battle of Plataea",
+      "type": "battle",
+      "description": "430 BCE battle",
+      "lon": 23.26666667,
+      "lat": 38.21666667,
+      "startYear": null
+    },
+    {
+      "id": "Q4871830",
+      "name": "Battle of Munichia",
+      "type": "battle",
+      "description": "403 BCE battle",
+      "lon": 23.656,
+      "lat": 37.941,
+      "startYear": null
+    },
+    {
+      "id": "Q20987758",
+      "name": "Battle of Pelusium",
+      "type": "battle",
+      "description": "battle between Ancient Egypt and the Achaemenid Persian Empire",
+      "lon": 32.545,
+      "lat": 31.041667,
+      "startYear": null
+    },
+    {
+      "id": "Q28669027",
+      "name": "Battle of Sardis",
+      "type": "battle",
+      "description": "395 BCE Greek-Persian battle",
+      "lon": 28.040277777,
+      "lat": 38.488333333,
+      "startYear": null
+    },
+    {
+      "id": "Q524871",
+      "name": "兹库斯之战",
+      "type": "battle",
+      "description": "naval battle between Athens and Sparta in 410 BC",
+      "lon": 27.89,
+      "lat": 40.38,
+      "startYear": null
+    },
+    {
+      "id": "Q608021",
+      "name": "Battle of Naupactus",
+      "type": "battle",
+      "description": "Athenian navy under Phormio against Peloponnesian fleet",
+      "lon": 21.8297,
+      "lat": 38.3914,
+      "startYear": null
+    },
+    {
+      "id": "Q670128",
+      "name": "派娄斯之战",
+      "type": "battle",
+      "description": "naval battle during the Peloponnesian War (425 BC)",
+      "lon": 21.7,
+      "lat": 36.916666666,
+      "startYear": null
+    },
+    {
+      "id": "Q866862",
+      "name": "伊哥斯波塔米戰役",
+      "type": "battle",
+      "description": "Final major battle of the Peloponnesian War, 405 BCE",
+      "lon": 26.55,
+      "lat": 40.25,
+      "startYear": null
+    },
+    {
+      "id": "Q975123",
+      "name": "诺提姆之战",
+      "type": "battle",
+      "description": "naval battle during Peloponnesian War (406 BC)",
+      "lon": 26.8475,
+      "lat": 37.992778,
+      "startYear": null
+    },
+    {
+      "id": "Q1887701",
+      "name": "Battle of Naxos",
+      "type": "battle",
+      "description": "sea battle that took place during the Boeotian War",
+      "lon": 25.375576,
+      "lat": 37.106821,
+      "startYear": null
+    },
+    {
+      "id": "Q2119676",
+      "name": "Battle of Cynossema",
+      "type": "battle",
+      "description": "naval battle during the Second Peloponnesian War (411 BC)",
+      "lon": 26.38775,
+      "lat": 40.142369,
+      "startYear": null
+    },
+    {
+      "id": "Q4269619",
+      "name": "Battle of Catana",
+      "type": "battle",
+      "description": "naval battle of the Sicilian War",
+      "lon": 15.087222222,
+      "lat": 37.502777777,
+      "startYear": null
+    },
+    {
+      "id": "Q2665646",
+      "name": "Battle of Rhium",
+      "type": "battle",
+      "description": "naval battle between Athenian and Peloponnesian fleets (429 BC)",
+      "lon": 21.766666666,
+      "lat": 38.316666666,
+      "startYear": null
+    },
+    {
+      "id": "Q389257",
+      "name": "阿吉纽西战役",
+      "type": "battle",
+      "description": "battle of the Peloponnesian war",
+      "lon": 26.8,
+      "lat": 39.033333,
+      "startYear": null
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "query": "battles_-400_-300_all",
+  "timestamp": 1779901131011,
+  "data": [
+    {
+      "id": "Q94414",
+      "name": "Battle of Lake Vadimo",
+      "type": "battle",
+      "description": "310 BCE battle",
+      "lon": 12.3232,
+      "lat": 42.4842,
+      "startYear": null
+    },
+    {
+      "id": "Q112016",
+      "name": "波斯門戰役",
+      "type": "battle",
+      "description": "波斯波利斯附近，亞歷山大大帝與阿爾塔巴左斯之間的戰鬥",
+      "lon": 51.598611111,
+      "lat": 30.708333333,
+      "startYear": null
+    },
+    {
+      "id": "Q123215",
+      "name": "Battle of Jaxartes",
+      "type": "battle",
+      "description": "329 BCE battle",
+      "lon": 69.616667,
+      "lat": 40.283333,
+      "startYear": null
+    },
+    {
+      "id": "Q174253",
+      "name": "Battle of Tegyra",
+      "type": "battle",
+      "description": "374 BCE battle",
+      "lon": 22.957728,
+      "lat": 38.534199,
+      "startYear": null
+    },
+    {
+      "id": "Q179670",
+      "name": "高加米拉戰役",
+      "type": "battle",
+      "description": "decisive battle of Alexander the Great's invasion of the Persian Achaemenid Empire",
+      "lon": 43.25,
+      "lat": 36.36,
+      "startYear": null
+    },
+    {
+      "id": "Q192938",
+      "name": "格拉尼庫斯河戰役",
+      "type": "battle",
+      "description": "334 BCE battle between Macedonians and Persians",
+      "lon": 27.242222222,
+      "lat": 40.228055555,
+      "startYear": null
+    },
+    {
+      "id": "Q200716",
+      "name": "喀羅尼亞戰役",
+      "type": "battle",
+      "description": "338 BCE battle during the expansion of Macedonia under Philip II",
+      "lon": 22.8475,
+      "lat": 38.495,
+      "startYear": null
+    },
+    {
+      "id": "Q201526",
+      "name": "伊蘇斯戰役",
+      "type": "battle",
+      "description": "second great battle of Alexander's conquest of Asia",
+      "lon": 36.211109,
+      "lat": 36.837894,
+      "startYear": null
+    },
+    {
+      "id": "Q213074",
+      "name": "希達斯皮斯河戰役",
+      "type": "battle",
+      "description": "battle fought by Alexander the Great in 326 BCE against King Porus of the Paurava kingdom on the banks of the Hydaspes River (Jhelum River) in the Punjab near Bhera",
+      "lon": 73.638888888,
+      "lat": 32.827777777,
+      "startYear": null
+    },
+    {
+      "id": "Q223220",
+      "name": "迈加洛波利斯战役",
+      "type": "battle",
+      "description": "battle between Antipater and Sparta",
+      "lon": 22.1422,
+      "lat": 37.4011,
+      "startYear": null
+    },
+    {
+      "id": "Q233399",
+      "name": "曼丁尼亚战役",
+      "type": "battle",
+      "description": "battle in 362 BCE",
+      "lon": 22.4,
+      "lat": 37.6,
+      "startYear": null
+    },
+    {
+      "id": "Q278903",
+      "name": "利開翁之役",
+      "type": "battle",
+      "description": "科林斯戰爭中一場由雅典獲勝的戰役",
+      "lon": 22.884225,
+      "lat": 37.934142,
+      "startYear": null
+    },
+    {
+      "id": "Q319124",
+      "name": "伊普蘇斯戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 30.99,
+      "lat": 38.95,
+      "startYear": null
+    },
+    {
+      "id": "Q733113",
+      "name": "喀罗尼亚战役",
+      "type": "battle",
+      "description": "battle of Corinthian War, 394 BCE",
+      "lon": 22.96666667,
+      "lat": 38.35,
+      "startYear": null
+    },
+    {
+      "id": "Q853635",
+      "name": "Battle of Suessula",
+      "type": "battle",
+      "description": "battle",
+      "lon": 14.4,
+      "lat": 40.98333333,
+      "startYear": null
+    },
+    {
+      "id": "Q1357977",
+      "name": "卡夫丁峡谷战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 14.5333,
+      "lat": 41.15,
+      "startYear": null
+    },
+    {
+      "id": "Q1407018",
+      "name": "帕萊塔西奈戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 51.65,
+      "lat": 32.633333333,
+      "startYear": null
+    },
+    {
+      "id": "Q431205",
+      "name": "庫那克薩戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 44.08,
+      "lat": 33.325,
+      "startYear": null
+    },
+    {
+      "id": "Q461599",
+      "name": "留克特拉戰役",
+      "type": "battle",
+      "description": "battle between Thebes and Sparta, 371 BCE",
+      "lon": 23.166666666,
+      "lat": 38.265555555,
+      "startYear": null
+    },
+    {
+      "id": "Q1671704",
+      "name": "Battle of Nemea",
+      "type": "battle",
+      "description": "394 BCE land battle during the Corinthian War",
+      "lon": 22.710278,
+      "lat": 37.808889,
+      "startYear": null
+    },
+    {
+      "id": "Q1671704",
+      "name": "Battle of Nemea",
+      "type": "battle",
+      "description": "394 BCE land battle during the Corinthian War",
+      "lon": 22.7103,
+      "lat": 37.8089,
+      "startYear": null
+    },
+    {
+      "id": "Q1720307",
+      "name": "赫勒斯滂戰役",
+      "type": "battle",
+      "description": "321 BCE battle",
+      "lon": 28,
+      "lat": 40,
+      "startYear": null
+    },
+    {
+      "id": "Q1754459",
+      "name": "Battle of Himera",
+      "type": "battle",
+      "description": "311 BCE battle between Carthage and Syracuse,battle",
+      "lon": 15.3,
+      "lat": 37.0667,
+      "startYear": null
+    },
+    {
+      "id": "Q1429804",
+      "name": "克蘭農戰役",
+      "type": "battle",
+      "description": "322 BCE battle",
+      "lon": 22.35,
+      "lat": 39.516667,
+      "startYear": null
+    },
+    {
+      "id": "Q954968",
+      "name": "伽比埃奈戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 51.801649,
+      "lat": 31.777205,
+      "startYear": null
+    },
+    {
+      "id": "Q991390",
+      "name": "Battle of Cretopolis",
+      "type": "battle",
+      "description": "battle during Wars of the Diadochi",
+      "lon": 30.321711111,
+      "lat": 37.374980555,
+      "startYear": null
+    },
+    {
+      "id": "Q1151812",
+      "name": "Battle of Cnidus",
+      "type": "battle",
+      "description": "battle during the Corinthian War",
+      "lon": 27.375,
+      "lat": 36.685833,
+      "startYear": null
+    },
+    {
+      "id": "Q511578",
+      "name": "Battle of Mount Gaurus",
+      "type": "battle",
+      "description": "battle",
+      "lon": 14.053611,
+      "lat": 40.848611,
+      "startYear": null
+    },
+    {
+      "id": "Q1543543",
+      "name": "Battle of the Crimissus",
+      "type": "battle",
+      "description": "339 BCE battle between Carthage and Syracuse",
+      "lon": 12.8375,
+      "lat": 37.940833333,
+      "startYear": null
+    },
+    {
+      "id": "Q2118879",
+      "name": "哈里亚图斯之战",
+      "type": "battle",
+      "description": "Spartan setback against Thebes in 395 BCE",
+      "lon": 23.0878,
+      "lat": 38.3792,
+      "startYear": null
+    },
+    {
+      "id": "Q1887733",
+      "name": "Battle of Bovianum",
+      "type": "battle",
+      "description": "304 BCE battle",
+      "lon": 14.466667,
+      "lat": 41.483333,
+      "startYear": null
+    },
+    {
+      "id": "Q1231054",
+      "name": "加薩戰役",
+      "type": "battle",
+      "description": "battle in 312 BCE",
+      "lon": 34.45,
+      "lat": 31.51666667,
+      "startYear": null
+    },
+    {
+      "id": "Q1247317",
+      "name": "薩拉米斯戰役",
+      "type": "battle",
+      "description": "naval battle during the Wars of the Diadochi",
+      "lon": 33.916666666,
+      "lat": 35.166666666,
+      "startYear": null
+    },
+    {
+      "id": "Q571269",
+      "name": "Battle of Vesuvius",
+      "type": "battle",
+      "description": "340 BCE battle",
+      "lon": 14.4261,
+      "lat": 40.8211,
+      "startYear": null
+    },
+    {
+      "id": "Q2237798",
+      "name": "底比斯戰役",
+      "type": "battle",
+      "description": "335 BCE battle between Alexander the Great and the Greek city state of Thebes",
+      "lon": 23.323611111,
+      "lat": 38.324166666,
+      "startYear": null
+    },
+    {
+      "id": "Q2005185",
+      "name": "馬陵之戰",
+      "type": "battle",
+      "description": "battle in 342 BC",
+      "lon": 115.3975,
+      "lat": 35.885833333,
+      "startYear": null
+    },
+    {
+      "id": "Q2334746",
+      "name": "Battle of Cynoscephalae",
+      "type": "battle",
+      "description": "part of Thebes campaign against Alexander of Pherea",
+      "lon": 22.83,
+      "lat": 39.36,
+      "startYear": null
+    },
+    {
+      "id": "Q655777",
+      "name": "阿利亚之战",
+      "type": "battle",
+      "description": "early 4th-century BCE battle between Gauls and Roman Republic",
+      "lon": 12.52,
+      "lat": 42.0175,
+      "startYear": null
+    },
+    {
+      "id": "Q3625055",
+      "name": "Capture of Neapolis",
+      "type": "battle",
+      "description": "326 BCE battle",
+      "lon": 14.25,
+      "lat": 40.8333,
+      "startYear": null
+    },
+    {
+      "id": "Q684113",
+      "name": "Battle of Lautulae",
+      "type": "battle",
+      "description": "battle",
+      "lon": 13.25,
+      "lat": 41.283333,
+      "startYear": null
+    },
+    {
+      "id": "Q4207050",
+      "name": "Battle of Abacaenum",
+      "type": "battle",
+      "description": "battle in Sicily in 393 BCE",
+      "lon": 15.1,
+      "lat": 38.05,
+      "startYear": null
+    },
+    {
+      "id": "Q4244801",
+      "name": "Battle of Messene",
+      "type": "battle",
+      "description": "4th-century BCE battle in Sicily",
+      "lon": 15.55,
+      "lat": 38.183333333,
+      "startYear": null
+    },
+    {
+      "id": "Q4872539",
+      "name": "Battle of Thermopylae",
+      "type": "battle",
+      "description": "322 BCE battle",
+      "lon": 22.5628,
+      "lat": 38.8053,
+      "startYear": null
+    },
+    {
+      "id": "Q15197556",
+      "name": "烏克西亞峽谷戰役",
+      "type": "battle",
+      "description": "330 BCE battle",
+      "lon": 48.257785,
+      "lat": 32.18922,
+      "startYear": null
+    },
+    {
+      "id": "Q16253748",
+      "name": "Battle of Saticula",
+      "type": "battle",
+      "description": "Second of three battles described by the Roman historian Livy",
+      "lon": 14.5,
+      "lat": 41.083333,
+      "startYear": null
+    },
+    {
+      "id": "Q65066202",
+      "name": "Siege of Megalopolis",
+      "type": "battle",
+      "description": "battle during the Wars of the Diadochi",
+      "lon": 22.133333333,
+      "lat": 37.4,
+      "startYear": null
+    },
+    {
+      "id": "Q20987758",
+      "name": "Battle of Pelusium",
+      "type": "battle",
+      "description": "battle between Ancient Egypt and the Achaemenid Persian Empire",
+      "lon": 32.545,
+      "lat": 31.041667,
+      "startYear": null
+    },
+    {
+      "id": "Q20987758",
+      "name": "Battle of Pelusium",
+      "type": "battle",
+      "description": "battle between Ancient Egypt and the Achaemenid Persian Empire",
+      "lon": 32.545,
+      "lat": 31.041667,
+      "startYear": null
+    },
+    {
+      "id": "Q1887701",
+      "name": "Battle of Naxos",
+      "type": "battle",
+      "description": "sea battle that took place during the Boeotian War",
+      "lon": 25.375576,
+      "lat": 37.106821,
+      "startYear": null
+    },
+    {
+      "id": "Q2237367",
+      "name": "Battle of Byzantium",
+      "type": "battle",
+      "description": "battle during Second War of the Diadochi",
+      "lon": 26.4,
+      "lat": 40.2,
+      "startYear": null
+    },
+    {
+      "id": "Q2265548",
+      "name": "阿瑪格斯戰役",
+      "type": "battle",
+      "description": "naval battle in 322 BC during the Lamian War, between Athens and Macedonia, ending in Macedonian victory: one of the battles that ended Athenian thalassocracy",
+      "lon": 25.54,
+      "lat": 36.5,
+      "startYear": null
+    },
+    {
+      "id": "Q28669027",
+      "name": "Battle of Sardis",
+      "type": "battle",
+      "description": "395 BCE Greek-Persian battle",
+      "lon": 28.040277777,
+      "lat": 38.488333333,
+      "startYear": null
+    },
+    {
+      "id": "Q4269619",
+      "name": "Battle of Catana",
+      "type": "battle",
+      "description": "naval battle of the Sicilian War",
+      "lon": 15.087222222,
+      "lat": 37.502777777,
+      "startYear": null
+    },
+    {
+      "id": "Q16330226",
+      "name": "Battle of the Echinades",
+      "type": "battle",
+      "description": "naval battle of the Lamian War",
+      "lon": 21.110833,
+      "lat": 38.303611,
+      "startYear": null
+    }
+  ]
+}

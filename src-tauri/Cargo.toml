@@ -1,0 +1,47 @@
+[package]
+name = "xie-li-yan"
+version = "2.1.15"
+description = "写梨眼-AI 小说写作桌面应用（Tauri 2 版）"
+authors = ["写梨眼团队"]
+edition = "2021"
+
+[lib]
+name = "xie_li_yan_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["unstable"] }
+tauri-plugin-opener = "2"
+tauri-plugin-window-state = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+futures-util = "0.3"
+reqwest = { version = "0.12", features = ["json", "stream", "gzip", "brotli", "deflate", "multipart"] }
+uuid = { version = "1", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+sha2 = "0.10"
+base64 = "0.22"
+ed25519-dalek = { version = "2.1", features = ["pkcs8"] }
+log = "0.4"
+regex = "1"
+zip = "2"
+anyhow = "1"
+keyring = "2"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "gif", "webp", "bmp"] }
+urlencoding = "2"
+url = "2"
+encoding_rs = "0.8"
+sysproxy = "0.3.0"
+unicode-normalization = "0.1.25"
+
+# 锁定 time < 0.3.48，因 0.3.48 与 cookie 0.18.1 的 blanket From impl 产生 E0119 冲突
+time = ">=0.3,<0.3.48"
+
+

@@ -1,0 +1,474 @@
+{
+  "query": "battles_-320_-220_all",
+  "timestamp": 1779901132581,
+  "data": [
+    {
+      "id": "Q319124",
+      "name": "伊普蘇斯戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 30.99,
+      "lat": 38.95,
+      "startYear": null
+    },
+    {
+      "id": "Q175985",
+      "name": "泰拉蒙战役",
+      "type": "battle",
+      "description": "battle between the Romans and the Celts (225 BC)",
+      "lon": 11.133,
+      "lat": 42.555,
+      "startYear": null
+    },
+    {
+      "id": "Q6891",
+      "name": "Battle of Bagradas",
+      "type": "battle",
+      "description": "battle of the First Punic War with a Carthaginian victory",
+      "lon": 10.1659,
+      "lat": 36.7975,
+      "startYear": null
+    },
+    {
+      "id": "Q47299",
+      "name": "庫魯佩迪安戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 27.617792,
+      "lat": 38.546466,
+      "startYear": null
+    },
+    {
+      "id": "Q94414",
+      "name": "Battle of Lake Vadimo",
+      "type": "battle",
+      "description": "310 BCE battle",
+      "lon": 12.3232,
+      "lat": 42.4842,
+      "startYear": null
+    },
+    {
+      "id": "Q917376",
+      "name": "Battle of Agrigentum",
+      "type": "battle",
+      "description": "first pitched battle of the First Punic War and the first large-scale military confrontation between Carthage and the Roman Republic",
+      "lon": 13.5833,
+      "lat": 37.3167,
+      "startYear": null
+    },
+    {
+      "id": "Q928903",
+      "name": "由提卡戰役 (傭兵戰爭)",
+      "type": "battle",
+      "description": "239 BCE battle",
+      "lon": 10.062855,
+      "lat": 37.058052,
+      "startYear": null
+    },
+    {
+      "id": "Q744611",
+      "name": "赫拉克利亞戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 16.669722,
+      "lat": 40.22,
+      "startYear": null
+    },
+    {
+      "id": "Q756413",
+      "name": "阿斯庫路姆戰役",
+      "type": "battle",
+      "description": "279 BCE battle of the Pyrrhic War,battle",
+      "lon": 15.5578,
+      "lat": 41.2156,
+      "startYear": null
+    },
+    {
+      "id": "Q1160070",
+      "name": "Battle of Beneventum",
+      "type": "battle",
+      "description": "battle fought in 275 BCE",
+      "lon": 14.783333,
+      "lat": 41.133333,
+      "startYear": null
+    },
+    {
+      "id": "Q1231054",
+      "name": "加薩戰役",
+      "type": "battle",
+      "description": "battle in 312 BCE",
+      "lon": 34.45,
+      "lat": 31.51666667,
+      "startYear": null
+    },
+    {
+      "id": "Q1247317",
+      "name": "薩拉米斯戰役",
+      "type": "battle",
+      "description": "naval battle during the Wars of the Diadochi",
+      "lon": 33.916666666,
+      "lat": 35.166666666,
+      "startYear": null
+    },
+    {
+      "id": "Q954968",
+      "name": "伽比埃奈戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 51.801649,
+      "lat": 31.777205,
+      "startYear": null
+    },
+    {
+      "id": "Q963839",
+      "name": "Battle of Adys",
+      "type": "battle",
+      "description": "battle of the First Punic War in which Rome defeated Carthage",
+      "lon": 10.1717,
+      "lat": 36.6085,
+      "startYear": null
+    },
+    {
+      "id": "Q991390",
+      "name": "Battle of Cretopolis",
+      "type": "battle",
+      "description": "battle during Wars of the Diadochi",
+      "lon": 30.321711111,
+      "lat": 37.374980555,
+      "startYear": null
+    },
+    {
+      "id": "Q1291237",
+      "name": "伊阙之战",
+      "type": "battle",
+      "description": "battle",
+      "lon": 112.469722222,
+      "lat": 34.555555555,
+      "startYear": null
+    },
+    {
+      "id": "Q2478491",
+      "name": "墨沙拿戰役",
+      "type": "battle",
+      "description": "first military conflict between the Roman Republic and Carthage, marking the start of the First Punic War",
+      "lon": 15.561388888,
+      "lat": 38.18,
+      "startYear": null
+    },
+    {
+      "id": "Q1357977",
+      "name": "卡夫丁峡谷战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 14.5333,
+      "lat": 41.15,
+      "startYear": null
+    },
+    {
+      "id": "Q1407018",
+      "name": "帕萊塔西奈戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 51.65,
+      "lat": 32.633333333,
+      "startYear": null
+    },
+    {
+      "id": "Q1476126",
+      "name": "Battle of Panormus",
+      "type": "battle",
+      "description": "Roman victory leading to Panormus (modern-day Palermo) being under Roman control for the remainder of the First Punic War",
+      "lon": 13.3667,
+      "lat": 38.1167,
+      "startYear": null
+    },
+    {
+      "id": "Q1482311",
+      "name": "Battle of Lake Vadimo",
+      "type": "battle",
+      "description": "Roman Republic victory over a joint Etruscan -Gaulish army",
+      "lon": 12.323,
+      "lat": 42.484,
+      "startYear": null
+    },
+    {
+      "id": "Q1720307",
+      "name": "赫勒斯滂戰役",
+      "type": "battle",
+      "description": "321 BCE battle",
+      "lon": 28,
+      "lat": 40,
+      "startYear": null
+    },
+    {
+      "id": "Q1754459",
+      "name": "Battle of Himera",
+      "type": "battle",
+      "description": "311 BCE battle between Carthage and Syracuse,battle",
+      "lon": 15.3,
+      "lat": 37.0667,
+      "startYear": null
+    },
+    {
+      "id": "Q2888088",
+      "name": "巴格斯達斯河戰役",
+      "type": "battle",
+      "description": "240 BCE battle during the Mercenary War",
+      "lon": 10.13,
+      "lat": 37.11,
+      "startYear": null
+    },
+    {
+      "id": "Q635839",
+      "name": "Battle of Sentinum",
+      "type": "battle",
+      "description": "295 BCE battle of the Third Samnite War",
+      "lon": 12.85448,
+      "lat": 43.41583,
+      "startYear": null
+    },
+    {
+      "id": "Q1799032",
+      "name": "Battle of Camerinum",
+      "type": "battle",
+      "description": "294 BCE battle",
+      "lon": 13.068889,
+      "lat": 43.140278,
+      "startYear": null
+    },
+    {
+      "id": "Q1887733",
+      "name": "Battle of Bovianum",
+      "type": "battle",
+      "description": "304 BCE battle",
+      "lon": 14.466667,
+      "lat": 41.483333,
+      "startYear": null
+    },
+    {
+      "id": "Q675000",
+      "name": "Battle of Clastidium",
+      "type": "battle",
+      "description": "battle during the Roman-Gaulish wars (222 BC)",
+      "lon": 9.133333,
+      "lat": 45.016667,
+      "startYear": null
+    },
+    {
+      "id": "Q684113",
+      "name": "Battle of Lautulae",
+      "type": "battle",
+      "description": "battle",
+      "lon": 13.25,
+      "lat": 41.283333,
+      "startYear": null
+    },
+    {
+      "id": "Q2890214",
+      "name": "Battle of Tifernum",
+      "type": "battle",
+      "description": "296 BCE battle",
+      "lon": 12.243889,
+      "lat": 43.460833,
+      "startYear": null
+    },
+    {
+      "id": "Q2292431",
+      "name": "Battle of Arretium",
+      "type": "battle",
+      "description": "battle during the Roman–Gallic wars (c.284 BC)",
+      "lon": 11.8833,
+      "lat": 43.463,
+      "startYear": null
+    },
+    {
+      "id": "Q2292431",
+      "name": "Battle of Arretium",
+      "type": "battle",
+      "description": "battle during the Roman–Gallic wars (c.284 BC)",
+      "lon": 11.8833,
+      "lat": 43.463,
+      "startYear": null
+    },
+    {
+      "id": "Q3623158",
+      "name": "Battle of Faesulae",
+      "type": "battle",
+      "description": "battle during the Roman-Gaulish Wars (225 BC)",
+      "lon": 12.386389,
+      "lat": 43.460278,
+      "startYear": null
+    },
+    {
+      "id": "Q3636302",
+      "name": "Battle of Thermopylae 279 BCE",
+      "type": "battle",
+      "description": "Greek battle against the Gauls at Thermopylae",
+      "lon": 22.5628,
+      "lat": 38.8053,
+      "startYear": null
+    },
+    {
+      "id": "Q3636635",
+      "name": "Battle of Thurii",
+      "type": "battle",
+      "description": "279 BCE battle",
+      "lon": 17.276944444,
+      "lat": 39.885,
+      "startYear": null
+    },
+    {
+      "id": "Q9424298",
+      "name": "Battle of Palermo",
+      "type": "battle",
+      "description": "253 BCE battle",
+      "lon": 13.3667,
+      "lat": 38.1167,
+      "startYear": null
+    },
+    {
+      "id": "Q11688183",
+      "name": "Battle of Helike",
+      "type": "battle",
+      "description": "228 BCE battle of the Carthaginian conquest of Iberia",
+      "lon": -1.276081,
+      "lat": 38.381084,
+      "startYear": null
+    },
+    {
+      "id": "Q4871805",
+      "name": "Battle of Mount Lycaeum",
+      "type": "battle",
+      "description": "227 BCE battle in ancient Greece",
+      "lon": 21.975,
+      "lat": 37.45694444,
+      "startYear": null
+    },
+    {
+      "id": "Q4873050",
+      "name": "Battle of the Strait of Messina",
+      "type": "battle",
+      "description": "276 BCE sea battle between Carthage and Pyrrhus",
+      "lon": 15.6325,
+      "lat": 38.24583333,
+      "startYear": null
+    },
+    {
+      "id": "Q96373234",
+      "name": "Battle of Argos",
+      "type": "battle",
+      "description": "battle (272 BCE)",
+      "lon": 22.716666666,
+      "lat": 37.616666666,
+      "startYear": null
+    },
+    {
+      "id": "Q61999900",
+      "name": "Battle of Phintias",
+      "type": "battle",
+      "description": "249 BCE battle near Sicily",
+      "lon": 13.946944444,
+      "lat": 37.108333333,
+      "startYear": null
+    },
+    {
+      "id": "Q65066202",
+      "name": "Siege of Megalopolis",
+      "type": "battle",
+      "description": "battle during the Wars of the Diadochi",
+      "lon": 22.133333333,
+      "lat": 37.4,
+      "startYear": null
+    },
+    {
+      "id": "Q6881",
+      "name": "埃克诺穆斯角海战",
+      "type": "battle",
+      "description": "naval battle of the First Punic War fought off Cape Ecnomus (modern day Poggio di Sant'Angelo in Licata, Sicily) and one of the largest naval battles of the ancient world",
+      "lon": 13.9,
+      "lat": 37.05,
+      "startYear": null
+    },
+    {
+      "id": "Q277345",
+      "name": "米列海戰",
+      "type": "battle",
+      "description": "first real naval battle between Carthage and the Roman Republic in the First Punic War",
+      "lon": 15.2333,
+      "lat": 38.2167,
+      "startYear": null
+    },
+    {
+      "id": "Q590014",
+      "name": "Battle of Drepana",
+      "type": "battle",
+      "description": "naval battle of the First Punic War near modern Trapani, western Sicily, with the Carthaginian fleet emerging victorious",
+      "lon": 12.505,
+      "lat": 38.01,
+      "startYear": null
+    },
+    {
+      "id": "Q1134649",
+      "name": "埃加達斯群島戰役",
+      "type": "battle",
+      "description": "final naval battle between Carthage and the Roman Republic in the First Punic War, resulting in a decisive Roman victory",
+      "lon": 12.2,
+      "lat": 37.9667,
+      "startYear": null
+    },
+    {
+      "id": "Q1355206",
+      "name": "丁達之役",
+      "type": "battle",
+      "description": "naval battle of the First Punic War that took place off Tyndaris (modern Tindari) in 257 BCE",
+      "lon": 15.03972222,
+      "lat": 38.14555556,
+      "startYear": null
+    },
+    {
+      "id": "Q1432659",
+      "name": "利帕里群岛战役",
+      "type": "battle",
+      "description": "first encounter between the fleets of Carthage and the Roman Republic during the First Punic War",
+      "lon": 14.960833333,
+      "lat": 38.4725,
+      "startYear": null
+    },
+    {
+      "id": "Q1886703",
+      "name": "索拉席之役",
+      "type": "battle",
+      "description": "\"naval battle fought in 258 BCE between the Roman and Carthaginian navies on the coast near the town of Sulci, Sardinia\",naval battle",
+      "lon": 8.45,
+      "lat": 39.0667,
+      "startYear": null
+    },
+    {
+      "id": "Q2237367",
+      "name": "Battle of Byzantium",
+      "type": "battle",
+      "description": "battle during Second War of the Diadochi",
+      "lon": 26.4,
+      "lat": 40.2,
+      "startYear": null
+    },
+    {
+      "id": "Q3235767",
+      "name": "科斯島戰役",
+      "type": "battle",
+      "description": "naval victory of Antigonus II over Ptolemy II's fleet",
+      "lon": 27.2333,
+      "lat": 36.85,
+      "startYear": null
+    },
+    {
+      "id": "Q3235767",
+      "name": "科斯島戰役",
+      "type": "battle",
+      "description": "naval victory of Antigonus II over Ptolemy II's fleet",
+      "lon": 27.2333,
+      "lat": 36.85,
+      "startYear": null
+    }
+  ]
+}

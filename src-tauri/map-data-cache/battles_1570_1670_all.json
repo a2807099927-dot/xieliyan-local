@@ -1,0 +1,906 @@
+{
+  "query": "battles_1570_1670_all",
+  "timestamp": 1779901131700,
+  "data": [
+    {
+      "id": "Q1392",
+      "name": "紐波特會戰",
+      "type": "battle",
+      "description": "battle between the Dutch and the Spanish in the city of Nieuwpoort, now in Belgium",
+      "lon": 2.738333333,
+      "lat": 51.155833333,
+      "startYear": 1600
+    },
+    {
+      "id": "Q4373",
+      "name": "白山之戰",
+      "type": "battle",
+      "description": "battle ending Bohemian phase of Thirty Years' War (1620)",
+      "lon": 14.319444444,
+      "lat": 50.078333333,
+      "startYear": 1620
+    },
+    {
+      "id": "Q39040",
+      "name": "山崎之戰",
+      "type": "battle",
+      "description": "1582 battle between the forces of Akechi Mitsuhide and Toyotomi Hideyoshi",
+      "lon": 135.691333333,
+      "lat": 34.907055555,
+      "startYear": 1582
+    },
+    {
+      "id": "Q326417",
+      "name": "马斯顿荒原战役",
+      "type": "battle",
+      "description": "1644 battle of the First English Civil War",
+      "lon": -1.254166666,
+      "lat": 53.962222222,
+      "startYear": 1644
+    },
+    {
+      "id": "Q331170",
+      "name": "蒙特惠克山之戰",
+      "type": "battle",
+      "description": "1641 battle in the Reapers' War",
+      "lon": 2.15888889,
+      "lat": 41.36722222,
+      "startYear": 1641
+    },
+    {
+      "id": "Q371409",
+      "name": "斯坦格布罗战役",
+      "type": "battle",
+      "description": "1598 battle",
+      "lon": 15.634167,
+      "lat": 58.413611,
+      "startYear": 1598
+    },
+    {
+      "id": "Q380067",
+      "name": "Battle of Trzciana",
+      "type": "battle",
+      "description": "1629 battle of the Polish-Swedish wars",
+      "lon": 19.0631,
+      "lat": 53.8005,
+      "startYear": 1629
+    },
+    {
+      "id": "Q167259",
+      "name": "吕岑会战",
+      "type": "battle",
+      "description": "battle during the Thirty Years' War, 1632",
+      "lon": 12.156666666,
+      "lat": 51.267777777,
+      "startYear": 1632
+    },
+    {
+      "id": "Q170113",
+      "name": "聖哥達戰役",
+      "type": "battle",
+      "description": "1664 major battle in the Austro-Turkish war",
+      "lon": 16.21666667,
+      "lat": 46.94166667,
+      "startYear": 1664
+    },
+    {
+      "id": "Q426926",
+      "name": "华沙战役",
+      "type": "battle",
+      "description": "1656 battle of the Polish-Lithuanian Commonwealth and Crimean Khanate, against Sweden and Brandenburg",
+      "lon": 21.0084,
+      "lat": 52.2323,
+      "startYear": 1656
+    },
+    {
+      "id": "Q428369",
+      "name": "長篠之戰",
+      "type": "battle",
+      "description": "1575 battle in Japan",
+      "lon": 137.525083333,
+      "lat": 34.921472222,
+      "startYear": 1575
+    },
+    {
+      "id": "Q428369",
+      "name": "長篠之戰",
+      "type": "battle",
+      "description": "1575 battle in Japan",
+      "lon": 137.525083333,
+      "lat": 34.921472222,
+      "startYear": 1575
+    },
+    {
+      "id": "Q428972",
+      "name": "維特施托克戰役",
+      "type": "battle",
+      "description": "battle (1636) during the Thirty Years' War in which a Swedish-allied army decisively defeated a combined Imperial-Saxon army",
+      "lon": 12.4855,
+      "lat": 53.1636,
+      "startYear": 1636
+    },
+    {
+      "id": "Q481354",
+      "name": "Battle of Oldendorf",
+      "type": "battle",
+      "description": "battle (1633) during the Thirty Years' War which resulted in a decisive victory for the Swedish army over the Holy Roman Empire army",
+      "lon": 9.25,
+      "lat": 52.1667,
+      "startYear": 1633
+    },
+    {
+      "id": "Q486979",
+      "name": "彈琴臺之戰",
+      "type": "battle",
+      "description": "1592 battle",
+      "lon": 127.95,
+      "lat": 36.966666666,
+      "startYear": 1592
+    },
+    {
+      "id": "Q489057",
+      "name": "Battle of Carrickfergus",
+      "type": "battle",
+      "description": "1597 battle",
+      "lon": -5.806,
+      "lat": 54.713,
+      "startYear": 1597
+    },
+    {
+      "id": "Q205379",
+      "name": "布賴滕費爾德戰役",
+      "type": "battle",
+      "description": "Protestants’ first major victory of the Thirty Years War in 1631",
+      "lon": 12.33333333,
+      "lat": 51.4,
+      "startYear": 1631
+    },
+    {
+      "id": "Q225562",
+      "name": "賤岳之戰",
+      "type": "battle",
+      "description": "1583 battle in feudal Japan",
+      "lon": 136.192722222,
+      "lat": 35.505916666,
+      "startYear": 1583
+    },
+    {
+      "id": "Q234188",
+      "name": "關原之戰",
+      "type": "battle",
+      "description": "日本戰國時代的一場戰役",
+      "lon": 136.4616,
+      "lat": 35.3705,
+      "startYear": 1600
+    },
+    {
+      "id": "Q245811",
+      "name": "開姆尼茨戰役",
+      "type": "battle",
+      "description": "1639 battle of the thirty years' war",
+      "lon": 12.916667,
+      "lat": 50.833333,
+      "startYear": 1639
+    },
+    {
+      "id": "Q491997",
+      "name": "Battle of Macroom",
+      "type": "battle",
+      "description": "1650 battle",
+      "lon": -8.956947,
+      "lat": 51.904354,
+      "startYear": 1650
+    },
+    {
+      "id": "Q492006",
+      "name": "Battle of Julianstown",
+      "type": "battle",
+      "description": "1641 battle",
+      "lon": -6.280191,
+      "lat": 53.670222,
+      "startYear": 1641
+    },
+    {
+      "id": "Q493596",
+      "name": "Battle of Knocknaclashy",
+      "type": "battle",
+      "description": "1651 battle",
+      "lon": -8.955361,
+      "lat": 52.108089,
+      "startYear": 1651
+    },
+    {
+      "id": "Q493609",
+      "name": "Battle of Scarrifholis",
+      "type": "battle",
+      "description": "1650 battle",
+      "lon": -7.799514,
+      "lat": 54.932431,
+      "startYear": 1650
+    },
+    {
+      "id": "Q494896",
+      "name": "Battle of Dungan's Hill",
+      "type": "battle",
+      "description": "1647 battle",
+      "lon": -6.73,
+      "lat": 53.4494,
+      "startYear": 1647
+    },
+    {
+      "id": "Q497787",
+      "name": "Battle of Liscarroll",
+      "type": "battle",
+      "description": "1642 battle",
+      "lon": -8.803681,
+      "lat": 52.260319,
+      "startYear": 1642
+    },
+    {
+      "id": "Q513007",
+      "name": "Battle of Sablat",
+      "type": "battle",
+      "description": "battle of the war of thirty years, 1619",
+      "lon": 14.2761419,
+      "lat": 49.1317192,
+      "startYear": 1619
+    },
+    {
+      "id": "Q519818",
+      "name": "楚斯馬斯豪森會戰",
+      "type": "battle",
+      "description": "1648 battle of the thirty years' war",
+      "lon": 10.5967,
+      "lat": 48.4002,
+      "startYear": 1648
+    },
+    {
+      "id": "Q522168",
+      "name": "本伯尔战役",
+      "type": "battle",
+      "description": "1646 battle",
+      "lon": -6.746,
+      "lat": 54.412,
+      "startYear": 1646
+    },
+    {
+      "id": "Q546505",
+      "name": "施特哥堡战役",
+      "type": "battle",
+      "description": "1598 battle",
+      "lon": 16.5983,
+      "lat": 58.4342,
+      "startYear": 1598
+    },
+    {
+      "id": "Q586189",
+      "name": "Battle of Powick Bridge",
+      "type": "battle",
+      "description": "1642 first major cavalry engagement of the English Civil War",
+      "lon": -2.2425,
+      "lat": 52.170277777,
+      "startYear": 1642
+    },
+    {
+      "id": "Q592069",
+      "name": "谢林伯尔战役",
+      "type": "battle",
+      "description": "1599 battle",
+      "lon": 24.1733,
+      "lat": 45.77492,
+      "startYear": 1599
+    },
+    {
+      "id": "Q592927",
+      "name": "古德温沙滩之战",
+      "type": "battle",
+      "description": "1652 military battle",
+      "lon": 1.508,
+      "lat": 51.274,
+      "startYear": 1652
+    },
+    {
+      "id": "Q261345",
+      "name": "Battle of Lleida",
+      "type": "battle",
+      "description": "battle fought on October 7, 1642",
+      "lon": 0.63333333,
+      "lat": 41.61666667,
+      "startYear": 1642
+    },
+    {
+      "id": "Q261738",
+      "name": "Battle of Kilrush",
+      "type": "battle",
+      "description": "1642 battle",
+      "lon": -6.862631,
+      "lat": 53.062128,
+      "startYear": 1642
+    },
+    {
+      "id": "Q269479",
+      "name": "Battle of Köbölkút",
+      "type": "battle",
+      "description": "1663 battle (1663)",
+      "lon": 18.51978704,
+      "lat": 47.859569304,
+      "startYear": 1663
+    },
+    {
+      "id": "Q608163",
+      "name": "Siege of Kraków",
+      "type": "battle",
+      "description": "1655 siege",
+      "lon": 19.937222222,
+      "lat": 50.061388888,
+      "startYear": 1655
+    },
+    {
+      "id": "Q609536",
+      "name": "瓦尔霍夫战役",
+      "type": "battle",
+      "description": "1626 battle",
+      "lon": 24.733333333,
+      "lat": 56.516666666,
+      "startYear": 1626
+    },
+    {
+      "id": "Q610329",
+      "name": "Battle of Omosu",
+      "type": "battle",
+      "description": "1580 battle",
+      "lon": 138.888,
+      "lat": 35.02,
+      "startYear": 1580
+    },
+    {
+      "id": "Q629302",
+      "name": "盧特戰役",
+      "type": "battle",
+      "description": "1626 battle of the Thirty Years' War",
+      "lon": 10.2386,
+      "lat": 51.9669,
+      "startYear": 1626
+    },
+    {
+      "id": "Q630142",
+      "name": "诺德林根会战",
+      "type": "battle",
+      "description": "1645 battle of the Thirty Years' War",
+      "lon": 10.6167,
+      "lat": 48.85,
+      "startYear": 1645
+    },
+    {
+      "id": "Q630992",
+      "name": "Battle of Stratton",
+      "type": "battle",
+      "description": "1643 battle",
+      "lon": -4.519,
+      "lat": 50.836,
+      "startYear": 1643
+    },
+    {
+      "id": "Q641989",
+      "name": "Battle of Nyborg",
+      "type": "battle",
+      "description": "1659 Swedish-Danish battle",
+      "lon": 10.7677,
+      "lat": 55.3425,
+      "startYear": 1659
+    },
+    {
+      "id": "Q643027",
+      "name": "魏森斯坦战役",
+      "type": "battle",
+      "description": "1604 battle of the Polish–Swedish War",
+      "lon": 25.571944444,
+      "lat": 58.889166666,
+      "startYear": 1604
+    },
+    {
+      "id": "Q651319",
+      "name": "沃洛科拉姆斯克保卫战 (1612年)",
+      "type": "battle",
+      "description": "1612 siege during the Polish–Muscovite War",
+      "lon": 35.95,
+      "lat": 56.033333333,
+      "startYear": 1612
+    },
+    {
+      "id": "Q653487",
+      "name": "Battle of Werben",
+      "type": "battle",
+      "description": "1631 battle of the thirty years war",
+      "lon": 11.9667,
+      "lat": 52.8667,
+      "startYear": 1631
+    },
+    {
+      "id": "Q653561",
+      "name": "Battle of Wolgast",
+      "type": "battle",
+      "description": "1628 battle of the thirty years' war",
+      "lon": 13.76666667,
+      "lat": 54.05,
+      "startYear": 1628
+    },
+    {
+      "id": "Q661686",
+      "name": "Battle of Höchst",
+      "type": "battle",
+      "description": "1622 battle of the thirty years war",
+      "lon": 8.553055555,
+      "lat": 50.095,
+      "startYear": 1622
+    },
+    {
+      "id": "Q661764",
+      "name": "溫普芬戰役",
+      "type": "battle",
+      "description": "1622 battle of the thirty years war",
+      "lon": 9.17222,
+      "lat": 49.1972,
+      "startYear": 1622
+    },
+    {
+      "id": "Q675324",
+      "name": "威根巷戰役",
+      "type": "battle",
+      "description": "1651 battle",
+      "lon": -2.63,
+      "lat": 53.57,
+      "startYear": 1651
+    },
+    {
+      "id": "Q677121",
+      "name": "Battle of Dessau Bridge",
+      "type": "battle",
+      "description": "1626 battle of the thirty years' war",
+      "lon": 12.251772222,
+      "lat": 51.833444444,
+      "startYear": 1626
+    },
+    {
+      "id": "Q687349",
+      "name": "樫井之戰",
+      "type": "battle",
+      "description": "1615 battle",
+      "lon": 135.290972222,
+      "lat": 34.379527777,
+      "startYear": 1615
+    },
+    {
+      "id": "Q689433",
+      "name": "Battle of Langport",
+      "type": "battle",
+      "description": "1645 battle of the First English Civil War",
+      "lon": -2.80111111,
+      "lat": 51.04194444,
+      "startYear": 1645
+    },
+    {
+      "id": "Q690464",
+      "name": "三方原之戰",
+      "type": "battle",
+      "description": "1573年日本战役",
+      "lon": 137.701833333,
+      "lat": 34.793777777,
+      "startYear": 1573
+    },
+    {
+      "id": "Q690495",
+      "name": "Battle of Keresztes",
+      "type": "battle",
+      "description": "1596 battle in the Long Turkish War",
+      "lon": 20.688055555,
+      "lat": 47.825277777,
+      "startYear": 1596
+    },
+    {
+      "id": "Q1236849",
+      "name": "贝奇纳战役",
+      "type": "battle",
+      "description": "Deciding battle of the 1587–1588 War of the Polish Succession, which erupted after two rival candidates were elected to the Polish throne",
+      "lon": 18.2625,
+      "lat": 51.11333333,
+      "startYear": 1588
+    },
+    {
+      "id": "Q1413158",
+      "name": "Battle of Wenden",
+      "type": "battle",
+      "description": "1601 battle",
+      "lon": 25.27,
+      "lat": 57.313333333,
+      "startYear": 1601
+    },
+    {
+      "id": "Q1415925",
+      "name": "扬考之战",
+      "type": "battle",
+      "description": "1645 battle of the thirty years' war",
+      "lon": 14.7294,
+      "lat": 49.6503,
+      "startYear": 1645
+    },
+    {
+      "id": "Q1436705",
+      "name": "Battle of Tuttlingen",
+      "type": "battle",
+      "description": "1643 battle of the Thirty Years' War",
+      "lon": 8.820555555,
+      "lat": 47.981111111,
+      "startYear": 1643
+    },
+    {
+      "id": "Q1459058",
+      "name": "Battle of Curlew Pass",
+      "type": "battle",
+      "description": "1599 battle",
+      "lon": -8.312222,
+      "lat": 53.9975,
+      "startYear": 1599
+    },
+    {
+      "id": "Q1461766",
+      "name": "Battle of Rathmines",
+      "type": "battle",
+      "description": "1649 battle",
+      "lon": -6.256,
+      "lat": 53.325,
+      "startYear": 1649
+    },
+    {
+      "id": "Q1467914",
+      "name": "Battle of Zsarnóca",
+      "type": "battle",
+      "description": "",
+      "lon": 18.86,
+      "lat": 48.58,
+      "startYear": 1664
+    },
+    {
+      "id": "Q1478525",
+      "name": "刀锋山之战",
+      "type": "battle",
+      "description": "1642 battle during the English Civil War",
+      "lon": -1.48416,
+      "lat": 52.13997,
+      "startYear": 1642
+    },
+    {
+      "id": "Q1478896",
+      "name": "Battle of Knocknanuss",
+      "type": "battle",
+      "description": "1647 battle",
+      "lon": -7.89,
+      "lat": 52.52,
+      "startYear": 1647
+    },
+    {
+      "id": "Q1497868",
+      "name": "Battle of Riebelsdorf Hill",
+      "type": "battle",
+      "description": "1640 battle of Thirty Years' War",
+      "lon": 9.299,
+      "lat": 50.885,
+      "startYear": 1640
+    },
+    {
+      "id": "Q1526883",
+      "name": "敦刻爾克之戰",
+      "type": "battle",
+      "description": "1658 battle in the Franco-Spanish War",
+      "lon": 2.3775,
+      "lat": 51.0383,
+      "startYear": 1658
+    },
+    {
+      "id": "Q1565234",
+      "name": "Battle of Wittenweiher",
+      "type": "battle",
+      "description": "1638 battle of the Thirty Years' War",
+      "lon": 7.7603,
+      "lat": 48.3359,
+      "startYear": 1638
+    },
+    {
+      "id": "Q2443770",
+      "name": "科爾孫戰役",
+      "type": "battle",
+      "description": "1648 battle during the Khmelnytsky Uprising",
+      "lon": 31.17027778,
+      "lat": 49.43611111,
+      "startYear": 1648
+    },
+    {
+      "id": "Q2453661",
+      "name": "Battle of Horodok",
+      "type": "battle",
+      "description": "1655 battle of the Russo-Polish War",
+      "lon": 23.65,
+      "lat": 49.783333333,
+      "startYear": 1655
+    },
+    {
+      "id": "Q2457514",
+      "name": "French Fury",
+      "type": "battle",
+      "description": "failed attempt by Francis, Duke of Anjou, to conquer the city of Antwerp by surprise",
+      "lon": 4.4,
+      "lat": 51.21666667,
+      "startYear": 1583
+    },
+    {
+      "id": "Q2470292",
+      "name": "兹博里夫战役",
+      "type": "battle",
+      "description": "1649 battle during the Khmelnytsky Uprising",
+      "lon": 25.1344,
+      "lat": 49.695,
+      "startYear": 1649
+    },
+    {
+      "id": "Q2475657",
+      "name": "Battle of Adwalton Moor",
+      "type": "battle",
+      "description": "1643 battle in Adwalton, West Yorkshire, England, part of the First English Civil War",
+      "lon": -1.664,
+      "lat": 53.751,
+      "startYear": 1643
+    },
+    {
+      "id": "Q2511359",
+      "name": "袭击奈梅亨",
+      "type": "battle",
+      "description": "Maarten Schenk van Nydeggen fails to take the city by surprise during the Eighty Years' War",
+      "lon": 5.534,
+      "lat": 51.893,
+      "startYear": 1589
+    },
+    {
+      "id": "Q2530449",
+      "name": "天王寺岡山之戰",
+      "type": "battle",
+      "description": "1615 battle",
+      "lon": 135.511166666,
+      "lat": 34.654361111,
+      "startYear": 1615
+    },
+    {
+      "id": "Q2530804",
+      "name": "Battle of Wisternitz",
+      "type": "battle",
+      "description": "battle of the thirty years' war, 1619",
+      "lon": 16.6486,
+      "lat": 48.8961,
+      "startYear": 1619
+    },
+    {
+      "id": "Q2540658",
+      "name": "Battle of Călugăreni",
+      "type": "battle",
+      "description": "1595 battle of the Ottoman Long War",
+      "lon": 26,
+      "lat": 44.1833,
+      "startYear": 1595
+    },
+    {
+      "id": "Q1353633",
+      "name": "小牧、长久手之战",
+      "type": "battle",
+      "description": "1584 battle",
+      "lon": 137.048027777,
+      "lat": 35.173666666,
+      "startYear": 1584
+    },
+    {
+      "id": "Q1406897",
+      "name": "Battle of Roundway Down",
+      "type": "battle",
+      "description": "1643 battle",
+      "lon": -1.98,
+      "lat": 51.385,
+      "startYear": 1643
+    },
+    {
+      "id": "Q1406921",
+      "name": "蘭斯登之戰",
+      "type": "battle",
+      "description": "1643 battle of the First English Civil War",
+      "lon": -2.401,
+      "lat": 51.4313,
+      "startYear": 1643
+    },
+    {
+      "id": "Q1411470",
+      "name": "Battle of Vlotho",
+      "type": "battle",
+      "description": "1638 battle of the thirty years' war",
+      "lon": 8.84972222,
+      "lat": 52.16666667,
+      "startYear": 1638
+    },
+    {
+      "id": "Q2887851",
+      "name": "Battle of Ameixial",
+      "type": "battle",
+      "description": "1663 battle of the Portuguese Restoration War",
+      "lon": -7.65,
+      "lat": 38.85,
+      "startYear": 1663
+    },
+    {
+      "id": "Q2887913",
+      "name": "Battle of Les Avins",
+      "type": "battle",
+      "description": "1635 battle of the thirty years' war",
+      "lon": 5.283,
+      "lat": 50.4,
+      "startYear": 1635
+    },
+    {
+      "id": "Q2887948",
+      "name": "埃尔瓦斯防线战役",
+      "type": "battle",
+      "description": "was fought on 14 January 1659, in Elvas, between Portugal and Spain",
+      "lon": -7.177,
+      "lat": 38.8909,
+      "startYear": 1659
+    },
+    {
+      "id": "Q2887993",
+      "name": "Battle of Inverkeithing",
+      "type": "battle",
+      "description": "battle during the Third English Civil War (1651)",
+      "lon": -3.415833333,
+      "lat": 56.048055555,
+      "startYear": 1651
+    },
+    {
+      "id": "Q2567011",
+      "name": "围攻哥本哈根",
+      "type": "battle",
+      "description": "1659 part of the Second Northern War",
+      "lon": 12.568333333,
+      "lat": 55.676111111,
+      "startYear": 1659
+    },
+    {
+      "id": "Q2572780",
+      "name": "Capture of Zutphen",
+      "type": "battle",
+      "description": "1572 battle",
+      "lon": 6.195,
+      "lat": 52.14,
+      "startYear": 1572
+    },
+    {
+      "id": "Q2576318",
+      "name": "Battle of Finta",
+      "type": "battle",
+      "description": "1653 battle",
+      "lon": 25.7989,
+      "lat": 44.7983,
+      "startYear": 1653
+    },
+    {
+      "id": "Q2605977",
+      "name": "邓巴战役 (1650年)",
+      "type": "battle",
+      "description": "battle during the 1650 English invasion of Scotland",
+      "lon": -2.484444444,
+      "lat": 55.983611111,
+      "startYear": 1650
+    },
+    {
+      "id": "Q2620862",
+      "name": "Battle of Konotop",
+      "type": "battle",
+      "description": "1659 battle during Russo-Polish War",
+      "lon": 33.1585,
+      "lat": 51.2224,
+      "startYear": 1659
+    },
+    {
+      "id": "Q2888011",
+      "name": "沖田畷之戰",
+      "type": "battle",
+      "description": "1584 battle",
+      "lon": 130.3645,
+      "lat": 32.802444444,
+      "startYear": 1584
+    },
+    {
+      "id": "Q2888138",
+      "name": "Battle of Besançon",
+      "type": "battle",
+      "description": "1575 battle of the French Wars of Religion",
+      "lon": 6.02194,
+      "lat": 47.2431,
+      "startYear": 1575
+    },
+    {
+      "id": "Q2888161",
+      "name": "布萊諾戰役",
+      "type": "battle",
+      "description": "1652 engagement during the Second Fronde",
+      "lon": 2.9497,
+      "lat": 47.7022,
+      "startYear": 1652
+    },
+    {
+      "id": "Q2888174",
+      "name": "Battle of Boksum",
+      "type": "battle",
+      "description": "1586 battle",
+      "lon": 5.73154,
+      "lat": 53.183483,
+      "startYear": 1586
+    },
+    {
+      "id": "Q2888264",
+      "name": "Battle of Castelo Rodrigo",
+      "type": "battle",
+      "description": "1664 battle",
+      "lon": -6.95,
+      "lat": 40.86666667,
+      "startYear": 1664
+    },
+    {
+      "id": "Q693388",
+      "name": "Battle of Prostken",
+      "type": "battle",
+      "description": "1656 battle",
+      "lon": 22.43277778,
+      "lat": 53.69888889,
+      "startYear": 1656
+    },
+    {
+      "id": "Q701335",
+      "name": "錫薩克戰役",
+      "type": "battle",
+      "description": "battle fought on 22 June 1593",
+      "lon": 16.386111111,
+      "lat": 45.470555555,
+      "startYear": 1593
+    },
+    {
+      "id": "Q703436",
+      "name": "萊希河戰役",
+      "type": "battle",
+      "description": "1632 battle of the thirty years' war",
+      "lon": 10.9125,
+      "lat": 48.6775,
+      "startYear": 1632
+    },
+    {
+      "id": "Q708574",
+      "name": "施塔特洛恩战役",
+      "type": "battle",
+      "description": "1623 battle of the Thirty Years War",
+      "lon": 6.94669,
+      "lat": 52.0198,
+      "startYear": 1623
+    },
+    {
+      "id": "Q2657186",
+      "name": "什克洛夫戰役 (1654年)",
+      "type": "battle",
+      "description": "1654 battle",
+      "lon": 30.2646,
+      "lat": 54.2083,
+      "startYear": 1654
+    },
+    {
+      "id": "Q2723462",
+      "name": "Battle of Chuvash Cape",
+      "type": "battle",
+      "description": "1582 Russian expedition that led to the fall of Khanate of Sibir and the end of Khan Kuchum's power",
+      "lon": 68.25,
+      "lat": 58.18333333,
+      "startYear": 1582
+    }
+  ]
+}

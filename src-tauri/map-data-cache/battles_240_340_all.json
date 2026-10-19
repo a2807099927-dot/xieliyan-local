@@ -1,0 +1,276 @@
+{
+  "query": "battles_240_340_all",
+  "timestamp": 1779899555103,
+  "data": [
+    {
+      "id": "Q339321",
+      "name": "米尔维安大桥战役",
+      "type": "battle",
+      "description": "4th-century battle for control of Rome",
+      "lon": 12.466944444,
+      "lat": 41.935555555,
+      "startYear": 312
+    },
+    {
+      "id": "Q179455",
+      "name": "Battle of the Hellespont",
+      "type": "battle",
+      "description": "battle",
+      "lon": 26.4,
+      "lat": 40.2,
+      "startYear": 324
+    },
+    {
+      "id": "Q1132306",
+      "name": "特兹拉卢姆之战",
+      "type": "battle",
+      "description": "0313 battle",
+      "lon": 27.8,
+      "lat": 41.15,
+      "startYear": 313
+    },
+    {
+      "id": "Q1231684",
+      "name": "Battle of Châlons",
+      "type": "battle",
+      "description": "274 battle between the Roman and Gallic empires",
+      "lon": 4.365,
+      "lat": 48.9575,
+      "startYear": 274
+    },
+    {
+      "id": "Q1264908",
+      "name": "克里索波利斯之战",
+      "type": "battle",
+      "description": "battle",
+      "lon": 29.03,
+      "lat": 41.015,
+      "startYear": 324
+    },
+    {
+      "id": "Q1267656",
+      "name": "贝纳库斯湖战役",
+      "type": "battle",
+      "description": "battle during the Roman-Germanic wars (268/269)",
+      "lon": 10.62053,
+      "lat": 45.5806,
+      "startYear": 268
+    },
+    {
+      "id": "Q1281436",
+      "name": "马蒂亚之战",
+      "type": "battle",
+      "description": "battle",
+      "lon": 25.9,
+      "lat": 41.93333333,
+      "startYear": 316
+    },
+    {
+      "id": "Q1289831",
+      "name": "Battle of Pavia",
+      "type": "battle",
+      "description": "battle of the Roman-Germanic wars (271)",
+      "lon": 9.15,
+      "lat": 45.1833,
+      "startYear": 271
+    },
+    {
+      "id": "Q1289843",
+      "name": "Battle of Placentia",
+      "type": "battle",
+      "description": "bitka med rimsko-germanskimi vojnami (271)",
+      "lon": 9.7,
+      "lat": 45.05,
+      "startYear": 271
+    },
+    {
+      "id": "Q929265",
+      "name": "纳伊苏斯战役",
+      "type": "battle",
+      "description": "罗马帝国时期对抗日耳曼人的战役",
+      "lon": 21.9,
+      "lat": 43.3,
+      "startYear": 268
+    },
+    {
+      "id": "Q2364744",
+      "name": "都灵战役",
+      "type": "battle",
+      "description": "312 battle at Augusta Taurinorum that was won by Constantine the Great",
+      "lon": 7.7,
+      "lat": 45.066667,
+      "startYear": 312
+    },
+    {
+      "id": "Q1421082",
+      "name": "阿伯里圖斯戰役",
+      "type": "battle",
+      "description": "battle between Romans and Gothic and Scythian tribesmen (251)",
+      "lon": 26.54,
+      "lat": 43.51,
+      "startYear": 251
+    },
+    {
+      "id": "Q1165502",
+      "name": "埃德萨战役",
+      "type": "battle",
+      "description": "260 AD battle between the Sasanian Empire and the Roman Empire",
+      "lon": 38.8,
+      "lat": 37.15,
+      "startYear": 260
+    },
+    {
+      "id": "Q2530931",
+      "name": "西巴莱亚之战",
+      "type": "battle",
+      "description": "between Constantine I and Licinius",
+      "lon": 18.8,
+      "lat": 45.283333,
+      "startYear": 314
+    },
+    {
+      "id": "Q2530973",
+      "name": "Battle of Emesa",
+      "type": "battle",
+      "description": "battle between Palmyrene and Roman armies (272)",
+      "lon": 36.71,
+      "lat": 34.72,
+      "startYear": 272
+    },
+    {
+      "id": "Q1512205",
+      "name": "Battle of Vindonissa",
+      "type": "battle",
+      "description": "battle between Roman and Alemanni forces (298/302)",
+      "lon": 8.216667,
+      "lat": 47.466667,
+      "startYear": 298
+    },
+    {
+      "id": "Q1547153",
+      "name": "维罗纳战役",
+      "type": "battle",
+      "description": "312",
+      "lon": 10.983333,
+      "lat": 45.433333,
+      "startYear": 312
+    },
+    {
+      "id": "Q1583991",
+      "name": "Battle of Misiche",
+      "type": "battle",
+      "description": "244 battle",
+      "lon": 43.797222222,
+      "lat": 33.363888888,
+      "startYear": 244
+    },
+    {
+      "id": "Q2665461",
+      "name": "巴巴利索斯战役",
+      "type": "battle",
+      "description": "252 battle between Sasanian Persians and Romans",
+      "lon": 37.891158333,
+      "lat": 36.061033333,
+      "startYear": 252
+    },
+    {
+      "id": "Q2707586",
+      "name": "維洛那戰役",
+      "type": "battle",
+      "description": "battle between Roman general Decius and Emperor Philip the Arab (249)",
+      "lon": 10.992530555,
+      "lat": 45.42625,
+      "startYear": 249
+    },
+    {
+      "id": "Q1759500",
+      "name": "Battle of Lingones",
+      "type": "battle",
+      "description": "298 battle during the Roman-Germanic wars (298)",
+      "lon": 5.333333,
+      "lat": 47.85,
+      "startYear": 298
+    },
+    {
+      "id": "Q762600",
+      "name": "Battle of Fano",
+      "type": "battle",
+      "description": "battle during the Roman-Germanic wars (271)",
+      "lon": 13.0167,
+      "lat": 43.8333,
+      "startYear": 271
+    },
+    {
+      "id": "Q767848",
+      "name": "阿德里安堡之战",
+      "type": "battle",
+      "description": "324 battle",
+      "lon": 26.525,
+      "lat": 41.67,
+      "startYear": 324
+    },
+    {
+      "id": "Q2243653",
+      "name": "Battle of Resaena",
+      "type": "battle",
+      "description": "243 battle between Roman and Sasanian forces",
+      "lon": 40.0667,
+      "lat": 36.85,
+      "startYear": 243
+    },
+    {
+      "id": "Q2273280",
+      "name": "Battle of Immae",
+      "type": "battle",
+      "description": "battle between Palmyrene and Roman forces (272)",
+      "lon": 36.569471,
+      "lat": 36.237868,
+      "startYear": 272
+    },
+    {
+      "id": "Q2309606",
+      "name": "梅蒂奥拉努战役",
+      "type": "battle",
+      "description": "battle during the Roman-Germanic wars (259)",
+      "lon": 9.16667,
+      "lat": 45.4667,
+      "startYear": 259
+    },
+    {
+      "id": "Q2334735",
+      "name": "Battle of Philippopolis",
+      "type": "battle",
+      "description": "battle between Roman and Gothic forces (250)",
+      "lon": 24.75,
+      "lat": 42.15,
+      "startYear": 250
+    },
+    {
+      "id": "Q4872544",
+      "name": "Battle of Thermopylae (254)",
+      "type": "battle",
+      "description": "254 battle between Roman and Gothic forces",
+      "lon": 22.56277778,
+      "lat": 38.80527778,
+      "startYear": 254
+    },
+    {
+      "id": "Q11908763",
+      "name": "Battle of Pons Aureoli",
+      "type": "battle",
+      "description": "268 battle",
+      "lon": 9.566666666,
+      "lat": 45.566666666,
+      "startYear": 268
+    },
+    {
+      "id": "Q25420405",
+      "name": "Battle of Brescia",
+      "type": "battle",
+      "description": "312 AD battle in the Civil Wars of the Tetrarchy",
+      "lon": 10.23333333,
+      "lat": 45.53333333,
+      "startYear": 312
+    }
+  ]
+}

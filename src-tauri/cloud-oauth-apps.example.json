@@ -1,0 +1,5 @@
+{
+  "_comment": "【可选】阿里开放平台密钥回退。终端用户一般无需此文件，阿里云盘默认走网页扫码。若需开放平台回退，可填 aliyunClientId/Secret。",
+  "aliyunClientId": "",
+  "aliyunClientSecret": ""
+}

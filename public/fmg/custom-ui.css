@@ -1,0 +1,70 @@
+/* custom-ui.css — 隐藏 FMG 原菜单 + 清理视觉图层 */
+
+/* 隐藏左侧菜单容器 */
+#optionsContainer {
+  display: none !important;
+}
+
+/* 隐藏地形符号（树木、山丘等图标） */
+#terrain {
+  display: none !important;
+}
+
+/* 隐藏冰层/雪花 */
+#ice {
+  display: none !important;
+}
+
+/* 隐藏生物群落色块 */
+#biomes {
+  display: none !important;
+}
+
+/* 隐藏温度图 */
+#temperature {
+  display: none !important;
+}
+
+/* 隐藏降水图 */
+#prec {
+  display: none !important;
+}
+
+/* 隐藏人口图 */
+#population {
+  display: none !important;
+}
+
+/* 隐藏文化图 */
+#cults {
+  display: none !important;
+}
+
+/* 隐藏宗教图 */
+#relig {
+  display: none !important;
+}
+
+/* 隐藏纹理 */
+#texture {
+  display: none !important;
+}
+
+/* 隐藏军事 */
+#armies {
+  display: none !important;
+}
+
+/* 隐藏徽标 */
+#emblems {
+  display: none !important;
+}
+
+/* 隐藏区域/zones */
+#zones {
+  display: none !important;
+}
+
+#tooltip {
+  pointer-events: none;
+}

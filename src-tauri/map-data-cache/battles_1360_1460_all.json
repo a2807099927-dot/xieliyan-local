@@ -1,0 +1,906 @@
+{
+  "query": "battles_1360_1460_all",
+  "timestamp": 1779898882966,
+  "data": [
+    {
+      "id": "Q188495",
+      "name": "阿金库尔战役",
+      "type": "battle",
+      "description": "百年戰爭中的英國勝利",
+      "lon": 2.141388888,
+      "lat": 50.463333333,
+      "startYear": 1415
+    },
+    {
+      "id": "Q209387",
+      "name": "安卡拉之战",
+      "type": "battle",
+      "description": "battle near Ankara on 20 July 1402, between the Timurid Empire and the Ottoman Sultanate",
+      "lon": 32.95,
+      "lat": 40.15,
+      "startYear": 1402
+    },
+    {
+      "id": "Q210354",
+      "name": "庫里科沃之戰",
+      "type": "battle",
+      "description": "1380 battle between Russian principalities and Golden Horde",
+      "lon": 38.671388888,
+      "lat": 53.607777777,
+      "startYear": 1380
+    },
+    {
+      "id": "Q212220",
+      "name": "尼科波利斯戰役",
+      "type": "battle",
+      "description": "Ottoman victory and raising of the siege of the fortress of Nicopolis in September 1396",
+      "lon": 24.895833333,
+      "lat": 43.705833333,
+      "startYear": 1396
+    },
+    {
+      "id": "Q166961",
+      "name": "什鲁斯伯里战役",
+      "type": "battle",
+      "description": "1403 battle of the Glyndŵr Rising",
+      "lon": -2.7185,
+      "lat": 52.7475,
+      "startYear": 1403
+    },
+    {
+      "id": "Q179288",
+      "name": "科索沃战役",
+      "type": "battle",
+      "description": "battle on 28th June 1389",
+      "lon": 21.12,
+      "lat": 42.63,
+      "startYear": 1389
+    },
+    {
+      "id": "Q264911",
+      "name": "Battle of Brüx",
+      "type": "battle",
+      "description": "Hussite Wars battle in 1421",
+      "lon": 13.6367825,
+      "lat": 50.5211592,
+      "startYear": 1421
+    },
+    {
+      "id": "Q281089",
+      "name": "卢德福德桥之战",
+      "type": "battle",
+      "description": "1459 battle of the Wars of the Roses",
+      "lon": -2.718888888,
+      "lat": 52.36375,
+      "startYear": 1459
+    },
+    {
+      "id": "Q283015",
+      "name": "博讓西戰役",
+      "type": "battle",
+      "description": "1429 battle of the Hundred Years' War",
+      "lon": 1.64917,
+      "lat": 46.7958,
+      "startYear": 1429
+    },
+    {
+      "id": "Q32832",
+      "name": "瓦尔纳战役",
+      "type": "battle",
+      "description": "1444 battle",
+      "lon": 27.883333333,
+      "lat": 43.216666666,
+      "startYear": 1444
+    },
+    {
+      "id": "Q33570",
+      "name": "格倫瓦德之戰",
+      "type": "battle",
+      "description": "15世紀的戰役",
+      "lon": 20.124722222,
+      "lat": 53.486111111,
+      "startYear": 1410
+    },
+    {
+      "id": "Q38977",
+      "name": "Battle of Deutschbrod",
+      "type": "battle",
+      "description": "1422 battle",
+      "lon": 15.481111111,
+      "lat": 49.739722222,
+      "startYear": 1422
+    },
+    {
+      "id": "Q44062",
+      "name": "Battle of Nebovidy",
+      "type": "battle",
+      "description": "1422 battle",
+      "lon": 15.224722222,
+      "lat": 49.989722222,
+      "startYear": 1422
+    },
+    {
+      "id": "Q74072",
+      "name": "Battle of Albulena",
+      "type": "battle",
+      "description": "1457 battle",
+      "lon": 19.718055555,
+      "lat": 41.601944444,
+      "startYear": 1457
+    },
+    {
+      "id": "Q839234",
+      "name": "格罗特尼基战役",
+      "type": "battle",
+      "description": "1439 battle of the Post-Hussite Wars",
+      "lon": 20.810555555,
+      "lat": 50.302777777,
+      "startYear": 1439
+    },
+    {
+      "id": "Q842796",
+      "name": "第一次聖奧爾本斯戰役",
+      "type": "battle",
+      "description": "1455 conflict",
+      "lon": 0.339,
+      "lat": 51.7487,
+      "startYear": 1455
+    },
+    {
+      "id": "Q872364",
+      "name": "Battle of Kleverhamm",
+      "type": "battle",
+      "description": "1397 battle",
+      "lon": 6.144791,
+      "lat": 51.815142,
+      "startYear": 1397
+    },
+    {
+      "id": "Q879327",
+      "name": "Battle of Hiltersried",
+      "type": "battle",
+      "description": "1433 battle",
+      "lon": 12.5794167,
+      "lat": 49.3839361,
+      "startYear": 1433
+    },
+    {
+      "id": "Q906912",
+      "name": "韦克菲尔德战役",
+      "type": "battle",
+      "description": "1460 battle",
+      "lon": -1.492222222,
+      "lat": 53.680138888,
+      "startYear": 1460
+    },
+    {
+      "id": "Q911131",
+      "name": "拉布罗西尼耶尔战役",
+      "type": "battle",
+      "description": "1423 battle during the Hundred Years' War",
+      "lon": -0.741,
+      "lat": 47.765,
+      "startYear": 1423
+    },
+    {
+      "id": "Q916295",
+      "name": "北安普顿战役",
+      "type": "battle",
+      "description": "1460 battle",
+      "lon": -0.884166666,
+      "lat": 52.223055555,
+      "startYear": 1460
+    },
+    {
+      "id": "Q922200",
+      "name": "蒙铁尔战役",
+      "type": "battle",
+      "description": "1369 battle in La Mancha, Castile",
+      "lon": -4,
+      "lat": 39,
+      "startYear": 1369
+    },
+    {
+      "id": "Q932613",
+      "name": "卡斯蒂永战役",
+      "type": "battle",
+      "description": "1453 battle during the Hundred Years' War",
+      "lon": -0.018888888,
+      "lat": 44.851666666,
+      "startYear": 1453
+    },
+    {
+      "id": "Q935088",
+      "name": "里潘尼戰役",
+      "type": "battle",
+      "description": "fought at Lipany, Vitice in 1434 during the Hussite Wars",
+      "lon": 14.936944444,
+      "lat": 50.028611111,
+      "startYear": 1434
+    },
+    {
+      "id": "Q939570",
+      "name": "马里查战役",
+      "type": "battle",
+      "description": "battle that took place at the Maritsa River near the village of Chernomen on September 26, 1371",
+      "lon": 26.035,
+      "lat": 40.73055556,
+      "startYear": 1371
+    },
+    {
+      "id": "Q1140646",
+      "name": "福尔米尼战役",
+      "type": "battle",
+      "description": "1450 battle during the Hundred Years' War",
+      "lon": -0.897777777,
+      "lat": 49.337222222,
+      "startYear": 1450
+    },
+    {
+      "id": "Q1196236",
+      "name": "土木堡之变",
+      "type": "battle",
+      "description": "明朝和瓦剌之间的冲突",
+      "lon": 115.6,
+      "lat": 40.383333333,
+      "startYear": 1449
+    },
+    {
+      "id": "Q1062615",
+      "name": "欧赖战役",
+      "type": "battle",
+      "description": "1364 battle of the War of the Breton Succession",
+      "lon": -2.98139,
+      "lat": 47.6686,
+      "startYear": 1364
+    },
+    {
+      "id": "Q1085253",
+      "name": "昆都尔察河谷大战",
+      "type": "battle",
+      "description": "1391 battle",
+      "lon": 50.45,
+      "lat": 53.45,
+      "startYear": 1391
+    },
+    {
+      "id": "Q1314054",
+      "name": "鯡魚之戰",
+      "type": "battle",
+      "description": "1429 military action near the town of Rouvray in France",
+      "lon": 1.73333,
+      "lat": 48.0667,
+      "startYear": 1429
+    },
+    {
+      "id": "Q1341972",
+      "name": "阿尔茹巴罗塔战役",
+      "type": "battle",
+      "description": "1385 battle in Portugal",
+      "lon": -8.844444444,
+      "lat": 39.639444444,
+      "startYear": 1385
+    },
+    {
+      "id": "Q1343168",
+      "name": "Battle of Nekmíř",
+      "type": "battle",
+      "description": "1419 battle",
+      "lon": 13.2695119,
+      "lat": 49.8558364,
+      "startYear": 1419
+    },
+    {
+      "id": "Q2888197",
+      "name": "布拉默姆沼泽战役",
+      "type": "battle",
+      "description": "1408 final battle of the Percy Rebellion",
+      "lon": -1.34138889,
+      "lat": 53.86444444,
+      "startYear": 1408
+    },
+    {
+      "id": "Q2888239",
+      "name": "Battle of Canturino",
+      "type": "battle",
+      "description": "1363 battle",
+      "lon": 12.844074,
+      "lat": 43.513296,
+      "startYear": 1363
+    },
+    {
+      "id": "Q2888296",
+      "name": "葡萄牙征服休达",
+      "type": "battle",
+      "description": "Portuguese conquest of Ceuta (1415)",
+      "lon": -5.300278,
+      "lat": 35.895833,
+      "startYear": 1415
+    },
+    {
+      "id": "Q1411508",
+      "name": "維可米耶什一役",
+      "type": "battle",
+      "description": "1435 battle",
+      "lon": 24.77138889,
+      "lat": 55.16583333,
+      "startYear": 1435
+    },
+    {
+      "id": "Q2387677",
+      "name": "加来战役",
+      "type": "battle",
+      "description": "1436 failed siege of Calais by Philip the Good, Duke of Burgundy",
+      "lon": 1.855555555,
+      "lat": 50.9475,
+      "startYear": 1436
+    },
+    {
+      "id": "Q425617",
+      "name": "韋納伊戰役",
+      "type": "battle",
+      "description": "1424 battle",
+      "lon": 0.94,
+      "lat": 48.755,
+      "startYear": 1424
+    },
+    {
+      "id": "Q451404",
+      "name": "Battle of St. Jakob an der Sihl",
+      "type": "battle",
+      "description": "1443 battle of the Old Zürich War",
+      "lon": 8.53083333,
+      "lat": 47.37361111,
+      "startYear": 1443
+    },
+    {
+      "id": "Q451853",
+      "name": "Battle of St. Jakob an der Birs",
+      "type": "battle",
+      "description": "1444 battle between Swiss and French troops",
+      "lon": 7.618,
+      "lat": 47.542,
+      "startYear": 1444
+    },
+    {
+      "id": "Q516507",
+      "name": "Reconquest of Gallipoli",
+      "type": "battle",
+      "description": "1366 middle ages battle",
+      "lon": 26.6711,
+      "lat": 40.4133,
+      "startYear": 1366
+    },
+    {
+      "id": "Q551549",
+      "name": "霍伊尼采一役",
+      "type": "battle",
+      "description": "1454 battle of the Thirteen Years' War",
+      "lon": 17.5667,
+      "lat": 53.7,
+      "startYear": 1454
+    },
+    {
+      "id": "Q558503",
+      "name": "Battle of Rudau",
+      "type": "battle",
+      "description": "1370 battle",
+      "lon": 20.46027778,
+      "lat": 54.87194444,
+      "startYear": 1370
+    },
+    {
+      "id": "Q558503",
+      "name": "Battle of Rudau",
+      "type": "battle",
+      "description": "1370 battle",
+      "lon": 20.46027778,
+      "lat": 54.87194444,
+      "startYear": 1370
+    },
+    {
+      "id": "Q1500196",
+      "name": "霍里茲戰役",
+      "type": "battle",
+      "description": "1423 battle",
+      "lon": 15.6444,
+      "lat": 50.3647,
+      "startYear": 1423
+    },
+    {
+      "id": "Q1500532",
+      "name": "克拉旺戰役",
+      "type": "battle",
+      "description": "1423 battle during the Hundred Years' War",
+      "lon": 3.691666666,
+      "lat": 47.683888888,
+      "startYear": 1423
+    },
+    {
+      "id": "Q2473814",
+      "name": "First Battle of Olmedo",
+      "type": "battle",
+      "description": "1445 battle",
+      "lon": -4.686666666,
+      "lat": 41.287222222,
+      "startYear": 1445
+    },
+    {
+      "id": "Q2508958",
+      "name": "捷列克河之戰",
+      "type": "battle",
+      "description": "1395 2nd major battle of Tokhtamysh–Timur war",
+      "lon": 47.45,
+      "lat": 43.58333333,
+      "startYear": 1395
+    },
+    {
+      "id": "Q2530225",
+      "name": "Battle of Atoleiros",
+      "type": "battle",
+      "description": "1384 battle in Portugal",
+      "lon": -7.626,
+      "lat": 39.021,
+      "startYear": 1384
+    },
+    {
+      "id": "Q2889262",
+      "name": "Battle of Marino",
+      "type": "battle",
+      "description": "1379 battle",
+      "lon": 12.666666666,
+      "lat": 41.766666666,
+      "startYear": 1379
+    },
+    {
+      "id": "Q2889370",
+      "name": "Battle of Montjuèi",
+      "type": "battle",
+      "description": "1411 battle",
+      "lon": 1.94222,
+      "lat": 43.5094,
+      "startYear": 1411
+    },
+    {
+      "id": "Q2889394",
+      "name": "蒙泰皮盧瓦戰役",
+      "type": "battle",
+      "description": "百年战争中的一场战役",
+      "lon": 2.6999,
+      "lat": 49.1539,
+      "startYear": 1429
+    },
+    {
+      "id": "Q2984951",
+      "name": "Battle of the Seven",
+      "type": "battle",
+      "description": "1402 battle",
+      "lon": -0.4122,
+      "lat": 45.2807,
+      "startYear": 1402
+    },
+    {
+      "id": "Q581401",
+      "name": "布洛希思之役",
+      "type": "battle",
+      "description": "1459 battle in the English Wars of the Roses",
+      "lon": -2.424722222,
+      "lat": 52.913611111,
+      "startYear": 1459
+    },
+    {
+      "id": "Q597478",
+      "name": "沃尔斯克拉河战役",
+      "type": "battle",
+      "description": "1399 battle",
+      "lon": 34.121666666,
+      "lat": 48.904166666,
+      "startYear": 1399
+    },
+    {
+      "id": "Q598069",
+      "name": "霍米爾登山戰役",
+      "type": "battle",
+      "description": "conflict between English and Scottish armies on 14 September 1402 in Northumberland, England, UK",
+      "lon": -2.052,
+      "lat": 55.559,
+      "startYear": 1402
+    },
+    {
+      "id": "Q612288",
+      "name": "普洛奇尼克之战",
+      "type": "battle",
+      "description": "1385 battle",
+      "lon": 21.3556,
+      "lat": 43.2019,
+      "startYear": 1385
+    },
+    {
+      "id": "Q615922",
+      "name": "沃扎河戰役",
+      "type": "battle",
+      "description": "1378 middle ages battle",
+      "lon": 39.44416667,
+      "lat": 54.71666667,
+      "startYear": 1378
+    },
+    {
+      "id": "Q2889660",
+      "name": "蓬瓦兰战役",
+      "type": "battle",
+      "description": "1370 battle in the Hundred Years' War",
+      "lon": 0.206944444,
+      "lat": 47.768888888,
+      "startYear": 1370
+    },
+    {
+      "id": "Q2889689",
+      "name": "Battle of Portomaggiore",
+      "type": "battle",
+      "description": "1395 battle in Italy",
+      "lon": 11.8,
+      "lat": 44.7,
+      "startYear": 1395
+    },
+    {
+      "id": "Q2889732",
+      "name": "拉多科桥战役",
+      "type": "battle",
+      "description": "1387 battle in England",
+      "lon": -1.589,
+      "lat": 51.6931,
+      "startYear": 1387
+    },
+    {
+      "id": "Q2889924",
+      "name": "聖羅馬諾戰役",
+      "type": "battle",
+      "description": "1432 battle",
+      "lon": 10.758144,
+      "lat": 43.688978,
+      "startYear": 1432
+    },
+    {
+      "id": "Q1618294",
+      "name": "Battle of Sudoměř",
+      "type": "battle",
+      "description": "1420 second battle of the Hussite Wars",
+      "lon": 14.06388889,
+      "lat": 49.24194444,
+      "startYear": 1420
+    },
+    {
+      "id": "Q1618756",
+      "name": "羅亞爾河畔默恩戰役",
+      "type": "battle",
+      "description": "1429 battle during the Hundred Years' War",
+      "lon": 1.69917,
+      "lat": 47.8294,
+      "startYear": 1429
+    },
+    {
+      "id": "Q1631158",
+      "name": "納赫拉之戰",
+      "type": "battle",
+      "description": "1367 battle",
+      "lon": -2.7,
+      "lat": 42.4275,
+      "startYear": 1367
+    },
+    {
+      "id": "Q1648673",
+      "name": "奧特本戰役",
+      "type": "battle",
+      "description": "1388 Medieval battle between England and Scotland",
+      "lon": -2.194722222,
+      "lat": 55.236944444,
+      "startYear": 1388
+    },
+    {
+      "id": "Q1648673",
+      "name": "奧特本戰役",
+      "type": "battle",
+      "description": "1388 Medieval battle between England and Scotland",
+      "lon": -2.194722222,
+      "lat": 55.236944444,
+      "startYear": 1388
+    },
+    {
+      "id": "Q1651134",
+      "name": "罗泽贝克战役",
+      "type": "battle",
+      "description": "1382 battle in Europe",
+      "lon": 3.013611111,
+      "lat": 50.93,
+      "startYear": 1382
+    },
+    {
+      "id": "Q1668787",
+      "name": "奧塞戰役",
+      "type": "battle",
+      "description": "1408 battle",
+      "lon": 5.464638888,
+      "lat": 50.721111111,
+      "startYear": 1408
+    },
+    {
+      "id": "Q1688652",
+      "name": "Battle of Kratzau",
+      "type": "battle",
+      "description": "1428 battle",
+      "lon": 14.9975,
+      "lat": 50.793333333,
+      "startYear": 1428
+    },
+    {
+      "id": "Q1762486",
+      "name": "Battle of Sanluri",
+      "type": "battle",
+      "description": "1409 battle in Europe",
+      "lon": 8.9,
+      "lat": 39.5667,
+      "startYear": 1409
+    },
+    {
+      "id": "Q2602904",
+      "name": "科什雷勒戰役",
+      "type": "battle",
+      "description": "1364 battle",
+      "lon": 1.342,
+      "lat": 49.059,
+      "startYear": 1364
+    },
+    {
+      "id": "Q2603935",
+      "name": "薩夫拉之戰",
+      "type": "battle",
+      "description": "1385 battle between Ottoman and Zetan forces in modern-day Albania",
+      "lon": 19.68333333,
+      "lat": 40.9,
+      "startYear": 1385
+    },
+    {
+      "id": "Q3277009",
+      "name": "Battle of Trnava",
+      "type": "battle",
+      "description": "1430 battle of the Hussite Wars",
+      "lon": 17.7099633,
+      "lat": 48.3889192,
+      "startYear": 1430
+    },
+    {
+      "id": "Q3298782",
+      "name": "Battle of Oranik",
+      "type": "battle",
+      "description": "1456 part of the Ottoman-Albanian Wars",
+      "lon": 20.5333,
+      "lat": 41.5167,
+      "startYear": 1456
+    },
+    {
+      "id": "Q3301210",
+      "name": "Battle of Oranik",
+      "type": "battle",
+      "description": "part of the Albanian-Venetian War of 1447-1448",
+      "lon": 20.5333,
+      "lat": 41.5167,
+      "startYear": 1448
+    },
+    {
+      "id": "Q3395349",
+      "name": "Battle of Tripolje",
+      "type": "battle",
+      "description": "1402 battle",
+      "lon": 21.2,
+      "lat": 42.6,
+      "startYear": 1402
+    },
+    {
+      "id": "Q624937",
+      "name": "Battle of Visby",
+      "type": "battle",
+      "description": "1361 battle fought in the town of Visby on the island of Gotland, Sweden between the forces of Danish king Valdemar IV and Gutnish country yeomen",
+      "lon": 18.299111111,
+      "lat": 57.633719444,
+      "startYear": 1361
+    },
+    {
+      "id": "Q647112",
+      "name": "科罗诺沃战役",
+      "type": "battle",
+      "description": "1410 battle",
+      "lon": 17.8111,
+      "lat": 53.3569,
+      "startYear": 1410
+    },
+    {
+      "id": "Q648535",
+      "name": "帕提戰役",
+      "type": "battle",
+      "description": "1429 battle",
+      "lon": 1.69583,
+      "lat": 48.0483,
+      "startYear": 1429
+    },
+    {
+      "id": "Q661759",
+      "name": "森帕赫战役",
+      "type": "battle",
+      "description": "1386 battle between old Switzerland confederation and Habsburg",
+      "lon": 8.213333333,
+      "lat": 47.145555555,
+      "startYear": 1386
+    },
+    {
+      "id": "Q1770727",
+      "name": "Battle of Sark",
+      "type": "battle",
+      "description": "battle fought between England and Scotland in October 1448",
+      "lon": -3.07194444,
+      "lat": 54.98611111,
+      "startYear": 1448
+    },
+    {
+      "id": "Q1777327",
+      "name": "哈弗勒之战",
+      "type": "battle",
+      "description": "1453 battle in Europe",
+      "lon": 3.65,
+      "lat": 50.9333,
+      "startYear": 1453
+    },
+    {
+      "id": "Q1779008",
+      "name": "Battle of Anghiari",
+      "type": "battle",
+      "description": "battle on 29 June 1440, between the forces of Milan and those of the Italian League led by the Republic of Florence",
+      "lon": 12.069598,
+      "lat": 43.546826,
+      "startYear": 1440
+    },
+    {
+      "id": "Q1785755",
+      "name": "博热战役",
+      "type": "battle",
+      "description": "1421 battle during the Hundred Years' War",
+      "lon": -0.103,
+      "lat": 47.542,
+      "startYear": 1421
+    },
+    {
+      "id": "Q1787589",
+      "name": "Battle of Aussig",
+      "type": "battle",
+      "description": "1426 battle of the Hussite Wars",
+      "lon": 13.9648,
+      "lat": 50.6598,
+      "startYear": 1426
+    },
+    {
+      "id": "Q1794532",
+      "name": "Battle of Åsle",
+      "type": "battle",
+      "description": "fight between Danish and Swedish forces 1389",
+      "lon": 13.652,
+      "lat": 58.18,
+      "startYear": 1389
+    },
+    {
+      "id": "Q1807251",
+      "name": "Battle of La Higueruela",
+      "type": "battle",
+      "description": "1431 battle of the Reconquista",
+      "lon": -3.707944444,
+      "lat": 37.237513888,
+      "startYear": 1431
+    },
+    {
+      "id": "Q1885831",
+      "name": "热尔伯鲁瓦战役",
+      "type": "battle",
+      "description": "1435 battle of the Hundred Years' War",
+      "lon": 1.8506,
+      "lat": 49.535,
+      "startYear": 1435
+    },
+    {
+      "id": "Q1919712",
+      "name": "Battle of Nevele",
+      "type": "battle",
+      "description": "1381 battle",
+      "lon": 3.5321,
+      "lat": 50.9628,
+      "startYear": 1381
+    },
+    {
+      "id": "Q1934137",
+      "name": "Battle of Torvioll",
+      "type": "battle",
+      "description": "1444 battle during an Albanian uprising against the Ottoman Empire",
+      "lon": 20.36666667,
+      "lat": 41.76666667,
+      "startYear": 1444
+    },
+    {
+      "id": "Q1968819",
+      "name": "Battle of Domažlice",
+      "type": "battle",
+      "description": "1431 battle during the crusades",
+      "lon": 12.993437,
+      "lat": 49.408272,
+      "startYear": 1431
+    },
+    {
+      "id": "Q667460",
+      "name": "Battle of Näfels",
+      "type": "battle",
+      "description": "1388 Swiss victory over Austria",
+      "lon": 9.066111111,
+      "lat": 47.101111111,
+      "startYear": 1388
+    },
+    {
+      "id": "Q668577",
+      "name": "康白尼之圍",
+      "type": "battle",
+      "description": "1430 Was Joan of Arc's final military action.",
+      "lon": 2.822222222,
+      "lat": 49.414166666,
+      "startYear": 1430
+    },
+    {
+      "id": "Q671340",
+      "name": "Battle of Maclodio",
+      "type": "battle",
+      "description": "1427 middle ages battle",
+      "lon": 10.05,
+      "lat": 45.4833,
+      "startYear": 1427
+    },
+    {
+      "id": "Q673411",
+      "name": "Battle of Arbedo",
+      "type": "battle",
+      "description": "1422 middle ages battle",
+      "lon": 9.04,
+      "lat": 46.21,
+      "startYear": 1422
+    },
+    {
+      "id": "Q681702",
+      "name": "Battle of Sörenberg",
+      "type": "battle",
+      "description": "1380 battle",
+      "lon": 8.04555556,
+      "lat": 46.80638889,
+      "startYear": 1380
+    },
+    {
+      "id": "Q690244",
+      "name": "Battle of Bulgnéville",
+      "type": "battle",
+      "description": "1431 battle",
+      "lon": 5.835,
+      "lat": 48.2086,
+      "startYear": 1431
+    },
+    {
+      "id": "Q690573",
+      "name": "布里涅战役",
+      "type": "battle",
+      "description": "1362 battle in France",
+      "lon": 4.75222,
+      "lat": 45.67472,
+      "startYear": 1362
+    },
+    {
+      "id": "Q3406467",
+      "name": "Battle of Pwll Melyn",
+      "type": "battle",
+      "description": "1405 battle in Wales",
+      "lon": -2.954,
+      "lat": 51.718,
+      "startYear": 1405
+    }
+  ]
+}

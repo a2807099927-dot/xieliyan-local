@@ -1,0 +1,8 @@
+.vscode
+.idea
+/node_modules
+/dist
+/coverage
+/compare
+/zh_font
+*.bak

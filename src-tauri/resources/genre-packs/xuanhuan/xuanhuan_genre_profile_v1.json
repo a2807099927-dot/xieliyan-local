@@ -1,0 +1,210 @@
+{
+  "_comment": "玄幻题材 genre_profiles 完整配置 v1（三层分析整合）",
+  "_version": "1.0",
+  "_anonymized": true,
+  "_source": "三层分析，章节1-10",
+
+  "genre": "xuanhuan",
+  "display_name": "玄幻",
+
+  "reflector_threshold": {
+    "pass_total": 18,
+    "max_total": 25,
+    "key_dimensions": ["beats", "persona"],
+    "key_min_score": 3,
+    "dimensions": {
+      "beats": {
+        "weight": 5,
+        "description": "必选剧情节点是否到位",
+        "objective_check": "required_beats命中率 >= 80%"
+      },
+      "persona": {
+        "weight": 5,
+        "description": "与角色快照是否冲突",
+        "objective_check": "persona_conflict_rate <= 0.3/千字",
+        "forbidden_behaviors": [
+          "主角主动暴露脆弱（当众哭泣/求饶/真诚认错）",
+          "主角面对羞辱无任何内心反应或誓言",
+          "主角对势力碾压型对手产生道德自省",
+          "主角在受辱场景中表现平静淡然（必须有内心愤怒）",
+          "主角在公开场合对同级或下级使用礼貌谦卑开场",
+          "面对同级挑衅选择沉默接受而非暗中记仇或立誓",
+          "主角奇遇/突破后不展现任何内心爽感"
+        ]
+      },
+      "emotion": {
+        "weight": 5,
+        "description": "是否体现目标情绪递进（羞辱→隐忍→奇遇→爆发）",
+        "objective_check": "情绪曲线波峰在章节70-90%位置，波谷必须先于波峰"
+      },
+      "causality": {
+        "weight": 5,
+        "description": "事件推进是否有因果链",
+        "objective_check": "每个羞辱事件必须有后续的奇遇/突破呼应，每次冲突必须有实力差距的客观依据"
+      },
+      "style": {
+        "weight": 5,
+        "description": "是否偏离style_profile",
+        "objective_ratio": 3,
+        "ai_ratio": 2,
+        "objective_checks": [
+          "平均句长在sentence_len_range范围内",
+          "紧张场景短句比率达标",
+          "无banned_words出现",
+          "段落平均行数在1-5行范围内",
+          "心理描写深度分布符合设定（中层占主导）",
+          "无超过200字的连续旁白说明段落"
+        ]
+      }
+    }
+  },
+
+  "style_profile": {
+    "sentence_len_range": {
+      "tense_scene": [4, 13],
+      "normal_scene": [14, 30],
+      "relaxed_scene": [20, 40]
+    },
+    "perspective": "third_limited_protagonist_centric",
+    "psychology_depth_ratio": {
+      "surface_level_thought": 0.30,
+      "direct_inner_monologue": 0.70,
+      "subconscious_metaphor": 0.00
+    },
+    "banned_words": [
+      "忽然间", "猛地一颤", "不知不觉中", "岁月如梭",
+      "光阴似箭，日月如梭", "像仙女一样", "天空很蓝，白云很白",
+      "生命的意义在于", "宇宙般的孤独", "莫名其妙地感动",
+      "深邃的眼神仿佛看穿了一切"
+    ],
+    "banned_scene_types": [
+      "纯景物抒情段落（无角色情绪或叙事功能）",
+      "道德自省独白（主角不做道德反思）",
+      "无目的性日常活动（起床洗漱等无冲突内容）",
+      "文艺式慢节奏开场（超过50字的纯环境开篇）",
+      "超过200字的连续世界观旁白（设定集中说明除外，且仅限第2-3章）",
+      "主角视角内的深层潜意识分析",
+      "非线性叙事结构（倒叙/插叙需有明确触发）"
+    ],
+    "tone": "tense_oppressive_then_cathartic",
+    "paragraph_avg_lines": 2.5,
+    "paragraph_max_lines": 5,
+    "conflict_short_sentence_ratio": 0.80,
+    "dialogue_narration_interval": "3-5轮对话插入1次叙述",
+    "narration_insert_max_chars": 42,
+    "description_order": ["整体印象/气质", "核心细节（脸/眼）", "服饰/配饰/标志性物件"],
+    "description_first_appearance_max_chars": 50,
+    "sensory_channels": {
+      "visual": 0.80,
+      "auditory": 0.15,
+      "tactile": 0.05,
+      "olfactory": 0.00
+    },
+    "chapter_structure": {
+      "opening_types": {
+        "conflict_suspense_start": 0.60,
+        "action_status_start": 0.20,
+        "dialogue_start": 0.10,
+        "environment_start": 0.10
+      },
+      "climax_position_range": [0.70, 0.90],
+      "ending_types": {
+        "suspense_hook": 0.70,
+        "emotional_resonance": 0.20,
+        "action_cliffhanger": 0.10
+      },
+      "closure_type": "semi_open",
+      "event_cycle_chapters": [3, 5],
+      "foreshadowing_recovery_span": [4, 8]
+    },
+    "conflict_resolution_logic": {
+      "vs_overwhelming_power": "隐忍立誓（记仇+宣誓+等待时机）",
+      "vs_peer_competitor": "直接硬刚（当场反击或立誓百倍奉还）",
+      "decision_basis": "当前实力对比，而非道德判断"
+    },
+    "info_density": {
+      "new_info_points_per_chapter": [3, 5],
+      "delivery_method": "旁白集中说明（设定章）+ 对话随文释出（剧情章）",
+      "position": "chapter_ending_dense + dedicated_setting_chapters"
+    },
+    "core_emotional_loop": "公开羞辱（波谷）→ 独处隐忍（酝酿）→ 奇遇/突破（转折）→ 冲突爆发（波峰）→ 新一轮羞辱或悬念（循环触发）"
+  },
+
+  "optimizer_gate": {
+    "silent_lt": 10,
+    "freq_only_lt": 20,
+    "full_advice_gte": 20
+  },
+
+  "optimization_map": {
+    "pace_fast": [
+      {"action": "raise_word_count_min", "value": 0.2, "unit": "percent"},
+      {"action": "add_required_beats", "value": 1, "unit": "count"},
+      {"action": "inject_craft_pattern", "value": "世界观设定旁白", "unit": "pattern_name"}
+    ],
+    "pace_slow": [
+      {"action": "lower_word_count_max", "value": 0.15, "unit": "percent"},
+      {"action": "inject_craft_pattern", "value": "场景转场句", "unit": "pattern_name"},
+      {"action": "inject_craft_pattern", "value": "章节收尾钩子句", "unit": "pattern_name"}
+    ],
+    "persona_ooc": [
+      {"action": "persona_weight", "value": 1, "unit": "score_delta"},
+      {"action": "refresh_character_snapshot", "value": true, "unit": "bool"},
+      {"action": "inject_forbidden_behaviors", "value": true, "unit": "bool"},
+      {"action": "inject_craft_pattern", "value": "冲突降温句", "unit": "pattern_name"}
+    ],
+    "style_drift": [
+      {"action": "inject_style_constraints", "value": 0.2, "unit": "percent"},
+      {"action": "banned_words_strict", "value": true, "unit": "bool"},
+      {"action": "inject_craft_pattern", "value": "节奏控制规则", "unit": "pattern_name"}
+    ],
+    "not_connected_prev": [
+      {"action": "nearby_recall", "value": 5, "unit": "count_delta"},
+      {"action": "anchor_prev_event_strict", "value": true, "unit": "bool"}
+    ],
+    "emotion_flat": [
+      {"action": "inject_craft_pattern", "value": "冲突升级信号词", "unit": "pattern_name"},
+      {"action": "emotion_arc_strict", "value": true, "unit": "bool"},
+      {"action": "inject_craft_pattern", "value": "心理独白句（主角自身）", "unit": "pattern_name"}
+    ],
+    "dialogue_unnatural": [
+      {"action": "inject_craft_pattern", "value": "对话开场句", "unit": "pattern_name"},
+      {"action": "inject_craft_pattern", "value": "冲突降温句", "unit": "pattern_name"}
+    ],
+    "chapter_ending_weak": [
+      {"action": "inject_craft_pattern", "value": "章节收尾钩子句", "unit": "pattern_name"},
+      {"action": "forbidden_ending_types", "value": ["完全闭合", "纯抒情", "总结陈词"], "unit": "list"}
+    ],
+    "setting_overload": [
+      {"action": "split_info_to_dialogue", "value": true, "unit": "bool"},
+      {"action": "max_continuous_narration_chars", "value": 200, "unit": "chars"}
+    ]
+  },
+
+  "conflict_signals": {
+    "undercurrent": [
+      "自嘲", "嘴角的苦涩", "呼吸微微急促", "紧握的手掌",
+      "落寞的转身", "有些格格不入", "沉默许久", "冷脸",
+      "眼神恍惚", "若有所思", "斜睨一眼", "话里有话"
+    ],
+    "open_conflict": [
+      "脸色一变", "心头猛的涌出一阵怒气", "冷笑", "眉头轻皱",
+      "冷喝道", "咄咄逼人", "当面嘲讽", "废物",
+      "你敢", "反唇相讥", "数落", "挑衅"
+    ],
+    "explosion": [
+      "火山般的爆发", "狰狞得有些可怖", "杀意凛然",
+      "豁然转身", "大吼一声", "你他妈", "我草你奶奶的",
+      "彻底决裂", "休书", "动手", "啪的一声"
+    ]
+  },
+
+  "craft_fingerprint": {
+    "dialogue_style": "对话即冲突——动作/神态引入，心理/对方反应收尾，每句对话都服务于实力差距的彰显或羞辱的加剧",
+    "rhythm_style": "压抑驱动节奏——以长叙述积累压抑，以短句爆发释放，单行段标注关键转折，张弛对比极为鲜明",
+    "description_style": "功能化描写——外貌服务角色定位，气质服务剧情预设，环境服务情绪转折，氛围词汇围绕主角处境高度集中",
+    "structure_style": "羞辱-奇遇闭环——公开羞辱奠定低谷，独处奇遇提供转机，实力突破触发爆发，悬念结尾驱动追读",
+    "psychology_style": "隐忍愤怒积累感——内心独白大量呈现愤怒、不甘与对力量的渴望，绝不暴露软弱，誓言是最高频的情绪出口",
+    "info_style": "设定集中+剧情随文——存在专属设定章节集中解释世界观，日常章节通过对话和行动随文释出，伏笔跨度6章左右"
+  }
+}

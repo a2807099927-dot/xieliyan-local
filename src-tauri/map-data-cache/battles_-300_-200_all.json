@@ -1,0 +1,906 @@
+{
+  "query": "battles_-300_-200_all",
+  "timestamp": 1779901132612,
+  "data": [
+    {
+      "id": "Q200056",
+      "name": "札馬戰役",
+      "type": "battle",
+      "description": "final battle of the Second Punic War",
+      "lon": 9.449166666,
+      "lat": 36.298888888,
+      "startYear": null
+    },
+    {
+      "id": "Q207250",
+      "name": "特拉西美诺湖战役",
+      "type": "battle",
+      "description": "217 BCE battle of the Second Punic War",
+      "lon": 12.085,
+      "lat": 43.1975,
+      "startYear": null
+    },
+    {
+      "id": "Q233363",
+      "name": "Second Battle of Beneventum",
+      "type": "battle",
+      "description": "211 BCE battle",
+      "lon": 14.7780556,
+      "lat": 41.1311111,
+      "startYear": null
+    },
+    {
+      "id": "Q233373",
+      "name": "Battle of Capua",
+      "type": "battle",
+      "description": "battle of the Second Punic War that took place in 211 BCE when the Romans besieged and captured Capua",
+      "lon": 14.25,
+      "lat": 41.0833333,
+      "startYear": null
+    },
+    {
+      "id": "Q233386",
+      "name": "Battle of Herdonia",
+      "type": "battle",
+      "description": "210 BCE battle of the Second Punic War in which Hannibal's Carthaginians encircled and destroyed a Roman army which was operating against his allies in Apulia",
+      "lon": 15.6333333,
+      "lat": 41.3166667,
+      "startYear": null
+    },
+    {
+      "id": "Q233402",
+      "name": "Battle of Nola",
+      "type": "battle",
+      "description": "215 BCE battle of the Second Punic War",
+      "lon": 14.5275,
+      "lat": 40.9261111,
+      "startYear": null
+    },
+    {
+      "id": "Q233406",
+      "name": "Second Battle of Tarentum",
+      "type": "battle",
+      "description": "208 BCE battle",
+      "lon": 17.2333333,
+      "lat": 40.4666667,
+      "startYear": null
+    },
+    {
+      "id": "Q6891",
+      "name": "Battle of Bagradas",
+      "type": "battle",
+      "description": "battle of the First Punic War with a Carthaginian victory",
+      "lon": 10.1659,
+      "lat": 36.7975,
+      "startYear": null
+    },
+    {
+      "id": "Q47299",
+      "name": "庫魯佩迪安戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 27.617792,
+      "lat": 38.546466,
+      "startYear": null
+    },
+    {
+      "id": "Q175985",
+      "name": "泰拉蒙战役",
+      "type": "battle",
+      "description": "battle between the Romans and the Celts (225 BC)",
+      "lon": 11.133,
+      "lat": 42.555,
+      "startYear": null
+    },
+    {
+      "id": "Q179591",
+      "name": "坎尼會戰",
+      "type": "battle",
+      "description": "第二次布匿戰爭中的主要戰役",
+      "lon": 16.1325,
+      "lat": 41.306388888,
+      "startYear": null
+    },
+    {
+      "id": "Q378957",
+      "name": "提基努斯河會戰",
+      "type": "battle",
+      "description": "battle of the Second Punic War between the Carthaginian forces of Hannibal and the Romans under Publius Cornelius Scipio in November 218 BCE",
+      "lon": 8.866666666,
+      "lat": 45.25,
+      "startYear": null
+    },
+    {
+      "id": "Q427853",
+      "name": "Battle of Capua",
+      "type": "battle",
+      "description": "battle of the Second Punic War in 212 BCE where Hannibal defeated two Roman consular armies and temporarily managed to raise the siege of Capua",
+      "lon": 14.25,
+      "lat": 41.0833333,
+      "startYear": null
+    },
+    {
+      "id": "Q271873",
+      "name": "特雷比亞河戰役",
+      "type": "battle",
+      "description": "first major battle of the Second Punic War",
+      "lon": 9.5675,
+      "lat": 44.9875,
+      "startYear": null
+    },
+    {
+      "id": "Q319124",
+      "name": "伊普蘇斯戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 30.99,
+      "lat": 38.95,
+      "startYear": null
+    },
+    {
+      "id": "Q963839",
+      "name": "Battle of Adys",
+      "type": "battle",
+      "description": "battle of the First Punic War in which Rome defeated Carthage",
+      "lon": 10.1717,
+      "lat": 36.6085,
+      "startYear": null
+    },
+    {
+      "id": "Q630781",
+      "name": "拉菲亞戰役",
+      "type": "battle",
+      "description": "217 BCE battle",
+      "lon": 34.251944444,
+      "lat": 31.288611111,
+      "startYear": null
+    },
+    {
+      "id": "Q635839",
+      "name": "Battle of Sentinum",
+      "type": "battle",
+      "description": "295 BCE battle of the Third Samnite War",
+      "lon": 12.85448,
+      "lat": 43.41583,
+      "startYear": null
+    },
+    {
+      "id": "Q675000",
+      "name": "Battle of Clastidium",
+      "type": "battle",
+      "description": "battle during the Roman-Gaulish wars (222 BC)",
+      "lon": 9.133333,
+      "lat": 45.016667,
+      "startYear": null
+    },
+    {
+      "id": "Q999235",
+      "name": "Battle of Ager Falernus",
+      "type": "battle",
+      "description": "skirmish between the armies of Rome and Carthage during the Second Punic War",
+      "lon": 14.55,
+      "lat": 41.1833,
+      "startYear": null
+    },
+    {
+      "id": "Q1055755",
+      "name": "伊利帕战役",
+      "type": "battle",
+      "description": "Scipio Africanus’s most brilliant victory in his military career during the Second Punic War",
+      "lon": -5.978333333,
+      "lat": 37.518333333,
+      "startYear": null
+    },
+    {
+      "id": "Q1160070",
+      "name": "Battle of Beneventum",
+      "type": "battle",
+      "description": "battle fought in 275 BCE",
+      "lon": 14.783333,
+      "lat": 41.133333,
+      "startYear": null
+    },
+    {
+      "id": "Q1184835",
+      "name": "Battle of Numistro",
+      "type": "battle",
+      "description": "battle of the Second Punic War ending in a stalemate between Hannibal's army and a Roman consular army led by consul Marcus Claudius Marcellus",
+      "lon": 16.31979,
+      "lat": 38.975596,
+      "startYear": null
+    },
+    {
+      "id": "Q2095240",
+      "name": "Battle of Cornus",
+      "type": "battle",
+      "description": "battle of the Second Punic War, taking place when a Carthaginian army sailed to Sardinia in support of a Sardinian revolt against Roman rule",
+      "lon": 8.97,
+      "lat": 39.31,
+      "startYear": null
+    },
+    {
+      "id": "Q2632506",
+      "name": "Battle of Tarentum",
+      "type": "battle",
+      "description": "209 BCE battle of the Second Punic War in which the Romans led by Quintus Fabius Maximus recaptured the city of Tarentum",
+      "lon": 17.240833333,
+      "lat": 40.418055555,
+      "startYear": null
+    },
+    {
+      "id": "Q2632522",
+      "name": "Battle of Tarentum",
+      "type": "battle",
+      "description": "212 BCE battle of the Second Punic War",
+      "lon": 17.240833333,
+      "lat": 40.418055555,
+      "startYear": null
+    },
+    {
+      "id": "Q1291237",
+      "name": "伊阙之战",
+      "type": "battle",
+      "description": "battle",
+      "lon": 112.469722222,
+      "lat": 34.555555555,
+      "startYear": null
+    },
+    {
+      "id": "Q1349891",
+      "name": "垓下之战",
+      "type": "battle",
+      "description": "battle",
+      "lon": 117.551111,
+      "lat": 33.327778,
+      "startYear": null
+    },
+    {
+      "id": "Q1353773",
+      "name": "Battle of the Great Plains",
+      "type": "battle",
+      "description": "battle fought between Scipio Africanus of Rome and a combined Carthaginian and Numidian army late in the Second Punic War",
+      "lon": 10.06259722,
+      "lat": 37.05794444,
+      "startYear": null
+    },
+    {
+      "id": "Q1362014",
+      "name": "Battle of the Silarus",
+      "type": "battle",
+      "description": "212 BCE battle of the Second Punic War in which Hannibal's army destroyed a Roman army led by praetor Marcus Centenius Penula",
+      "lon": 14.942531,
+      "lat": 40.481628,
+      "startYear": null
+    },
+    {
+      "id": "Q1362016",
+      "name": "Battle of Beneventum",
+      "type": "battle",
+      "description": "battle fought in 214 BCE near modern Benevento during the Second Punic War, in which Roman legions under Tiberius Sempronius Gracchus defeated Hanno's Carthaginian forces, denying Hannibal reinforcements",
+      "lon": 14.7833,
+      "lat": 41.1333,
+      "startYear": null
+    },
+    {
+      "id": "Q1362023",
+      "name": "First Battle of Tarentum",
+      "type": "battle",
+      "description": "211 BCE battle",
+      "lon": 17.2333333,
+      "lat": 40.4666667,
+      "startYear": null
+    },
+    {
+      "id": "Q1362035",
+      "name": "Battle of Herdonia",
+      "type": "battle",
+      "description": "212 BCE battle of the Second Punic War in which Hannibal's Carthaginian army destroyed a Roman army led by Praetor Gnaeus Fulvius Flaccus",
+      "lon": 15.6333333,
+      "lat": 41.3166667,
+      "startYear": null
+    },
+    {
+      "id": "Q2888065",
+      "name": "Battle of Utica",
+      "type": "battle",
+      "description": "203 BCE battle of the Second Punic War",
+      "lon": 10.062258,
+      "lat": 37.056528,
+      "startYear": null
+    },
+    {
+      "id": "Q728550",
+      "name": "Battle of Baecula",
+      "type": "battle",
+      "description": "Scipio Africanus’s first major field battle after he had taken command of Roman interests in Iberia during the Second Punic War, in which he routed the Carthaginian army under the command of Hasdrubal Barca",
+      "lon": -3.1,
+      "lat": 38.016667,
+      "startYear": null
+    },
+    {
+      "id": "Q744611",
+      "name": "赫拉克利亞戰役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 16.669722,
+      "lat": 40.22,
+      "startYear": null
+    },
+    {
+      "id": "Q2888088",
+      "name": "巴格斯達斯河戰役",
+      "type": "battle",
+      "description": "240 BCE battle during the Mercenary War",
+      "lon": 10.13,
+      "lat": 37.11,
+      "startYear": null
+    },
+    {
+      "id": "Q1458235",
+      "name": "Battle of the Upper Baetis",
+      "type": "battle",
+      "description": "double battle, battles of Castulo and Ilorca, fought in 211 BCE between Rome and Carthage",
+      "lon": -6.35,
+      "lat": 36.78333333,
+      "startYear": null
+    },
+    {
+      "id": "Q1474647",
+      "name": "Battle of Crotona",
+      "type": "battle",
+      "description": "one of the last larger scale engagements between the Romans and the Carthaginians in Italy during the Second Punic War",
+      "lon": 17.1166667,
+      "lat": 39.0833333,
+      "startYear": null
+    },
+    {
+      "id": "Q1476126",
+      "name": "Battle of Panormus",
+      "type": "battle",
+      "description": "Roman victory leading to Panormus (modern-day Palermo) being under Roman control for the remainder of the First Punic War",
+      "lon": 13.3667,
+      "lat": 38.1167,
+      "startYear": null
+    },
+    {
+      "id": "Q1482311",
+      "name": "Battle of Lake Vadimo",
+      "type": "battle",
+      "description": "Roman Republic victory over a joint Etruscan -Gaulish army",
+      "lon": 12.323,
+      "lat": 42.484,
+      "startYear": null
+    },
+    {
+      "id": "Q2292431",
+      "name": "Battle of Arretium",
+      "type": "battle",
+      "description": "battle during the Roman–Gallic wars (c.284 BC)",
+      "lon": 11.8833,
+      "lat": 43.463,
+      "startYear": null
+    },
+    {
+      "id": "Q2292431",
+      "name": "Battle of Arretium",
+      "type": "battle",
+      "description": "battle during the Roman–Gallic wars (c.284 BC)",
+      "lon": 11.8833,
+      "lat": 43.463,
+      "startYear": null
+    },
+    {
+      "id": "Q2330778",
+      "name": "Battle of Mantinea",
+      "type": "battle",
+      "description": "207 BCE battle of the First Macedonian War in Greece",
+      "lon": 22.4,
+      "lat": 37.6,
+      "startYear": null
+    },
+    {
+      "id": "Q1500202",
+      "name": "格魯門圖姆戰役",
+      "type": "battle",
+      "description": "207 BCE battle of the Second Punic War in which the Romans led by Gaius Claudius Nero won a minor victory over a part of Hannibal's Carthaginian army",
+      "lon": 15.889722,
+      "lat": 40.283889,
+      "startYear": null
+    },
+    {
+      "id": "Q1500211",
+      "name": "Battle of Cissa",
+      "type": "battle",
+      "description": "218 BCE battle of the Second Punic War, the first battle that the Romans fought in Iberia",
+      "lon": 1.2496,
+      "lat": 41.1157,
+      "startYear": null
+    },
+    {
+      "id": "Q3623158",
+      "name": "Battle of Faesulae",
+      "type": "battle",
+      "description": "battle during the Roman-Gaulish Wars (225 BC)",
+      "lon": 12.386389,
+      "lat": 43.460278,
+      "startYear": null
+    },
+    {
+      "id": "Q3636293",
+      "name": "Battle of Silva Litana",
+      "type": "battle",
+      "description": "battle that occurred in 218 BCE during the Second Punic War",
+      "lon": 11.0916667,
+      "lat": 44.4091667,
+      "startYear": null
+    },
+    {
+      "id": "Q3636302",
+      "name": "Battle of Thermopylae 279 BCE",
+      "type": "battle",
+      "description": "Greek battle against the Gauls at Thermopylae",
+      "lon": 22.5628,
+      "lat": 38.8053,
+      "startYear": null
+    },
+    {
+      "id": "Q2890214",
+      "name": "Battle of Tifernum",
+      "type": "battle",
+      "description": "296 BCE battle",
+      "lon": 12.243889,
+      "lat": 43.460833,
+      "startYear": null
+    },
+    {
+      "id": "Q756413",
+      "name": "阿斯庫路姆戰役",
+      "type": "battle",
+      "description": "279 BCE battle of the Pyrrhic War,battle",
+      "lon": 15.5578,
+      "lat": 41.2156,
+      "startYear": null
+    },
+    {
+      "id": "Q778730",
+      "name": "Battle of Canusium",
+      "type": "battle",
+      "description": "battle of the Second Punic War consisting in a three-day engagement in Apulia, Italy between the forces of Rome and Carthage in the summer of 209 BCE",
+      "lon": 16.066027777,
+      "lat": 41.236638888,
+      "startYear": null
+    },
+    {
+      "id": "Q3636635",
+      "name": "Battle of Thurii",
+      "type": "battle",
+      "description": "279 BCE battle",
+      "lon": 17.276944444,
+      "lat": 39.885,
+      "startYear": null
+    },
+    {
+      "id": "Q1591145",
+      "name": "卡塔赫納戰役",
+      "type": "battle",
+      "description": "209 BCE successful Roman assault on the Carthaginian stronghold New Carthage (Cartagena) in Iberia",
+      "lon": -0.9825,
+      "lat": 37.6,
+      "startYear": null
+    },
+    {
+      "id": "Q1660792",
+      "name": "Battle of Cirta",
+      "type": "battle",
+      "description": "battle during the Second Punic War between the forces of the Roman Republic under Publius Cornelius Scipio and Carthage's main ally, Syphax",
+      "lon": 6.61194444,
+      "lat": 36.3675,
+      "startYear": null
+    },
+    {
+      "id": "Q847402",
+      "name": "彭城之戰",
+      "type": "battle",
+      "description": "battle",
+      "lon": 117.16666667,
+      "lat": 34.26666667,
+      "startYear": null
+    },
+    {
+      "id": "Q848056",
+      "name": "梅陶罗河战役",
+      "type": "battle",
+      "description": "pivotal battle in the Second Punic War between Rome and Carthage, fought in 207 BCE near the Metauro River in present-day Italy",
+      "lon": 13.014507,
+      "lat": 43.782373,
+      "startYear": null
+    },
+    {
+      "id": "Q870783",
+      "name": "Battle of Rhone Crossing",
+      "type": "battle",
+      "description": "battle of the Second Punic War",
+      "lon": 4.809722222,
+      "lat": 44.138333333,
+      "startYear": null
+    },
+    {
+      "id": "Q913464",
+      "name": "Battle of Nola",
+      "type": "battle",
+      "description": "214 BCE battle of the Second Punic War",
+      "lon": 14.5275,
+      "lat": 40.9261111,
+      "startYear": null
+    },
+    {
+      "id": "Q917376",
+      "name": "Battle of Agrigentum",
+      "type": "battle",
+      "description": "first pitched battle of the First Punic War and the first large-scale military confrontation between Carthage and the Roman Republic",
+      "lon": 13.5833,
+      "lat": 37.3167,
+      "startYear": null
+    },
+    {
+      "id": "Q925828",
+      "name": "Battle of Nola",
+      "type": "battle",
+      "description": "216 BCE battle of the Second Punic War",
+      "lon": 14.5275,
+      "lat": 40.9261111,
+      "startYear": null
+    },
+    {
+      "id": "Q928903",
+      "name": "由提卡戰役 (傭兵戰爭)",
+      "type": "battle",
+      "description": "239 BCE battle",
+      "lon": 10.062855,
+      "lat": 37.058052,
+      "startYear": null
+    },
+    {
+      "id": "Q1788933",
+      "name": "Battle of Dertosa",
+      "type": "battle",
+      "description": "\"battle of the Second Punic War, fought in the spring of 215 BCE on the south bank of the Ebro River across from the town of Dertosa\",battle",
+      "lon": 0.51666667,
+      "lat": 40.8,
+      "startYear": null
+    },
+    {
+      "id": "Q1799032",
+      "name": "Battle of Camerinum",
+      "type": "battle",
+      "description": "294 BCE battle",
+      "lon": 13.068889,
+      "lat": 43.140278,
+      "startYear": null
+    },
+    {
+      "id": "Q3822130",
+      "name": "Battle of Carteia",
+      "type": "battle",
+      "description": "land battle of the Second Punic War",
+      "lon": -6.35,
+      "lat": 36.783333,
+      "startYear": null
+    },
+    {
+      "id": "Q2478491",
+      "name": "墨沙拿戰役",
+      "type": "battle",
+      "description": "first military conflict between the Roman Republic and Carthage, marking the start of the First Punic War",
+      "lon": 15.561388888,
+      "lat": 38.18,
+      "startYear": null
+    },
+    {
+      "id": "Q2498565",
+      "name": "First Battle of Lamia",
+      "type": "battle",
+      "description": "battle of the First Macedonian War",
+      "lon": 22.433333,
+      "lat": 38.9,
+      "startYear": null
+    },
+    {
+      "id": "Q2498572",
+      "name": "Second Battle of Lamia",
+      "type": "battle",
+      "description": "battle of the First Macedonian War",
+      "lon": 22.433333,
+      "lat": 38.9,
+      "startYear": null
+    },
+    {
+      "id": "Q2586793",
+      "name": "Battle of Beneventum",
+      "type": "battle",
+      "description": "212 BCE battle of the Second Punic War in which Hanno the Elder was defeated by Quintus Fulvius Flaccus",
+      "lon": 14.7833,
+      "lat": 41.1333,
+      "startYear": null
+    },
+    {
+      "id": "Q1974201",
+      "name": "Battle of Geronium",
+      "type": "battle",
+      "description": "battle of the Second Punic War",
+      "lon": 14.73336111,
+      "lat": 41.76183333,
+      "startYear": null
+    },
+    {
+      "id": "Q2979703",
+      "name": "Po Valley raid",
+      "type": "battle",
+      "description": "culmination of a major diversion carried out by the Carthaginian commander Mago, son of Hamilcar Barca, at the end of the Second Punic war between Rome and Carthage in what is now northwestern Italy",
+      "lon": 9.166667,
+      "lat": 45.466667,
+      "startYear": null
+    },
+    {
+      "id": "Q3270429",
+      "name": "巨鹿之战",
+      "type": "battle",
+      "description": "秦末战事",
+      "lon": 114.483333333,
+      "lat": 37.066666666,
+      "startYear": null
+    },
+    {
+      "id": "Q4871805",
+      "name": "Battle of Mount Lycaeum",
+      "type": "battle",
+      "description": "227 BCE battle in ancient Greece",
+      "lon": 21.975,
+      "lat": 37.45694444,
+      "startYear": null
+    },
+    {
+      "id": "Q4870658",
+      "name": "Battle of Carmona",
+      "type": "battle",
+      "description": "206 BCE battle",
+      "lon": -5.633333333,
+      "lat": 37.466666666,
+      "startYear": null
+    },
+    {
+      "id": "Q9424298",
+      "name": "Battle of Palermo",
+      "type": "battle",
+      "description": "253 BCE battle",
+      "lon": 13.3667,
+      "lat": 38.1167,
+      "startYear": null
+    },
+    {
+      "id": "Q4873050",
+      "name": "Battle of the Strait of Messina",
+      "type": "battle",
+      "description": "276 BCE sea battle between Carthage and Pyrrhus",
+      "lon": 15.6325,
+      "lat": 38.24583333,
+      "startYear": null
+    },
+    {
+      "id": "Q11688183",
+      "name": "Battle of Helike",
+      "type": "battle",
+      "description": "228 BCE battle of the Carthaginian conquest of Iberia",
+      "lon": -1.276081,
+      "lat": 38.381084,
+      "startYear": null
+    },
+    {
+      "id": "Q11688220",
+      "name": "Battle of Petelia",
+      "type": "battle",
+      "description": "battle of the 2nd Punic War, in 208 BC",
+      "lon": 17.0489,
+      "lat": 39.265,
+      "startYear": null
+    },
+    {
+      "id": "Q15622355",
+      "name": "Battle of Castulo",
+      "type": "battle",
+      "description": "part of the battle of the Upper Baetis in in 211 BCE.",
+      "lon": 1.230469,
+      "lat": 41.22825,
+      "startYear": null
+    },
+    {
+      "id": "Q65082946",
+      "name": "Battle of Anyi",
+      "type": "battle",
+      "description": "battle fought between the Kingdom of Han and the Kingdom of Wei",
+      "lon": 115.548888888,
+      "lat": 28.845,
+      "startYear": null
+    },
+    {
+      "id": "Q17622605",
+      "name": "Battle of Cumae",
+      "type": "battle",
+      "description": "215 BCE battle",
+      "lon": 14.0536,
+      "lat": 40.8486,
+      "startYear": null
+    },
+    {
+      "id": "Q21152928",
+      "name": "Battle of Iliturgi",
+      "type": "battle",
+      "description": "205 BCE battle",
+      "lon": -3.8226,
+      "lat": 37.9583,
+      "startYear": null
+    },
+    {
+      "id": "Q48965466",
+      "name": "Battle of Leontion",
+      "type": "battle",
+      "description": "battle of the Social War",
+      "lon": 21.7919124,
+      "lat": 38.1197247,
+      "startYear": null
+    },
+    {
+      "id": "Q18649505",
+      "name": "Battle of Munda",
+      "type": "battle",
+      "description": "214 BCE battle",
+      "lon": -5.2167,
+      "lat": 37.35,
+      "startYear": null
+    },
+    {
+      "id": "Q96373234",
+      "name": "Battle of Argos",
+      "type": "battle",
+      "description": "battle (272 BCE)",
+      "lon": 22.716666666,
+      "lat": 37.616666666,
+      "startYear": null
+    },
+    {
+      "id": "Q61999900",
+      "name": "Battle of Phintias",
+      "type": "battle",
+      "description": "249 BCE battle near Sicily",
+      "lon": 13.946944444,
+      "lat": 37.108333333,
+      "startYear": null
+    },
+    {
+      "id": "Q6881",
+      "name": "埃克诺穆斯角海战",
+      "type": "battle",
+      "description": "naval battle of the First Punic War fought off Cape Ecnomus (modern day Poggio di Sant'Angelo in Licata, Sicily) and one of the largest naval battles of the ancient world",
+      "lon": 13.9,
+      "lat": 37.05,
+      "startYear": null
+    },
+    {
+      "id": "Q113317",
+      "name": "Battle of Lilybaeum",
+      "type": "battle",
+      "description": "first naval clash between the navies of Carthage and Rome during the Second Punic War",
+      "lon": 12.4333333,
+      "lat": 37.8,
+      "startYear": null
+    },
+    {
+      "id": "Q277345",
+      "name": "米列海戰",
+      "type": "battle",
+      "description": "first real naval battle between Carthage and the Roman Republic in the First Punic War",
+      "lon": 15.2333,
+      "lat": 38.2167,
+      "startYear": null
+    },
+    {
+      "id": "Q590014",
+      "name": "Battle of Drepana",
+      "type": "battle",
+      "description": "naval battle of the First Punic War near modern Trapani, western Sicily, with the Carthaginian fleet emerging victorious",
+      "lon": 12.505,
+      "lat": 38.01,
+      "startYear": null
+    },
+    {
+      "id": "Q932326",
+      "name": "萊德島戰役",
+      "type": "battle",
+      "description": "battle fought between Rhodes and Macedon in 201 BCE",
+      "lon": 27.278369,
+      "lat": 37.530233,
+      "startYear": null
+    },
+    {
+      "id": "Q21234831",
+      "name": "Battle of Sapriportis",
+      "type": "battle",
+      "description": "210 BCE naval battle",
+      "lon": 17.05,
+      "lat": 40.583333,
+      "startYear": null
+    },
+    {
+      "id": "Q1134649",
+      "name": "埃加達斯群島戰役",
+      "type": "battle",
+      "description": "final naval battle between Carthage and the Roman Republic in the First Punic War, resulting in a decisive Roman victory",
+      "lon": 12.2,
+      "lat": 37.9667,
+      "startYear": null
+    },
+    {
+      "id": "Q1355206",
+      "name": "丁達之役",
+      "type": "battle",
+      "description": "naval battle of the First Punic War that took place off Tyndaris (modern Tindari) in 257 BCE",
+      "lon": 15.03972222,
+      "lat": 38.14555556,
+      "startYear": null
+    },
+    {
+      "id": "Q1432659",
+      "name": "利帕里群岛战役",
+      "type": "battle",
+      "description": "first encounter between the fleets of Carthage and the Roman Republic during the First Punic War",
+      "lon": 14.960833333,
+      "lat": 38.4725,
+      "startYear": null
+    },
+    {
+      "id": "Q1886703",
+      "name": "索拉席之役",
+      "type": "battle",
+      "description": "\"naval battle fought in 258 BCE between the Roman and Carthaginian navies on the coast near the town of Sulci, Sardinia\",naval battle",
+      "lon": 8.45,
+      "lat": 39.0667,
+      "startYear": null
+    },
+    {
+      "id": "Q2286942",
+      "name": "Battle of Ebro River",
+      "type": "battle",
+      "description": "naval battle of the Second Punic War, fought near the mouth of Ebro River in the spring of 217 BC",
+      "lon": 0.863056,
+      "lat": 40.72,
+      "startYear": null
+    },
+    {
+      "id": "Q3235767",
+      "name": "科斯島戰役",
+      "type": "battle",
+      "description": "naval victory of Antigonus II over Ptolemy II's fleet",
+      "lon": 27.2333,
+      "lat": 36.85,
+      "startYear": null
+    },
+    {
+      "id": "Q3235767",
+      "name": "科斯島戰役",
+      "type": "battle",
+      "description": "naval victory of Antigonus II over Ptolemy II's fleet",
+      "lon": 27.2333,
+      "lat": 36.85,
+      "startYear": null
+    },
+    {
+      "id": "Q3822486",
+      "name": "Battle of Carteia",
+      "type": "battle",
+      "description": "206 BCE naval battle of the Second Punic War",
+      "lon": -5.415058333,
+      "lat": 36.160330555,
+      "startYear": null
+    }
+  ]
+}

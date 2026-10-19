@@ -1,0 +1,34 @@
+{
+  "_comment": "无脑爽文模式 genre profile — system prompt 存储在 shuangwen_prompt 字段，由 agent-loader 加密保护",
+  "_version": "1.0",
+  "genre": "shuangwen",
+  "display_name": "无脑爽文",
+  "shuangwen_prompt": "你是一个顶级的商业网文写作AI。\n\n【最高优先级指令——必须严格遵守】\n- 直接输出小说正文，第一个字就是故事内容\n- 严禁输出任何分析、思考、规划、说明、注释\n- 严禁出现【首先】【我需要】【根据】【用户要求】【我决定】等思考性语言\n- 严禁解释你在做什么或为什么这样写\n- 违反以上任何一条，输出即视为无效\n\n【写作法则】\n所有剧情设计的目的是满足读者的情绪价值。爽感的本质是来自他人（配角）的震惊、羡慕、敬畏、恐惧等强烈情绪反应。\n\n第一法则【极限铺垫】：欲扬先抑。为主角构建多层级绝境（宏观危机→中层压迫→底层惨状→主角个人困境），拉出仇恨线和生存原动力。\n\n第二法则【期待感管理】：围绕核心信息差（系统/重生/特殊技能）展开，分层释放，绝不一次性揭露。打脸遵循「上门被拒→冷眼相待→当众羞辱→引入对比→强迫分手」五步递进。\n\n第三法则【连锁震惊反应】：主角完成事件后，按层级描写震惊反应——平民层：这怎么可能！→亲友层：我们家要崛起了！→权威层：此人必须重用！\n\n第四法则【角色锚定】：主角一切行为本质是装逼，展示压倒性优势。女性角色必须从五官、气质、身形、穿着、眼神刻画，写出诱人迷人的感觉。男性配角标签化即可。\n\n【格式要求】\n- 第三人称叙事\n- 每段对话后必须有配角的震惊/崇拜反应\n- 章节结尾必须留钩子\n- 现在立刻开始写正文，不要有任何前言",
+  "reflector_threshold": {
+    "pass_total": 18,
+    "max_total": 25,
+    "key_dimensions": ["beats"],
+    "key_min_score": 3,
+    "dimensions": {
+      "beats": { "weight": 5, "description": "爽点节拍是否到位", "objective_check": "required_beats命中率 >= 80%" }
+    }
+  },
+  "style_profile": {
+    "perspective": "third_limited_protagonist_centric",
+    "tone": "explosive_cathartic_male_fantasy",
+    "banned_words": ["不知不觉中", "岁月如梭", "光阴似箭", "像仙女一样"],
+    "banned_scene_types": ["道德自省独白", "纯景物抒情段落（无叙事功能）"]
+  },
+  "optimizer_gate": { "silent_lt": 10, "freq_only_lt": 20, "full_advice_gte": 20 },
+  "optimization_map": {},
+  "conflict_signals": {
+    "undercurrent": ["冷笑", "哼了一声", "眉头一皱", "不屑"],
+    "open_conflict": ["你敢", "好大的胆子", "怒道"],
+    "explosion": ["大叫一声", "怒火滔天", "猛地站起"]
+  },
+  "craft_fingerprint": {
+    "dialogue_style": "功能性强，快速推进情节，神态修饰引入为主",
+    "rhythm_style": "节奏明快，短句和单行段落制造紧张感和喜剧效果",
+    "structure_style": "欲扬先抑微循环，章节末尾强悬念钩子"
+  }
+}

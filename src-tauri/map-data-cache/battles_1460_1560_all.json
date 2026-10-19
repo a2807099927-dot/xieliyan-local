@@ -1,0 +1,906 @@
+{
+  "query": "battles_1460_1560_all",
+  "timestamp": 1779898880266,
+  "data": [
+    {
+      "id": "Q251597",
+      "name": "Battle of Dornach",
+      "type": "battle",
+      "description": "1499 battle of the Swabian War",
+      "lon": 7.61666667,
+      "lat": 47.48333333,
+      "startYear": 1499
+    },
+    {
+      "id": "Q280439",
+      "name": "奥别尔京战役",
+      "type": "battle",
+      "description": "1531 battle",
+      "lon": 25.17,
+      "lat": 48.6894,
+      "startYear": 1531
+    },
+    {
+      "id": "Q283288",
+      "name": "Battle of Abancay",
+      "type": "battle",
+      "description": "1537 battle that took place during the Spanish conquest of Peru",
+      "lon": -72.88333333,
+      "lat": -13.63333333,
+      "startYear": 1537
+    },
+    {
+      "id": "Q319592",
+      "name": "拉普兰塔战役",
+      "type": "battle",
+      "description": "1475 battle between the Old Swiss Confederacy and the Duchy of Savoy during the Burgundian Wars",
+      "lon": 7.360833,
+      "lat": 46.233056,
+      "startYear": 1475
+    },
+    {
+      "id": "Q319637",
+      "name": "布鲁德霍尔茨战役",
+      "type": "battle",
+      "description": "1499 battle",
+      "lon": 7.59482222,
+      "lat": 47.50756389,
+      "startYear": 1499
+    },
+    {
+      "id": "Q203366",
+      "name": "Battle of Gubel",
+      "type": "battle",
+      "description": "",
+      "lon": 8.57377778,
+      "lat": 47.16168611,
+      "startYear": 1531
+    },
+    {
+      "id": "Q222013",
+      "name": "博斯沃思原野戰役",
+      "type": "battle",
+      "description": "玫瑰戰爭戰役",
+      "lon": -1.410277777,
+      "lat": 52.591111111,
+      "startYear": 1485
+    },
+    {
+      "id": "Q233414",
+      "name": "第二次帕尼帕特战役",
+      "type": "battle",
+      "description": "1556 battle",
+      "lon": 76.97,
+      "lat": 29.39,
+      "startYear": 1556
+    },
+    {
+      "id": "Q233416",
+      "name": "第二次聖奧爾本斯戰役",
+      "type": "battle",
+      "description": "1461 battle",
+      "lon": -0.33611111,
+      "lat": 51.755,
+      "startYear": 1461
+    },
+    {
+      "id": "Q25628",
+      "name": "烏格拉河對峙",
+      "type": "battle",
+      "description": "standoff in 1480 between Muscovy and Great Horde",
+      "lon": 36.05,
+      "lat": 54.56666667,
+      "startYear": 1480
+    },
+    {
+      "id": "Q63468",
+      "name": "帕维亚之战",
+      "type": "battle",
+      "description": "24 February 1525, was the decisive engagement of the Italian War of 1521–26",
+      "lon": 9.165,
+      "lat": 45.1975,
+      "startYear": 1525
+    },
+    {
+      "id": "Q163959",
+      "name": "埃里库尔战役",
+      "type": "battle",
+      "description": "1474 part of the Burgundian Wars",
+      "lon": 6.76667,
+      "lat": 47.5833,
+      "startYear": 1474
+    },
+    {
+      "id": "Q178510",
+      "name": "第一次摩哈赤战役",
+      "type": "battle",
+      "description": "土耳其第一次入侵匈牙利",
+      "lon": 18.647222222,
+      "lat": 45.941388888,
+      "startYear": 1526
+    },
+    {
+      "id": "Q1425362",
+      "name": "卡哈马卡战役",
+      "type": "battle",
+      "description": "1532 battle",
+      "lon": -78.5175,
+      "lat": -7.156944444,
+      "startYear": 1532
+    },
+    {
+      "id": "Q1428169",
+      "name": "巴内特战役",
+      "type": "battle",
+      "description": "1471 engagement in the Wars of the Roses",
+      "lon": -0.198888888,
+      "lat": 51.665833333,
+      "startYear": 1471
+    },
+    {
+      "id": "Q1443091",
+      "name": "加里利亚诺河之战",
+      "type": "battle",
+      "description": "1503 battle",
+      "lon": 13.5667,
+      "lat": 41.2167,
+      "startYear": 1504
+    },
+    {
+      "id": "Q1456533",
+      "name": "吉内加特戰役",
+      "type": "battle",
+      "description": "1479 battle between France and the Habsburg royals",
+      "lon": 2.27111111,
+      "lat": 50.60805556,
+      "startYear": 1479
+    },
+    {
+      "id": "Q1464620",
+      "name": "拉摩塔戰役",
+      "type": "battle",
+      "description": "1513 battle",
+      "lon": 11.488611111,
+      "lat": 45.596666666,
+      "startYear": 1513
+    },
+    {
+      "id": "Q1495481",
+      "name": "史托克菲爾德戰役",
+      "type": "battle",
+      "description": "1487 battle",
+      "lon": -0.888,
+      "lat": 53.035,
+      "startYear": 1487
+    },
+    {
+      "id": "Q349422",
+      "name": "桶狹間之戰",
+      "type": "battle",
+      "description": "1560 battle",
+      "lon": 136.980777777,
+      "lat": 35.059972222,
+      "startYear": 1560
+    },
+    {
+      "id": "Q387238",
+      "name": "Battle of Tlatelolco",
+      "type": "battle",
+      "description": "1473 battle",
+      "lon": -99.1375,
+      "lat": 19.45108333,
+      "startYear": 1473
+    },
+    {
+      "id": "Q859756",
+      "name": "小豆坂之战",
+      "type": "battle",
+      "description": "battle of 1542 in which Oda Nobuhide defeated Imagawa Yoshimoto",
+      "lon": 137.1782977,
+      "lat": 34.9303109,
+      "startYear": 1542
+    },
+    {
+      "id": "Q872741",
+      "name": "Battle of Seckenheim",
+      "type": "battle",
+      "description": "battle during the Mainz Feud, part of the larger Bavarian War",
+      "lon": 8.46917,
+      "lat": 49.4889,
+      "startYear": 1462
+    },
+    {
+      "id": "Q895686",
+      "name": "錫沃斯豪森戰役",
+      "type": "battle",
+      "description": "1553 battle",
+      "lon": 10.1127,
+      "lat": 52.376,
+      "startYear": 1553
+    },
+    {
+      "id": "Q462099",
+      "name": "Battle of Calven",
+      "type": "battle",
+      "description": "1499 battle",
+      "lon": 10.510483,
+      "lat": 46.667772,
+      "startYear": 1499
+    },
+    {
+      "id": "Q472614",
+      "name": "Battle of Giornico",
+      "type": "battle",
+      "description": "1478 battle as part of expansionist policy of the Old Swiss Confederation",
+      "lon": 8.88333,
+      "lat": 46.3833,
+      "startYear": 1478
+    },
+    {
+      "id": "Q473669",
+      "name": "Battle of Lake Smolina",
+      "type": "battle",
+      "description": "1502 battle",
+      "lon": 28.00460705,
+      "lat": 57.53630928,
+      "startYear": 1502
+    },
+    {
+      "id": "Q477592",
+      "name": "Battle of Drakenburg",
+      "type": "battle",
+      "description": "battle on 23 May 1547 to the north of Nienburg, Germany",
+      "lon": 9.23135,
+      "lat": 52.6932,
+      "startYear": 1547
+    },
+    {
+      "id": "Q477778",
+      "name": "Battle of Frastanz",
+      "type": "battle",
+      "description": "1499 battle",
+      "lon": 9.62,
+      "lat": 47.22,
+      "startYear": 1499
+    },
+    {
+      "id": "Q497806",
+      "name": "Battle of Ergeme",
+      "type": "battle",
+      "description": "1560 military conflict in Estonia during Livonian War",
+      "lon": 25.815827777,
+      "lat": 57.805505555,
+      "startYear": 1560
+    },
+    {
+      "id": "Q1337059",
+      "name": "蒂克斯伯里战役",
+      "type": "battle",
+      "description": "1471 battle",
+      "lon": -2.161388888,
+      "lat": 51.986388888,
+      "startYear": 1471
+    },
+    {
+      "id": "Q1358091",
+      "name": "上田原之戰",
+      "type": "battle",
+      "description": "1548 battle",
+      "lon": 138.213305555,
+      "lat": 36.395694444,
+      "startYear": 1548
+    },
+    {
+      "id": "Q2889540",
+      "name": "诺艾恩之战",
+      "type": "battle",
+      "description": "1521 battle during the Spanish conquest of Iberian Navarre",
+      "lon": -1.654,
+      "lat": 42.758,
+      "startYear": 1521
+    },
+    {
+      "id": "Q1557439",
+      "name": "Battle of Pfeddersheim",
+      "type": "battle",
+      "description": "1525 conflict",
+      "lon": 8.278889,
+      "lat": 49.640556,
+      "startYear": 1525
+    },
+    {
+      "id": "Q1606958",
+      "name": "Battle of Bogesund",
+      "type": "battle",
+      "description": "1520 battle",
+      "lon": 13.3953,
+      "lat": 57.77,
+      "startYear": 1520
+    },
+    {
+      "id": "Q1616739",
+      "name": "Battle of Reynogüelén",
+      "type": "battle",
+      "description": "1536 battle",
+      "lon": -72.4552,
+      "lat": -36.6473,
+      "startYear": 1536
+    },
+    {
+      "id": "Q1617262",
+      "name": "基亚波战役",
+      "type": "battle",
+      "description": "1558 battle of the Arauco War",
+      "lon": -73.58597222,
+      "lat": -37.4397,
+      "startYear": 1558
+    },
+    {
+      "id": "Q906912",
+      "name": "韦克菲尔德战役",
+      "type": "battle",
+      "description": "1460 battle",
+      "lon": -1.492222222,
+      "lat": 53.680138888,
+      "startYear": 1460
+    },
+    {
+      "id": "Q916295",
+      "name": "北安普顿战役",
+      "type": "battle",
+      "description": "1460 battle",
+      "lon": -0.884166666,
+      "lat": 52.223055555,
+      "startYear": 1460
+    },
+    {
+      "id": "Q920169",
+      "name": "Second Battle of Acentejo",
+      "type": "battle",
+      "description": "1495 conflict",
+      "lon": -16.468055555,
+      "lat": 28.434722222,
+      "startYear": 1495
+    },
+    {
+      "id": "Q947591",
+      "name": "薩利納斯戰役",
+      "type": "battle",
+      "description": "1538 battle that took place during the Spanish conquest of Peru",
+      "lon": -71.978055555,
+      "lat": -13.566666666,
+      "startYear": 1538
+    },
+    {
+      "id": "Q958133",
+      "name": "Battle of Oriola",
+      "type": "battle",
+      "description": "1521 battle",
+      "lon": -0.94694444,
+      "lat": 38.08555556,
+      "startYear": 1521
+    },
+    {
+      "id": "Q2368123",
+      "name": "平基戰役",
+      "type": "battle",
+      "description": "1547 Anglo-Scottish battle",
+      "lon": -3.023,
+      "lat": 55.933,
+      "startYear": 1547
+    },
+    {
+      "id": "Q2371616",
+      "name": "Conquest of Stockholm",
+      "type": "battle",
+      "description": "1523 battle of the Swedish War of Liberation",
+      "lon": 18.074,
+      "lat": 59.331,
+      "startYear": 1523
+    },
+    {
+      "id": "Q2371630",
+      "name": "Battle of Rotebro",
+      "type": "battle",
+      "description": "1497 late 15th Century conflict between Denmark and Sweden",
+      "lon": 17.9,
+      "lat": 59.466667,
+      "startYear": 1497
+    },
+    {
+      "id": "Q2371630",
+      "name": "Battle of Rotebro",
+      "type": "battle",
+      "description": "1497 late 15th Century conflict between Denmark and Sweden",
+      "lon": 17.914208,
+      "lat": 59.481853,
+      "startYear": 1497
+    },
+    {
+      "id": "Q2403565",
+      "name": "Battle of Chikhori",
+      "type": "battle",
+      "description": "1463 battle",
+      "lon": 43.07,
+      "lat": 42.24,
+      "startYear": 1463
+    },
+    {
+      "id": "Q544936",
+      "name": "費里布里奇戰役",
+      "type": "battle",
+      "description": "1461 battle",
+      "lon": -1.273611111,
+      "lat": 53.7125,
+      "startYear": 1461
+    },
+    {
+      "id": "Q2889856",
+      "name": "聖歐班迪科爾米耶戰役",
+      "type": "battle",
+      "description": "battle between king Charles VIII of France and Francis II, Duke of Brittany, signalling the end to the 'Mad war' (1485-1488)",
+      "lon": -1.3975,
+      "lat": 48.26027778,
+      "startYear": 1488
+    },
+    {
+      "id": "Q2890025",
+      "name": "索维莫斯战役",
+      "type": "battle",
+      "description": "English victory over Scotland, 1542",
+      "lon": -3.02574,
+      "lat": 55.01122,
+      "startYear": 1542
+    },
+    {
+      "id": "Q2890338",
+      "name": "比拉拉尔战役",
+      "type": "battle",
+      "description": "1521 battle during the Revolt of the Comuneros",
+      "lon": -5.13333,
+      "lat": 41.55,
+      "startYear": 1521
+    },
+    {
+      "id": "Q2890433",
+      "name": "Battle of Un no Kuchi",
+      "type": "battle",
+      "description": "Japanese battle in 1536",
+      "lon": 138.495622,
+      "lat": 36.037036,
+      "startYear": 1536
+    },
+    {
+      "id": "Q971248",
+      "name": "達比克草原戰役",
+      "type": "battle",
+      "description": "1516 battle",
+      "lon": 37.275,
+      "lat": 36.545,
+      "startYear": 1516
+    },
+    {
+      "id": "Q1010239",
+      "name": "有田中井手之戰",
+      "type": "battle",
+      "description": "1517 battle",
+      "lon": 132.532055555,
+      "lat": 34.66825,
+      "startYear": 1517
+    },
+    {
+      "id": "Q1064989",
+      "name": "嚴島之戰",
+      "type": "battle",
+      "description": "1555 battle",
+      "lon": 132.322305555,
+      "lat": 34.301611111,
+      "startYear": 1555
+    },
+    {
+      "id": "Q1073358",
+      "name": "瓦斯卢伊战役",
+      "type": "battle",
+      "description": "battle between Stephen III of Moldavia and the Ottoman governor of Rumelia, Hadım Suleiman Pasha",
+      "lon": 27.745,
+      "lat": 46.605,
+      "startYear": 1475
+    },
+    {
+      "id": "Q1076079",
+      "name": "盐尻峠之战",
+      "type": "battle",
+      "description": "1548 battle",
+      "lon": 138.027722222,
+      "lat": 36.069888888,
+      "startYear": 1548
+    },
+    {
+      "id": "Q1617667",
+      "name": "马塔基托战役",
+      "type": "battle",
+      "description": "1557 battle of Arauco War",
+      "lon": -71.6386,
+      "lat": -35.0681,
+      "startYear": 1557
+    },
+    {
+      "id": "Q1635231",
+      "name": "赫克瑟姆戰役",
+      "type": "battle",
+      "description": "1464 battle during the Wars of the Roses. Marked the end of significant Lancastrian resistance in the north of England during the early part of the reign of Edward IV",
+      "lon": -2.1,
+      "lat": 54.97,
+      "startYear": 1464
+    },
+    {
+      "id": "Q1638031",
+      "name": "Battle of Brunkeberg",
+      "type": "battle",
+      "description": "1471 battle",
+      "lon": 18.068611111,
+      "lat": 59.329444444,
+      "startYear": 1471
+    },
+    {
+      "id": "Q1692857",
+      "name": "Battle of Losecoat Field",
+      "type": "battle",
+      "description": "1470 battle during the Wars of the Roses. Secured the defeat of the poorly organised Welles Uprising against King Edward IV",
+      "lon": -0.536111111,
+      "lat": 52.686111111,
+      "startYear": 1470
+    },
+    {
+      "id": "Q1700886",
+      "name": "Battle of Soltau",
+      "type": "battle",
+      "description": "1519 battle",
+      "lon": 9.7725,
+      "lat": 53.0576,
+      "startYear": 1519
+    },
+    {
+      "id": "Q1748450",
+      "name": "Battle of Hedgeley Moor",
+      "type": "battle",
+      "description": "25 April 1464 battle of the Wars of the Roses",
+      "lon": -1.924,
+      "lat": 55.471,
+      "startYear": 1464
+    },
+    {
+      "id": "Q1754732",
+      "name": "阿尼亞代洛之戰",
+      "type": "battle",
+      "description": "1509 battle during the War of the League of Cambrai",
+      "lon": 9.56667,
+      "lat": 45.45,
+      "startYear": 1509
+    },
+    {
+      "id": "Q2510875",
+      "name": "Battle of Baia",
+      "type": "battle",
+      "description": "1467 battle between Moldavia and Hungary",
+      "lon": 26.229,
+      "lat": 47.425,
+      "startYear": 1467
+    },
+    {
+      "id": "Q2533670",
+      "name": "Battle of Valea Albă",
+      "type": "battle",
+      "description": "1476 battle in present day Romania",
+      "lon": 26.560277777,
+      "lat": 47.078333333,
+      "startYear": 1476
+    },
+    {
+      "id": "Q2536997",
+      "name": "谢隆战役",
+      "type": "battle",
+      "description": "1471 battle in Russia",
+      "lon": 30.76666667,
+      "lat": 58.2,
+      "startYear": 1471
+    },
+    {
+      "id": "Q603279",
+      "name": "Capture of Mers-el-Kébir",
+      "type": "battle",
+      "description": "1505 battle",
+      "lon": -0.716667,
+      "lat": 35.7333,
+      "startYear": 1505
+    },
+    {
+      "id": "Q605321",
+      "name": "第一次帕尼帕特战役",
+      "type": "battle",
+      "description": "1526 battle.",
+      "lon": 76.972777777,
+      "lat": 29.401666666,
+      "startYear": 1526
+    },
+    {
+      "id": "Q620585",
+      "name": "莫提梅路口戰役",
+      "type": "battle",
+      "description": "1461 battle",
+      "lon": -2.869166666,
+      "lat": 52.318611111,
+      "startYear": 1461
+    },
+    {
+      "id": "Q1137980",
+      "name": "拉文納戰役",
+      "type": "battle",
+      "description": "1512 battle",
+      "lon": 12.2,
+      "lat": 44.41666667,
+      "startYear": 1512
+    },
+    {
+      "id": "Q1207310",
+      "name": "奥尔沙战役",
+      "type": "battle",
+      "description": "1514 battle",
+      "lon": 30.383333,
+      "lat": 54.5,
+      "startYear": 1514
+    },
+    {
+      "id": "Q1228713",
+      "name": "Battle of Palast",
+      "type": "battle",
+      "description": "1552 battle",
+      "lon": 18.973389,
+      "lat": 48.154506,
+      "startYear": 1552
+    },
+    {
+      "id": "Q1228713",
+      "name": "Battle of Palast",
+      "type": "battle",
+      "description": "1552 battle",
+      "lon": 18.973389,
+      "lat": 48.154506,
+      "startYear": 1552
+    },
+    {
+      "id": "Q1806377",
+      "name": "瀨澤之戰",
+      "type": "battle",
+      "description": "1542 battle",
+      "lon": 138.244583333,
+      "lat": 35.896027777,
+      "startYear": 1542
+    },
+    {
+      "id": "Q1849818",
+      "name": "Battle of Edgcote",
+      "type": "battle",
+      "description": "1469 battle in the English Wars of the Roses",
+      "lon": -1.247222222,
+      "lat": 52.114444444,
+      "startYear": 1469
+    },
+    {
+      "id": "Q633362",
+      "name": "Battle of Gavinana",
+      "type": "battle",
+      "description": "1530 battle",
+      "lon": 10.916666666,
+      "lat": 43.933333333,
+      "startYear": 1530
+    },
+    {
+      "id": "Q634629",
+      "name": "陶顿战役",
+      "type": "battle",
+      "description": "battle during the English Wars of the Roses, renownedly bloody",
+      "lon": -1.268333333,
+      "lat": 53.839722222,
+      "startYear": 1461
+    },
+    {
+      "id": "Q656190",
+      "name": "Battle of Hemmingstedt",
+      "type": "battle",
+      "description": "battle between Kalmar Union forces and Dithmarschen peasant militiamen 17 February, 1500 in modern-day Schleswig-Holstein, Germany",
+      "lon": 9.071944444,
+      "lat": 54.147222222,
+      "startYear": 1500
+    },
+    {
+      "id": "Q661327",
+      "name": "米尔贝格战役",
+      "type": "battle",
+      "description": "1547 battle of the Schmalkaldic War",
+      "lon": 13.2167,
+      "lat": 51.4331,
+      "startYear": 1547
+    },
+    {
+      "id": "Q661940",
+      "name": "諾瓦拉戰役",
+      "type": "battle",
+      "description": "1513 battle of the Italian wars",
+      "lon": 8.72,
+      "lat": 45.435,
+      "startYear": 1513
+    },
+    {
+      "id": "Q1255093",
+      "name": "Battle of Wurzach",
+      "type": "battle",
+      "description": "1525 battle in the German Peasants' War",
+      "lon": 9.883781,
+      "lat": 47.906342,
+      "startYear": 1525
+    },
+    {
+      "id": "Q1273257",
+      "name": "拉拉古纳战役",
+      "type": "battle",
+      "description": "1495年战役",
+      "lon": -16.316666666,
+      "lat": 28.485277777,
+      "startYear": 1494
+    },
+    {
+      "id": "Q1300742",
+      "name": "弗洛登战役",
+      "type": "battle",
+      "description": "神聖同盟戰爭的一部份",
+      "lon": -2.1753,
+      "lat": 55.62693,
+      "startYear": 1513
+    },
+    {
+      "id": "Q668008",
+      "name": "格朗松战役",
+      "type": "battle",
+      "description": "Burgundian defeat in the Burgundian Wars, 2 March 1476",
+      "lon": 6.633055555,
+      "lat": 46.816944444,
+      "startYear": 1476
+    },
+    {
+      "id": "Q683341",
+      "name": "比克卡会战",
+      "type": "battle",
+      "description": "1522 battle of the Italian wars",
+      "lon": 9.21,
+      "lat": 45.518,
+      "startYear": 1522
+    },
+    {
+      "id": "Q683412",
+      "name": "Battle of Olshanitsa",
+      "type": "battle",
+      "description": "1527 battle",
+      "lon": 30.616667,
+      "lat": 49.666667,
+      "startYear": 1527
+    },
+    {
+      "id": "Q683526",
+      "name": "Battle of Kappel",
+      "type": "battle",
+      "description": "1531 battle",
+      "lon": 8.526753,
+      "lat": 47.232231,
+      "startYear": 1531
+    },
+    {
+      "id": "Q688502",
+      "name": "Battle of Morat",
+      "type": "battle",
+      "description": "Swiss victory in the Burgundian Wars, 22 June 1476",
+      "lon": 7.116667,
+      "lat": 46.933333,
+      "startYear": 1476
+    },
+    {
+      "id": "Q690291",
+      "name": "Battle of Breadfield",
+      "type": "battle",
+      "description": "1479 battle of the Ottoman–Hungarian Wars",
+      "lon": 23.34444444,
+      "lat": 45.9375,
+      "startYear": 1479
+    },
+    {
+      "id": "Q694379",
+      "name": "克爾巴瓦原野戰役",
+      "type": "battle",
+      "description": "1493 battle of the Hundred Years' Croatian-Ottoman War",
+      "lon": 15.7,
+      "lat": 44.6,
+      "startYear": 1493
+    },
+    {
+      "id": "Q695198",
+      "name": "奧斯曼帝國入侵奧特朗托",
+      "type": "battle",
+      "description": "1480-1481 invasion of the Italian city of Otranto by Ottoman Empire forces",
+      "lon": 18.4833,
+      "lat": 40.15,
+      "startYear": 1481
+    },
+    {
+      "id": "Q1989936",
+      "name": "姆斯季斯拉夫爾戰役",
+      "type": "battle",
+      "description": "1501 historical event",
+      "lon": 31.716667,
+      "lat": 54,
+      "startYear": 1501
+    },
+    {
+      "id": "Q2007212",
+      "name": "泰爾詹戰役",
+      "type": "battle",
+      "description": "1473 battle between the Aq Qoyunlu and the Ottoman Empire",
+      "lon": 39.98,
+      "lat": 40.01806,
+      "startYear": 1473
+    },
+    {
+      "id": "Q2034641",
+      "name": "维德罗莎战役",
+      "type": "battle",
+      "description": "1500 battle in Europe",
+      "lon": 33.47694445,
+      "lat": 54.81861112,
+      "startYear": 1500
+    },
+    {
+      "id": "Q699475",
+      "name": "跟蓋特戰役",
+      "type": "battle",
+      "description": "1513 battle",
+      "lon": 2.2361,
+      "lat": 50.5747,
+      "startYear": 1513
+    },
+    {
+      "id": "Q703363",
+      "name": "弗兰肯豪森战役",
+      "type": "battle",
+      "description": "1525 battle of the German Peasants' War",
+      "lon": 11.10111111,
+      "lat": 51.35583333,
+      "startYear": 1525
+    },
+    {
+      "id": "Q3636372",
+      "name": "Battle of Casaloldo",
+      "type": "battle",
+      "description": "1509 battle",
+      "lon": 10.46,
+      "lat": 45.25,
+      "startYear": 1509
+    },
+    {
+      "id": "Q3636492",
+      "name": "Battle of Lagunillas",
+      "type": "battle",
+      "description": "1557 battle",
+      "lon": -73.0947,
+      "lat": -36.8472,
+      "startYear": 1557
+    },
+    {
+      "id": "Q3636513",
+      "name": "Battle of Macomer",
+      "type": "battle",
+      "description": "1478 battle",
+      "lon": 8.78333333,
+      "lat": 40.26666667,
+      "startYear": 1478
+    }
+  ]
+}

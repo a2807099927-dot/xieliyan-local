@@ -1,0 +1,580 @@
+{
+  "query": "battles_540_640_all",
+  "timestamp": 1779898882499,
+  "data": [
+    {
+      "id": "Q826083",
+      "name": "塹壕之戰",
+      "type": "battle",
+      "description": "failed besieging of early Muslims by Arab and Jewish forces in 627 CE",
+      "lon": 39.6,
+      "lat": 24.4667,
+      "startYear": 627
+    },
+    {
+      "id": "Q888904",
+      "name": "阿季奈迪恩战役",
+      "type": "battle",
+      "description": "拜占庭帝国与正统哈里发国之间的战役",
+      "lon": 34.95,
+      "lat": 31.68333333,
+      "startYear": 634
+    },
+    {
+      "id": "Q1233768",
+      "name": "Battle of the Blarathon",
+      "type": "battle",
+      "description": "591 battle",
+      "lon": 46.193187,
+      "lat": 37.011555,
+      "startYear": 591
+    },
+    {
+      "id": "Q486124",
+      "name": "巴德尔之役",
+      "type": "battle",
+      "description": "624 battle between the Muslims and the Quraysh near Badr (present-day Saudi Arabia)",
+      "lon": 38.766666666,
+      "lat": 23.733333333,
+      "startYear": 624
+    },
+    {
+      "id": "Q488278",
+      "name": "武侯德之戰",
+      "type": "battle",
+      "description": "early Islamic battle",
+      "lon": 39.611667,
+      "lat": 24.503333,
+      "startYear": 625
+    },
+    {
+      "id": "Q956923",
+      "name": "天域之战",
+      "type": "battle",
+      "description": "634 battle in Northumberland",
+      "lon": -2.1,
+      "lat": 55.02,
+      "startYear": 634
+    },
+    {
+      "id": "Q1030249",
+      "name": "法尔战役",
+      "type": "battle",
+      "description": "Arab–Byzantine battle fought in January 635 AD",
+      "lon": 35.616667,
+      "lat": 32.45,
+      "startYear": 635
+    },
+    {
+      "id": "Q2300090",
+      "name": "胡奈之戰",
+      "type": "battle",
+      "description": "conflict between the early Muslims and Bedouins (630 AD)",
+      "lon": 40.042027777,
+      "lat": 21.516555555,
+      "startYear": 630
+    },
+    {
+      "id": "Q2300090",
+      "name": "胡奈之戰",
+      "type": "battle",
+      "description": "conflict between the early Muslims and Bedouins (630 AD)",
+      "lon": 38.8197,
+      "lat": 22.9733,
+      "startYear": 630
+    },
+    {
+      "id": "Q565661",
+      "name": "海巴尔战役",
+      "type": "battle",
+      "description": "7th-century battle",
+      "lon": 39.2925,
+      "lat": 25.698611111,
+      "startYear": 628
+    },
+    {
+      "id": "Q2542813",
+      "name": "Battle of Ullais",
+      "type": "battle",
+      "description": "633 battle",
+      "lon": 44.569722,
+      "lat": 31.617778,
+      "startYear": 633
+    },
+    {
+      "id": "Q2570386",
+      "name": "Battle of al-Anbar",
+      "type": "battle",
+      "description": "633 battle",
+      "lon": 43.9394,
+      "lat": 33.9911,
+      "startYear": 633
+    },
+    {
+      "id": "Q2575044",
+      "name": "車士打戰役",
+      "type": "battle",
+      "description": "615 battle in England",
+      "lon": -2.88555556,
+      "lat": 53.1675,
+      "startYear": 615
+    },
+    {
+      "id": "Q2576269",
+      "name": "Battle of Ayn al-Tamr",
+      "type": "battle",
+      "description": "633 battle",
+      "lon": 43.480217,
+      "lat": 32.557357,
+      "startYear": 633
+    },
+    {
+      "id": "Q2456292",
+      "name": "葉麻默戰役",
+      "type": "battle",
+      "description": "battle fought in 632",
+      "lon": 46.45665,
+      "lat": 24.88666,
+      "startYear": 632
+    },
+    {
+      "id": "Q2628454",
+      "name": "围攻罗马城",
+      "type": "battle",
+      "description": "siege of Rome during the Gothic War",
+      "lon": 12.5,
+      "lat": 41.9,
+      "startYear": 546
+    },
+    {
+      "id": "Q2633662",
+      "name": "阿尔夫德里德之战",
+      "type": "battle",
+      "description": "battle, according to the Annales Cambriae, in 573",
+      "lon": -2.91666667,
+      "lat": 55.01666667,
+      "startYear": 573
+    },
+    {
+      "id": "Q2700721",
+      "name": "Battle of Jalula",
+      "type": "battle",
+      "description": "battle between Caliphate and Sassanids in 637",
+      "lon": 45.1667,
+      "lat": 34.2833,
+      "startYear": 637
+    },
+    {
+      "id": "Q2706752",
+      "name": "Battle of al-Qaryatayn",
+      "type": "battle",
+      "description": "engagement between the Rashidun Caliphate and Ghassanids",
+      "lon": 37.2333,
+      "lat": 34.2333,
+      "startYear": 634
+    },
+    {
+      "id": "Q2712138",
+      "name": "Battle of Degsastan",
+      "type": "battle",
+      "description": "603 battle between Áedán mac Gabráin and Æthelfrith",
+      "startYear": 603
+    },
+    {
+      "id": "Q1137764",
+      "name": "维苏威战役",
+      "type": "battle",
+      "description": "552 battle between Byzantine Empire and Ostrogothic Kingdom during Gothic War",
+      "lon": 14.5,
+      "lat": 40.65,
+      "startYear": 552
+    },
+    {
+      "id": "Q1429157",
+      "name": "迪勒姆战役",
+      "type": "battle",
+      "description": "battle in 577 between West Saxons and Celtic Britons, culturally separating Wales from Cornwall",
+      "lon": -2.36841,
+      "lat": 51.48886,
+      "startYear": 577
+    },
+    {
+      "id": "Q1458166",
+      "name": "Battle of the Volturnus",
+      "type": "battle",
+      "description": "0554 battle",
+      "lon": 14.056666666,
+      "lat": 41.091666666,
+      "startYear": 554
+    },
+    {
+      "id": "Q1504536",
+      "name": "大败",
+      "type": "battle",
+      "description": "battle",
+      "lon": 21.168889,
+      "lat": 44.711944,
+      "startYear": 599
+    },
+    {
+      "id": "Q639827",
+      "name": "Siege of Damascus",
+      "type": "battle",
+      "description": "634 battle during the Muslim conquest of Syria",
+      "lon": 36.291944444,
+      "lat": 33.513055555,
+      "startYear": 634
+    },
+    {
+      "id": "Q656787",
+      "name": "铁桥战役",
+      "type": "battle",
+      "description": "637 Muslim Byzantine battle",
+      "lon": 36.353055555,
+      "lat": 36.248333333,
+      "startYear": 637
+    },
+    {
+      "id": "Q3079892",
+      "name": "Invasion of Banu Qaynuqa",
+      "type": "battle",
+      "description": "siege of Banu Qaynuqa by Meccan Muslims (624)",
+      "lon": 39.6,
+      "lat": 24.46666667,
+      "startYear": 624
+    },
+    {
+      "id": "Q1639459",
+      "name": "穆塔之役",
+      "type": "battle",
+      "description": "September 629 battle",
+      "lon": 35.6972,
+      "lat": 31.0333,
+      "startYear": 629
+    },
+    {
+      "id": "Q1758473",
+      "name": "Battle of Hatfield Chase",
+      "type": "battle",
+      "description": "633 battle",
+      "lon": -0.926,
+      "lat": 53.585,
+      "startYear": 633
+    },
+    {
+      "id": "Q3696172",
+      "name": "Battle of Zafar",
+      "type": "battle",
+      "description": "632 battle",
+      "lon": 44.40333333,
+      "lat": 14.21138889,
+      "startYear": 632
+    },
+    {
+      "id": "Q3696185",
+      "name": "Battle of Buzakha",
+      "type": "battle",
+      "description": "7th-century battle of the Ridda Wars",
+      "lon": 41.683333333,
+      "lat": 27.516666666,
+      "startYear": 632
+    },
+    {
+      "id": "Q755966",
+      "name": "尼尼微之战",
+      "type": "battle",
+      "description": "627年拜占庭与波斯的战役",
+      "lon": 43.152778,
+      "lat": 36.359444,
+      "startYear": 627
+    },
+    {
+      "id": "Q755966",
+      "name": "尼尼微之战",
+      "type": "battle",
+      "description": "627年拜占庭与波斯的战役",
+      "lon": 43.433333,
+      "lat": 36.266667,
+      "startYear": 627
+    },
+    {
+      "id": "Q769358",
+      "name": "塔吉納戰役",
+      "type": "battle",
+      "description": "552 battle between the Byzantine Empire and the Ostrogothic Kingdom during the Gothic War",
+      "lon": 12.783333333,
+      "lat": 43.233333333,
+      "startYear": 552
+    },
+    {
+      "id": "Q3403266",
+      "name": "Battle of Catraeth",
+      "type": "battle",
+      "description": "battle around AD 600 between the Gododdin and the Angles",
+      "lon": -1.630096,
+      "lat": 54.377358,
+      "startYear": 600
+    },
+    {
+      "id": "Q1895789",
+      "name": "击溃",
+      "type": "battle",
+      "description": "542 battle of the Gothic War",
+      "lon": 11.883333333,
+      "lat": 44.285555555,
+      "startYear": 542
+    },
+    {
+      "id": "Q4870466",
+      "name": "Battle of Beran Byrig",
+      "type": "battle",
+      "description": "556 battle between West Saxons and Gritons",
+      "lon": -1.786808,
+      "lat": 51.485458,
+      "startYear": 556
+    },
+    {
+      "id": "Q4870685",
+      "name": "Battle of Cefn Digoll",
+      "type": "battle",
+      "description": "630 battle",
+      "lon": -3.06666667,
+      "lat": 52.65,
+      "startYear": 630
+    },
+    {
+      "id": "Q4870750",
+      "name": "Battle of Cirencester",
+      "type": "battle",
+      "description": "628 battle",
+      "lon": -1.968,
+      "lat": 51.719,
+      "startYear": 628
+    },
+    {
+      "id": "Q2089132",
+      "name": "Battle of Hazir",
+      "type": "battle",
+      "description": "battle between the Byzantine and Rashidun armies in present-day Syria in 637",
+      "lon": 37.0575,
+      "lat": 35.995833333,
+      "startYear": 637
+    },
+    {
+      "id": "Q2237576",
+      "name": "赫利奥波利斯战役",
+      "type": "battle",
+      "description": "640 AD decisive battle during the Muslim conquest of Egypt",
+      "lon": 31.288889,
+      "lat": 30.129444,
+      "startYear": 640
+    },
+    {
+      "id": "Q2237614",
+      "name": "Battle of Martyropolis",
+      "type": "battle",
+      "description": "battle in the Byzantine–Sasanian War of 572–591",
+      "lon": 41.0014,
+      "lat": 38.1422,
+      "startYear": 588
+    },
+    {
+      "id": "Q2237629",
+      "name": "击败",
+      "type": "battle",
+      "description": "542 battle in the Gothic War",
+      "lon": 11.3833,
+      "lat": 43.95,
+      "startYear": 542
+    },
+    {
+      "id": "Q4872153",
+      "name": "雷斯戰役",
+      "type": "battle",
+      "description": "596 hypothetical battle",
+      "lon": -3.193417,
+      "lat": 56.117233,
+      "startYear": 596
+    },
+    {
+      "id": "Q4871095",
+      "name": "Battle of Ghamra",
+      "type": "battle",
+      "description": "",
+      "lon": 31.264569,
+      "lat": 30.074942,
+      "startYear": 632
+    },
+    {
+      "id": "Q4870253",
+      "name": "Battle of Alclud Ford",
+      "type": "battle",
+      "description": "580 battle",
+      "lon": -4.561987,
+      "lat": 55.937201,
+      "startYear": 580
+    },
+    {
+      "id": "Q4871254",
+      "name": "虎牢之戰",
+      "type": "battle",
+      "description": "621 battle in China",
+      "lon": 113.206389,
+      "lat": 34.843611,
+      "startYear": 621
+    },
+    {
+      "id": "Q4871255",
+      "name": "霍邑之战",
+      "type": "battle",
+      "description": "battle fought in China in 617",
+      "lon": 111.75,
+      "lat": 36.57,
+      "startYear": 617
+    },
+    {
+      "id": "Q4872748",
+      "name": "沃登斯堡戰役",
+      "type": "battle",
+      "description": "592 battle fought in England in 592",
+      "lon": -1.8372,
+      "lat": 51.3556,
+      "startYear": 592
+    },
+    {
+      "id": "Q4871760",
+      "name": "Battle of Moira",
+      "type": "battle",
+      "description": "637 battle",
+      "lon": -6.23,
+      "lat": 54.48,
+      "startYear": 637
+    },
+    {
+      "id": "Q4871866",
+      "name": "Battle of Naqra",
+      "type": "battle",
+      "description": "633 battle",
+      "lon": 46.546303,
+      "lat": 24.617387,
+      "startYear": 633
+    },
+    {
+      "id": "Q20312996",
+      "name": "弗朗切斯科·德·罗西",
+      "type": "battle",
+      "description": "541 battle",
+      "lon": 12.25,
+      "lat": 45.666666666,
+      "startYear": 541
+    },
+    {
+      "id": "Q16822665",
+      "name": "Battle of Marj Rahit",
+      "type": "battle",
+      "description": "634 battle between the Muslim Arabs under Khalid b. Walid and the Christian Ghassanid Arabs",
+      "lon": 36.517558333,
+      "lat": 33.603866666,
+      "startYear": 634
+    },
+    {
+      "id": "Q13600791",
+      "name": "布哈拉之戰",
+      "type": "battle",
+      "description": "battle that dissolved the Hephthalite Empire",
+      "lon": 64.433333,
+      "lat": 39.766667,
+      "startYear": 560
+    },
+    {
+      "id": "Q34588915",
+      "name": "Battle of Melantias",
+      "type": "battle",
+      "description": "559 battle of the Byzantine-Kutrigur war",
+      "lon": 28.33,
+      "lat": 41,
+      "startYear": 559
+    },
+    {
+      "id": "Q15277676",
+      "name": "Siege of Exeter",
+      "type": "battle",
+      "description": "battle circa 630",
+      "lon": -3.066666666,
+      "lat": 52.65,
+      "startYear": 630
+    },
+    {
+      "id": "Q15972096",
+      "name": "埃唐普战役",
+      "type": "battle",
+      "description": "604 battle",
+      "lon": 2.0941,
+      "lat": 48.2603,
+      "startYear": 604
+    },
+    {
+      "id": "Q18890189",
+      "name": "Battle of al-Yaqusah",
+      "type": "battle",
+      "description": "",
+      "lon": 35.731,
+      "lat": 32.76015,
+      "startYear": 634
+    },
+    {
+      "id": "Q18920218",
+      "name": "Battle of Burs",
+      "type": "battle",
+      "description": "636 battle",
+      "lon": 44.3449,
+      "lat": 32.3934,
+      "startYear": 636
+    },
+    {
+      "id": "Q86750828",
+      "name": "Battle of Nisibis",
+      "type": "battle",
+      "description": "541 battle",
+      "lon": 41.2157,
+      "lat": 37.0753,
+      "startYear": 541
+    },
+    {
+      "id": "Q67203695",
+      "name": "Siege of Onoguris",
+      "type": "battle",
+      "description": "554 conflict during the Lazic War",
+      "lon": 44.46008,
+      "lat": 42.296477,
+      "startYear": 555
+    },
+    {
+      "id": "Q124958496",
+      "name": "Battle of Abraq",
+      "type": "battle",
+      "description": "632 event in the Nejd region, Saudi Arabia",
+      "lon": 39.5034,
+      "lat": 24.8398,
+      "startYear": 632
+    },
+    {
+      "id": "Q131161345",
+      "name": "Battle of Loch Trethin",
+      "type": "battle",
+      "description": "",
+      "lon": -7.3418806,
+      "lat": 53.5256075,
+      "startYear": 634
+    },
+    {
+      "id": "Q2119353",
+      "name": "塞纳·伽利卡海战",
+      "type": "battle",
+      "description": "551 naval battle between the Byzantine Empire and the Ostrogothic Kingdom of Italy",
+      "lon": 13.252777777,
+      "lat": 43.713055555,
+      "startYear": 551
+    }
+  ]
+}

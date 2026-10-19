@@ -1,0 +1,303 @@
+{
+  "query": "battles_430_530_all",
+  "timestamp": 1779899553456,
+  "data": [
+    {
+      "id": "Q13190",
+      "name": "Battle of Bolia",
+      "type": "battle",
+      "description": "part of Roman-Germanic wars",
+      "lon": 18.05,
+      "lat": 47.683333,
+      "startYear": 469
+    },
+    {
+      "id": "Q39154",
+      "name": "苏瓦松战役",
+      "type": "battle",
+      "description": "486 battle",
+      "lon": 3.323611,
+      "lat": 49.381667,
+      "startYear": 486
+    },
+    {
+      "id": "Q139808",
+      "name": "沙隆战役",
+      "type": "battle",
+      "description": "451年的军事冲突",
+      "lon": 4.5,
+      "lat": 49,
+      "startYear": 451
+    },
+    {
+      "id": "Q264737",
+      "name": "曲尔皮希战役",
+      "type": "battle",
+      "description": "refers to Franco-alamannic battles in the years 496 & 503 (Clovis) at what is now Zülpich, near Cologne",
+      "lon": 6.601111111,
+      "lat": 50.675277777,
+      "startYear": 496
+    },
+    {
+      "id": "Q385604",
+      "name": "达拉战役",
+      "type": "battle",
+      "description": "530年东罗马帝国和萨珊帝国之间的战役",
+      "lon": 40.955,
+      "lat": 37.18,
+      "startYear": 530
+    },
+    {
+      "id": "Q892169",
+      "name": "乌图斯战役",
+      "type": "battle",
+      "description": "447 battle",
+      "lon": 24.68,
+      "lat": 43.61,
+      "startYear": 477
+    },
+    {
+      "id": "Q734700",
+      "name": "阿瓦拉尔战役",
+      "type": "battle",
+      "description": "451 battle",
+      "lon": 45.057091666,
+      "lat": 39.338791666,
+      "startYear": 451
+    },
+    {
+      "id": "Q766072",
+      "name": "Battle of Órbigo",
+      "type": "battle",
+      "description": "456 battle",
+      "lon": -5.70655,
+      "lat": 41.9899,
+      "startYear": 456
+    },
+    {
+      "id": "Q966386",
+      "name": "韦兹龙斯之战",
+      "type": "battle",
+      "description": "battle",
+      "lon": 5.5,
+      "lat": 45.33333333,
+      "startYear": 524
+    },
+    {
+      "id": "Q841211",
+      "name": "尼達歐之戰",
+      "type": "battle",
+      "description": "5th-century internal battle in the Hunnic Empire",
+      "lon": 19.016666666,
+      "lat": 44.933333333,
+      "startYear": 454
+    },
+    {
+      "id": "Q851504",
+      "name": "克洛維戰勝西哥特王國",
+      "type": "battle",
+      "description": "507 battle between the Franks commanded by Clovis and the Visigoths commanded by Alaric II",
+      "lon": 0.3333,
+      "lat": 46.5833,
+      "startYear": 507
+    },
+    {
+      "id": "Q595320",
+      "name": "巴登山戰役",
+      "type": "battle",
+      "description": "Battle in medieval England",
+      "lon": -2.36,
+      "lat": 51.38,
+      "startYear": 500
+    },
+    {
+      "id": "Q1281559",
+      "name": "伊松佐河戰役",
+      "type": "battle",
+      "description": "489 battle",
+      "lon": 13.371191666,
+      "lat": 45.769725,
+      "startYear": 489
+    },
+    {
+      "id": "Q2435881",
+      "name": "里米尼战役 (432年)",
+      "type": "battle",
+      "description": "432 battle",
+      "lon": 12.2,
+      "lat": 44.41666667,
+      "startYear": 432
+    },
+    {
+      "id": "Q2457256",
+      "name": "奥尔良战役",
+      "type": "battle",
+      "description": "463 battle",
+      "lon": 1.876944444,
+      "lat": 47.884583333,
+      "startYear": 463
+    },
+    {
+      "id": "Q2741713",
+      "name": "Battle of Aylesford",
+      "type": "battle",
+      "description": "battle between Britons and Anglo-Saxons, fought at Aylesford, Kent, England",
+      "lon": 0.5,
+      "lat": 51.3167,
+      "startYear": 455
+    },
+    {
+      "id": "Q1637986",
+      "name": "Battle of Satala",
+      "type": "battle",
+      "description": "530 battle",
+      "lon": 39.6,
+      "lat": 40.05,
+      "startYear": 530
+    },
+    {
+      "id": "Q4870331",
+      "name": "Battle of Arelate",
+      "type": "battle",
+      "description": "458 battle",
+      "lon": 4.628,
+      "lat": 43.677,
+      "startYear": 458
+    },
+    {
+      "id": "Q2888472",
+      "name": "Battle of Déols",
+      "type": "battle",
+      "description": "5th-century battle between Visigoths and Bretons in France",
+      "lon": 1.7010817,
+      "lat": 46.8379378,
+      "startYear": 469
+    },
+    {
+      "id": "Q4872170",
+      "name": "Battle of Ravenna",
+      "type": "battle",
+      "description": "476 battle between the Heruli under their King Odoacer and the remnants of the Western Roman Army in Roman Italy",
+      "lon": 12.2,
+      "lat": 44.41666667,
+      "startYear": 476
+    },
+    {
+      "id": "Q4870796",
+      "name": "Battle of Cotyaeum",
+      "type": "battle",
+      "description": "492 battle",
+      "lon": 29.98333333,
+      "lat": 39.41666667,
+      "startYear": 492
+    },
+    {
+      "id": "Q4845152",
+      "name": "Battle of Wippedesfleot",
+      "type": "battle",
+      "description": "466 battle",
+      "lon": 1.352,
+      "lat": 51.314,
+      "startYear": 466
+    },
+    {
+      "id": "Q4871168",
+      "name": "Battle of Guoloph",
+      "type": "battle",
+      "description": "437 conflict between the rival Britonnic forces of Ambrosius Aurelianus and Vortigern (Vitalinus).",
+      "lon": -1.56952,
+      "lat": 51.12744,
+      "startYear": 437
+    },
+    {
+      "id": "Q13126317",
+      "name": "Alleluia Victory of Germanus",
+      "type": "battle",
+      "description": "Britons led by Germanus of Auxerre against Picts",
+      "lon": -3.133,
+      "lat": 53.166,
+      "startYear": 430
+    },
+    {
+      "id": "Q14360450",
+      "name": "Battle of Dijon",
+      "type": "battle",
+      "description": "500",
+      "lon": 5.042777777,
+      "lat": 47.323888888,
+      "startYear": 500
+    },
+    {
+      "id": "Q4871718",
+      "name": "莫克雷德斯伯恩戰役",
+      "type": "battle",
+      "description": "485 battle fought in the conquest of the Kingdom of Sussex",
+      "lon": 0.426664,
+      "lat": 50.930454,
+      "startYear": 485
+    },
+    {
+      "id": "Q20431182",
+      "name": "Battle of Barcelona",
+      "type": "battle",
+      "description": "510 battle",
+      "lon": 2.166666666,
+      "lat": 41.401944444,
+      "startYear": 510
+    },
+    {
+      "id": "Q20640741",
+      "name": "Battle of Barcelona",
+      "type": "battle",
+      "description": "512 battle",
+      "lon": 2.166666666,
+      "lat": 41.401944444,
+      "startYear": 512
+    },
+    {
+      "id": "Q105686763",
+      "name": "Battle of Sondani",
+      "type": "battle",
+      "description": "528 battle",
+      "lon": 75.069404,
+      "lat": 24.071955,
+      "startYear": 528
+    },
+    {
+      "id": "Q60524380",
+      "name": "Battle of Arles",
+      "type": "battle",
+      "description": "435 battle",
+      "lon": 4.628,
+      "lat": 43.677,
+      "startYear": 435
+    },
+    {
+      "id": "Q60524381",
+      "name": "Battle of Arles",
+      "type": "battle",
+      "description": "471 battle",
+      "lon": 4.628,
+      "lat": 43.677,
+      "startYear": 471
+    },
+    {
+      "id": "Q60524461",
+      "name": "Battle of Toulouse",
+      "type": "battle",
+      "description": "458 battle",
+      "lon": 1.444,
+      "lat": 43.6045,
+      "startYear": 458
+    },
+    {
+      "id": "Q20106465",
+      "name": "Siege of Tolosa",
+      "type": "battle",
+      "description": "(439)",
+      "lon": 1.444,
+      "lat": 43.6045,
+      "startYear": 439
+    }
+  ]
+}

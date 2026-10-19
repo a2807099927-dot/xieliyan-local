@@ -1,0 +1,69 @@
+{
+  "query": "battles_80_180_all",
+  "timestamp": 1779901132475,
+  "data": [
+    {
+      "id": "Q2707263",
+      "name": "Third Battle of Tapae",
+      "type": "battle",
+      "description": "battle between the Roman Empire and the Dacians (101)",
+      "lon": 22.7247,
+      "lat": 45.5056,
+      "startYear": 101
+    },
+    {
+      "id": "Q1127337",
+      "name": "格劳庇乌山战役",
+      "type": "battle",
+      "description": "83 battle that was part of the Roman conquest of Britain",
+      "lon": -3,
+      "lat": 56.916667,
+      "startYear": 83
+    },
+    {
+      "id": "Q1127337",
+      "name": "格劳庇乌山战役",
+      "type": "battle",
+      "description": "83 battle that was part of the Roman conquest of Britain",
+      "lon": -3,
+      "lat": 56.916667,
+      "startYear": 84
+    },
+    {
+      "id": "Q4871083",
+      "name": "Battle of Gatae",
+      "type": "battle",
+      "description": "103 AD battle in Trajan's Dacian campaign",
+      "lon": 7.684198,
+      "lat": 45.077697,
+      "startYear": 103
+    },
+    {
+      "id": "Q3494883",
+      "name": "Battle of Sarmisegetusa",
+      "type": "battle",
+      "description": "Roman siege of Sarmizegetusa, the capital of Dacia (106)",
+      "lon": 23.3093,
+      "lat": 45.6219,
+      "startYear": 106
+    },
+    {
+      "id": "Q1476280",
+      "name": "Battle of Tapae",
+      "type": "battle",
+      "description": "87 CE battle",
+      "lon": 22.7247,
+      "lat": 45.5056,
+      "startYear": 87
+    },
+    {
+      "id": "Q134067676",
+      "name": "Battle of Dura-Europos",
+      "type": "battle",
+      "description": "165 CE battle",
+      "lon": 40.73,
+      "lat": 34.747,
+      "startYear": 165
+    }
+  ]
+}

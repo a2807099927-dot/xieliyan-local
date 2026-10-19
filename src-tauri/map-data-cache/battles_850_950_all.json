@@ -1,0 +1,672 @@
+{
+  "query": "battles_850_950_all",
+  "timestamp": 1779898882342,
+  "data": [
+    {
+      "id": "Q335871",
+      "name": "巴蒂斯·里亚克斯战役",
+      "type": "battle",
+      "description": "battle between the Byzantine Empire and the Paulicians in 872 or in 878",
+      "lon": 36.701111111,
+      "lat": 39.836666666,
+      "startYear": 872
+    },
+    {
+      "id": "Q335871",
+      "name": "巴蒂斯·里亚克斯战役",
+      "type": "battle",
+      "description": "battle between the Byzantine Empire and the Paulicians in 872 or in 878",
+      "lon": 36.701111111,
+      "lat": 39.836666666,
+      "startYear": 878
+    },
+    {
+      "id": "Q425535",
+      "name": "Battle of Hakadal",
+      "type": "battle",
+      "description": "ca. 860 battle",
+      "lon": 10.82496667,
+      "lat": 60.11936111,
+      "startYear": 860
+    },
+    {
+      "id": "Q908101",
+      "name": "Battle of Andernach",
+      "type": "battle",
+      "description": "876 Middle Ages battle",
+      "lon": 7.4061547,
+      "lat": 50.4391946,
+      "startYear": 876
+    },
+    {
+      "id": "Q940959",
+      "name": "Battle of Englefield",
+      "type": "battle",
+      "description": "battle on 31 December 870 at Englefield, near Reading",
+      "lon": -1.1,
+      "lat": 51.444,
+      "startYear": 871
+    },
+    {
+      "id": "Q945396",
+      "name": "苏瓦松战役",
+      "type": "battle",
+      "description": "923 battle",
+      "lon": 3.32361111,
+      "lat": 49.38166667,
+      "startYear": 923
+    },
+    {
+      "id": "Q854523",
+      "name": "克羅埃西亞—保加利亞戰爭",
+      "type": "battle",
+      "description": "military engagement in the Dinaric Alps",
+      "lon": 16.5,
+      "lat": 45,
+      "startYear": 926
+    },
+    {
+      "id": "Q1094996",
+      "name": "Battle of Dayr al-Aqul",
+      "type": "battle",
+      "description": "battle",
+      "lon": 45.08333333,
+      "lat": 32.91666667,
+      "startYear": 876
+    },
+    {
+      "id": "Q573774",
+      "name": "Battle of Cynwit",
+      "type": "battle",
+      "description": "878 battle between West Saxons and Vikings",
+      "lon": -3.078333,
+      "lat": 51.158611,
+      "startYear": 878
+    },
+    {
+      "id": "Q1991963",
+      "name": "Battle of Corbridge",
+      "type": "battle",
+      "description": "918 battle, part of the Norse invasions of England",
+      "lon": -2.017064,
+      "lat": 54.974092,
+      "startYear": 918
+    },
+    {
+      "id": "Q1992574",
+      "name": "Battle of Basing",
+      "type": "battle",
+      "description": "871 battle at Old Basing",
+      "lon": -1.0473,
+      "lat": 51.2704,
+      "startYear": 871
+    },
+    {
+      "id": "Q658731",
+      "name": "阿克卢斯河战役",
+      "type": "battle",
+      "description": "917 battle, part of the Byzantine–Bulgarian Wars",
+      "lon": 27.636666666,
+      "lat": 42.643055555,
+      "startYear": 917
+    },
+    {
+      "id": "Q2888864",
+      "name": "真格兰战役",
+      "type": "battle",
+      "description": "851 battle between the Duchy of Brittany and West Francia",
+      "lon": -1.73194444,
+      "lat": 47.72388889,
+      "startYear": 851
+    },
+    {
+      "id": "Q2065046",
+      "name": "Battle of Reading",
+      "type": "battle",
+      "description": "871 battle at Reading",
+      "lon": -0.96,
+      "lat": 51.46,
+      "startYear": 871
+    },
+    {
+      "id": "Q668524",
+      "name": "Battle of Tempsford",
+      "type": "battle",
+      "description": "0917 battle",
+      "lon": -0.2962,
+      "lat": 52.1706,
+      "startYear": 917
+    },
+    {
+      "id": "Q1511005",
+      "name": "Battle of Valdejunquera",
+      "type": "battle",
+      "description": "middle ages battle",
+      "lon": -1.933333333,
+      "lat": 42.754444444,
+      "startYear": 920
+    },
+    {
+      "id": "Q1518266",
+      "name": "Battle of Simancas",
+      "type": "battle",
+      "description": "battle",
+      "lon": -4.81666667,
+      "lat": 41.6,
+      "startYear": 939
+    },
+    {
+      "id": "Q1542647",
+      "name": "布里萨尔特战役",
+      "type": "battle",
+      "description": "866 middle ages battle",
+      "lon": -0.453717,
+      "lat": 47.699813,
+      "startYear": 866
+    },
+    {
+      "id": "Q1542647",
+      "name": "布里萨尔特战役",
+      "type": "battle",
+      "description": "866 middle ages battle",
+      "lon": 0.44917,
+      "lat": 47.70167,
+      "startYear": 866
+    },
+    {
+      "id": "Q2889375",
+      "name": "Battle of Montfaucon",
+      "type": "battle",
+      "description": "882 battle",
+      "lon": 5.13699,
+      "lat": 49.271606,
+      "startYear": 882
+    },
+    {
+      "id": "Q2889573",
+      "name": "Battle of Padura",
+      "type": "battle",
+      "description": "888 battle",
+      "lon": -2.88333333,
+      "lat": 43.2,
+      "startYear": 888
+    },
+    {
+      "id": "Q2237365",
+      "name": "阿什當之戰",
+      "type": "battle",
+      "description": "871 battle in Berkshire",
+      "lon": -1.23,
+      "lat": 51.535,
+      "startYear": 871
+    },
+    {
+      "id": "Q2246615",
+      "name": "布魯南博爾之戰",
+      "type": "battle",
+      "description": "937 important victory for King Athelstan of England",
+      "lon": -2.257319,
+      "lat": 53.796373,
+      "startYear": 937
+    },
+    {
+      "id": "Q2253682",
+      "name": "泰特豪尔之战",
+      "type": "battle",
+      "description": "910 battle",
+      "lon": -2.133333,
+      "lat": 52.583333,
+      "startYear": 910
+    },
+    {
+      "id": "Q2305651",
+      "name": "埃丁頓之役",
+      "type": "battle",
+      "description": "878 decisive battle between the Anglo-Saxons and the Vikings",
+      "lon": -2.242222222,
+      "lat": 51.440277777,
+      "startYear": 878
+    },
+    {
+      "id": "Q1811747",
+      "name": "保加罗菲格战役",
+      "type": "battle",
+      "description": "拜占庭帝国和保加利亚第一帝国之间的一场决定性战役",
+      "lon": 27.1,
+      "lat": 41.43333333,
+      "startYear": 896
+    },
+    {
+      "id": "Q2890242",
+      "name": "特朗斯战役",
+      "type": "battle",
+      "description": "939 battle in Britanny",
+      "lon": -1.588611,
+      "lat": 48.496667,
+      "startYear": 939
+    },
+    {
+      "id": "Q2890760",
+      "name": "白藤江之战 (938年)",
+      "type": "battle",
+      "description": "naval battle between Tĩnh Hải quân and Southern Han on the Bạch Đằng River",
+      "lon": 106.6317,
+      "lat": 20.8442,
+      "startYear": 938
+    },
+    {
+      "id": "Q2445761",
+      "name": "索庫爾安維穆戰役",
+      "type": "battle",
+      "description": "881 battle during the Viking invasions of West Francia",
+      "lon": 1.599351,
+      "lat": 50.081764,
+      "startYear": 881
+    },
+    {
+      "id": "Q2527826",
+      "name": "佩盖战役",
+      "type": "battle",
+      "description": "921 battle of the Byzantine-Bulgarian Wars",
+      "lon": 28.976018,
+      "lat": 41.01224,
+      "startYear": 921
+    },
+    {
+      "id": "Q2531443",
+      "name": "魯汶戰役",
+      "type": "battle",
+      "description": "891",
+      "lon": 4.7,
+      "lat": 50.883,
+      "startYear": 891
+    },
+    {
+      "id": "Q4870264",
+      "name": "Battle of Alhandic",
+      "type": "battle",
+      "description": "battle of the Reconquista (939 AD)",
+      "lon": -5.756229,
+      "lat": 41.49943,
+      "startYear": 939
+    },
+    {
+      "id": "Q4872545",
+      "name": "Battle of Thimeon",
+      "type": "battle",
+      "description": "880 battle during the Viking invasions of West Francia",
+      "lon": 4.43333333,
+      "lat": 50.4,
+      "startYear": 880
+    },
+    {
+      "id": "Q3656916",
+      "name": "卡塔斯尔泰战役",
+      "type": "battle",
+      "description": "917 battle between Byzantines and Bulgarians",
+      "lon": 28.890278,
+      "lat": 41.030556,
+      "startYear": 917
+    },
+    {
+      "id": "Q3751537",
+      "name": "阿貝達戰役",
+      "type": "battle",
+      "description": "(851)",
+      "lon": -2.46667,
+      "lat": 42.35,
+      "startYear": 851
+    },
+    {
+      "id": "Q3751571",
+      "name": "瓜達拉塞提戰役",
+      "type": "battle",
+      "description": "852 battle",
+      "lon": -3.87,
+      "lat": 39.8,
+      "startYear": 852
+    },
+    {
+      "id": "Q3752313",
+      "name": "蒙特拉圖塞戰役",
+      "type": "battle",
+      "description": "(859)",
+      "lon": -2.7,
+      "lat": 42.5833,
+      "startYear": 859
+    },
+    {
+      "id": "Q4871955",
+      "name": "Battle of Orkdal",
+      "type": "battle",
+      "description": "ca. 870 battle",
+      "lon": 9.82375278,
+      "lat": 63.27503611,
+      "startYear": 870
+    },
+    {
+      "id": "Q4870691",
+      "name": "Battle of Cellorigo",
+      "type": "battle",
+      "description": "882 battle",
+      "lon": -3,
+      "lat": 42.633333,
+      "startYear": 882
+    },
+    {
+      "id": "Q4087422",
+      "name": "Battle of Dollar",
+      "type": "battle",
+      "description": "fought in 875 at Dollar, Scotland",
+      "lon": -3.673888888,
+      "lat": 56.161944444,
+      "startYear": 875
+    },
+    {
+      "id": "Q7509925",
+      "name": "Siege of Chartres",
+      "type": "battle",
+      "description": "911 Viking invasion in Burgundy – repelled by Frankish forces",
+      "lon": 1.488333333,
+      "lat": 48.446666666,
+      "startYear": 911
+    },
+    {
+      "id": "Q4872931",
+      "name": "霍姆之战",
+      "type": "battle",
+      "description": "902 battle",
+      "lon": -0.242472,
+      "lat": 52.47588,
+      "startYear": 902
+    },
+    {
+      "id": "Q4872958",
+      "name": "莫奎拉戰役",
+      "type": "battle",
+      "description": "865 battle as part of the Spanish Reconquista",
+      "lon": -3.023333333,
+      "lat": 42.646388888,
+      "startYear": 865
+    },
+    {
+      "id": "Q4871022",
+      "name": "Battle of Fjaler",
+      "type": "battle",
+      "description": "ca. 880 battle",
+      "lon": 5.39801944,
+      "lat": 61.362975,
+      "startYear": 880
+    },
+    {
+      "id": "Q4872270",
+      "name": "Battle of San Esteban de Gormaz",
+      "type": "battle",
+      "description": "917 battle of Spanish Reconquista",
+      "lon": -3.2,
+      "lat": 41.583333,
+      "startYear": 917
+    },
+    {
+      "id": "Q5454133",
+      "name": "First Battle of Solskjel",
+      "type": "battle",
+      "description": "ca. 870 battle",
+      "lon": 8.1886,
+      "lat": 63.2445,
+      "startYear": 870
+    },
+    {
+      "id": "Q5722426",
+      "name": "Battle of Eisenach",
+      "type": "battle",
+      "description": "battle between Hungarian and German forces",
+      "lon": 10.314588884,
+      "lat": 50.979729124,
+      "startYear": 908
+    },
+    {
+      "id": "Q5722473",
+      "name": "Q5722473",
+      "type": "battle",
+      "description": "899 battle",
+      "lon": 66.87361111,
+      "lat": 36.77305556,
+      "startYear": 899
+    },
+    {
+      "id": "Q11908720",
+      "name": "Battle of Bayyana",
+      "type": "battle",
+      "description": "891 battle",
+      "lon": -2.440697222,
+      "lat": 36.915094444,
+      "startYear": 891
+    },
+    {
+      "id": "Q11908721",
+      "name": "Battle of Baltarga",
+      "type": "battle",
+      "description": "942 battle",
+      "lon": 1.8,
+      "lat": 42.36666667,
+      "startYear": 942
+    },
+    {
+      "id": "Q11908789",
+      "name": "Battle of Jandula",
+      "type": "battle",
+      "description": "853 battle",
+      "lon": -4.05,
+      "lat": 38.03333333,
+      "startYear": 853
+    },
+    {
+      "id": "Q13126304",
+      "name": "Battle of the Conwy",
+      "type": "battle",
+      "description": "881 Welsh-English battle",
+      "lon": -3.83,
+      "lat": 53.28,
+      "startYear": 881
+    },
+    {
+      "id": "Q19611623",
+      "name": "Battle of Islandbridge",
+      "type": "battle",
+      "description": "AD 919 attempt to drive Vikings from Ireland",
+      "lon": -6.3083,
+      "lat": 53.3473,
+      "startYear": 919
+    },
+    {
+      "id": "Q16822586",
+      "name": "Battle of Buttington",
+      "type": "battle",
+      "description": "893 battle",
+      "lon": -3.09,
+      "lat": 52.672,
+      "startYear": 893
+    },
+    {
+      "id": "Q61081731",
+      "name": "Battle of Brecenanmere",
+      "type": "battle",
+      "description": "battle fought by native Welsh army and invading Anglo-Saxons, fought in 916",
+      "lon": -3.3909,
+      "lat": 51.9468,
+      "startYear": 916
+    },
+    {
+      "id": "Q17622621",
+      "name": "波尔沃拉里亚战役",
+      "type": "battle",
+      "description": "",
+      "lon": -5.682163888,
+      "lat": 41.966127777,
+      "startYear": 878
+    },
+    {
+      "id": "Q20584456",
+      "name": "Battle of Llandudno",
+      "type": "battle",
+      "description": "856 battle at Llandudno in 856 between the Welsh and the invading English",
+      "lon": -3.82,
+      "lat": 53.32,
+      "startYear": 856
+    },
+    {
+      "id": "Q61410209",
+      "name": "Battle of Llangollen",
+      "type": "battle",
+      "description": "battle fought in Llangolen, Wales in 870",
+      "lon": -3.1595,
+      "lat": 52.9792,
+      "startYear": 870
+    },
+    {
+      "id": "Q61413115",
+      "name": "Rhiw Saeson Battle",
+      "type": "battle",
+      "description": "battle fought near Llantrisant, Wales in 873",
+      "lon": -3.3503,
+      "lat": 51.540054,
+      "startYear": 873
+    },
+    {
+      "id": "Q22083877",
+      "name": "Battle of Bellaghmoon",
+      "type": "battle",
+      "description": "battle in County Kildare, Ireland",
+      "lon": -6.885,
+      "lat": 52.877,
+      "startYear": 908
+    },
+    {
+      "id": "Q22227287",
+      "name": "卡尔迪亚战役",
+      "type": "battle",
+      "description": "870s battle",
+      "lon": 26.75,
+      "lat": 40.55,
+      "startYear": 872
+    },
+    {
+      "id": "Q41371473",
+      "name": "卡尔塔武图罗战役",
+      "type": "battle",
+      "description": "battle Between Byzantium and Umayyad Caliphate",
+      "lon": 15.318,
+      "lat": 37.844,
+      "startYear": 881
+    },
+    {
+      "id": "Q55647802",
+      "name": "First Battle of Cellorigo",
+      "type": "battle",
+      "description": "Cellorigo's first battle in 882",
+      "lon": -2.999444444,
+      "lat": 42.627222222,
+      "startYear": 882
+    },
+    {
+      "id": "Q55648613",
+      "name": "Second Battle of Cellorigo",
+      "type": "battle",
+      "description": "883 battle",
+      "lon": -2.999444444,
+      "lat": 42.627222222,
+      "startYear": 883
+    },
+    {
+      "id": "Q25247871",
+      "name": "君士坦丁堡战役_(922年)",
+      "type": "battle",
+      "description": "拜占庭与保加利亚在922年发生于拜占庭帝国首都君士坦丁堡郊区的一场战役",
+      "lon": 28.93333333,
+      "lat": 42.03333333,
+      "startYear": 922
+    },
+    {
+      "id": "Q113947145",
+      "name": "Battle of Benfleet",
+      "type": "battle",
+      "description": "894 battle between Vikings and Wessex",
+      "lon": 0.56,
+      "lat": 51.55,
+      "startYear": 894
+    },
+    {
+      "id": "Q97196090",
+      "name": "Battle of Barcelona",
+      "type": "battle",
+      "description": "935 battle",
+      "lon": 2.1769,
+      "lat": 41.3825,
+      "startYear": 935
+    },
+    {
+      "id": "Q98785100",
+      "name": "Battle of York",
+      "type": "battle",
+      "description": "867 battle between Anglo-Saxons and Vikings",
+      "lon": -1.080277777,
+      "lat": 53.958333333,
+      "startYear": 867
+    },
+    {
+      "id": "Q98799580",
+      "name": "奇彭纳姆战役",
+      "type": "battle",
+      "description": "878 battle between Anglo-Saxons and Vikings",
+      "lon": -2.1158,
+      "lat": 51.4585,
+      "startYear": 878
+    },
+    {
+      "id": "Q112181341",
+      "name": "Battle of Medina Elvira",
+      "type": "battle",
+      "description": "899 battle",
+      "lon": -3.707938888,
+      "lat": 37.237511111,
+      "startYear": 899
+    },
+    {
+      "id": "Q125861402",
+      "name": "Battle of Alhandega",
+      "type": "battle",
+      "description": "939 battle",
+      "lon": -5.616111111,
+      "lat": 40.712777777,
+      "startYear": 939
+    },
+    {
+      "id": "Q139855912",
+      "name": "Fall of Kairouan",
+      "type": "battle",
+      "description": "909 battle",
+      "lon": 10.100833333,
+      "lat": 35.677222222,
+      "startYear": 909
+    },
+    {
+      "id": "Q139856100",
+      "name": "Battle of Tabrashq",
+      "type": "battle",
+      "description": "908 Fatimid punitive campaign",
+      "lon": 8.715,
+      "lat": 35.610555555,
+      "startYear": 908
+    },
+    {
+      "id": "Q515561",
+      "name": "哈弗斯峡湾战役",
+      "type": "battle",
+      "description": "middle ages battle",
+      "lon": 5.67147778,
+      "lat": 58.94145278,
+      "startYear": 872
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "query": "battles_670_770_all",
+  "timestamp": 1779899554284,
+  "data": [
+    {
+      "id": "Q128996",
+      "name": "阿克洛伊农战役",
+      "type": "battle",
+      "description": "740年爆发于倭马亚王朝与拜占庭帝国之间的一场战役",
+      "lon": 30.533333,
+      "lat": 38.75,
+      "startYear": 740
+    },
+    {
+      "id": "Q173077",
+      "name": "圖爾戰役",
+      "type": "battle",
+      "description": "在732年墨落溫法蘭克與倭馬亞王朝的戰役",
+      "lon": 0.68916667,
+      "lat": 47.39361111,
+      "startYear": 732
+    },
+    {
+      "id": "Q398174",
+      "name": "Siege of Nicaea",
+      "type": "battle",
+      "description": "Unsuccessful attempt by the Umayyad Caliphate to capture the Byzantine city of Nicaea in 727",
+      "lon": 29.7195,
+      "lat": 40.429,
+      "startYear": 727
+    },
+    {
+      "id": "Q289492",
+      "name": "扎卜河战役",
+      "type": "battle",
+      "description": "750 battle in Iraq",
+      "lon": 43.343611111,
+      "lat": 35.991111111,
+      "startYear": 750
+    },
+    {
+      "id": "Q504172",
+      "name": "瓜达莱特之战",
+      "type": "battle",
+      "description": "711 battle between the Visigothic Kingdom and the Umayyad Caliphate; decisive Umayyad victory leads to the fall of the Visigothic Kingdom and the Umayyad conquest of the peninsula",
+      "lon": -6.21667,
+      "lat": 36.6,
+      "startYear": 711
+    },
+    {
+      "id": "Q514382",
+      "name": "赫雷战役",
+      "type": "battle",
+      "description": "middle ages battle",
+      "lon": 39.6333,
+      "lat": 24.4667,
+      "startYear": 683
+    },
+    {
+      "id": "Q784296",
+      "name": "泰尔特里战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 3.96944444,
+      "lat": 49.86305556,
+      "startYear": 687
+    },
+    {
+      "id": "Q1375800",
+      "name": "里什基山口战役",
+      "type": "battle",
+      "description": "759 battle",
+      "lon": 26.93944444,
+      "lat": 42.93722222,
+      "startYear": 759
+    },
+    {
+      "id": "Q587908",
+      "name": "納博訥戰役",
+      "type": "battle",
+      "description": "737 battle",
+      "lon": 3.003078,
+      "lat": 43.184277,
+      "startYear": 737
+    },
+    {
+      "id": "Q587908",
+      "name": "納博訥戰役",
+      "type": "battle",
+      "description": "737 battle",
+      "lon": 3.003611111,
+      "lat": 43.184722222,
+      "startYear": 737
+    },
+    {
+      "id": "Q602880",
+      "name": "安基阿盧斯戰役",
+      "type": "battle",
+      "description": "708 battle",
+      "lon": 27.65,
+      "lat": 42.55,
+      "startYear": 708
+    },
+    {
+      "id": "Q1478970",
+      "name": "迦太基之战",
+      "type": "battle",
+      "description": "engagement of the Muslim conquest of the Maghreb",
+      "lon": 10.3233,
+      "lat": 36.8528,
+      "startYear": 698
+    },
+    {
+      "id": "Q1508114",
+      "name": "Battle of the River Berre",
+      "type": "battle",
+      "description": "frankish expedition and battle in Septimania",
+      "lon": 2.92416667,
+      "lat": 43.05055556,
+      "startYear": 737
+    },
+    {
+      "id": "Q1784832",
+      "name": "萬西之戰",
+      "type": "battle",
+      "description": "717 battle",
+      "lon": 3.24027778,
+      "lat": 50.09527778,
+      "startYear": 717
+    },
+    {
+      "id": "Q1747219",
+      "name": "阿维尼翁战役",
+      "type": "battle",
+      "description": "737 battle",
+      "lon": 4.81667,
+      "lat": 43.95,
+      "startYear": 737
+    },
+    {
+      "id": "Q626058",
+      "name": "卡尔巴拉战役",
+      "type": "battle",
+      "description": "battle in October 680 between the army of Ubayd Allah ibn Ziyad and al-Husayn ibn Ali",
+      "lon": 44.031388888,
+      "lat": 32.615277777,
+      "startYear": 680
+    },
+    {
+      "id": "Q652320",
+      "name": "图卢兹战役",
+      "type": "battle",
+      "description": "721 battle",
+      "lon": 1.45,
+      "lat": 43.6,
+      "startYear": 721
+    },
+    {
+      "id": "Q957186",
+      "name": "科瓦東加戰役",
+      "type": "battle",
+      "description": "722 first victory won by Christian military forces after the Islamic conquest of Hispania",
+      "lon": -4.980669444,
+      "lat": 43.273372222,
+      "startYear": 718
+    },
+    {
+      "id": "Q957186",
+      "name": "科瓦東加戰役",
+      "type": "battle",
+      "description": "722 first victory won by Christian military forces after the Islamic conquest of Hispania",
+      "lon": -4.980669444,
+      "lat": 43.273372222,
+      "startYear": 722
+    },
+    {
+      "id": "Q961243",
+      "name": "鄧尼赫坦戰役",
+      "type": "battle",
+      "description": "685 battle between the Pics and the Northumbrians",
+      "lon": -2.8,
+      "lat": 56.63,
+      "startYear": 685
+    },
+    {
+      "id": "Q966312",
+      "name": "安基阿卢斯战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 27.65,
+      "lat": 42.55,
+      "startYear": 763
+    },
+    {
+      "id": "Q2524627",
+      "name": "波尔多战役",
+      "type": "battle",
+      "description": "732 battle",
+      "lon": -0.60666667,
+      "lat": 45.04138889,
+      "startYear": 732
+    },
+    {
+      "id": "Q2531046",
+      "name": "阿梅爾戰役",
+      "type": "battle",
+      "description": "716 battle",
+      "lon": 5.63861,
+      "lat": 50.48,
+      "startYear": 716
+    },
+    {
+      "id": "Q2531046",
+      "name": "阿梅爾戰役",
+      "type": "battle",
+      "description": "716 battle",
+      "lon": 5.638627,
+      "lat": 50.480034,
+      "startYear": 716
+    },
+    {
+      "id": "Q3621804",
+      "name": "马尔凯莱战役",
+      "type": "battle",
+      "description": "took place in 756 between the armies of the First Bulgarian Empire and the Byzantine Empire at Markeli, near the town of Karnobat in south eastern Bulgaria",
+      "lon": 26.89652222,
+      "lat": 42.63763333,
+      "startYear": 756
+    },
+    {
+      "id": "Q3636313",
+      "name": "Battle of Adrianópolis",
+      "type": "battle",
+      "description": "718 battle",
+      "lon": 26.5667,
+      "lat": 41.6667,
+      "startYear": 718
+    },
+    {
+      "id": "Q1115943",
+      "name": "蘇瓦松戰役",
+      "type": "battle",
+      "description": "battle in 718",
+      "lon": 3.32361111,
+      "lat": 49.38166667,
+      "startYear": 718
+    },
+    {
+      "id": "Q1130525",
+      "name": "Battle of Compiègne",
+      "type": "battle",
+      "description": "0715 battle",
+      "lon": -2.823056,
+      "lat": 49.415,
+      "startYear": 715
+    },
+    {
+      "id": "Q1130525",
+      "name": "Battle of Compiègne",
+      "type": "battle",
+      "description": "0715 battle",
+      "lon": 2.87301,
+      "lat": 49.39796,
+      "startYear": 715
+    },
+    {
+      "id": "Q1130525",
+      "name": "Battle of Compiègne",
+      "type": "battle",
+      "description": "0715 battle",
+      "lon": 2.87306,
+      "lat": 49.39806,
+      "startYear": 715
+    },
+    {
+      "id": "Q3636595",
+      "name": "Battle of Ravenna",
+      "type": "battle",
+      "description": "729 battle",
+      "lon": 12.2,
+      "lat": 44.41666667,
+      "startYear": 729
+    },
+    {
+      "id": "Q2038283",
+      "name": "Battle of the Boarn",
+      "type": "battle",
+      "description": "734 battle",
+      "lon": 5.793829,
+      "lat": 53.076754,
+      "startYear": 734
+    },
+    {
+      "id": "Q4087416",
+      "name": "瓦爾達納克特戰役",
+      "type": "battle",
+      "description": "702 battle",
+      "lon": 44.3408,
+      "lat": 40.0234,
+      "startYear": 702
+    },
+    {
+      "id": "Q2949566",
+      "name": "髑髅修道院战役",
+      "type": "battle",
+      "description": "701 battle in the Umayyad Caliphate",
+      "lon": 44.4,
+      "lat": 32.03333333,
+      "startYear": 701
+    },
+    {
+      "id": "Q2237785",
+      "name": "维斯克拉战役",
+      "type": "battle",
+      "description": "682 battle between Byzantium and Umayyad Caliphate",
+      "lon": 5.733333333,
+      "lat": 34.833333333,
+      "startYear": 682
+    },
+    {
+      "id": "Q2272823",
+      "name": "Battle of Cologne",
+      "type": "battle",
+      "description": "716 battle near Cologne",
+      "lon": 6.958976,
+      "lat": 50.94257,
+      "startYear": 716
+    },
+    {
+      "id": "Q2281774",
+      "name": "迈尔季·拉希特战役",
+      "type": "battle",
+      "description": "one of the early battles of the Second Fitna, fought on 18 August 684",
+      "lon": 36.5,
+      "lat": 33.6,
+      "startYear": 684
+    },
+    {
+      "id": "Q4870429",
+      "name": "伐地国之战",
+      "type": "battle",
+      "description": "729 battle of the Muslim conquest of Transoxiana",
+      "lon": 64.071,
+      "lat": 39.662,
+      "startYear": 729
+    },
+    {
+      "id": "Q4871691",
+      "name": "迈斯金战役",
+      "type": "battle",
+      "description": "battle of the Second Fitna (680s-690s). It was fought in mid-October 691 near present-day Baghdad",
+      "lon": 44.24,
+      "lat": 33.823333,
+      "startYear": 691
+    },
+    {
+      "id": "Q4871928",
+      "name": "Battle of Nîmes",
+      "type": "battle",
+      "description": "8th-century siege in France",
+      "lon": 4.360054,
+      "lat": 43.836699,
+      "startYear": 736
+    },
+    {
+      "id": "Q4872010",
+      "name": "Battle of Pencon",
+      "type": "battle",
+      "description": "720 obscure battle fought either in southern Wales or Herefordshire",
+      "lon": -2.8,
+      "lat": 51.9,
+      "startYear": 720
+    },
+    {
+      "id": "Q4870907",
+      "name": "Battle of Dorestad",
+      "type": "battle",
+      "description": "c695 battle",
+      "lon": 5.34,
+      "lat": 51.975,
+      "startYear": 695
+    },
+    {
+      "id": "Q4871212",
+      "name": "Battle of Hereford",
+      "type": "battle",
+      "description": "760 battle",
+      "lon": -2.7175,
+      "lat": 52.056,
+      "startYear": 760
+    },
+    {
+      "id": "Q4872459",
+      "name": "睢阳之战",
+      "type": "battle",
+      "description": "8th-century battle during the An Lushan Rebellion",
+      "lon": 115.61888889,
+      "lat": 34.38305556,
+      "startYear": 757
+    },
+    {
+      "id": "Q4872747",
+      "name": "Battle of Woden's Burg",
+      "type": "battle",
+      "description": "715 battle",
+      "lon": -1.8372,
+      "lat": 51.3556,
+      "startYear": 715
+    },
+    {
+      "id": "Q4872906",
+      "name": "隘路战役",
+      "type": "battle",
+      "description": "731 CE battle in present-day Uzbekistan",
+      "lon": 66.909722222,
+      "lat": 39.293888888,
+      "startYear": 731
+    },
+    {
+      "id": "Q4873029",
+      "name": "特伦特河战役",
+      "type": "battle",
+      "description": "679 battle",
+      "lon": -1.676111,
+      "lat": 53.533333,
+      "startYear": 679
+    },
+    {
+      "id": "Q16851462",
+      "name": "Siege of Kamarja",
+      "type": "battle",
+      "description": "battle fought in 729 CE",
+      "lon": 66.379,
+      "lat": 39.953,
+      "startYear": 729
+    },
+    {
+      "id": "Q11908716",
+      "name": "Battle of Olalíes",
+      "type": "battle",
+      "description": "722 battle",
+      "lon": -6.02,
+      "lat": 43.25,
+      "startYear": 722
+    },
+    {
+      "id": "Q11908745",
+      "name": "Battle of Guadalete",
+      "type": "battle",
+      "description": "745 battle",
+      "lon": -6.216666666,
+      "lat": 36.6,
+      "startYear": 745
+    },
+    {
+      "id": "Q17605393",
+      "name": "Battle of Llívia",
+      "type": "battle",
+      "description": "731 battle",
+      "lon": 1.98333,
+      "lat": 42.45,
+      "startYear": 731
+    },
+    {
+      "id": "Q18006531",
+      "name": "Siege of Al-Sakhra",
+      "type": "battle",
+      "description": "735 siege",
+      "lon": -5.055556,
+      "lat": 43.308889,
+      "startYear": 735
+    },
+    {
+      "id": "Q18008908",
+      "name": "Battle of Xaqunda",
+      "type": "battle",
+      "description": "747 battle",
+      "lon": -4.76667,
+      "lat": 37.8833,
+      "startYear": 747
+    },
+    {
+      "id": "Q15884770",
+      "name": "Battle of Ayn al-Warda",
+      "type": "battle",
+      "description": "battle fought in early January 685 between the Umayyad army and the Penitents",
+      "lon": 40.07916667,
+      "lat": 36.84083333,
+      "startYear": 685
+    },
+    {
+      "id": "Q22690044",
+      "name": "玛玛战役",
+      "type": "battle",
+      "description": "688 battle",
+      "lon": 6.468611111,
+      "lat": 35.484166666,
+      "startYear": 688
+    },
+    {
+      "id": "Q122382759",
+      "name": "Battle of Aror",
+      "type": "battle",
+      "description": "8th century battle between Umayyads and Brahmin dynasty of Sindh",
+      "lon": 68.9833,
+      "lat": 27.65,
+      "startYear": 712
+    },
+    {
+      "id": "Q27940416",
+      "name": "海济尔战役",
+      "type": "battle",
+      "description": "battle of Khazir, took place in August 686 near the Khazir River in Mosul's eastern environs, in modern-day Iraq",
+      "lon": 43.53,
+      "lat": 36.31,
+      "startYear": 686
+    },
+    {
+      "id": "Q65056847",
+      "name": "Battle of Lucofao",
+      "type": "battle",
+      "description": "679 battle",
+      "lon": 4.0817514,
+      "lat": 49.6112958,
+      "startYear": 679
+    }
+  ]
+}

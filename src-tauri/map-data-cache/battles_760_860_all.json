@@ -1,0 +1,429 @@
+{
+  "query": "battles_760_860_all",
+  "timestamp": 1779898886873,
+  "data": [
+    {
+      "id": "Q1939977",
+      "name": "埃倫頓戰役",
+      "type": "battle",
+      "description": "825 battle",
+      "lon": -1.792,
+      "lat": 51.525,
+      "startYear": 825
+    },
+    {
+      "id": "Q403416",
+      "name": "普利斯卡战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 26.66833333,
+      "lat": 42.9275,
+      "startYear": 811
+    },
+    {
+      "id": "Q425535",
+      "name": "Battle of Hakadal",
+      "type": "battle",
+      "description": "ca. 860 battle",
+      "lon": 10.82496667,
+      "lat": 60.11936111,
+      "startYear": 860
+    },
+    {
+      "id": "Q966312",
+      "name": "安基阿卢斯战役",
+      "type": "battle",
+      "description": "battle",
+      "lon": 27.65,
+      "lat": 42.55,
+      "startYear": 763
+    },
+    {
+      "id": "Q1048401",
+      "name": "韦尔西尼基亚战役",
+      "type": "battle",
+      "description": "0813 battle",
+      "lon": 26.566667,
+      "lat": 41.666667,
+      "startYear": 813
+    },
+    {
+      "id": "Q2888101",
+      "name": "巴隆战役",
+      "type": "battle",
+      "description": "845 battle in France",
+      "lon": -2.07027778,
+      "lat": 47.70444444,
+      "startYear": 845
+    },
+    {
+      "id": "Q2888154",
+      "name": "Battle of Blain",
+      "type": "battle",
+      "description": "843 battle",
+      "lon": -1.75,
+      "lat": 47.48333333,
+      "startYear": 843
+    },
+    {
+      "id": "Q2888222",
+      "name": "布比亞河戰役",
+      "type": "battle",
+      "description": "battle between the Kingdom of Asturias and the Emirate of Córdoba in 791",
+      "lon": -6.65,
+      "lat": 42.7167,
+      "startYear": 791
+    },
+    {
+      "id": "Q2888864",
+      "name": "真格兰战役",
+      "type": "battle",
+      "description": "851 battle between the Duchy of Brittany and West Francia",
+      "lon": -1.73194444,
+      "lat": 47.72388889,
+      "startYear": 851
+    },
+    {
+      "id": "Q2889320",
+      "name": "Battle of Messac",
+      "type": "battle",
+      "description": "843 battle",
+      "lon": -1.82389,
+      "lat": 47.82556,
+      "startYear": 843
+    },
+    {
+      "id": "Q2889320",
+      "name": "Battle of Messac",
+      "type": "battle",
+      "description": "843 battle",
+      "lon": -1.80722,
+      "lat": 47.82556,
+      "startYear": 843
+    },
+    {
+      "id": "Q3751377",
+      "name": "潘科博戰役",
+      "type": "battle",
+      "description": "816 battle",
+      "lon": -3.1,
+      "lat": 42.63333333,
+      "startYear": 816
+    },
+    {
+      "id": "Q3751537",
+      "name": "阿貝達戰役",
+      "type": "battle",
+      "description": "(851)",
+      "lon": -2.46667,
+      "lat": 42.35,
+      "startYear": 851
+    },
+    {
+      "id": "Q3751571",
+      "name": "瓜達拉塞提戰役",
+      "type": "battle",
+      "description": "852 battle",
+      "lon": -3.87,
+      "lat": 39.8,
+      "startYear": 852
+    },
+    {
+      "id": "Q3752313",
+      "name": "蒙特拉圖塞戰役",
+      "type": "battle",
+      "description": "(859)",
+      "lon": -2.7,
+      "lat": 42.5833,
+      "startYear": 859
+    },
+    {
+      "id": "Q3817928",
+      "name": "雷伊战役",
+      "type": "battle",
+      "description": "811 battle of the Fourth Fitna",
+      "lon": 51.4333,
+      "lat": 35.5833,
+      "startYear": 811
+    },
+    {
+      "id": "Q2237567",
+      "name": "柯皮那顿战役",
+      "type": "battle",
+      "description": "拜占庭帝国与阿拔斯王朝于788年9月在小亚细亚进行的战役",
+      "lon": 34.8711,
+      "lat": 37.4278,
+      "startYear": 788
+    },
+    {
+      "id": "Q2237594",
+      "name": "盧托斯戰役",
+      "type": "battle",
+      "description": "794 battle",
+      "lon": -6.41667,
+      "lat": 43.3333,
+      "startYear": 794
+    },
+    {
+      "id": "Q1233475",
+      "name": "龙塞斯瓦列斯山口战役",
+      "type": "battle",
+      "description": "778 battle between Charlemagne and Basques",
+      "lon": -1.333888888,
+      "lat": 42.989444444,
+      "startYear": 778
+    },
+    {
+      "id": "Q1268954",
+      "name": "奧斯提亞海戰",
+      "type": "battle",
+      "description": "849 battle",
+      "lon": 12.2833,
+      "lat": 41.75,
+      "startYear": 849
+    },
+    {
+      "id": "Q2923372",
+      "name": "Battle of Süntel",
+      "type": "battle",
+      "description": "782 battle",
+      "lon": 9.333611111,
+      "lat": 52.210555555,
+      "startYear": 782
+    },
+    {
+      "id": "Q1430939",
+      "name": "豐唐瓦之戰",
+      "type": "battle",
+      "description": "841 middle ages battle",
+      "lon": 3.3,
+      "lat": 47.65,
+      "startYear": 841
+    },
+    {
+      "id": "Q1578852",
+      "name": "马尔克拉战役",
+      "type": "battle",
+      "description": "792 battle of the Byzantine-Bulgarian Wars",
+      "lon": 26.89652222,
+      "lat": 42.63763333,
+      "startYear": 792
+    },
+    {
+      "id": "Q1639273",
+      "name": "安曾战役",
+      "type": "battle",
+      "description": "battle in Asia Minor between Byzantines and Abbasids (838 CE)",
+      "lon": 36.09,
+      "lat": 40.39,
+      "startYear": 838
+    },
+    {
+      "id": "Q1770064",
+      "name": "Battle of Otford",
+      "type": "battle",
+      "description": "776 battle",
+      "lon": 0.183333,
+      "lat": 51.3167,
+      "startYear": 776
+    },
+    {
+      "id": "Q5576442",
+      "name": "蒙特库贝罗战役",
+      "type": "battle",
+      "description": "",
+      "lon": -7.326955555,
+      "lat": 43.085794444,
+      "startYear": 774
+    },
+    {
+      "id": "Q5723004",
+      "name": "Battle of Tablada",
+      "type": "battle",
+      "description": "",
+      "lon": -6.134963888,
+      "lat": 37.362086111,
+      "startYear": 844
+    },
+    {
+      "id": "Q2713449",
+      "name": "Siege of Adrianople (813)",
+      "type": "battle",
+      "description": "813 siege",
+      "lon": 26.559444444,
+      "lat": 41.678055555,
+      "startYear": 813
+    },
+    {
+      "id": "Q4872202",
+      "name": "龙塞斯瓦列斯山口战役",
+      "type": "battle",
+      "description": "824 battle",
+      "lon": -1.324,
+      "lat": 43.02,
+      "startYear": 824
+    },
+    {
+      "id": "Q4871212",
+      "name": "Battle of Hereford",
+      "type": "battle",
+      "description": "760 battle",
+      "lon": -2.7175,
+      "lat": 52.056,
+      "startYear": 760
+    },
+    {
+      "id": "Q4872873",
+      "name": "科内利亚纳桥战役",
+      "type": "battle",
+      "description": "842 battle",
+      "lon": -6.150833333,
+      "lat": 43.404722222,
+      "startYear": 842
+    },
+    {
+      "id": "Q6403042",
+      "name": "法赫赫战役",
+      "type": "battle",
+      "description": "battle in June 786 between Abbasids and Al-Husayn ibn Ali (Sahib Fakhkh)",
+      "lon": 39.8068,
+      "lat": 21.4531,
+      "startYear": 786
+    },
+    {
+      "id": "Q11908699",
+      "name": "Battle of Ad Pontes",
+      "type": "battle",
+      "description": "792 battle",
+      "lon": 1.93333333,
+      "lat": 41.48333333,
+      "startYear": 792
+    },
+    {
+      "id": "Q11908707",
+      "name": "Battle of Angumois",
+      "type": "battle",
+      "description": "844 battle",
+      "lon": 0.166666666,
+      "lat": 45.65,
+      "startYear": 844
+    },
+    {
+      "id": "Q11908735",
+      "name": "Battle of Conchas de Arganzón",
+      "type": "battle",
+      "description": "801 battle",
+      "lon": -2.83333333,
+      "lat": 42.76666667,
+      "startYear": 801
+    },
+    {
+      "id": "Q11908782",
+      "name": "Battle of las Babias",
+      "type": "battle",
+      "description": "795 historic battle on the Iberian peninsula",
+      "lon": -6.054444444,
+      "lat": 42.458055555,
+      "startYear": 795
+    },
+    {
+      "id": "Q11908789",
+      "name": "Battle of Jandula",
+      "type": "battle",
+      "description": "853 battle",
+      "lon": -4.05,
+      "lat": 38.03333333,
+      "startYear": 853
+    },
+    {
+      "id": "Q11915296",
+      "name": "Conquest of Girona",
+      "type": "battle",
+      "description": "(785)",
+      "lon": 2.81666667,
+      "lat": 41.98333333,
+      "startYear": 785
+    },
+    {
+      "id": "Q20584456",
+      "name": "Battle of Llandudno",
+      "type": "battle",
+      "description": "856 battle at Llandudno in 856 between the Welsh and the invading English",
+      "lon": -3.82,
+      "lat": 53.32,
+      "startYear": 856
+    },
+    {
+      "id": "Q9172538",
+      "name": "Battle of Orbiel River",
+      "type": "battle",
+      "description": "Battle between Franks and Arabs in 793",
+      "lon": 2.426992,
+      "lat": 43.240092,
+      "startYear": 793
+    },
+    {
+      "id": "Q18330892",
+      "name": "Battle of Hingston Down",
+      "type": "battle",
+      "description": "838 battle",
+      "lon": -4.2473,
+      "lat": 50.521,
+      "startYear": 838
+    },
+    {
+      "id": "Q109423305",
+      "name": "Battle of Anceo",
+      "type": "battle",
+      "description": "825 battle",
+      "lon": -8.474797077,
+      "lat": 42.357400181,
+      "startYear": 825
+    },
+    {
+      "id": "Q25340547",
+      "name": "Battle of Toulouse",
+      "type": "battle",
+      "description": "battle of the Carolingian Civil War",
+      "lon": 1.444,
+      "lat": 43.6045,
+      "startYear": 844
+    },
+    {
+      "id": "Q635213",
+      "name": "克拉維霍戰役",
+      "type": "battle",
+      "description": "844 legendary battle of the Spanish Reconquista",
+      "lon": -2.406666666,
+      "lat": 42.368888888,
+      "startYear": 844
+    },
+    {
+      "id": "Q3636499",
+      "name": "Battle of Licosa",
+      "type": "battle",
+      "description": "846 naval battle",
+      "lon": 14.54,
+      "lat": 40.15,
+      "startYear": 846
+    },
+    {
+      "id": "Q11908753",
+      "name": "Battle of Mallorca",
+      "type": "battle",
+      "description": "813 battle",
+      "lon": 3.13333333,
+      "lat": 39.96666667,
+      "startYear": 813
+    },
+    {
+      "id": "Q55605027",
+      "name": "Battle of Comacchio",
+      "type": "battle",
+      "description": "",
+      "lon": 12.1703,
+      "lat": 44.6838,
+      "startYear": 809
+    }
+  ]
+}

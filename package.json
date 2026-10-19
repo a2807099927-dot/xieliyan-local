@@ -1,0 +1,53 @@
+{
+  "name": "xie-li-yan-tauri",
+  "version": "2.1.15",
+  "description": "写梨眼 Tauri 2.0 版本",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist src-tauri/target/release",
+    "build:release": "npm run clean && npm run build:frontend && npm run build",
+    "dev:frontend": "vite",
+    "build:frontend": "tsc --noEmit && vite build",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "@tauri-apps/plugin-dialog": "^2.7.1",
+    "@tauri-apps/plugin-fs": "^2.5.1",
+    "@tauri-apps/plugin-window-state": "^2.0.0",
+    "@tiptap/core": "^2.11.5",
+    "@tiptap/extension-placeholder": "^2.11.5",
+    "@tiptap/extension-underline": "^2.11.5",
+    "@tiptap/react": "^2.11.5",
+    "@tiptap/starter-kit": "^2.11.5",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.21.0",
+    "maplibre-gl": "^5.24.0",
+    "prosemirror-model": "^1.25.6",
+    "prosemirror-state": "^1.4.4",
+    "prosemirror-view": "^1.41.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "reactflow": "^11.11.4",
+    "tippy.js": "^6.3.7",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^5.1.0",
+    "autoprefixer": "^10.4.20",
+    "javascript-obfuscator": "^4.1.1",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "vite": "^6.0.0",
+    "vitest": "^4.1.10"
+  }
+}

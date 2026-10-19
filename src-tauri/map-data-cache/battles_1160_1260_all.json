@@ -1,0 +1,906 @@
+{
+  "query": "battles_1160_1260_all",
+  "timestamp": 1779898883573,
+  "data": [
+    {
+      "id": "Q136344",
+      "name": "古茲達格戰役",
+      "type": "battle",
+      "description": "1243 Mongol decisive victory over the Seljuq Sultanate",
+      "lon": 39.55,
+      "lat": 40.25,
+      "startYear": 1243
+    },
+    {
+      "id": "Q159512",
+      "name": "列格尼卡战役",
+      "type": "battle",
+      "description": "波蘭和蒙古軍隊之間的13世紀戰鬥",
+      "lon": 16.222777777,
+      "lat": 51.145277777,
+      "startYear": 1241
+    },
+    {
+      "id": "Q183249",
+      "name": "西蒂河戰役",
+      "type": "battle",
+      "description": "1238 battle",
+      "lon": 37.85202,
+      "lat": 58.06853,
+      "startYear": 1238
+    },
+    {
+      "id": "Q14689",
+      "name": "楚德湖战役",
+      "type": "battle",
+      "description": "1242 battle during Northern Crusades",
+      "lon": 27.5,
+      "lat": 58.233333333,
+      "startYear": 1242
+    },
+    {
+      "id": "Q73105",
+      "name": "Battle of Westkapelle",
+      "type": "battle",
+      "description": "1253 conflict",
+      "lon": 3.58,
+      "lat": 51.52,
+      "startYear": 1253
+    },
+    {
+      "id": "Q367025",
+      "name": "萊納之戰",
+      "type": "battle",
+      "description": "1208 middle ages battle",
+      "lon": 13.83333333,
+      "lat": 58.23333333,
+      "startYear": 1208
+    },
+    {
+      "id": "Q219697",
+      "name": "拉斯纳瓦斯-德托洛萨会战",
+      "type": "battle",
+      "description": "1212 battle between Iberian Christian armies and an Almohad Muslim army",
+      "lon": -3.549027777,
+      "lat": 38.343,
+      "startYear": 1212
+    },
+    {
+      "id": "Q244356",
+      "name": "阿音札鲁特战役",
+      "type": "battle",
+      "description": "1260 battle between the Egyptian Sultanate and the Mongol Empire",
+      "lon": 35.357,
+      "lat": 32.55,
+      "startYear": 1260
+    },
+    {
+      "id": "Q281013",
+      "name": "Battle of Monmouth",
+      "type": "battle",
+      "description": "battle fought in 1233 between (mainly) Welsh and invading Normans",
+      "lon": -2.725,
+      "lat": 51.813,
+      "startYear": 1233
+    },
+    {
+      "id": "Q283364",
+      "name": "莱尼亚诺战役",
+      "type": "battle",
+      "description": "1176 battle",
+      "lon": 8.908611111,
+      "lat": 45.603333333,
+      "startYear": 1176
+    },
+    {
+      "id": "Q319893",
+      "name": "Battle of Stellau",
+      "type": "battle",
+      "description": "1201 battle",
+      "lon": 9.72768,
+      "lat": 53.9277,
+      "startYear": 1201
+    },
+    {
+      "id": "Q830626",
+      "name": "布汶战役",
+      "type": "battle",
+      "description": "1214年欧洲战争",
+      "lon": 3.225,
+      "lat": 50.58,
+      "startYear": 1214
+    },
+    {
+      "id": "Q847287",
+      "name": "蒙吉萨战役",
+      "type": "battle",
+      "description": "1177 battle of the Crusades",
+      "lon": 34.92,
+      "lat": 31.86,
+      "startYear": 1177
+    },
+    {
+      "id": "Q853754",
+      "name": "苏勒战役",
+      "type": "battle",
+      "description": "1236年战役",
+      "lon": 23.51444444,
+      "lat": 56.115,
+      "startYear": 1236
+    },
+    {
+      "id": "Q1048657",
+      "name": "盛克戰役",
+      "type": "battle",
+      "description": "1195 battle",
+      "lon": 46.018889,
+      "lat": 40.829722,
+      "startYear": 1195
+    },
+    {
+      "id": "Q1082410",
+      "name": "Battle of St. Matthew's Day",
+      "type": "battle",
+      "description": "1217 battle",
+      "lon": 25.4825,
+      "lat": 58.446666666,
+      "startYear": 1217
+    },
+    {
+      "id": "Q1092099",
+      "name": "斯库奥达斯战役",
+      "type": "battle",
+      "description": "1258 battle",
+      "lon": 21.44055556,
+      "lat": 56.23638889,
+      "startYear": 1258
+    },
+    {
+      "id": "Q1092099",
+      "name": "斯库奥达斯战役",
+      "type": "battle",
+      "description": "1258 battle",
+      "lon": 21.44055556,
+      "lat": 56.23638889,
+      "startYear": 1259
+    },
+    {
+      "id": "Q1138687",
+      "name": "蒙泰波尔齐战役",
+      "type": "battle",
+      "description": "1167 battle",
+      "lon": 12.7165,
+      "lat": 41.818,
+      "startYear": 1167
+    },
+    {
+      "id": "Q1148862",
+      "name": "法瑞斯库尔战役",
+      "type": "battle",
+      "description": "1250 Egyptian victory in the major battle of the Seventh Crusade",
+      "lon": 31.714722222,
+      "lat": 31.329722222,
+      "startYear": 1250
+    },
+    {
+      "id": "Q1169274",
+      "name": "科尔泰诺瓦战役",
+      "type": "battle",
+      "description": "1237 middle ages battle",
+      "lon": 9.783333333,
+      "lat": 45.533333333,
+      "startYear": 1237
+    },
+    {
+      "id": "Q396501",
+      "name": "Battle of Lehola",
+      "type": "battle",
+      "description": "1215 military conflict in Estonia during Livonian Crusade",
+      "lon": 25.482777777,
+      "lat": 58.549444444,
+      "startYear": 1215
+    },
+    {
+      "id": "Q446410",
+      "name": "莱塔河之战",
+      "type": "battle",
+      "description": "1246 battle",
+      "lon": 16.23027778,
+      "lat": 47.73666667,
+      "startYear": 1246
+    },
+    {
+      "id": "Q490223",
+      "name": "博恩赫沃德战役",
+      "type": "battle",
+      "description": "1227 battle",
+      "lon": 10.2,
+      "lat": 54.06666667,
+      "startYear": 1227
+    },
+    {
+      "id": "Q985668",
+      "name": "唐岛之战",
+      "type": "battle",
+      "description": "1161 battle during the Jin-Song wars",
+      "lon": 121,
+      "lat": 37,
+      "startYear": 1161
+    },
+    {
+      "id": "Q939358",
+      "name": "第一次霍姆斯戰役",
+      "type": "battle",
+      "description": "1260 battle between Egyptians and Mongols",
+      "lon": 36.714462,
+      "lat": 34.723185,
+      "startYear": 1260
+    },
+    {
+      "id": "Q940026",
+      "name": "阿斯夫戰役",
+      "type": "battle",
+      "description": "1191年的十字軍之戰",
+      "lon": 34.806944444,
+      "lat": 32.194444444,
+      "startYear": 1191
+    },
+    {
+      "id": "Q940722",
+      "name": "Battle of Ümera",
+      "type": "battle",
+      "description": "1210 battle",
+      "lon": 25.416666666,
+      "lat": 57.5,
+      "startYear": 1210
+    },
+    {
+      "id": "Q941312",
+      "name": "貝濟耶大屠杀",
+      "type": "battle",
+      "description": "1209 killing of Cathars during the Albigensian Crusade",
+      "lon": 3.21899,
+      "lat": 43.3476,
+      "startYear": 1209
+    },
+    {
+      "id": "Q521799",
+      "name": "涅瓦河之戰",
+      "type": "battle",
+      "description": "1240 battle",
+      "lon": 30.604166666,
+      "lat": 59.8075,
+      "startYear": 1240
+    },
+    {
+      "id": "Q570204",
+      "name": "迦勒迦河之战",
+      "type": "battle",
+      "description": "中世紀的戰鬥",
+      "lon": 37.495686,
+      "lat": 47.250789,
+      "startYear": 1223
+    },
+    {
+      "id": "Q1778251",
+      "name": "Battle of Älgarås",
+      "type": "battle",
+      "description": "1205 battle",
+      "lon": 14.2667,
+      "lat": 58.8167,
+      "startYear": 1205
+    },
+    {
+      "id": "Q1792257",
+      "name": "Battle of Sparrsätra",
+      "type": "battle",
+      "description": "1247 Swedish battle",
+      "lon": 16.975833333,
+      "lat": 59.694166666,
+      "startYear": 1247
+    },
+    {
+      "id": "Q2692278",
+      "name": "Battle of Lihula",
+      "type": "battle",
+      "description": "1220 battle of the Northern Crusades",
+      "lon": 23.839444,
+      "lat": 58.694444,
+      "startYear": 1220
+    },
+    {
+      "id": "Q2724154",
+      "name": "Battle of Adrianople",
+      "type": "battle",
+      "description": "1254 battle",
+      "lon": 26.566667,
+      "lat": 41.666667,
+      "startYear": 1254
+    },
+    {
+      "id": "Q2750179",
+      "name": "Siege of Castelnòu d'Arri",
+      "type": "battle",
+      "description": "1211 siege",
+      "lon": 1.95,
+      "lat": 43.316666666,
+      "startYear": 1211
+    },
+    {
+      "id": "Q2750179",
+      "name": "Siege of Castelnòu d'Arri",
+      "type": "battle",
+      "description": "1211 siege",
+      "lon": 1.953888888,
+      "lat": 43.318055555,
+      "startYear": 1211
+    },
+    {
+      "id": "Q2792009",
+      "name": "Battle of Portopí",
+      "type": "battle",
+      "description": "september 1229 in Mallorca",
+      "lon": 2.516666666,
+      "lat": 39.516666666,
+      "startYear": 1229
+    },
+    {
+      "id": "Q577190",
+      "name": "克雷森之战",
+      "type": "battle",
+      "description": "1187 battle",
+      "lon": 35.354527777,
+      "lat": 32.735083333,
+      "startYear": 1187
+    },
+    {
+      "id": "Q587095",
+      "name": "蒙塔佩蒂之战",
+      "type": "battle",
+      "description": "1260 battle between the Italian republics of Florence and Siena",
+      "lon": 11.439444444,
+      "lat": 43.315277777,
+      "startYear": 1260
+    },
+    {
+      "id": "Q599647",
+      "name": "Battle of Cassano",
+      "type": "battle",
+      "description": "1259 battle between the Guelphs and Ghibellines",
+      "lon": 9.516771,
+      "lat": 45.52606,
+      "startYear": 1259
+    },
+    {
+      "id": "Q600609",
+      "name": "杜尔贝战役",
+      "type": "battle",
+      "description": "battle in Latvia, 1260",
+      "lon": 21.35,
+      "lat": 56.595,
+      "startYear": 1260
+    },
+    {
+      "id": "Q2888010",
+      "name": "石橋山之戰",
+      "type": "battle",
+      "description": "1180 battle of the Genpei War",
+      "lon": 139.140305555,
+      "lat": 35.221138888,
+      "startYear": 1180
+    },
+    {
+      "id": "Q2888043",
+      "name": "Battle of Uji",
+      "type": "battle",
+      "description": "1221 battle in Japan",
+      "lon": 135.779444444,
+      "lat": 34.880833333,
+      "startYear": 1221
+    },
+    {
+      "id": "Q2888057",
+      "name": "宇治川之戰",
+      "type": "battle",
+      "description": "1184 Second Battle of Uji",
+      "lon": 135.808722222,
+      "lat": 34.89025,
+      "startYear": 1184
+    },
+    {
+      "id": "Q1319855",
+      "name": "基里纳战役",
+      "type": "battle",
+      "description": "1235 confrontation between the Sosso king Sumanguru Kanté and the Mandinka prince Sundiata Keita",
+      "lon": -8.1516667,
+      "lat": 12.3063889,
+      "startYear": 1235
+    },
+    {
+      "id": "Q1341824",
+      "name": "列丹尼斯戰役",
+      "type": "battle",
+      "description": "1219 battle during the Livonian Crusade",
+      "lon": 24.73944444,
+      "lat": 59.43527778,
+      "startYear": 1219
+    },
+    {
+      "id": "Q1354080",
+      "name": "米雷之戰",
+      "type": "battle",
+      "description": "Crusader army of Simon IV de Montfort defeated the Catharist, Aragonese and Catalan forces of Peter II of Aragon, at Muret near Toulouse",
+      "lon": 1.32666667,
+      "lat": 43.46111111,
+      "startYear": 1213
+    },
+    {
+      "id": "Q1355254",
+      "name": "伯曼农战役",
+      "type": "battle",
+      "description": "1224 battle",
+      "lon": 35.999722,
+      "lat": 37.8925,
+      "startYear": 1224
+    },
+    {
+      "id": "Q625406",
+      "name": "Battle of Philippopolis",
+      "type": "battle",
+      "description": "1208 battle",
+      "lon": 24.75,
+      "lat": 42.15,
+      "startYear": 1208
+    },
+    {
+      "id": "Q636520",
+      "name": "邁爾季歐雲之戰 (1179)",
+      "type": "battle",
+      "description": "1179 battle between Egyptians and Crusaders",
+      "lon": 35.588889,
+      "lat": 33.358333,
+      "startYear": 1179
+    },
+    {
+      "id": "Q650507",
+      "name": "富士川之戰",
+      "type": "battle",
+      "description": "battle in 1180 in Japan",
+      "lon": 138.696361111,
+      "lat": 35.158722222,
+      "startYear": 1180
+    },
+    {
+      "id": "Q657913",
+      "name": "Battle of Iconium",
+      "type": "battle",
+      "description": "1190 battle",
+      "lon": 32.483333,
+      "lat": 37.866667,
+      "startYear": 1190
+    },
+    {
+      "id": "Q2888805",
+      "name": "Battle of Haugsnes",
+      "type": "battle",
+      "description": "battle in 1246 in Iceland",
+      "lon": -19.3,
+      "lat": 65.5333,
+      "startYear": 1246
+    },
+    {
+      "id": "Q2888869",
+      "name": "Battle of Jerez",
+      "type": "battle",
+      "description": "1231 battle in Spain of the Castilians against the Moors during the Reconquista",
+      "lon": -6.137777777,
+      "lat": 36.681666666,
+      "startYear": 1231
+    },
+    {
+      "id": "Q2888964",
+      "name": "藤戶之戰",
+      "type": "battle",
+      "description": "1184 Japanese battle in the Genpei Wars",
+      "lon": 133.799638888,
+      "lat": 34.555972222,
+      "startYear": 1185
+    },
+    {
+      "id": "Q2889028",
+      "name": "俱利伽羅峠之戰",
+      "type": "battle",
+      "description": "1183 battle of the Genpei War",
+      "lon": 136.821027777,
+      "lat": 36.661694444,
+      "startYear": 1183
+    },
+    {
+      "id": "Q1364027",
+      "name": "門德雷斯河畔的安條克戰役",
+      "type": "battle",
+      "description": "1211 battle between the Empire of Nicaea and the Sultanate of Rum",
+      "lon": 28.574239,
+      "lat": 37.873435,
+      "startYear": 1211
+    },
+    {
+      "id": "Q1422948",
+      "name": "Battle of the Wülferichskamp",
+      "type": "battle",
+      "description": "1254 battle",
+      "lon": 7.48416667,
+      "lat": 51.585,
+      "startYear": 1254
+    },
+    {
+      "id": "Q1427630",
+      "name": "阿得里安堡战役",
+      "type": "battle",
+      "description": "part of the Fourth Crusade, in which the Bulgarians defeated the Crusaders",
+      "lon": 26.566667,
+      "lat": 41.666667,
+      "startYear": 1205
+    },
+    {
+      "id": "Q1459494",
+      "name": "科洛克尼察战役",
+      "type": "battle",
+      "description": "1230 battle in Bulgaria",
+      "lon": 25.5,
+      "lat": 41.9833,
+      "startYear": 1230
+    },
+    {
+      "id": "Q1836863",
+      "name": "Battle of Belvoir Castle",
+      "type": "battle",
+      "description": "1182 military campaign involving that Fortress",
+      "lon": 35.52161111,
+      "lat": 32.59556389,
+      "startYear": 1182
+    },
+    {
+      "id": "Q1855461",
+      "name": "Battle of Lincoln",
+      "type": "battle",
+      "description": "battle of Lincoln, England in 1217",
+      "lon": -0.538653,
+      "lat": 53.2333,
+      "startYear": 1217
+    },
+    {
+      "id": "Q1887494",
+      "name": "以仁王舉兵",
+      "type": "battle",
+      "description": "1180 opening battle of the Genpei War",
+      "lon": 135.779444444,
+      "lat": 34.880833333,
+      "startYear": 1180
+    },
+    {
+      "id": "Q2890815",
+      "name": "Battle of the Puig",
+      "type": "battle",
+      "description": "1237 battle",
+      "lon": -0.3,
+      "lat": 39.58333333,
+      "startYear": 1237
+    },
+    {
+      "id": "Q2916261",
+      "name": "Battle of Garni",
+      "type": "battle",
+      "description": "1225 battle",
+      "lon": 44.723056,
+      "lat": 40.119444,
+      "startYear": 1225
+    },
+    {
+      "id": "Q2920414",
+      "name": "Battle of Basian",
+      "type": "battle",
+      "description": "1202 battle of the Georgian-Seljuk Wars",
+      "lon": 41.675556,
+      "lat": 39.979722,
+      "startYear": 1202
+    },
+    {
+      "id": "Q2889980",
+      "name": "篠原之戰",
+      "type": "battle",
+      "description": "battle in 1183 in Japan",
+      "lon": 136.360305555,
+      "lat": 36.355972222,
+      "startYear": 1183
+    },
+    {
+      "id": "Q2890062",
+      "name": "Battle of Steppes",
+      "type": "battle",
+      "description": "battle in 1213 in modern-day Belgium",
+      "lon": 5.132777777,
+      "lat": 50.749166666,
+      "startYear": 1213
+    },
+    {
+      "id": "Q2890114",
+      "name": "墨俁川之戰",
+      "type": "battle",
+      "description": "battle in 1181 in Japan",
+      "lon": 136.683861111,
+      "lat": 35.352972222,
+      "startYear": 1181
+    },
+    {
+      "id": "Q705874",
+      "name": "蒂萨河之战",
+      "type": "battle",
+      "description": "1241 battle during the Mongol invasion of Hungary",
+      "lon": 20.913055555,
+      "lat": 47.977777777,
+      "startYear": 1241
+    },
+    {
+      "id": "Q730553",
+      "name": "密列奥塞法隆战役",
+      "type": "battle",
+      "description": "1176 battle",
+      "lon": 31.946613,
+      "lat": 37.910676,
+      "startYear": 1176
+    },
+    {
+      "id": "Q763428",
+      "name": "佩拉戈尼亚战役",
+      "type": "battle",
+      "description": "1259 battle",
+      "lon": 21.566666666,
+      "lat": 40.816666666,
+      "startYear": 1259
+    },
+    {
+      "id": "Q767844",
+      "name": "君士坦丁堡之围",
+      "type": "battle",
+      "description": "1203 siege",
+      "lon": 28.976018,
+      "lat": 41.01224,
+      "startYear": 1203
+    },
+    {
+      "id": "Q767844",
+      "name": "君士坦丁堡之围",
+      "type": "battle",
+      "description": "1203 siege",
+      "lon": 28.9769,
+      "lat": 41.0167,
+      "startYear": 1203
+    },
+    {
+      "id": "Q815162",
+      "name": "1240年基辅围城战",
+      "type": "battle",
+      "description": "1240 Mongol siege of a Rus' city",
+      "lon": 30.523611111,
+      "lat": 50.45,
+      "startYear": 1240
+    },
+    {
+      "id": "Q2008448",
+      "name": "雅法战役",
+      "type": "battle",
+      "description": "1192 battle of the Third Crusade",
+      "lon": 34.75164444,
+      "lat": 32.05440833,
+      "startYear": 1192
+    },
+    {
+      "id": "Q2034912",
+      "name": "哈里姆战役",
+      "type": "battle",
+      "description": "1164 battle fought between Zengids and a combined army of Crusaders",
+      "lon": 36.516667,
+      "lat": 36.2,
+      "startYear": 1164
+    },
+    {
+      "id": "Q2037147",
+      "name": "扎维霍斯特战役",
+      "type": "battle",
+      "description": "battle in Poland in 1205",
+      "lon": 21.8588,
+      "lat": 50.806,
+      "startYear": 1205
+    },
+    {
+      "id": "Q2037147",
+      "name": "扎维霍斯特战役",
+      "type": "battle",
+      "description": "battle in Poland in 1205",
+      "lon": 21.8588,
+      "lat": 50.806,
+      "startYear": 1205
+    },
+    {
+      "id": "Q1481920",
+      "name": "阿拉科斯戰役",
+      "type": "battle",
+      "description": "1195 battle of the Reconquista",
+      "lon": -4,
+      "lat": 38.95277778,
+      "startYear": 1195
+    },
+    {
+      "id": "Q1528017",
+      "name": "Battle of Demetritzes",
+      "type": "battle",
+      "description": "1185 battle",
+      "lon": 23.38333333,
+      "lat": 41.23333333,
+      "startYear": 1185
+    },
+    {
+      "id": "Q2116658",
+      "name": "一之谷之戰",
+      "type": "battle",
+      "description": "battle in 1184 in Japan",
+      "lon": 135.105277777,
+      "lat": 34.640277777,
+      "startYear": 1184
+    },
+    {
+      "id": "Q2117322",
+      "name": "屋島之戰",
+      "type": "battle",
+      "description": "part of the Genpei War (March 22, 1185)",
+      "lon": 134.122333333,
+      "lat": 34.345611111,
+      "startYear": 1185
+    },
+    {
+      "id": "Q2214882",
+      "name": "Battle of Ane",
+      "type": "battle",
+      "description": "1227 battle fought near the village",
+      "lon": 6.650833,
+      "lat": 52.613611,
+      "startYear": 1227
+    },
+    {
+      "id": "Q2236796",
+      "name": "Battle of Altenesch",
+      "type": "battle",
+      "description": "1234 battle",
+      "lon": 8.62357,
+      "lat": 53.1276,
+      "startYear": 1234
+    },
+    {
+      "id": "Q2236918",
+      "name": "Battle of Gisors",
+      "type": "battle",
+      "description": "1198 battle in France",
+      "lon": 1.74361111,
+      "lat": 49.26166667,
+      "startYear": 1198
+    },
+    {
+      "id": "Q4870805",
+      "name": "Battle of Creadran Cille",
+      "type": "battle",
+      "description": "1257 battle in Ireland",
+      "lon": -8.615,
+      "lat": 54.356,
+      "startYear": 1257
+    },
+    {
+      "id": "Q4870809",
+      "name": "Battle of Crogen",
+      "type": "battle",
+      "description": "1165 skirmish or battle where Welsh troops engaged an Anglo-Norman invasion force",
+      "lon": -3.104,
+      "lat": 52.939,
+      "startYear": 1165
+    },
+    {
+      "id": "Q4087407",
+      "name": "阿德拉米狄翁战役",
+      "type": "battle",
+      "description": "1205 battle between the Latin Empire and the Empire of Nicaea",
+      "lon": 27.016667,
+      "lat": 39.583333,
+      "startYear": 1205
+    },
+    {
+      "id": "Q4087460",
+      "name": "Battle of Renfrew",
+      "type": "battle",
+      "description": "1164 battle near Renfrew, Scotland",
+      "lon": -4.402,
+      "lat": 55.861,
+      "startYear": 1164
+    },
+    {
+      "id": "Q4110452",
+      "name": "1169年基辅战役",
+      "type": "battle",
+      "description": "1169 siege and plundering of the capital of Kyivan Rus'",
+      "lon": 30.523611111,
+      "lat": 50.45,
+      "startYear": 1169
+    },
+    {
+      "id": "Q3031201",
+      "name": "海灣戰爭",
+      "type": "battle",
+      "description": "1244 battle",
+      "lon": -20.83333333,
+      "lat": 65.83333333,
+      "startYear": 1244
+    },
+    {
+      "id": "Q3090571",
+      "name": "法住寺合戰",
+      "type": "battle",
+      "description": "siege in 1184 in Japan",
+      "lon": 135.77273056,
+      "lat": 34.987625,
+      "startYear": 1184
+    },
+    {
+      "id": "Q1575254",
+      "name": "Battle of Roche-au-Moine",
+      "type": "battle",
+      "description": "1214 battle",
+      "lon": -0.65638889,
+      "lat": 47.38388889,
+      "startYear": 1214
+    },
+    {
+      "id": "Q1649708",
+      "name": "費爾興戰役",
+      "type": "battle",
+      "description": "1164 battle",
+      "lon": 12.9,
+      "lat": 53.85,
+      "startYear": 1164
+    },
+    {
+      "id": "Q1669489",
+      "name": "塔耶堡之战",
+      "type": "battle",
+      "description": "1242 battle between England and France",
+      "lon": -0.65,
+      "lat": 45.83,
+      "startYear": 1242
+    },
+    {
+      "id": "Q2237381",
+      "name": "粟津之戰",
+      "type": "battle",
+      "description": "1184 battle of the Genpei War",
+      "lon": 135.89762,
+      "lat": 34.98107,
+      "startYear": 1184
+    },
+    {
+      "id": "Q4871252",
+      "name": "Battle of Huete",
+      "type": "battle",
+      "description": "1164 battle",
+      "lon": -2.68888889,
+      "lat": 40.1475,
+      "startYear": 1164
+    },
+    {
+      "id": "Q3269760",
+      "name": "印度河之戰",
+      "type": "battle",
+      "description": "battle fought at the Indust river between Khwarazm and the Mongols (1221 AD)",
+      "lon": 72.18,
+      "lat": 33.77,
+      "startYear": 1221
+    }
+  ]
+}
