@@ -1,6 +1,6 @@
 # 写梨眼 (XieLiYan) Tauri 2 — 项目功能清单与架构参考手册
 
-> 版本：2.1.14 | 生成日期：2026-08-28 | 用途：新会话快速上下文
+> 版本：2.1.15（本地版）| 生成日期：2026-08-28 | 用途：新会话快速上下文
 
 ---
 
@@ -9,7 +9,7 @@
 | 属性 | 值 |
 |------|------|
 | 产品名 | 写梨眼 (XieLiYan) |
-| 版本 | 2.1.14 |
+| 版本 | 2.1.15（本地版） |
 | 定位 | AI 辅助小说写作桌面应用 |
 | 前身 | Electron 42 版 → 全量迁移至 Tauri 2 |
 | 标识符 | `com.xieliyan.app` |
@@ -244,7 +244,6 @@ tauri2/
 | 写作习惯 | `settings/HabitSettingsTab.tsx` (11KB) | 自动保存/续写行为 |
 | 存储设置 | `settings/StoreSettingsTab.tsx` (10KB) | WebDAV/备份 |
 | AI 日志 | `settings/AiLogTab.tsx` | AI 调用记录查看 |
-| 提示词市场 | `settings/PromptMarketModal.tsx` (12KB) | 提示词模板 |
 | 设置控制器 | `settings/useSettingsModalController.ts` (16KB) | 面板切换逻辑 |
 | 后端配置 | `commands/config.rs` (8KB) | 加载/保存/重置 |
 
@@ -260,16 +259,7 @@ tauri2/
 
 **同步策略**：本地 `books/**/*.{json,html}` → 内存 zip 压缩 → 坚果云 `/写梨眼/books/` 单次上传，规避频率限制。
 
-### 3.13 自动更新
-
-| 功能 | 文件 | 说明 |
-|------|------|------|
-| 更新检查/下载/安装 | `commands/updater.rs` (11KB) | tauri-plugin-updater |
-| 更新对话框 | `components/common/UpdateDialog.tsx` | 用户 UI 交互 |
-| 手动更新按钮 | `components/common/ManualUpdateButton.tsx` | 手动触发 |
-| 更新端点 | `tauri.conf.json` | R2 CDN `latest.json` |
-
-### 3.14 多窗口管理
+### 3.13 多窗口管理
 
 | 窗口 | Label | 后端文件 | 用途 |
 |------|-------|----------|------|
@@ -279,26 +269,25 @@ tauri2/
 | 大纲 | `outline-window` | `windows/outline.rs` | 章节大纲树 |
 | 小说实验室 | `novel-lab-window` | `windows/novel_lab.rs` | 拆书 + 分析 |
 | AI 网页 | `aiweb-window` | `windows/aiweb.rs` (18KB) | 内嵌 AI 网页助手 |
-| 思维市场 | `mind-market` | `windows/mind.rs` | 外部思维市场 |
 | 工具箱 | — | `windows/toolbox.rs` | 工具箱窗口 |
 | 通用逻辑 | — | `windows/common.rs` | 窗口公共操作 |
 | 窗口状态 | — | `windows/state.rs` | 窗口状态管理 |
 
-### 3.15 UI 缩放
+### 3.14 UI 缩放
 
 | 功能 | 文件 | 说明 |
 |------|------|------|
 | 缩放控制 | `commands/scale.rs` (6KB) | 50%-180%、5% 步长、多窗口联动 |
 | 1K 屏幕自适应 | `commands/scale.rs` | 启动自动检测 → 默认 85%/75% |
 
-### 3.16 灵感搜索
+### 3.15 灵感搜索
 
 | 功能 | 文件 |
 |------|------|
 | 灵感搜索对话框 | `components/modals/InspirationSearchModal.tsx` (12KB) |
 | 后端搜索 | `commands/ai/inspiration.rs` (6KB) |
 
-### 3.17 其他功能
+### 3.16 其他功能
 
 | 功能 | 文件 | 说明 |
 |------|------|------|
@@ -307,7 +296,6 @@ tauri2/
 | 错误边界 | `components/common/ErrorBoundary.tsx` | React Error Boundary |
 | 时间图标 | `components/common/ChronoIcon.tsx` | 时间相关图标组件 |
 | Diff 审阅 | `components/common/DiffReviewModal.tsx` | Diff 审阅弹窗 |
-| 旧版 Token 恢复 | `commands/legacy_auth.rs` | Electron 版 token 迁移 |
 | 日志查看/上报 | `commands/logs.rs` | 日志面板 |
 | 系统信息 | `commands/system.rs` | 系统信息获取 |
 | 侧边栏 | `components/GlobalSidebar.tsx` | 全局导航侧边栏 |
@@ -389,7 +377,6 @@ ai/
 | `useAppStore` | `store/useAppStore.ts` (3KB) | 路由、活跃书ID、活跃章ID、编辑器Tab列表、分屏状态 |
 | `useBookStore` | `store/useBookStore.ts` (36KB) | 书籍数据 CRUD、章节内容读写、记忆库操作、卷管理 |
 | `useConfigStore` | `store/useConfigStore.ts` (12KB) | AI 配置、UI 配置、网络配置、WebDAV 配置 |
-| `useUserStore` | `store/useUserStore.ts` (3KB) | 用户认证、VIP 状态、Token |
 | `useIslandStore` | `store/useIslandStore.ts` (4KB) | 浮动通知队列、显示/隐藏 |
 | `useEditorBridgeStore` | `store/useEditorBridgeStore.ts` (2KB) | 编辑器↔Agent 窗口通信桥数据 |
 | `useEquipmentClipboard` | `store/useEquipmentClipboard.ts` (1KB) | 装备剪贴板 |
@@ -511,7 +498,6 @@ src/utils/tauri-bridge.ts   → 所有 invoke 调用的统一入口 [32KB]
 | `tauri-plugin-window-state` | 2 | 窗口状态持久化 |
 | `tauri-plugin-dialog` | 2 | 原生对话框 |
 | `tauri-plugin-fs` | 2 | 文件系统访问 |
-| `tauri-plugin-updater` | 2 | 自动更新 |
 | `serde` / `serde_json` | 1 | 序列化/反序列化 |
 | `tokio` | 1 (full) | 异步运行时 |
 | `reqwest` | 0.12 | HTTP 客户端 (json/stream/gzip/brotli) |
@@ -557,7 +543,6 @@ src/utils/tauri-bridge.ts   → 所有 invoke 调用的统一入口 [32KB]
 | `inspect-config.ps1` | 检查配置数据 |
 | `inspect-runtime.ps1` | 检查运行时资源 |
 | `inspect-wallpaper.ps1` | 检查壁纸资源 |
-| `extract-token.ps1` | 提取 Token |
 | `tail-log.ps1` | 查看日志 |
 | `gen-latest-yml.cjs` | 生成更新清单 |
 | `generate-copyright-materials.mjs` | 生成版权材料 |

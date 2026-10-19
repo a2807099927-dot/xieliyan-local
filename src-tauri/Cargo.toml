@@ -29,7 +29,6 @@ uuid = { version = "1", features = ["v4"] }
 chrono = { version = "0.4", features = ["serde"] }
 sha2 = "0.10"
 base64 = "0.22"
-ed25519-dalek = { version = "2.1", features = ["pkcs8"] }
 log = "0.4"
 regex = "1"
 zip = "2"

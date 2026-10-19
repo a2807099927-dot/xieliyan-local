@@ -1,6 +1,7 @@
 # 写梨眼 (XieLiYan) Tauri 2 — 项目架构文档
 
-> 版本：2.1.14 | 更新日期：2026-10-16
+> 版本：2.1.15（本地版）| 更新日期：2026-10-19
+> 本仓库是剥离后的本地版：不含账号/VIP/卡密/支付，不含自动更新，也不含自动工坊与提示词市场。下文只描述仍然存在的本地能力。
 
 ## 概述
 
@@ -36,7 +37,6 @@ tauri2/
 │   ├── store/              — Zustand 状态管理
 │   ├── hooks/              — React Hooks
 │   ├── Agent/              — AI Agent 写作助手
-│   ├── workshop/           — 自动开书工坊（编排器 + 分阶段面板）
 │   ├── ai/                 — 前端 AI 适配层
 │   ├── i18n/               — 文案与多语言
 │   ├── utils/              — 工具函数（含 tauri-bridge 兼容层）
@@ -67,11 +67,11 @@ tauri2/
 | `ai/` | 13 | AI 调用：聊天、中断、验证、模型列表、文风、日志、灵感搜索、网页搜索、提示词 |
 | `cloud/` | 5 | 阿里云盘：OAuth 登录、打包上传、下载 |
 | `resources/` | 6 | 角色管理：增删改查、AI 提取、分类管理 |
-| `windows/` | 10 | 多窗口：Agent/续写/大纲/小说实验室/AI网页/思维市场/工具箱 |
+| `windows/` | 10 | 多窗口：Agent/续写/大纲/小说实验室/AI网页/工具箱 |
 | `webdav/` | 5 | 云同步：坚果云 WebDAV 上传/下载/测试 |
 | `embedded/` | 3 | 内嵌浏览器（child webview） |
 | `novel_lab/` | 8 | 小说实验室：拆书/存档/分析 |
-| 单文件模块 | — | `config`（配置加载/保存/重置）、`updater`（自动更新）、`scale`（UI 缩放）、`agent`（任务准备）、`legacy_auth`（旧版 token 恢复）、`logs`（日志查看/上报）、`pay`（VIP 支付）、`secrets`（keyring 密钥存取）、`token_store`（登录 token 持久化）、`system`（系统信息）、`http_fetch`（通用 HTTP，含 SSRF 防护）、`user_skill_store`（用户技能库） |
+| 单文件模块 | — | `config`（配置加载/保存/重置）、`scale`（UI 缩放）、`agent`（任务准备）、`logs`（日志查看/上报）、`secrets`（keyring 密钥存取）、`system`（系统信息）、`http_fetch`（通用 HTTP，含 SSRF 防护）、`user_skill_store`（用户技能库） |
 
 ### AI 引擎 (`ai/`)
 
@@ -113,7 +113,6 @@ ai/
 | `useAppStore` | 路由、活跃书/章、编辑器 Tab、分屏 |
 | `useBookStore` | 书籍数据 CRUD、章节内容、记忆库 |
 | `useConfigStore` | 全局配置（AI/UI/网络/WebDAV） |
-| `useUserStore` | 用户认证、VIP 状态 |
 | `useIslandStore` | 浮动通知（Island 组件） |
 | `useEditorBridgeStore` | 编辑器↔Agent 窗口通信 |
 
@@ -198,7 +197,6 @@ workspace/
 | 大纲 | `outline-window` | 章节大纲树 |
 | 小说实验室 | `novel-lab-window` | 拆书 + 分析 |
 | AI 网页 | `aiweb-window` | 内嵌 AI 网页助手 |
-| 思维市场 | `mind-market` | 外部思维市场页面 |
 
 ---
 
