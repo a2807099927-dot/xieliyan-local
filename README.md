@@ -76,6 +76,12 @@ workspace/books/{bookId}/
 | [`CHANGELOG.md`](./CHANGELOG.md) | 版本变更（含被移除功能之前的历史） |
 | [`MIGRATION_PLAN.md`](./MIGRATION_PLAN.md) | Electron → Tauri 迁移记录（历史文档） |
 
+## 交流
+
+用法、Bug、功能建议都可以来 QQ 群聊：https://qm.qq.com/q/LlZUAUnscu
+
+应用内也有入口：书架页左侧栏底部、以及编辑器最右侧图标条最下方的群图标。
+
 ## 许可
 
 本程序是自由软件，在自由软件基金会发布的 **GNU 通用公共许可证第 3 版**（GPL-3.0）条款下重新分发和/或修改，详见 [`LICENSE`](./LICENSE)。
