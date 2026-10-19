@@ -6,7 +6,7 @@ AI 辅助小说写作桌面应用，Tauri 2 + React 18。这一份是我剥离�
 - 所有 AI 能力都需要您自备 API Key（OpenAI 兼容端点、Anthropic、Gemini、DeepSeek、Grok、中转站、本地模型都可）
 - 提示词词库内置在客户端（`src-tauri/src/prompts/`），本地解密，不联网取词
 - 云备份走您自己配置的 WebDAV / 坚果云，不经过任何第三方服务器
-
+- 如果懒得进行打包，那么可以在 xieliyan.top 网站下载我部署好的版本，MAC与Win系统包均在。
 ## 快速开始
 
 ```bash
