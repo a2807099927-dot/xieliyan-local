@@ -913,7 +913,7 @@ export function MemoryBankModal({ book, open, onClose }: { book: Book; open: boo
  useIslandStore.getState().show({ type: 'success', message: '已复制 Markdown', autoHideMs: 1200 });
  };
 
- // ── VIP 导出智能整理 ────────────────────────────────────────────────
+ // ── 导出智能整理 ────────────────────────────────────────────────
  const parseExportRange = (startStr: string, endStr: string, total: number): { start: number; end: number } | null => {
  const start = Number(startStr.trim());
  const end = Number(endStr.trim());
